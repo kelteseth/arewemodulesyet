@@ -92,15 +92,11 @@
                 --row-color-secondary: #f0f0f0;
                 /* light grey for alternate rows */
             }
-
-            /* Define dark theme colors */
-            @media (prefers-color-scheme: dark) {
-                :root {
-                    --row-color-primary: #333333;
-                    /* darker color for primary rows */
-                    --row-color-secondary: #2a2a2a;
-                    /* even darker grey for alternate rows */
-                }
+            :root {
+                --row-color-primary: #333333;
+                /* darker color for primary rows */
+                --row-color-secondary: #2a2a2a;
+                /* even darker grey for alternate rows */
             }
 
             table {
@@ -111,10 +107,15 @@
             th {
                 background-color:#222222;
             }
+
             th,
             td {
                 padding: 8px;
-                /* light grey border */
+                color: #eee;
+            }
+
+            td a {
+                color: steelblue;
             }
 
             /* Alternating row backgrounds */
@@ -132,7 +133,7 @@
             <tr style="text-align: left;">
                 <th>Status</th>
                 <th>Help<br>Wanted</th>
-                <th style="max-width: 200px;">Name</th>
+                <th style="width: 100%;">Name</th>
                 <th>Popularity</th>
                 <th style="max-width: 120px;">Version</th>
                 <th>Min C++<br>Version</th>
@@ -145,7 +146,7 @@
             <tr>
                 <td>{{ .status }}</td>
                 <td>{{ if ne .help_wanted ""}}{{ .help_wanted }}{{ end }}</td>
-                <td style="max-width: 200px;"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
+                <td style="width: 100%;"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
                 <td>{{ .revision_count }}</td>
                 <td style="max-width: 120px;">{{ .version }}</td>
                 <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td>
