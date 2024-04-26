@@ -16001,7 +16001,7 @@ ports:
   modules_support_date: 0
   name: qt5
   revision_count: 38
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16010,7 +16010,7 @@ ports:
   modules_support_date: 0
   name: qt5-3d
   revision_count: 12
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16019,7 +16019,7 @@ ports:
   modules_support_date: 0
   name: qt5-activeqt
   revision_count: 10
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16037,7 +16037,7 @@ ports:
   modules_support_date: 0
   name: qt5-base
   revision_count: 91
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16055,7 +16055,7 @@ ports:
   modules_support_date: 0
   name: qt5-charts
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16073,7 +16073,7 @@ ports:
   modules_support_date: 0
   name: qt5-datavis3d
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16109,7 +16109,7 @@ ports:
   modules_support_date: 0
   name: qt5-graphicaleffects
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16118,7 +16118,7 @@ ports:
   modules_support_date: 0
   name: qt5-imageformats
   revision_count: 20
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16127,7 +16127,7 @@ ports:
   modules_support_date: 0
   name: qt5-location
   revision_count: 9
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16154,7 +16154,7 @@ ports:
   modules_support_date: 0
   name: qt5-mqtt
   revision_count: 8
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16163,7 +16163,7 @@ ports:
   modules_support_date: 0
   name: qt5-multimedia
   revision_count: 8
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16190,7 +16190,7 @@ ports:
   modules_support_date: 0
   name: qt5-quickcontrols
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16199,7 +16199,7 @@ ports:
   modules_support_date: 0
   name: qt5-quickcontrols2
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16217,7 +16217,7 @@ ports:
   modules_support_date: 0
   name: qt5-script
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16226,7 +16226,7 @@ ports:
   modules_support_date: 0
   name: qt5-scxml
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16253,7 +16253,7 @@ ports:
   modules_support_date: 0
   name: qt5-serialport
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16262,7 +16262,7 @@ ports:
   modules_support_date: 0
   name: qt5-speech
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16271,7 +16271,7 @@ ports:
   modules_support_date: 0
   name: qt5-svg
   revision_count: 9
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16280,7 +16280,7 @@ ports:
   modules_support_date: 0
   name: qt5-tools
   revision_count: 18
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16298,7 +16298,7 @@ ports:
   modules_support_date: 0
   name: qt5-virtualkeyboard
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16325,7 +16325,7 @@ ports:
   modules_support_date: 0
   name: qt5-webengine
   revision_count: 19
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16343,7 +16343,7 @@ ports:
   modules_support_date: 0
   name: qt5-websockets
   revision_count: 7
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16361,7 +16361,7 @@ ports:
   modules_support_date: 0
   name: qt5-winextras
   revision_count: 10
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16379,7 +16379,7 @@ ports:
   modules_support_date: 0
   name: qt5-xmlpatterns
   revision_count: 8
-  status: ❔
+  status: ❌
   tracking_issue: ''
   version: 5.15.13
 - current_min_cpp_version: Unknown
@@ -16415,8 +16415,8 @@ ports:
   modules_support_date: 0
   name: qtbase
   revision_count: 38
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16433,8 +16433,8 @@ ports:
   modules_support_date: 0
   name: qtcoap
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16442,8 +16442,8 @@ ports:
   modules_support_date: 0
   name: qtconnectivity
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16451,8 +16451,8 @@ ports:
   modules_support_date: 0
   name: qtdatavis3d
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16460,8 +16460,8 @@ ports:
   modules_support_date: 0
   name: qtdeclarative
   revision_count: 9
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16469,8 +16469,8 @@ ports:
   modules_support_date: 0
   name: qtdeviceutilities
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16478,8 +16478,8 @@ ports:
   modules_support_date: 0
   name: qtdoc
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16487,8 +16487,8 @@ ports:
   modules_support_date: 0
   name: qtgraphs
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16496,8 +16496,8 @@ ports:
   modules_support_date: 0
   name: qtgrpc
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16514,8 +16514,8 @@ ports:
   modules_support_date: 0
   name: qtimageformats
   revision_count: 7
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16523,8 +16523,8 @@ ports:
   modules_support_date: 0
   name: qtinterfaceframework
   revision_count: 11
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16550,8 +16550,8 @@ ports:
   modules_support_date: 0
   name: qtlanguageserver
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16568,8 +16568,8 @@ ports:
   modules_support_date: 0
   name: qtlottie
   revision_count: 4
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16577,8 +16577,8 @@ ports:
   modules_support_date: 0
   name: qtmqtt
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16586,8 +16586,8 @@ ports:
   modules_support_date: 0
   name: qtmultimedia
   revision_count: 10
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16595,8 +16595,8 @@ ports:
   modules_support_date: 0
   name: qtnetworkauth
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16604,8 +16604,8 @@ ports:
   modules_support_date: 0
   name: qtopcua
   revision_count: 9
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16613,8 +16613,8 @@ ports:
   modules_support_date: 0
   name: qtpositioning
   revision_count: 3
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16622,8 +16622,8 @@ ports:
   modules_support_date: 0
   name: qtquick3d
   revision_count: 5
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16658,8 +16658,8 @@ ports:
   modules_support_date: 0
   name: qtquicktimeline
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16667,8 +16667,8 @@ ports:
   modules_support_date: 0
   name: qtremoteobjects
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16676,8 +16676,8 @@ ports:
   modules_support_date: 0
   name: qtscxml
   revision_count: 3
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16685,8 +16685,8 @@ ports:
   modules_support_date: 0
   name: qtsensors
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16694,8 +16694,8 @@ ports:
   modules_support_date: 0
   name: qtserialbus
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16703,8 +16703,8 @@ ports:
   modules_support_date: 0
   name: qtserialport
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16712,8 +16712,8 @@ ports:
   modules_support_date: 0
   name: qtshadertools
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16721,8 +16721,8 @@ ports:
   modules_support_date: 0
   name: qtspeech
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16730,8 +16730,8 @@ ports:
   modules_support_date: 0
   name: qtsvg
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16739,8 +16739,8 @@ ports:
   modules_support_date: 0
   name: qttools
   revision_count: 14
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16748,8 +16748,8 @@ ports:
   modules_support_date: 0
   name: qttranslations
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16757,8 +16757,8 @@ ports:
   modules_support_date: 0
   name: qtvirtualkeyboard
   revision_count: 4
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16775,8 +16775,8 @@ ports:
   modules_support_date: 0
   name: qtwebchannel
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16784,8 +16784,8 @@ ports:
   modules_support_date: 0
   name: qtwebengine
   revision_count: 16
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16793,8 +16793,8 @@ ports:
   modules_support_date: 0
   name: qtwebsockets
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -16802,8 +16802,8 @@ ports:
   modules_support_date: 0
   name: qtwebview
   revision_count: 3
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://bugreports.qt.io/browse/QTBUG-103271
   version: 6.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
