@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://kelteseth.github.io/arewemodulesyet/
 languageCode: en-us
 title: Are We C++20 Modules Yet?
 theme: ["PaperMod"]
