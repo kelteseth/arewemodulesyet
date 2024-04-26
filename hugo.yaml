@@ -1,6 +1,6 @@
 baseURL: https://kelteseth.github.io/arewemodulesyet/
 languageCode: en-us
-title: Are We C++20 Modules Yet?
+title: Are We (C++20) Modules Yet?
 theme: ["PaperMod"]
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme

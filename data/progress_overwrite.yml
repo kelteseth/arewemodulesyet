@@ -15,5 +15,8 @@ ports:
 - name: catch2
   tracking_issue: "https://github.com/catchorg/Catch2/issues/2575"
   status: ⚠️
+- name: qtbase
+  tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
+  status: ⚠️
 - name: sqlite3
   help_wanted: 💀
