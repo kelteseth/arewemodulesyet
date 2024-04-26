@@ -1,0 +1,168 @@
+<!-- Custom Module -->
+<div class="custom-module">
+
+    <script src="/js/chart.js"></script>
+    <h3 id="finished-text" style=" font-size: 3rem;"></h3>
+    <div class="progress-container" style="width: 100%; height: 250px; padding: 10px;">
+        <canvas id="progressbar"></canvas>
+        <p style="color: gray;">⬆️ There is a progress bar (promised)</p>
+        <div id="progress-text" style="text-align: right; margin-top: 1rem;"></div>
+        <div id="finished-rate-text" style="text-align: right; "></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const table = document.getElementById('progress-table');
+            let totalProjects = 0;
+            let completedProjects = 0;
+            let modulesSupportDates = [];
+
+            // Parse table data
+            for (let row of table.rows) {
+                const status = row.cells[0].textContent.trim();
+                if (status === "✅") {
+                    const a = row.cells[6].innerText
+                    const modulesDate = parseInt(a);
+                    completedProjects++;
+                    console.log(a, modulesDate, row.cells[6])
+                    if (modulesDate > 0) {
+                        modulesSupportDates.push(modulesDate);
+                    }
+                }
+                totalProjects++;
+            }
+
+            // Calculate progress percentage
+            //completedProjects = 999
+            const progressPercent = (completedProjects / totalProjects) * 100;
+
+            // Update progress bar using Chart.js
+            var ctx = document.getElementById('progressbar').getContext('2d');
+            var progressBar = new Chart(ctx, {
+                type: 'bar', data: {
+                    labels: ['Progress'], datasets: [{ data: [progressPercent], backgroundColor: ['green'], }]
+                }, options: {
+                    indexAxis: 'y', scales: { x: { beginAtZero: true, max: 100, }, y: { ticks: { display: false } } }, plugins: { legend: { display: false }, tooltip: { enabled: false } }, animation: { duration: 800 }, responsive: true, maintainAspectRatio: false,
+                }
+            });
+
+            // Update progress text
+            document.getElementById('progress-text').innerText = `${completedProjects} / ${totalProjects} (${progressPercent.toFixed(2)}%) Confirmed Complete`;
+
+            if (modulesSupportDates.length > 0) {
+                // Calculate monthly completion rate
+                const currentUnixTime = Math.floor(Date.now() / 1000);
+                const monthsPassed = (currentUnixTime - Math.min(...modulesSupportDates)) / (30 * 24 * 3600);
+                const monthlyRate = modulesSupportDates.length / monthsPassed;
+                const yearlyRate = monthlyRate * 12; // Calculate yearly rate
+
+                // Estimate when all projects will support modules
+                const monthsToCompletion = (totalProjects - completedProjects) / monthlyRate;
+                const estimatedCompletionUnixTime = currentUnixTime + monthsToCompletion * 30 * 24 * 3600;
+                const estimatedDate = new Date(estimatedCompletionUnixTime * 1000);
+
+                // Display estimated completion date and current yearly rate
+                document.getElementById('finished-text').innerText = `Estimated finish by: ${estimatedDate.toDateString()}`;
+                document.getElementById('finished-rate-text').innerText += `Current rate: ${yearlyRate.toFixed(2)} projects/year`;
+            } else {
+                document.getElementById('finished-text').innerText = "error"
+            }
+        });
+    </script>
+
+    <h1 style="margin-top: 9rem; font-size: 3rem;">List Of Libraries:</h1>
+
+    <!-- Display Header Information -->
+    <div style="margin-bottom: 3rem; font-size: small; color: gray;">
+        <p>Popularity based on vcpkg port update: Generated Date: {{ dateFormat "2 January 2006" (time
+            .Site.Data.progress.header.generated_date) }} Count parsed from <a
+                href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this
+                git commit.</a> <a href="https://github.com/kelteseth/arewemodulesyet">See Emoji Legend ❔ ✅ ⚠️ ❌</a>
+        </p>
+    </div>
+
+
+    <!-- Progress Table -->
+    <table id="progress-table">
+        <style>
+            /* Define default light theme colors */
+            :root {
+                --row-color-primary: #ffffff;
+                /* white for primary rows */
+                --row-color-secondary: #f0f0f0;
+                /* light grey for alternate rows */
+            }
+
+            /* Define dark theme colors */
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --row-color-primary: #333333;
+                    /* darker color for primary rows */
+                    --row-color-secondary: #2a2a2a;
+                    /* even darker grey for alternate rows */
+                }
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                /* ensures neat borders */
+            }
+            th {
+                background-color:#222222;
+            }
+            th,
+            td {
+                padding: 8px;
+                /* light grey border */
+            }
+
+            /* Alternating row backgrounds */
+            tr:nth-child(odd) {
+                background-color: var(--row-color-primary);
+                /* use variable for primary row color */
+            }
+
+            tr:nth-child(even) {
+                background-color: var(--row-color-secondary);
+                /* use variable for secondary row color */
+            }
+        </style>
+        <thead>
+            <tr style="text-align: left;">
+                <th>Status</th>
+                <th>Help<br>Wanted</th>
+                <th style="max-width: 200px;">Name</th>
+                <th>Popularity</th>
+                <th style="max-width: 120px;">Version</th>
+                <th>Min C++<br>Version</th>
+                <th>Modules<br>Support Since</th>
+                <th style="max-width: 80px;">Tacking Issue</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range sort .Site.Data.progress.ports "revision_count" "desc" }}
+            <tr>
+                <td>{{ .status }}</td>
+                <td>{{ if ne .help_wanted ""}}{{ .help_wanted }}{{ end }}</td>
+                <td style="max-width: 200px;"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
+                <td>{{ .revision_count }}</td>
+                <td style="max-width: 120px;">{{ .version }}</td>
+                <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td>
+                <td>
+                    {{ if ne .modules_support_date 0}}
+                    {{ .modules_support_date }}
+                    <!-- {{ dateFormat "2 January 2006" (time .modules_support_date) }} -->
+                    {{ end }}
+                </td>
+                <td style="max-width: 80px;">
+                    {{ if ne .tracking_issue ""}}
+                    <a href="{{ .tracking_issue }}">🔗</a>
+                    {{end }}
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+
+</div>

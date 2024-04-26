@@ -1,0 +1,19 @@
+ports:
+- name: fmt
+  modules_support_date: 1665476134
+  status: ✅
+  current_min_cpp_version: 11
+  tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"
+- name: vulkan-hpp
+  modules_support_date: 1592905195
+  status: ✅
+  current_min_cpp_version: 11
+  tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/121"
+- name: protobuf
+  tracking_issue: "https://github.com/protocolbuffers/protobuf/issues/14109"
+  status: ⚠️
+- name: catch2
+  tracking_issue: "https://github.com/catchorg/Catch2/issues/2575"
+  status: ⚠️
+- name: sqlite3
+  help_wanted: 💀
