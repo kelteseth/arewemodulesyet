@@ -205,6 +205,37 @@
 
 <!-- Script for filtering -->
 <script>
+    /**
+     * Check if a row matches the filter and checkboxes
+     * @param {HTMLTableCellElement} col
+     * @param {string} filter
+     * @param {HTMLInputElement} filterQuestion
+     * @param {HTMLInputElement} filterCheck
+     * @param {HTMLInputElement} filterWarning
+     * @param {HTMLInputElement} filterCross
+     * @returns {boolean}
+     */
+    function rowMatches(col, filter, filterQuestion, filterCheck, filterWarning, filterCross) {
+        if (!col.textContent) {
+            return false;
+        }
+        const txtUpper = col.textContent.toUpperCase();
+
+        // If all checkboxes are unchecked, only consider the text filter
+        if (!filterQuestion.checked && !filterCheck.checked && !filterWarning.checked && !filterCross.checked) {
+            // If the row contains the filter, show it
+            return txtUpper.includes(filter);
+        }
+
+        // If the row contains the filter and the checkbox, show it
+        const someCheckbox = (filterQuestion.checked && col.textContent.includes("❔"))
+            || (filterCheck.checked && col.textContent.includes("✅"))
+            || (filterWarning.checked && col.textContent.includes("⚠️"))
+            || (filterCross.checked && col.textContent.includes("❌"));
+
+        return txtUpper.includes(filter) && someCheckbox;
+    }
+
     function onSearchInput() {
         // Get the elements
         const input = document.getElementById("search-input");
@@ -235,34 +266,20 @@
         // make the search case-insensitive
         const filter = input.value.toUpperCase();
 
-        const rows = Array.from(table.getElementsByTagName("tr"));
+        const rows = table.getElementsByTagName("tr");
         for (const row of rows) {
-            const cols = Array.from(row.getElementsByTagName("td"));
+            const cols = row.getElementsByTagName("td");
 
             // Check if the row contains the search filter
-            const matches = cols.find(col => {
-                if (col.textContent === null) {
-                    return false;
+            let matches = false;
+            for (const col of cols) {
+                if (rowMatches(col, filter, filterQuestion, filterCheck, filterWarning, filterCross)) {
+                    matches = true;
+                    break;
                 }
-                const txtUpper = col.textContent.toUpperCase();
-
-                // If all checkboxes are unchecked, only consider the text filter
-                if (!filterQuestion.checked && !filterCheck.checked && !filterWarning.checked && !filterCross.checked) {
-                    // If the row contains the filter, show it
-                    return txtUpper.includes(filter);
-                }
-
-                // If the row contains the filter and the checkbox, show it
-                const someCheckbox = (filterQuestion.checked && col.textContent.includes("❔"))
-                    || (filterCheck.checked && col.textContent.includes("✅"))
-                    || (filterWarning.checked && col.textContent.includes("⚠️"))
-                    || (filterCross.checked && col.textContent.includes("❌"));
-
-                return txtUpper.includes(filter) && someCheckbox;
-
-            });
+            };
             // show or hide the row based on the search
-            row.style.display = matches !== undefined ? "" : "none";
+            row.style.display = matches ? "" : "none";
         }
     }
 </script>
