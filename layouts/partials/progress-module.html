@@ -44,7 +44,7 @@
                 type: 'bar', data: {
                     labels: ['Progress'], datasets: [{ data: [progressPercent], backgroundColor: ['green'], }]
                 }, options: {
-                    
+
         maintainAspectRatio: false, aspectRatio: 2,
                     indexAxis: 'y', scales: { x: { beginAtZero: true, max: 100, }, y: { ticks: { display: false } } }, plugins: { legend: { display: false }, tooltip: { enabled: false } }, animation: { duration: 800 }, responsive: true, maintainAspectRatio: false,
                 }
@@ -266,8 +266,15 @@
         // make the search case-insensitive
         const filter = input.value.toUpperCase();
 
+        let isFirstRow = true;
         const rows = table.getElementsByTagName("tr");
         for (const row of rows) {
+            // Skip the first row (header)
+            if (isFirstRow) {
+                isFirstRow = false;
+                continue;
+            }
+
             const cols = row.getElementsByTagName("td");
 
             // Check if the row contains the search filter
