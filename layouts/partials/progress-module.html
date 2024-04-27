@@ -86,6 +86,9 @@
     </div>
 
 
+    <!-- Table Filter -->
+    <input type="text" id="search-input" onkeyup="onSearchInput()" placeholder="Search for names..">
+
     <!-- Progress Table -->
     <table id="progress-table" style="margin-bottom: 2rem;">
         <style>
@@ -132,6 +135,14 @@
                 background-color: var(--row-color-secondary);
                 /* use variable for secondary row color */
             }
+
+            #search-input {
+                color: #eee;
+                padding: 10px;
+            }
+            #search-input::placeholder {
+                color: var(--row-color-secondary);
+            }
         </style>
         <thead>
             <tr style="text-align: left;">
@@ -171,3 +182,36 @@
     </table>
 
 </div>
+
+<!-- Script for filtering -->
+<script>
+    function onSearchInput() {
+        // Declare variables
+        const input = document.getElementById("search-input");
+        if (!(input instanceof HTMLInputElement)) {
+            return;
+        }
+        const table = document.getElementById("progress-table");
+        if (!(table instanceof HTMLTableElement)) {
+            return;
+        }
+
+        // make the search case-insensitive
+        const filter = input.value.toUpperCase();
+
+        const rows = Array.from(table.getElementsByTagName("tr"));
+        for (const row of rows) {
+            const cols = Array.from(row.getElementsByTagName("td"));
+
+            // Check if the row contains the search filter
+            const matches = cols.find(col => {
+                if (col.textContent === null) {
+                    return false;
+                }
+                return col.textContent.toUpperCase().includes(filter);
+            });
+            // show or hide the row based on the search
+            row.style.display = matches !== undefined ? "" : "none";
+        }
+    }
+</script>
