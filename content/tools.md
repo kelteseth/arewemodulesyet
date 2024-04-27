@@ -16,7 +16,7 @@
 |----------|----------------|--------------------|-------|
 | CMake    | ✅ 3.28             | ✅ 3.30               | [Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
 | Ninja    | ✅ 1.11            | ✅ 1.11                 |       |
-| Build2   | ✅             | ❔                 |       |
+| Build2   | ✅             | Partial (0.17.0-stage) msvc and clang-with-libc++ only | [Link](https://github.com/build2/build2/issues/333) |
 | Scons    | ❌             | ❌                 |       |
 | Bazel    | ❌             | ❌                 |       |
 | Meson    | ✅             | Partial            | [Link](https://github.com/mesonbuild/meson/issues/4314) |
