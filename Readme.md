@@ -55,3 +55,15 @@ python.exe .\generate_vcpkg_usage_stats.py --merge
 ```bash
 python.exe generate_vcpkg_usage_stats.py --repo_path=C:\vcpkg
 ```
+
+### Website structure
+```
+- /data
+    - raw_progress.yml          # Raw parsed vcpkg list
+    - progress_overwrite.yml    # Additional infos added by hand like status, progress
+    - progress.yml              # Merged result that is displayed on the website
+- /layouts/partials/
+    - progress-module.html      # Diagram and table for the home page
+- /content/
+    - tools.md                  # Tools site
+```
