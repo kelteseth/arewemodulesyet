@@ -10,16 +10,18 @@
 
 # Build Tools
 
-| Tool     | C++20 Modules | C++23 Standard Library Modules  `import std;` | Tracking Issue |
+| Tool     | C++20 Modules | C++23 Standard Library Modules  `import std;` | Info |
 |----------|----------------|--------------------|-------|
-| CMake    | ✅ 3.28             | ✅ 3.30               | [Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
+| CMake    | ✅ 3.28             | ✅ 3.30               | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
 | Ninja    | ✅ 1.11            | ✅ 1.11                 |       |
-| Build2   | ✅             | Partial (0.17.0-stage) msvc and clang-with-libc++ only | [Link](https://github.com/build2/build2/issues/333) |
+| Build2   | ✅             | Partial (0.17.0-stage) msvc and clang-with-libc++ only | [Issue Link](https://github.com/build2/build2/issues/333) |
 | Scons    | ❌             | ❌                 |       |
-| Bazel    | ❌             | ❌                 |       |
-| Meson    | ✅             | Partial            | [Link](https://github.com/mesonbuild/meson/issues/4314) |
-| Gnu Make | ❌             | ❌                 |       |
+| Bazel    | ❌             | ❌                 | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005)      |
+| Meson    | ✅             | Partial            | [Issue Link](https://github.com/mesonbuild/meson/issues/4314) |
+| Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
 | Gradle   | ❌             | ❌                 |       |
+| qmake   | ❌             | ❌                 |   Deprecated and shout  no longer be used!    |
+| qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
 
 ## Exotic Tools and Preprocessor
 

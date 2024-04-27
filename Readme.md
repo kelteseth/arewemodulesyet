@@ -29,7 +29,6 @@ Note that most projects do not even have an issue for tracking `modules` support
 - 🐌 Planned but no estimation. Ask again in like 5 years.
 - 💀  Needs support old library/compiler/build tool to even start adding support for `modules`.
 - 🤡 Maintainer does want to keep it oldschool. No plan to update anytime soon.
-- 🪨 Is actually a `c` project so we will never see modules support, because `c` has no `modules` support.
 
 ### help_wanted
 - ✅ Yes
