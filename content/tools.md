@@ -3,12 +3,12 @@
 | MSVC 2022     |  ✅      |  17.6         |
 | Clang         |   Partial      |         17       |
 | Apple Clang   |  ❌            |  ❌            |
-| GCC           |  ❌            |         ❌       |
+| GCC           |  Partial       |         14       |
 
 | Tool/Compiler | C++23 `import std` | Version Support |
 |---------------|---------------------|-----------------|
 | MSVC 2022     |  Partial            |  17.10          |
-| Clang         |  ❌            |  ❌              |
+| Clang         |  Partial            |  18             |
 | Apple Clang   |  ❌                 |  ❌              |
 | GCC           |  ❌                 |     ❌            |
 
