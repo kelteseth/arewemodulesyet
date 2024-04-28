@@ -44,7 +44,7 @@
                 type: 'bar', data: {
                     labels: ['Progress'], datasets: [{ data: [progressPercent], backgroundColor: ['green'], }]
                 }, options: {
-                    
+
         maintainAspectRatio: false, aspectRatio: 2,
                     indexAxis: 'y', scales: { x: { beginAtZero: true, max: 100, }, y: { ticks: { display: false } } }, plugins: { legend: { display: false }, tooltip: { enabled: false } }, animation: { duration: 800 }, responsive: true, maintainAspectRatio: false,
                 }
@@ -110,6 +110,18 @@
     </div>
 
 
+    <div id="input-bar">
+        <!-- Table Filter -->
+        <input type="text" id="search-input" onkeyup="onSearchInput()" placeholder="Search for names..">
+        <!-- Filter Checkboxes -->
+        <div id="checkboxes">
+            <label><input type="checkbox" id="filter-question" onchange="onSearchInput()">❔</label>
+            <label><input type="checkbox" id="filter-check" onchange="onSearchInput()">✅</label>
+            <label><input type="checkbox" id="filter-warning" onchange="onSearchInput()">⚠️</label>
+            <label><input type="checkbox" id="filter-cross" onchange="onSearchInput()">❌</label>
+        </div>
+    </div>
+
     <!-- Progress Table -->
     <table id="progress-table" style="margin-bottom: 2rem;">
         <style>
@@ -156,6 +168,25 @@
                 background-color: var(--row-color-secondary);
                 /* use variable for secondary row color */
             }
+
+            #search-input {
+                color: #eee;
+                padding: 10px;
+            }
+            #search-input::placeholder {
+                color: var(--row-color-primary);
+            }
+            #input-bar {
+                display: flex;
+            }
+            #checkboxes {
+                display: flex;
+                margin-left: auto;
+                align-items: center;
+            }
+            #checkboxes label {
+                padding-left: 10px;
+            }
         </style>
         <thead>
             <tr style="text-align: left;">
@@ -195,3 +226,91 @@
     </table>
 
 </div>
+
+<!-- Script for filtering -->
+<script>
+    /**
+     * Check if a row matches the filter and checkboxes
+     * @param {HTMLTableCellElement} col
+     * @param {string} filter
+     * @param {HTMLInputElement} filterQuestion
+     * @param {HTMLInputElement} filterCheck
+     * @param {HTMLInputElement} filterWarning
+     * @param {HTMLInputElement} filterCross
+     * @returns {boolean}
+     */
+    function rowMatches(col, filter, filterQuestion, filterCheck, filterWarning, filterCross) {
+        if (!col.textContent) {
+            return false;
+        }
+        const txtUpper = col.textContent.toUpperCase();
+
+        // If all checkboxes are unchecked, only consider the text filter
+        if (!filterQuestion.checked && !filterCheck.checked && !filterWarning.checked && !filterCross.checked) {
+            // If the row contains the filter, show it
+            return txtUpper.includes(filter);
+        }
+
+        // If the row contains the filter and the checkbox, show it
+        const someCheckbox = (filterQuestion.checked && col.textContent.includes("❔"))
+            || (filterCheck.checked && col.textContent.includes("✅"))
+            || (filterWarning.checked && col.textContent.includes("⚠️"))
+            || (filterCross.checked && col.textContent.includes("❌"));
+
+        return txtUpper.includes(filter) && someCheckbox;
+    }
+
+    function onSearchInput() {
+        // Get the elements
+        const input = document.getElementById("search-input");
+        if (!(input instanceof HTMLInputElement)) {
+            return;
+        }
+        const table = document.getElementById("progress-table");
+        if (!(table instanceof HTMLTableElement)) {
+            return;
+        }
+        const filterQuestion = document.getElementById("filter-question");
+        if (!(filterQuestion instanceof HTMLInputElement)) {
+            return;
+        }
+        const filterCheck = document.getElementById("filter-check");
+        if (!(filterCheck instanceof HTMLInputElement)) {
+            return;
+        }
+        const filterWarning = document.getElementById("filter-warning");
+        if (!(filterWarning instanceof HTMLInputElement)) {
+            return;
+        }
+        const filterCross = document.getElementById("filter-cross");
+        if (!(filterCross instanceof HTMLInputElement)) {
+            return;
+        }
+
+        // make the search case-insensitive
+        const filter = input.value.toUpperCase();
+
+        let isFirstRow = true;
+        const rows = table.getElementsByTagName("tr");
+        for (const row of rows) {
+            // Skip the first row (header)
+            if (isFirstRow) {
+                isFirstRow = false;
+                continue;
+            }
+
+            const cols = row.getElementsByTagName("td");
+
+            // Check if the row contains the search filter
+            let matches = false;
+            for (const col of cols) {
+                if (rowMatches(col, filter, filterQuestion, filterCheck, filterWarning, filterCross)) {
+                    matches = true;
+                    break;
+                }
+            };
+            // show or hide the row based on the search
+            row.style.display = matches ? "" : "none";
+        }
+    }
+</script>
