@@ -1,3 +1,17 @@
+# ### status
+# - ❔ Default: No set. Help wanted for every lib that has this status!
+# - ✅ Full support
+# - ⚙️ Worked on
+# - ⚠️ Reported
+# - ❌ Corresponding tracking issue was closed and no planned support anytime soon.
+# - 💀 Needs support old library/compiler/build tool to even start adding support for `modules`.
+# - 🤡 Maintainer does want to keep it oldschool. No plan to update anytime soon.
+
+# ### help_wanted
+# - ✅ Yes
+# - ❌ No
+# - 💀 Does not allow outside contributions
+
 ports:
 - name: fmt
   modules_support_date: 1665476134
@@ -11,10 +25,16 @@ ports:
   tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/121"
 - name: protobuf
   tracking_issue: "https://github.com/protocolbuffers/protobuf/issues/14109"
-  status: ⚠️
+  status: ❌
 - name: catch2
   tracking_issue: "https://github.com/catchorg/Catch2/issues/2575"
+  status: ❌
+- name: vtk
   status: ⚠️
+  tracking_issue: "https://gitlab.kitware.com/vtk/vtk/-/issues/19337"
+
+# Qt5 will not get any modules support anytime soon.
+# Is is on life support, please use Qt6
 - name: qt5
   status: ❌
 - name: qt5-base
@@ -63,6 +83,8 @@ ports:
   status: ❌
 - name: qt5-websockets
   status: ❌
+
+# This is Qt6
 - name: qtbase
   tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
   status: ⚠️

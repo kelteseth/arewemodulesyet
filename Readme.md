@@ -24,10 +24,10 @@ Note that most projects do not even have an issue for tracking `modules` support
 ### status
 - ❔ Default: No set. Help wanted for every lib that has this status!
 - ✅ Full support
-- ⚠️ Corresponding tracking issue was closed and no planned support anytime soon.
-- ❌ Not planned anytime soon.
-- 🐌 Planned but no estimation. Ask again in like 5 years.
-- 💀  Needs support old library/compiler/build tool to even start adding support for `modules`.
+- ⚙️ Worked on
+- ⚠️ Reported
+- ❌ Corresponding tracking issue was closed and no planned support anytime soon.
+- 💀 Needs support old library/compiler/build tool to even start adding support for `modules`.
 - 🤡 Maintainer does want to keep it oldschool. No plan to update anytime soon.
 
 ### help_wanted

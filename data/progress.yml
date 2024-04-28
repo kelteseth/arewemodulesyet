@@ -3365,7 +3365,7 @@ ports:
   modules_support_date: 0
   name: catch2
   revision_count: 58
-  status: ⚠️
+  status: ❌
   tracking_issue: https://github.com/catchorg/Catch2/issues/2575
   version: Unknown
 - current_min_cpp_version: Unknown
@@ -15686,7 +15686,7 @@ ports:
   modules_support_date: 0
   name: protobuf
   revision_count: 77
-  status: ⚠️
+  status: ❌
   tracking_issue: https://github.com/protocolbuffers/protobuf/issues/14109
   version: 3.21.12
 - current_min_cpp_version: Unknown
@@ -20654,8 +20654,8 @@ ports:
   modules_support_date: 0
   name: vtk
   revision_count: 79
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://gitlab.kitware.com/vtk/vtk/-/issues/19337
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
