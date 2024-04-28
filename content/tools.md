@@ -22,7 +22,7 @@
 | Gradle   | ❌             | ❌                 |       |
 | qmake   | ❌             | ❌                 |   Deprecated and shout  no longer be used!    |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
-| XMake   | ✅            | ✅                |    |
+| XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
 
 ## Exotic Tools and Preprocessor
 
