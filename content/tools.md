@@ -22,6 +22,7 @@
 | Gradle   | ❌             | ❌                 |       |
 | qmake   | ❌             | ❌                 |   Deprecated and shout  no longer be used!    |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
+| XMake   | ✅            | ✅                |    |
 
 ## Exotic Tools and Preprocessor
 
