@@ -125,19 +125,53 @@
     <!-- Progress Table -->
     <table id="progress-table" style="margin-bottom: 2rem; width: 100%;">
         <style>
-            /* Define default light theme colors */
             :root {
+                /* Light theme colors */
+                --text-color: #333;
+                --background-color-th: #e0e0e0;
+                --link-color: #0066cc;
+                --input-text-color: #333;
                 --row-color-primary: #ffffff;
-                /* white for primary rows */
                 --row-color-secondary: #f0f0f0;
-                /* light grey for alternate rows */
             }
 
-            :root {
+            body.dark {
+                /* Dark theme colors */
+                --text-color: #ddd;
+                --background-color-th: #222;
+                --link-color: steelblue;
+                --input-text-color: #ddd;
                 --row-color-primary: #333333;
-                /* darker color for primary rows */
                 --row-color-secondary: #2a2a2a;
-                /* even darker grey for alternate rows */
+            }
+
+            th {
+                background-color: var(--background-color-th);
+                padding: 8px;
+                color: var(--text-color);
+            }
+
+            td {
+                padding: 8px;
+                color: var(--text-color);
+            }
+
+            td a {
+                color: var(--link-color);
+            }
+
+            /* Alternating row backgrounds using CSS variables for row colors */
+            tr:nth-child(odd) {
+                background-color: var(--row-color-primary);
+            }
+
+            tr:nth-child(even) {
+                background-color: var(--row-color-secondary);
+            }
+
+            #search-input {
+                color: var(--input-text-color);
+                padding: 10px;
             }
 
             table {
@@ -146,38 +180,8 @@
                 /* ensures neat borders */
             }
 
-            th {
-                background-color: #222222;
-            }
-
-            th,
-            td {
-                padding: 8px;
-                color: #eee;
-            }
-
-            td a {
-                color: steelblue;
-            }
-
-            /* Alternating row backgrounds */
-            tr:nth-child(odd) {
-                background-color: var(--row-color-primary);
-                /* use variable for primary row color */
-            }
-
-            tr:nth-child(even) {
-                background-color: var(--row-color-secondary);
-                /* use variable for secondary row color */
-            }
-
-            #search-input {
-                color: #eee;
-                padding: 10px;
-            }
-
             #search-input::placeholder {
-                color: var(--row-color-primary);
+                color: var(--input-text-color);
             }
 
             #input-bar {
