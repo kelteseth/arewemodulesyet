@@ -6,7 +6,7 @@
     <div class="progress-container" style="width: 100%;  ">
         <div style="height: 70px">
             <canvas id="progressbar"></canvas>
-          </div>
+        </div>
         <p style="color: gray;">⬆️ There is a progress bar (promise)</p>
         <div id="progress-text" style="text-align: right; margin-top: 1rem;"></div>
         <div id="finished-rate-text" style="text-align: right; "></div>
@@ -45,7 +45,7 @@
                     labels: ['Progress'], datasets: [{ data: [progressPercent], backgroundColor: ['green'], }]
                 }, options: {
 
-        maintainAspectRatio: false, aspectRatio: 2,
+                    maintainAspectRatio: false, aspectRatio: 2,
                     indexAxis: 'y', scales: { x: { beginAtZero: true, max: 100, }, y: { ticks: { display: false } } }, plugins: { legend: { display: false }, tooltip: { enabled: false } }, animation: { duration: 800 }, responsive: true, maintainAspectRatio: false,
                 }
             });
@@ -98,14 +98,14 @@
             </ul>
         </div>
     </div>
-    
+
 
     <!-- Display Header Information -->
     <div style="margin-bottom: 1rem; margin-top: 1rem; font-size: small; color: gray;">
         <p>Popularity based on vcpkg port update: Generated Date: {{ dateFormat "2 January 2006" (time
             .Site.Data.progress.header.generated_date) }} Count parsed from <a
                 href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this
-                git commit.</a> 
+                git commit.</a>
         </p>
     </div>
 
@@ -123,7 +123,7 @@
     </div>
 
     <!-- Progress Table -->
-    <table id="progress-table" style="margin-bottom: 2rem;">
+    <table id="progress-table" style="margin-bottom: 2rem; width: 100%;">
         <style>
             /* Define default light theme colors */
             :root {
@@ -132,6 +132,7 @@
                 --row-color-secondary: #f0f0f0;
                 /* light grey for alternate rows */
             }
+
             :root {
                 --row-color-primary: #333333;
                 /* darker color for primary rows */
@@ -144,8 +145,9 @@
                 border-collapse: collapse;
                 /* ensures neat borders */
             }
+
             th {
-                background-color:#222222;
+                background-color: #222222;
             }
 
             th,
@@ -173,31 +175,49 @@
                 color: #eee;
                 padding: 10px;
             }
+
             #search-input::placeholder {
                 color: var(--row-color-primary);
             }
+
             #input-bar {
                 display: flex;
             }
+
             #checkboxes {
                 display: flex;
                 margin-left: auto;
                 align-items: center;
             }
+
             #checkboxes label {
                 padding-left: 10px;
+            }
+
+            .truncate-text-name {
+                max-width: 290px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .truncate-text-version {
+                max-width: 90px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         </style>
         <thead>
             <tr style="text-align: left;">
                 <th>Status</th>
                 <th>Help<br>Wanted</th>
-                <th style="max-width: 340px;">Name</th>
+                <th>Name</th>
                 <th>Popularity</th>
-                <th style="max-width: 120px;">Version</th>
+                <th>Version</th>
                 <th>Min C++<br>Version</th>
                 <th>Modules<br>Support Since</th>
-                <th style="max-width: 80px;">Tacking Issue</th>
+                <th>Tacking Issue</th>
             </tr>
         </thead>
         <tbody>
@@ -205,9 +225,9 @@
             <tr>
                 <td>{{ .status }}</td>
                 <td>{{ if ne .help_wanted ""}}{{ .help_wanted }}{{ end }}</td>
-                <td style="max-width: 340px;"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
+                <td class="truncate-text-name"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
                 <td>{{ .revision_count }}</td>
-                <td style="max-width: 120px;">{{ .version }}</td>
+                <td class="truncate-text-version">{{ .version }}</td>
                 <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td>
                 <td>
                     {{ if ne .modules_support_date 0}}
@@ -215,7 +235,7 @@
                     <!-- {{ dateFormat "2 January 2006" (time .modules_support_date) }} -->
                     {{ end }}
                 </td>
-                <td style="max-width: 80px;">
+                <td>
                     {{ if ne .tracking_issue ""}}
                     <a href="{{ .tracking_issue }}">🔗</a>
                     {{end }}
