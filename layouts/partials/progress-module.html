@@ -23,7 +23,7 @@
             for (let row of table.rows) {
                 const status = row.cells[0].textContent.trim();
                 if (status === "✅") {
-                    const a = row.cells[6].innerText
+                    const a = row.cells[7].innerText
                     const modulesDate = parseInt(a);
                     completedProjects++;
                     console.log(a, modulesDate, row.cells[6])
@@ -35,7 +35,6 @@
             }
 
             // Calculate progress percentage
-            //completedProjects = 999
             const progressPercent = (completedProjects / totalProjects) * 100;
 
             // Update progress bar using Chart.js
@@ -69,7 +68,7 @@
                 document.getElementById('finished-text').innerText = `Estimated finish by: ${estimatedDate.toDateString()}`;
                 document.getElementById('finished-rate-text').innerText += `Current rate: ${yearlyRate.toFixed(2)} projects/year`;
             } else {
-                document.getElementById('finished-text').innerText = "error"
+                document.getElementById('finished-text').innerText = ""
             }
         });
     </script>
