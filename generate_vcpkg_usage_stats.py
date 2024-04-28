@@ -75,7 +75,7 @@ def load_and_merge_yaml(file1, file2, output_file):
     for item in raw_ports_list:
         if item['name'] in overwrite_dict:
             # Only overwrite specific fields
-            for key in ['current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'help_wanted', 'status']:
+            for key in ['import_statement','current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'help_wanted', 'status']:
                 if key in overwrite_dict[item['name']]:
                     item[key] = overwrite_dict[item['name']][key]
         merged_ports.append(item)

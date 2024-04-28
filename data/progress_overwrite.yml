@@ -14,11 +14,13 @@
 
 ports:
 - name: fmt
+  import_statement: fmt
   modules_support_date: 1665476134
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"
 - name: vulkan-hpp
+  import_statement: vulkan_hpp
   modules_support_date: 1592905195
   status: ✅
   current_min_cpp_version: 11

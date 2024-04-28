@@ -10,6 +10,8 @@ Example port
 ``` yml
 ports: 
 - name: fmt
+  # Can be different from lib name. For example vulkan-cpp uses vulkan_cpp!
+  import_statement: fmt
   # Unix timestamp, since when the lib has modules support. Used for extrapolating finish date
   modules_support_date: 1665476134 
   status: ✅

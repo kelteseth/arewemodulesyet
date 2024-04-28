@@ -6251,6 +6251,7 @@ ports:
 - current_min_cpp_version: 11
   help_wanted: ❔
   homepage: https://github.com/fmtlib/fmt
+  import_statement: fmt
   modules_support_date: 1665476134
   name: fmt
   revision_count: 60
@@ -20696,6 +20697,7 @@ ports:
 - current_min_cpp_version: 11
   help_wanted: ❔
   homepage: No homepage provided.
+  import_statement: vulkan_hpp
   modules_support_date: 1592905195
   name: vulkan-hpp
   revision_count: 8
