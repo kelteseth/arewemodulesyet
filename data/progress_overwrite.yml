@@ -25,6 +25,11 @@ ports:
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/121"
+- name: flux
+  import_statement: flux
+  modules_support_date: 1691048988
+  status: ✅
+  current_min_cpp_version: 20
 - name: protobuf
   tracking_issue: "https://github.com/protocolbuffers/protobuf/issues/14109"
   status: ❌
@@ -34,7 +39,6 @@ ports:
 - name: vtk
   status: ⚠️
   tracking_issue: "https://gitlab.kitware.com/vtk/vtk/-/issues/19337"
-
 # Qt5 will not get any modules support anytime soon.
 # Is is on life support, please use Qt6
 - name: qt5

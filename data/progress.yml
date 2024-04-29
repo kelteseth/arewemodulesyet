@@ -6212,13 +6212,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.3.5
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 20
   help_wanted: ❔
   homepage: https://github.com/tcbrindle/flux
-  modules_support_date: 0
+  import_statement: flux
+  modules_support_date: 1691048988
   name: flux
   revision_count: 1
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: Unknown
 - current_min_cpp_version: Unknown
