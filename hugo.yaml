@@ -13,7 +13,7 @@ menu:
     # - name: News
     #   url: post
     #   weight: 1
-    - name: Build Tools & Compiler Support
+    - name: Toolchains
       url: /Tools/
     - name: Follow me
       url: https://bsky.app/profile/kelteseth.bsky.social
