@@ -42,6 +42,10 @@ ports:
 - name: itk
   help_wanted: ✅
   current_min_cpp_version: 17
+- name: hikogui 
+  help_wanted: ✅
+  current_min_cpp_version: 20
+  tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
 # Qt5 will not get any modules support anytime soon.
 # Is is on life support, please use Qt6
 - name: qt5

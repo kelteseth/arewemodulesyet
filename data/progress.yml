@@ -7663,14 +7663,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
+- current_min_cpp_version: 20
+  help_wanted: ✅
   homepage: https://github.com/hikogui/hikogui
   modules_support_date: 0
   name: hikogui
   revision_count: 3
   status: ❔
-  tracking_issue: ''
+  tracking_issue: https://github.com/hikogui/hikogui/issues/460
   version: 0.8.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -8284,8 +8284,8 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 3.5.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
+- current_min_cpp_version: 17
+  help_wanted: ✅
   homepage: https://github.com/InsightSoftwareConsortium/ITK
   modules_support_date: 0
   name: itk
