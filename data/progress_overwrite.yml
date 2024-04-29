@@ -39,6 +39,10 @@ ports:
 - name: vtk
   status: ⚠️
   tracking_issue: "https://gitlab.kitware.com/vtk/vtk/-/issues/19337"
+- name: itk
+  import_statement: itk
+  help_wanted: ✅
+  current_min_cpp_version: 17
 # Qt5 will not get any modules support anytime soon.
 # Is is on life support, please use Qt6
 - name: qt5
