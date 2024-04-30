@@ -641,13 +641,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 4.1.0
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 20
   help_wanted: ❔
   homepage: https://github.com/alibaba/async_simple
-  modules_support_date: 0
+  import_statement: async_simple
+  modules_support_date: 1687167198
   name: async-simple
   revision_count: 2
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: '1.3'
 - current_min_cpp_version: Unknown

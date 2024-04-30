@@ -30,6 +30,11 @@ ports:
   modules_support_date: 1691048988
   status: ✅
   current_min_cpp_version: 20
+- name: async-simple
+  import_statement: async_simple
+  modules_support_date: 1687167198
+  status: ✅
+  current_min_cpp_version: 20
 - name: protobuf
   tracking_issue: "https://github.com/protocolbuffers/protobuf/issues/14109"
   status: ❌
