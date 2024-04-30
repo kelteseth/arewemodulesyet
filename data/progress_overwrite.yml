@@ -33,6 +33,10 @@ ports:
 - name: protobuf
   tracking_issue: "https://github.com/protocolbuffers/protobuf/issues/14109"
   status: ❌
+- name: seastar
+  homepage: https://github.com/scylladb/seastar/tree/master
+  modules_support_date: 1679636937
+  status: ✅
 - name: catch2
   tracking_issue: "https://github.com/catchorg/Catch2/issues/2575"
   status: ❌

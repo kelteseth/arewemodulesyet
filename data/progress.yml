@@ -21839,3 +21839,12 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.13.73
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/scylladb/seastar/tree/master
+  import_statement: ''
+  modules_support_date: 1679636937
+  name: seastar
+  status: ✅
+  tracking_issue: ''
+  version: ''
