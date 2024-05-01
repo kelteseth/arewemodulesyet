@@ -27,7 +27,7 @@
 | Bazel    | ❌             | ❌                 | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005)      |
 | Meson    | ✅             | Partial            | [Issue Link](https://github.com/mesonbuild/meson/issues/4314) |
 | Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
-| Gradle   | ❌             | ❌                 |       |
+| Gradle   | ❌             | ❌                 |  [Issue Link](https://github.com/gradle/gradle/issues/29009)     |
 | qmake   | ❌             | ❌                 |   Deprecated and shout  no longer be used!    |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
 | XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
