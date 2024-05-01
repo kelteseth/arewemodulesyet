@@ -80,6 +80,22 @@ def load_and_merge_yaml(file1, file2, output_file):
                     item[key] = overwrite_dict[item['name']][key]
         merged_ports.append(item)
     
+    # Add project not listed in vcpkg
+    ## Create a dictionary from the merged ports data for easy access
+    merged_set = {item['name'] for item in merged_ports}
+    for name,item in overwrite_dict.items():
+        if name not in merged_set:
+            merged_ports.append({
+                "name": name,
+                "current_min_cpp_version": item.get("current_min_cpp_version", "Unknown"),
+                "help_wanted": item.get("help_wanted", "❔"),
+                "homepage": item.get("homepage", ""),
+                "modules_support_date": item.get("modules_support_date", "0"),
+                "status": item.get("status", "?"),
+                "tracking_issue": item.get("tracking_issue", ""),
+                "version": item.get("version", ""),
+                "import_statement": item.get("import_statement", "")
+            })
     # Reconstruct the merged data with header
     merged_data = {
         'header': raw_ports,

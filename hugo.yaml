@@ -13,8 +13,9 @@ menu:
     # - name: News
     #   url: post
     #   weight: 1
-    - name: Toolchains
+    - name: ⚙️ Toolchain Support
       url: /Tools/
+      weight: 1
     - name: Follow me
       url: https://bsky.app/profile/kelteseth.bsky.social
     - name: Contribute on Github

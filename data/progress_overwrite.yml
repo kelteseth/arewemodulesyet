@@ -46,56 +46,23 @@ ports:
   help_wanted: ✅
   current_min_cpp_version: 20
   tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
-# Qt5 will not get any modules support anytime soon.
-# Is is on life support, please use Qt6
-- name: qt5
-  status: ❌
-- name: qt5-base
-  status: ❌
-- name: qt5-imageformats
-  status: ❌
-- name: qt5-webengine
-  status: ❌
-- name: qt5-tools
-  status: ❌
-- name: qt5-3d
-  status: ❌
-- name: qt5-activeqt
-  status: ❌
-- name: qt5-winextras
-  status: ❌
-- name: qt5-location
-  status: ❌
-- name: qt5-svg
-  status: ❌
-- name: qt5-mqtt
-  status: ❌
-- name: qt5-multimedia
-  status: ❌
-- name: qt5-xmlpatterns
-  status: ❌
-- name: qt5-charts
-  status: ❌
-- name: qt5-datavis3d
-  status: ❌
-- name: qt5-graphicaleffects
-  status: ❌
-- name: qt5-quickcontrols
-  status: ❌
-- name: qt5-quickcontrols2
-  status: ❌
-- name: qt5-script
-  status: ❌
-- name: qt5-scxml
-  status: ❌
-- name: qt5-serialport
-  status: ❌
-- name: qt5-speech
-  status: ❌
-- name: qt5-virtualkeyboard
-  status: ❌
-- name: qt5-websockets
-  status: ❌
+- name: async-simple
+  import_statement: async_simple
+  modules_support_date: 1687167198
+  status: ✅
+  current_min_cpp_version: 20
+- name: sqlite3
+  help_wanted: 💀
+
+###############################################################################  
+# Libraries that are not part of vcpkg
+- name: seastar
+  homepage: https://github.com/scylladb/seastar/tree/master
+  modules_support_date: 1679636937
+  status: ✅
+  import_statement: seastar
+  current_min_cpp_version: 17
+
 
 # This is Qt6
 - name: qtbase
@@ -203,5 +170,55 @@ ports:
 - name: qtwebview
   tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
   status: ⚠️
-- name: sqlite3
-  help_wanted: 💀
+
+###############################################################################  
+# Qt5 will not get any modules support anytime soon.
+# Is is on life support, please use Qt6
+- name: qt5
+  status: ❌
+- name: qt5-base
+  status: ❌
+- name: qt5-imageformats
+  status: ❌
+- name: qt5-webengine
+  status: ❌
+- name: qt5-tools
+  status: ❌
+- name: qt5-3d
+  status: ❌
+- name: qt5-activeqt
+  status: ❌
+- name: qt5-winextras
+  status: ❌
+- name: qt5-location
+  status: ❌
+- name: qt5-svg
+  status: ❌
+- name: qt5-mqtt
+  status: ❌
+- name: qt5-multimedia
+  status: ❌
+- name: qt5-xmlpatterns
+  status: ❌
+- name: qt5-charts
+  status: ❌
+- name: qt5-datavis3d
+  status: ❌
+- name: qt5-graphicaleffects
+  status: ❌
+- name: qt5-quickcontrols
+  status: ❌
+- name: qt5-quickcontrols2
+  status: ❌
+- name: qt5-script
+  status: ❌
+- name: qt5-scxml
+  status: ❌
+- name: qt5-serialport
+  status: ❌
+- name: qt5-speech
+  status: ❌
+- name: qt5-virtualkeyboard
+  status: ❌
+- name: qt5-websockets
+  status: ❌
