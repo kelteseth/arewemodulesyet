@@ -53,6 +53,21 @@ ports:
   current_min_cpp_version: 20
 - name: sqlite3
   help_wanted: 💀
+- current_min_cpp_version: 14
+  help_wanted: ❔
+  homepage: https://github.com/googleapis/google-cloud-cpp
+  name: google-cloud-cpp
+  status: ⚠️
+  tracking_issue: 'https://github.com/googleapis/google-cloud-cpp/issues/14105'
+- current_min_cpp_version: 11
+  name: aws-sdk-cpp
+  status: ⚠️
+  tracking_issue: 'https://github.com/aws/aws-sdk-cpp/issues/2946'
+- current_min_cpp_version: 11
+  name: grpc
+  status: ⚠️
+  tracking_issue: 'https://github.com/grpc/grpc/issues/36497'
+  
 
 ###############################################################################  
 # Libraries that are not part of vcpkg

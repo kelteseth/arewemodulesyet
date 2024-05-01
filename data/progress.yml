@@ -957,14 +957,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.2.10
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 11
   help_wanted: ❔
   homepage: https://github.com/aws/aws-sdk-cpp
   modules_support_date: 0
   name: aws-sdk-cpp
   revision_count: 94
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/aws/aws-sdk-cpp/issues/2946
   version: 1.11.285
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -7034,14 +7034,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.72.0
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 14
   help_wanted: ❔
   homepage: https://github.com/googleapis/google-cloud-cpp
   modules_support_date: 0
   name: google-cloud-cpp
   revision_count: 95
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/googleapis/google-cloud-cpp/issues/14105
   version: 2.23.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -7178,14 +7178,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.5.0
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 11
   help_wanted: ❔
   homepage: https://github.com/grpc/grpc
   modules_support_date: 0
   name: grpc
   revision_count: 85
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/grpc/grpc/issues/36497
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
