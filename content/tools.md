@@ -36,7 +36,7 @@
 
 | Preprocessor | C++20 Modules | Description      | Issue | 
 |--------------|---------------|-----------------|-------|
-| Clangd       | ❌  (maybe clang 19)         |   | [Issue Link](https://github.com/clangd/clangd/issues/12937) [PR](https://github.com/llvm/llvm-project/pull/66462#issuecomment-1950743841)|
+| Clangd       | ❌  (maybe clang 19)         |   | [Issue Link](https://github.com/clangd/clangd/issues/1293) [PR](https://github.com/llvm/llvm-project/pull/66462#issuecomment-1950743841)|
 
 
 ## Preprocessor
