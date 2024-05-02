@@ -23,7 +23,7 @@ def read_vcpkg_json(json_path):
         return {
             "name": data.get("name", "Unknown"),
             "version": data.get("version-string", data.get("version", "Unknown")),
-            "homepage": data.get("homepage", "No homepage provided."),
+            "homepage": data.get("homepage", ""),
             # The follwing are empty and getting overwritten by hand
             "current_min_cpp_version": "Unknown",
             "tracking_issue": "", # Issue that tracks the progress
