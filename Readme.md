@@ -1,6 +1,6 @@
 # Are we modules yet? Not even close, lol.
 
-This website will track the most popular c++ librarys, compiler and build system. We use vcpkg to get a rough idea on how popular a library is via how many revisions the port has. For more infromations, checkout the python script that parses the data `generate_vcpkg_usage_stats.py`.  
+This website will track the most popular C++ libraries, compilers and build systems. We use vcpkg to get a rough idea on how popular a library is via how many revisions the port has. For more information, checkout the python script that parses the data: `generate_vcpkg_usage_stats.py`.  
 
 
 
