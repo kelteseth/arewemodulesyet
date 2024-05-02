@@ -108,42 +108,109 @@
         </p>
     </div>
 
+    <style>
+        :root {
+            /* Light theme colors */
+            --text-color: #333;
+            --background-color-th: #e0e0e0;
+            --link-color: #0066cc;
+            --input-text-color: #333;
+            --row-color-primary: #ffffff;
+            --row-color-secondary: #f0f0f0;
+        }
+
+        body.dark {
+            /* Dark theme colors */
+            --text-color: #ddd;
+            --background-color-th: #222;
+            --link-color: steelblue;
+            --input-text-color: #827b7b;
+            --row-color-primary: #333333;
+            --row-color-secondary: #2a2a2a;
+        }
+    </style>
+
 
     <div id="input-bar">
         <!-- Table Filter -->
         <input type="text" id="search-input" onkeyup="onSearchInput()" placeholder="Search for names..">
         <!-- Filter Checkboxes -->
-        <div id="checkboxes">
-            <label><input type="checkbox" id="filter-question" onchange="onSearchInput()">❔</label>
-            <label><input type="checkbox" id="filter-check" onchange="onSearchInput()">✅</label>
-            <label><input type="checkbox" id="filter-warning" onchange="onSearchInput()">⚠️</label>
-            <label><input type="checkbox" id="filter-cross" onchange="onSearchInput()">❌</label>
+        <div class="checkboxes-container">
+            <div class="checkboxes" id="status-checkboxes">
+                <div class="checkbox-items">
+                    <label class="checkbox"><input type="checkbox" id="status-check" onchange="onSearchInput()"/>✅</label>
+                    <label class="checkbox"><input type="checkbox" id="status-question" onchange="onSearchInput()"/>❔</label>
+                    <label class="checkbox"><input type="checkbox" id="status-working" onchange="onSearchInput()"/>⚙️</label>
+                    <label class="checkbox"><input type="checkbox" id="status-warning" onchange="onSearchInput()"/>⚠️</label>
+                    <label class="checkbox"><input type="checkbox" id="status-cross" onchange="onSearchInput()"/>❌</label>
+                    <label class="checkbox"><input type="checkbox" id="status-dead" onchange="onSearchInput()"/>💀</label>
+                    <label class="checkbox"><input type="checkbox" id="status-clown" onchange="onSearchInput()"/>🤡</label>
+                </div>
+                <div class="checkboxes-label">Status</div>
+            </div>
+
+            <div class="checkboxes" id="help-checkboxes">
+                <div class="checkbox-items">
+                    <label class="checkbox"><input type="checkbox" id="help-check" onchange="onSearchInput()"/>✅</label>
+                    <label class="checkbox"><input type="checkbox" id="status-question" onchange="onSearchInput()"/>❔</label>
+                    <label class="checkbox"><input type="checkbox" id="help-cross" onchange="onSearchInput()"/>❌</label>
+                    <label class="checkbox"><input type="checkbox" id="help-dead" onchange="onSearchInput()"/>💀</label>
+                    <label class="checkbox"></label>
+                    <label class="checkbox"></label>
+                    <label class="checkbox"></label>
+                </div>
+                <div class="checkboxes-label">Help Wanted</div>
+            </div>
         </div>
     </div>
 
+    <style>
+        #input-bar {
+            display: flex;
+            padding-bottom: 1rem;
+        }
+
+        #search-input {
+            color: var(--input-text-color);
+            background-color: var(--row-color-secondary);
+            padding: 10px;
+            flex-grow: 1;
+        }
+
+        .checkboxes-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .checkboxes {
+            font-size: medium;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .checkboxes-label {
+            flex-basis: 100%;
+            width: 8rem;
+            margin-left: 2rem;
+        }
+
+        .checkbox-items {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .checkboxes label {
+            display: flex;
+            flex-direction: row;
+            padding-left: 10px;
+            width: 3em;
+        }
+    </style>
     <!-- Progress Table -->
     <table id="progress-table" style="margin-bottom: 2rem; width: 100%;">
         <style>
-            :root {
-                /* Light theme colors */
-                --text-color: #333;
-                --background-color-th: #e0e0e0;
-                --link-color: #0066cc;
-                --input-text-color: #333;
-                --row-color-primary: #ffffff;
-                --row-color-secondary: #f0f0f0;
-            }
-
-            body.dark {
-                /* Dark theme colors */
-                --text-color: #ddd;
-                --background-color-th: #222;
-                --link-color: steelblue;
-                --input-text-color: #ddd;
-                --row-color-primary: #333333;
-                --row-color-secondary: #2a2a2a;
-            }
-
             th {
                 background-color: var(--background-color-th);
                 padding: 8px;
@@ -168,11 +235,6 @@
                 background-color: var(--row-color-secondary);
             }
 
-            #search-input {
-                color: var(--input-text-color);
-                padding: 10px;
-            }
-
             table {
                 width: 100%;
                 border-collapse: collapse;
@@ -181,20 +243,6 @@
 
             #search-input::placeholder {
                 color: var(--input-text-color);
-            }
-
-            #input-bar {
-                display: flex;
-            }
-
-            #checkboxes {
-                display: flex;
-                margin-left: auto;
-                align-items: center;
-            }
-
-            #checkboxes label {
-                padding-left: 10px;
             }
 
             .truncate-text-name {
@@ -265,91 +313,124 @@
     </table>
 
 </div>
-
 <!-- Script for filtering -->
 <script>
     /**
-     * Check if a row matches the filter and checkboxes
-     * @param {HTMLTableCellElement} col
-     * @param {string} filter
-     * @param {HTMLInputElement} filterQuestion
-     * @param {HTMLInputElement} filterCheck
-     * @param {HTMLInputElement} filterWarning
-     * @param {HTMLInputElement} filterCross
+     * Check if the checkbox matches the filter
+     * @param {string} colText
+     * @param {Array<{ checked: boolean, text: string }>} checkboxesInfo
      * @returns {boolean}
      */
-    function rowMatches(col, filter, filterQuestion, filterCheck, filterWarning, filterCross) {
-        if (!col.textContent) {
-            return false;
-        }
-        const txtUpper = col.textContent.toUpperCase();
-
-        // If all checkboxes are unchecked, only consider the text filter
-        if (!filterQuestion.checked && !filterCheck.checked && !filterWarning.checked && !filterCross.checked) {
-            // If the row contains the filter, show it
-            return txtUpper.includes(filter);
-        }
-
-        // If the row contains the filter and the checkbox, show it
-        const someCheckbox = (filterQuestion.checked && col.textContent.includes("❔"))
-            || (filterCheck.checked && col.textContent.includes("✅"))
-            || (filterWarning.checked && col.textContent.includes("⚠️"))
-            || (filterCross.checked && col.textContent.includes("❌"));
-
-        return txtUpper.includes(filter) && someCheckbox;
+    function colMatchesCheckbox(colText, checkboxesInfo) {
+        // if the filter matches one of the checkboxes
+        return checkboxesInfo.some(checkboxInfo => {
+            if (checkboxInfo.checked) {
+                return colText === checkboxInfo.text;
+            }
+        });
     }
 
+    /**
+     * Check if a row matches the filter
+     * @param {string} colText
+     * @param {string} filter
+     * @returns {boolean}
+     */
+    function colMatches(colText, filter) {
+        if (filter === "") {
+            return true;
+        }
+        return colText.toUpperCase().includes(filter);
+    }
+
+    /**
+     * Get the checkbox information
+     * @param {HTMLLabelElement[]} checkboxes
+     * @returns {Array<{ checked: boolean, text: string }>}
+     */
+    function getCheckboxInfo(checkboxes) {
+        return Array.from(checkboxes)
+            .map(checkbox => {
+                const checkboxInput = checkbox.querySelector("input");
+                if (!(checkboxInput instanceof HTMLInputElement)) {
+                    return null;
+                }
+
+                const checkboxText = checkbox.textContent;
+                if (!checkboxText) {
+                    return null;
+                }
+
+                return { checked: checkboxInput.checked, text: checkboxText };
+            })
+            .filter(checkboxInfo => checkboxInfo !== null);
+    }
+
+    // Get the element references
+    const input = document.getElementById("search-input");
+    if (!(input instanceof HTMLInputElement)) {
+        throw new Error("Search input not found");
+    }
+    const table = document.getElementById("progress-table");
+    if (!(table instanceof HTMLTableElement)) {
+        throw new Error("Progress table not found");
+    }
+    const rows = table.getElementsByTagName("tr");
+    const statusCheckboxes = document.querySelectorAll("#status-checkboxes .checkbox");
+    const helpCheckboxes = document.querySelectorAll("#help-checkboxes .checkbox");
+
     function onSearchInput() {
-        // Get the elements
-        const input = document.getElementById("search-input");
-        if (!(input instanceof HTMLInputElement)) {
-            return;
-        }
-        const table = document.getElementById("progress-table");
-        if (!(table instanceof HTMLTableElement)) {
-            return;
-        }
-        const filterQuestion = document.getElementById("filter-question");
-        if (!(filterQuestion instanceof HTMLInputElement)) {
-            return;
-        }
-        const filterCheck = document.getElementById("filter-check");
-        if (!(filterCheck instanceof HTMLInputElement)) {
-            return;
-        }
-        const filterWarning = document.getElementById("filter-warning");
-        if (!(filterWarning instanceof HTMLInputElement)) {
-            return;
-        }
-        const filterCross = document.getElementById("filter-cross");
-        if (!(filterCross instanceof HTMLInputElement)) {
-            return;
-        }
+        const statusCheckboxesInfo = getCheckboxInfo(statusCheckboxes);
+        const allStatusUnchecked = statusCheckboxesInfo.every(checkboxInfo => !checkboxInfo.checked);
+
+        const helpCheckboxesInfo = getCheckboxInfo(helpCheckboxes);
+        const allHelpUnchecked = helpCheckboxesInfo.every(checkboxInfo => !checkboxInfo.checked);
 
         // make the search case-insensitive
+        /** @type {string} */
         const filter = input.value.toUpperCase();
 
-        let isFirstRow = true;
-        const rows = table.getElementsByTagName("tr");
+        let i_row = 0;
         for (const row of rows) {
             // Skip the first row (header)
-            if (isFirstRow) {
-                isFirstRow = false;
+            if (i_row == 0) {
+                i_row++;
                 continue;
             }
 
             const cols = row.getElementsByTagName("td");
 
-            // Check if the row contains the search filter
+            // Check if the row contains the search status
             let matches = false;
+            let checkboxMatches = allHelpUnchecked && allStatusUnchecked;
+
+            let j_col = 0;
             for (const col of cols) {
-                if (rowMatches(col, filter, filterQuestion, filterCheck, filterWarning, filterCross)) {
-                    matches = true;
+                const colText = col.textContent;
+                if (colText === null) {
+                    j_col++;
+                    continue;
+                }
+
+                if (j_col == 0) {
+                    checkboxMatches = allStatusUnchecked || colMatchesCheckbox(colText, statusCheckboxesInfo);
+                } else if (j_col == 1) {
+                    checkboxMatches = checkboxMatches && (allHelpUnchecked || colMatchesCheckbox(colText, helpCheckboxesInfo));
+                } else {
+                    matches = checkboxMatches && colMatches(colText, filter);
+                }
+
+                if (matches) {
                     break;
                 }
+
+                j_col++;
             };
+
             // show or hide the row based on the search
             row.style.display = matches ? "" : "none";
+
+            i_row++;
         }
     }
 </script>
