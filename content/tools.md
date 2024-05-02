@@ -20,17 +20,19 @@
 
 | Tool     | C++20 Modules | C++23 Standard Library Modules  `import std;` | Info |
 |----------|----------------|--------------------|-------|
-| CMake    | ✅ 3.28             | ✅ 3.30               | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
 | Ninja    | ✅ 1.11            | ✅ 1.11                 |       |
+| MSBuild   | ✅            | ✅                |  |
+| CMake    | ✅ 3.28             | ✅ 3.30               | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
+| XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
+| Zork++   | ✅            | ✅                |   [Project](https://github.com/zerodaycode/Zork) |
 | Build2   | ✅             | Partial (0.17.0-stage) msvc and clang-with-libc++ only | [Issue Link](https://github.com/build2/build2/issues/333) |
-| Scons    | ⚙️             | ❌                 |  [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523)     |
-| Bazel    | ❌             | ❌                 | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005)      |
 | Meson    | ✅             | Partial            | [Issue Link](https://github.com/mesonbuild/meson/issues/4314) |
 | Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
+| Scons    | ⚙️             | ❌                 |  [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523)     |
+| Bazel    | ❌             | ❌                 | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005)      |
 | Gradle   | ❌             | ❌                 |  [Issue Link](https://github.com/gradle/gradle/issues/29009)     |
-| qmake   | ❌             | ❌                 |   Deprecated and shout  no longer be used!    |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
-| XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
+| qmake   | ❌             | ❌                 |  💀 Deprecated and shout  no longer be used!    |
 
 ## Language Server (IDE Support) 
 
