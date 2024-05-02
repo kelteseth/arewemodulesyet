@@ -13,7 +13,7 @@ menu:
     # - name: News
     #   url: post
     #   weight: 1
-    - name: ⚙️ Toolchain Support
+    - name: ⚙️ Tools Support
       url: /Tools/
       weight: 1
     - name: Follow me

@@ -32,7 +32,14 @@
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
 | XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
 
-## Exotic Tools and Preprocessor
+## Language Server (IDE Support) 
+
+| Preprocessor | C++20 Modules | Description      | Issue | 
+|--------------|---------------|-----------------|-------|
+| Clangd       | ❌  (maybe clang 19)         |   | [Issue Link](https://github.com/clangd/clangd/issues/12937) [PR](https://github.com/llvm/llvm-project/pull/66462#issuecomment-1950743841)|
+
+
+## Preprocessor
 
 | Preprocessor | C++20 Modules | Description      | Issue | 
 |--------------|---------------|-----------------|-------|
