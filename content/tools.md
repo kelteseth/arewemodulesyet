@@ -35,7 +35,7 @@
 | Gradle   | ❌             | ❌                 |  [Issue Link](https://github.com/gradle/gradle/issues/29009)     |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
 | fastbuild   | ❌             | ❌                 |  [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026)   |
-| qmake   | ❌             | ❌                 |  💀 Deprecated and shout no longer be used!    |
+| qmake   | ❌             | ❌                 |  💀 Deprecated and shout no   longer be used!    |
 
 
 ## Language Server (IDE Support) 
@@ -43,6 +43,7 @@
 | Preprocessor | C++20 Modules | Description      | Issue | 
 |--------------|---------------|-----------------|-------|
 | Clangd       | ❌  (maybe clang 19)         |   | [Issue Link](https://github.com/clangd/clangd/issues/1293) [PR](https://github.com/llvm/llvm-project/pull/66462#issuecomment-1950743841)|
+| vscode-cmake-tools        | ❌          |   | [Issue Link](https://github.com/microsoft/vscode-cmake-tools/issues/3335) |
 
 
 ## Preprocessor
