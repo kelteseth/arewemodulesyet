@@ -29,11 +29,13 @@
 | Meson    | ✅             | Partial            | [Issue Link](https://github.com/mesonbuild/meson/issues/4314) |
 | Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
 | Scons    | ⚙️             | ❌                 |  [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523)     |
+| ccache     | ❌             | ❌                 | [Issue Link](https://github.com/ccache/ccache/issues/1252)      |
+| sccache     | ❌             | ❌                 | [Issue Link](https://github.com/mozilla/sccache/issues/2095)      |
 | Bazel    | ❌             | ❌                 | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005)      |
 | Gradle   | ❌             | ❌                 |  [Issue Link](https://github.com/gradle/gradle/issues/29009)     |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
-| qmake   | ❌             | ❌                 |  💀 Deprecated and shout  no longer be used!    |
 | fastbuild   | ❌             | ❌                 |  [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026)   |
+| qmake   | ❌             | ❌                 |  💀 Deprecated and shout no longer be used!    |
 
 
 ## Language Server (IDE Support) 
