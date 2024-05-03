@@ -73,7 +73,10 @@ ports:
 - name: uwebsockets
   status: ⚠️
   tracking_issue: 'https://github.com/uNetworking/uWebSockets/issues/1734'
-  
+- name: hpx
+  status: ⚠️
+  tracking_issue: https://github.com/STEllAR-GROUP/hpx/issues/6014
+
 ###############################################################################  
 # Libraries that are not part of vcpkg
 - name: seastar

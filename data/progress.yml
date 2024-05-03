@@ -7715,8 +7715,8 @@ ports:
   modules_support_date: 0
   name: hpx
   revision_count: 34
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/STEllAR-GROUP/hpx/issues/6014
   version: 1.9.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
