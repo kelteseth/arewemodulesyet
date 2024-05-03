@@ -54,7 +54,6 @@ ports:
 - name: sqlite3
   help_wanted: 💀
 - current_min_cpp_version: 14
-  help_wanted: ❔
   homepage: https://github.com/googleapis/google-cloud-cpp
   name: google-cloud-cpp
   status: ⚠️
@@ -67,7 +66,10 @@ ports:
   name: grpc
   status: ⚠️
   tracking_issue: 'https://github.com/grpc/grpc/issues/36497'
-  
+- current_min_cpp_version: 11
+  name: harfbuzz
+  status: ⚠️
+  tracking_issue: 'https://github.com/harfbuzz/harfbuzz/issues/4696'
 
 ###############################################################################  
 # Libraries that are not part of vcpkg

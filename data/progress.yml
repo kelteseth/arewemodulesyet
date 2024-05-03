@@ -7520,14 +7520,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 11
   help_wanted: ❔
   homepage: https://github.com/harfbuzz/harfbuzz
   modules_support_date: 0
   name: harfbuzz
   revision_count: 85
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/harfbuzz/harfbuzz/issues/4696
   version: 8.4.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
