@@ -70,7 +70,10 @@ ports:
   name: harfbuzz
   status: ⚠️
   tracking_issue: 'https://github.com/harfbuzz/harfbuzz/issues/4696'
-
+- name: uwebsockets
+  status: ⚠️
+  tracking_issue: 'https://github.com/uNetworking/uWebSockets/issues/1734'
+  
 ###############################################################################  
 # Libraries that are not part of vcpkg
 - name: seastar

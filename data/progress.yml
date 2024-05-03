@@ -20252,8 +20252,8 @@ ports:
   modules_support_date: 0
   name: uwebsockets
   revision_count: 46
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/uNetworking/uWebSockets/issues/1734
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -21859,7 +21859,6 @@ ports:
   tracking_issue: ''
   version: 0.13.73
 - current_min_cpp_version: 17
-  help_wanted: ❔
   homepage: https://github.com/scylladb/seastar/tree/master
   import_statement: seastar
   modules_support_date: 1679636937
