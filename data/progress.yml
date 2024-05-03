@@ -3456,8 +3456,8 @@ ports:
   modules_support_date: 0
   name: cereal
   revision_count: 10
-  status: ❔
-  tracking_issue: ''
+  status: ⚠️
+  tracking_issue: https://github.com/USCiLab/cereal/issues/793
   version: 1.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔

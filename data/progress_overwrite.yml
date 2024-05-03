@@ -76,7 +76,10 @@ ports:
 - name: hpx
   status: ⚠️
   tracking_issue: https://github.com/STEllAR-GROUP/hpx/issues/6014
-
+- name: cereal
+  status: ⚠️
+  tracking_issue: https://github.com/USCiLab/cereal/issues/793
+  
 ###############################################################################  
 # Libraries that are not part of vcpkg
 - name: seastar
