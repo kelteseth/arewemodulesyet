@@ -79,7 +79,10 @@ ports:
 - name: cereal
   status: ⚠️
   tracking_issue: https://github.com/USCiLab/cereal/issues/793
-  
+- name: z4kn4fein-semver
+  status: ⚠️
+  tracking_issue: https://github.com/z4kn4fein/cpp-semver/issues/7
+
 ###############################################################################  
 # Libraries that are not part of vcpkg
 - name: seastar
