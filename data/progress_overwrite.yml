@@ -250,4 +250,18 @@ ports:
 - name: qt5-virtualkeyboard
   status: ❌
 - name: qt5-websockets
-  status: ❌
+  status: ❌ports: 
+- name: glm
+  import_statement: glm
+  modules_support_date: 1703948400 
+  status: ✅
+  help_wanted: ❌
+  current_min_cpp_version: 11
+  tracking_issue: "https://github.com/g-truc/glm/pull/1208"
+- name: argparse
+  import_statement: argparse
+  modules_support_date: 1697382000
+  status: ✅
+  help_wanted: ❌
+  current_min_cpp_version: 17
+  tracking_issue: "https://github.com/p-ranav/argparse/pull/290"
