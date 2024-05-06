@@ -250,7 +250,7 @@ ports:
 - name: qt5-virtualkeyboard
   status: ❌
 - name: qt5-websockets
-  status: ❌ports: 
+  status: ❌
 - name: glm
   import_statement: glm
   modules_support_date: 1703948400 
