@@ -82,6 +82,9 @@ ports:
 - name: z4kn4fein-semver
   status: ⚠️
   tracking_issue: https://github.com/z4kn4fein/cpp-semver/issues/7
+- name: kangaru
+  status: ⚙️
+  tracking_issue: https://github.com/gracicot/kangaru/issues/124
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
