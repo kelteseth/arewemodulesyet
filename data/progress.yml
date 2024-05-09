@@ -461,14 +461,15 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '20190702'
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 17
   help_wanted: ❔
   homepage: https://github.com/p-ranav/argparse
-  modules_support_date: 0
+  import_statement: argparse
+  modules_support_date: 1697382000
   name: argparse
   revision_count: 10
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/p-ranav/argparse/pull/290
   version: '3.0'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -6926,14 +6927,15 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.78.1
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 11
   help_wanted: ❔
   homepage: https://glm.g-truc.net
-  modules_support_date: 0
+  import_statement: glm
+  modules_support_date: 1703948400
   name: glm
   revision_count: 27
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/g-truc/glm/pull/1208
   version: 1.0.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -8579,8 +8581,8 @@ ports:
   modules_support_date: 0
   name: kangaru
   revision_count: 11
-  status: ❔
-  tracking_issue: ''
+  status: ⚙️
+  tracking_issue: https://github.com/gracicot/kangaru/issues/124
   version: 4.3.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -21864,5 +21866,3 @@ ports:
   modules_support_date: 1679636937
   name: seastar
   status: ✅
-  tracking_issue: ''
-  version: ''

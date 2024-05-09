@@ -85,6 +85,19 @@ ports:
 - name: kangaru
   status: ⚙️
   tracking_issue: https://github.com/gracicot/kangaru/issues/124
+- name: glm
+  import_statement: glm
+  modules_support_date: 1703948400 
+  status: ✅
+  current_min_cpp_version: 11
+  tracking_issue: "https://github.com/g-truc/glm/pull/1208"
+- name: argparse
+  import_statement: argparse
+  modules_support_date: 1697382000
+  status: ✅
+  current_min_cpp_version: 17
+  tracking_issue: "https://github.com/p-ranav/argparse/pull/290"
+
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
@@ -96,7 +109,8 @@ ports:
   current_min_cpp_version: 17
 
 
-# This is Qt6
+###############################################################################  
+# This is Qt6 and currently all of them share the same issue
 - name: qtbase
   tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
   status: ⚠️
@@ -254,17 +268,3 @@ ports:
   status: ❌
 - name: qt5-websockets
   status: ❌
-- name: glm
-  import_statement: glm
-  modules_support_date: 1703948400 
-  status: ✅
-  help_wanted: ❌
-  current_min_cpp_version: 11
-  tracking_issue: "https://github.com/g-truc/glm/pull/1208"
-- name: argparse
-  import_statement: argparse
-  modules_support_date: 1697382000
-  status: ✅
-  help_wanted: ❌
-  current_min_cpp_version: 17
-  tracking_issue: "https://github.com/p-ranav/argparse/pull/290"
