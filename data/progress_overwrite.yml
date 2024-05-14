@@ -97,6 +97,12 @@ ports:
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/p-ranav/argparse/pull/290"
+- name: magic_enum
+  import_statement: magic_enum
+  modules_support_date: 1715245320
+  status: ✅
+  current_min_cpp_version: 17
+  tracking_issue: "https://github.com/Neargye/magic_enum/pull/343"
 
 
 ###############################################################################  
