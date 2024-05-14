@@ -35,7 +35,7 @@
 | Gradle   | ❌             | ❌                 |  [Issue Link](https://github.com/gradle/gradle/issues/29009)     |
 | qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
 | fastbuild   | ❌             | ❌                 |  [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026)   |
-| qmake   | ❌             | ❌                 |  💀 Deprecated and shout no   longer be used!    |
+| qmake   | ❌             | ❌                 |  💀 Deprecated and should no   longer be used!    |
 
 
 ## Language Server (IDE Support) 
