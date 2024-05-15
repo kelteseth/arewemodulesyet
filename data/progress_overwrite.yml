@@ -103,6 +103,12 @@ ports:
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/Neargye/magic_enum/pull/343"
+- name: fastgltf
+  import_statement: fastgltf
+  modules_support_date: 1715783640
+  status: ✅
+  current_min_cpp_version: 17
+  tracking_issue: "https://github.com/spnda/fastgltf/pull/61"
 
 
 ###############################################################################  
