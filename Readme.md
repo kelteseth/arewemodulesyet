@@ -68,4 +68,5 @@ python.exe generate_vcpkg_usage_stats.py --repo_path=C:\vcpkg
 - /content/
     - tools.md                  # Tools site
     - documents.md              # Documents site
+    - examples.md               # Examples site
 ```

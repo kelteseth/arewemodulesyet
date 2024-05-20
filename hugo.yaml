@@ -19,6 +19,9 @@ menu:
     - name: Docs
       url: /Documents/
       weight: 2
+    - name: Examples
+      url: /Examples/
+      weight: 3
     - name: Follow me
       url: https://bsky.app/profile/kelteseth.bsky.social
     - name: Contribute on Github
