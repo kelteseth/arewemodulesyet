@@ -16,6 +16,9 @@ menu:
     - name: ⚙️ Tools Support
       url: /Tools/
       weight: 1
+    - name: Docs
+      url: /Documents/
+      weight: 2
     - name: Follow me
       url: https://bsky.app/profile/kelteseth.bsky.social
     - name: Contribute on Github

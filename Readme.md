@@ -67,4 +67,5 @@ python.exe generate_vcpkg_usage_stats.py --repo_path=C:\vcpkg
     - progress-module.html      # Diagram and table for the home page
 - /content/
     - tools.md                  # Tools site
+    - documents.md              # Documents site
 ```
