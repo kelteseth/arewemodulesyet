@@ -133,7 +133,7 @@ ports:
   current_min_cpp_version: 17
   version: '3.9.0'
 - name: tgui
-  import_statement: tgui.opengl
+  import_statement: tgui
   status: ✅
   modules_support_date: 1705126799
 
