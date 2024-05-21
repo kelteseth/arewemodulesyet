@@ -25,7 +25,7 @@
 | CMake    | ✅ 3.28             | ✅ 3.30               | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
 | XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
 | Zork++   | ✅            | ✅                |   [Project](https://github.com/zerodaycode/Zork) |
-| Build2   | ✅             | Partial (0.17.0-stage) msvc and clang-with-libc++ only | [Issue Link](https://github.com/build2/build2/issues/333) |
+| Build2   | ✅             | ✅ 0.17.0 | [Issue Link](https://github.com/build2/build2/issues/333) |
 | Meson    | ✅             | Partial            | [Issue Link](https://github.com/mesonbuild/meson/issues/4314) |
 | Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
 | Scons    | ⚙️             | ❌                 |  [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523)     |
