@@ -109,6 +109,12 @@ ports:
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/spnda/fastgltf/pull/61"
+- name: mp-units
+  homepage: https://github.com/mpusz/mp-units
+  modules_support_date: 1704521999
+  status: ✅
+  import_statement: mp_units
+  tracking_issue: "https://github.com/mpusz/mp-units/pull/350"
 
 
 ###############################################################################  
@@ -119,7 +125,6 @@ ports:
   status: ✅
   import_statement: seastar
   current_min_cpp_version: 17
-
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue
