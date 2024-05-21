@@ -125,6 +125,13 @@ ports:
   status: ✅
   import_statement: seastar
   current_min_cpp_version: 17
+- name: ctre
+  homepage: https://github.com/hanickadot/compile-time-regular-expressions
+  import_statement: ctre
+  status: ✅
+  modules_support_date: 1715926799
+  current_min_cpp_version: 17
+  version: '3.9.0'
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue

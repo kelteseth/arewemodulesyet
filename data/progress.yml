@@ -4603,13 +4603,14 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.3.7
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 17
   help_wanted: ❔
   homepage: https://github.com/hanickadot/compile-time-regular-expressions
-  modules_support_date: 0
+  import_statement: ctre
+  modules_support_date: 1715926799
   name: ctre
   revision_count: 11
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: 3.8.1
 - current_min_cpp_version: Unknown
