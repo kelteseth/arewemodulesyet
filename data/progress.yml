@@ -19355,10 +19355,11 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://tgui.eu
-  modules_support_date: 0
+  import_statement: tgui.opengl
+  modules_support_date: 1705126799
   name: tgui
   revision_count: 16
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: 1.1.0
 - current_min_cpp_version: Unknown

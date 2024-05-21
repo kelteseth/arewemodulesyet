@@ -132,6 +132,10 @@ ports:
   modules_support_date: 1715926799
   current_min_cpp_version: 17
   version: '3.9.0'
+- name: tgui
+  import_statement: tgui.opengl
+  status: ✅
+  modules_support_date: 1705126799
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue
