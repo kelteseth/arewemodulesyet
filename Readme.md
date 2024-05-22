@@ -2,8 +2,6 @@
 
 This website will track the most popular C++ libraries, compilers and build systems. We use vcpkg to get a rough idea on how popular a library is via how many revisions the port has. For more information, checkout the python script that parses the data: `generate_vcpkg_usage_stats.py`.  
 
-
-
 ## Legend for `progress_overwrite.yml`
 
 Example port 
@@ -12,8 +10,8 @@ ports:
 - name: fmt
   # Can be different from lib name. For example vulkan-cpp uses vulkan_cpp!
   import_statement: fmt
-  # Unix timestamp, since when the lib has modules support. Used for extrapolating finish date
-  modules_support_date: 1665476134 
+  # Date since when the lib has modules support. Used for extrapolating finish date
+  modules_support_date: 2024/5/22 
   status: ✅
   help_wanted: ❌
   current_min_cpp_version: 11

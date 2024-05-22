@@ -24,7 +24,10 @@
                 const status = row.cells[0].textContent.trim();
                 if (status === "✅") {
                     const a = row.cells[7].innerText
-                    const modulesDate = parseInt(a);
+                    var modulesDate = 0
+
+                    if (!isNaN(new Date(a)))
+                        modulesDate = ((new Date(a).getTime() / 1000).toFixed(0))
                     completedProjects++;
                     console.log(a, modulesDate, row.cells[6])
                     if (modulesDate > 0) {
@@ -297,9 +300,8 @@
                 <td class="truncate-text-version">{{ .version }}</td>
                 <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td>
                 <td>
-                    {{ if ne .modules_support_date 0}}
+                    {{ if ne .modules_support_date ""}}
                     {{ .modules_support_date }}
-                    <!-- {{ dateFormat "2 January 2006" (time .modules_support_date) }} -->
                     {{ end }}
                 </td>
                 <td>

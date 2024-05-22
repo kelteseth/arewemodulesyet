@@ -27,7 +27,7 @@ def read_vcpkg_json(json_path):
             # The follwing are empty and getting overwritten by hand
             "current_min_cpp_version": "Unknown",
             "tracking_issue": "", # Issue that tracks the progress
-            "modules_support_date": 0,  # Unix timestamp, default 0
+            "modules_support_date": "",  # Unix timestamp, default empty
             "help_wanted": "❔"
         }
     except Exception as e:
@@ -90,7 +90,7 @@ def load_and_merge_yaml(file1, file2, output_file):
                 "current_min_cpp_version": item.get("current_min_cpp_version", "Unknown"),
                 "help_wanted": item.get("help_wanted", "❔"),
                 "homepage": item.get("homepage", ""),
-                "modules_support_date": item.get("modules_support_date", "0"),
+                "modules_support_date": item.get("modules_support_date", ""),
                 "status": item.get("status", "?"),
                 "tracking_issue": item.get("tracking_issue", ""),
                 "version": item.get("version", ""),

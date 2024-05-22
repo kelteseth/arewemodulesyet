@@ -15,19 +15,19 @@
 ports:
 - name: fmt
   import_statement: fmt
-  modules_support_date: 1665476134
+  modules_support_date: 2022/10/11
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"
 - name: vulkan-hpp
   import_statement: vulkan_hpp
-  modules_support_date: 1592905195
+  modules_support_date: 2020/6/23
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/121"
 - name: flux
   import_statement: flux
-  modules_support_date: 1691048988
+  modules_support_date: 2023/8/3
   status: ✅
   current_min_cpp_version: 20
 - name: protobuf
@@ -48,7 +48,7 @@ ports:
   tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
 - name: async-simple
   import_statement: async_simple
-  modules_support_date: 1687167198
+  modules_support_date: 2023/6/19
   status: ✅
   current_min_cpp_version: 20
 - name: sqlite3
@@ -87,55 +87,55 @@ ports:
   tracking_issue: https://github.com/gracicot/kangaru/issues/124
 - name: glm
   import_statement: glm
-  modules_support_date: 1703948400 
+  modules_support_date: 2023/12/30 
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/g-truc/glm/pull/1208"
 - name: argparse
   import_statement: argparse
-  modules_support_date: 1697382000
+  modules_support_date: 2023/10/15
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/p-ranav/argparse/pull/290"
 - name: magic-enum
   import_statement: magic_enum
-  modules_support_date: 1715245320
+  modules_support_date: 2024/5/9
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/Neargye/magic_enum/pull/343"
 - name: fastgltf
   import_statement: fastgltf
-  modules_support_date: 1715783640
+  modules_support_date: 2024/5/15
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/spnda/fastgltf/pull/61"
 - name: mp-units
   homepage: https://github.com/mpusz/mp-units
-  modules_support_date: 1704521999
+  modules_support_date: 2024/1/6
   status: ✅
   import_statement: mp_units
   tracking_issue: "https://github.com/mpusz/mp-units/pull/350"
+- name: ctre
+  homepage: https://github.com/hanickadot/compile-time-regular-expressions
+  import_statement: ctre
+  status: ✅
+  modules_support_date: 2024/5/17
+  current_min_cpp_version: 17
+  version: '3.9.0'
+- name: tgui
+  import_statement: tgui
+  status: ✅
+  modules_support_date: 2024/1/13
 
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
 - name: seastar
   homepage: https://github.com/scylladb/seastar/tree/master
-  modules_support_date: 1679636937
+  modules_support_date: 2023/3/24
   status: ✅
   import_statement: seastar
   current_min_cpp_version: 17
-- name: ctre
-  homepage: https://github.com/hanickadot/compile-time-regular-expressions
-  import_statement: ctre
-  status: ✅
-  modules_support_date: 1715926799
-  current_min_cpp_version: 17
-  version: '3.9.0'
-- name: tgui
-  import_statement: tgui
-  status: ✅
-  modules_support_date: 1705126799
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue
