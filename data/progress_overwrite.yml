@@ -136,6 +136,12 @@ ports:
   status: ✅
   import_statement: seastar
   current_min_cpp_version: 17
+- name: cpp-lazy
+  homepage: https://github.com/MarcDirven/cpp-lazy
+  modules_support_date: 2024/4/9
+  status: ✅
+  import_statement: lz
+  current_min_cpp_version: 11
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue

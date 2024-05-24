@@ -21874,3 +21874,12 @@ ports:
   status: ✅
   tracking_issue: ''
   version: ''
+- current_min_cpp_version: 11
+  help_wanted: ❔
+  homepage: https://github.com/MarcDirven/cpp-lazy
+  import_statement: lz
+  modules_support_date: 2024/4/9
+  name: cpp-lazy
+  status: ✅
+  tracking_issue: ''
+  version: ''
