@@ -135,7 +135,7 @@ ports:
   modules_support_date: 2023/3/24
   status: ✅
   import_statement: seastar
-  current_min_cpp_version: 17
+  current_min_cpp_version: 20
 - name: cpp-lazy
   homepage: https://github.com/MarcDirven/cpp-lazy
   modules_support_date: 2024/4/9
