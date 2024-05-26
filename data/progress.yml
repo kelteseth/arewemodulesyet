@@ -21865,7 +21865,7 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.13.73
-- current_min_cpp_version: 17
+- current_min_cpp_version: 20
   help_wanted: ❔
   homepage: https://github.com/scylladb/seastar/tree/master
   import_statement: seastar
