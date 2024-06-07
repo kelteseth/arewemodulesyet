@@ -20598,11 +20598,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://vladimirshaleev.github.io/ipaddress/
-  modules_support_date: ''
+  import_statement: ipaddress
+  modules_support_date: 2024/6/2
   name: vladimirshaleev-ipaddress
   revision_count: 1
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/VladimirShaleev/ipaddress/pull/8
   version: 1.0.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
