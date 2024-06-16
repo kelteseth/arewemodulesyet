@@ -4,7 +4,7 @@
 | Compiler     | C++20 Modules     |
 |--------------|-------------------|
 | MSVC 2022    | ✅ (17.6)          |
-| Clang        | Partial (17)      | 
+| Clang        | Partial (17)      |
 | Apple Clang  | ❌                |
 | GCC          | Partial (14)      |
 
@@ -12,9 +12,9 @@
 
 | Standard Library | Provides `import std;` |
 |--------------|--------------------|
-| MSSTL    | ✅ (17.10)       | 
-| libc++        | Partial (18)       | 
-| libstdc++          | ❌                | 
+| MSSTL    | ✅ (17.10)       |
+| libc++        | Partial (18)       |
+| libstdc++          | ❌                |
 
 # Build Tools
 
@@ -33,14 +33,14 @@
 | sccache     | ❌             | ❌                 | [Issue Link](https://github.com/mozilla/sccache/issues/2095)      |
 | Bazel    | ❌             | ❌                 | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005)      |
 | Gradle   | ❌             | ❌                 |  [Issue Link](https://github.com/gradle/gradle/issues/29009)     |
-| qbs   | ❌             | ❌                 |   [Issue Link](https://bugreports.qt.io/browse/QBS-1181)   |
+| qbs   | ⚙️             | ❌                 |   [Issue](https://bugreports.qt.io/browse/QBS-1181), [PR](https://codereview.qt-project.org/c/qbs/qbs/+/387822)   |
 | fastbuild   | ❌             | ❌                 |  [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026)   |
 | qmake   | ❌             | ❌                 |  💀 Deprecated and should no   longer be used!    |
 
 
-## Language Server (IDE Support) 
+## Language Server (IDE Support)
 
-| Preprocessor | C++20 Modules | Description      | Issue | 
+| Preprocessor | C++20 Modules | Description      | Issue |
 |--------------|---------------|-----------------|-------|
 | Clangd       | ❌  (maybe clang 19)         |   | [Issue Link](https://github.com/clangd/clangd/issues/1293) [PR](https://github.com/llvm/llvm-project/pull/66462#issuecomment-1950743841)|
 | vscode-cmake-tools        | ❌          |   | [Issue Link](https://github.com/microsoft/vscode-cmake-tools/issues/3335) |
@@ -48,6 +48,6 @@
 
 ## Preprocessor
 
-| Preprocessor | C++20 Modules | Description      | Issue | 
+| Preprocessor | C++20 Modules | Description      | Issue |
 |--------------|---------------|-----------------|-------|
 | Qt moc       | ❌           | Qt needs to add modules support to their preprocessor before they can even begin adding modules support. The last conversation happened mid December 2023 [here](https://lists.qt-project.org/pipermail/development/2023-December/044800.html).  fabiankosmale [laid out the challenges for this](https://lists.qt-project.org/pipermail/development/2023-December/044802.html), but no timeline was given for when it will be done. | [Link](https://bugreports.qt.io/browse/QTBUG-86697) |
