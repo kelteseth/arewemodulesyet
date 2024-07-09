@@ -43,6 +43,7 @@
 | Preprocessor | C++20 Modules | Description      | Issue |
 |--------------|---------------|-----------------|-------|
 | Clangd       | ❌  (maybe clang 19)         |   | [Issue Link](https://github.com/clangd/clangd/issues/1293) [PR](https://github.com/llvm/llvm-project/pull/66462#issuecomment-1950743841)|
+| clangd (forked) | ✅  | need to be built from source | [Repo Link](https://github.com/ChuanqiXu9/clangd-for-modules) | 
 | vscode-cmake-tools        | ❌          |   | [Issue Link](https://github.com/microsoft/vscode-cmake-tools/issues/3335) |
 
 
