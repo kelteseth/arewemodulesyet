@@ -20750,14 +20750,15 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 3.0.1
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 20
   help_wanted: ❔
   homepage: https://github.com/YaaZ/VulkanMemoryAllocator-Hpp
-  modules_support_date: ''
+  import_statement: vk_mem_alloc_hpp
+  modules_support_date: 2023/9/11
   name: vulkan-memory-allocator-hpp
   revision_count: 3
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/YaaZ/VulkanMemoryAllocator-Hpp/issues/29
   version: 3.0.1.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
