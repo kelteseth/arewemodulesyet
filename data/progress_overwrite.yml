@@ -133,6 +133,12 @@ ports:
   status: ✅
   modules_support_date: 2024/6/2
   current_min_cpp_version: Unknown
+- name: vulkan-memory-allocator-hpp
+  import_statement: vk_mem_alloc_hpp
+  modules_support_date: 2023/9/11 
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: "https://github.com/YaaZ/VulkanMemoryAllocator-Hpp/issues/29"
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
