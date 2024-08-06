@@ -11,3 +11,7 @@
 
 - [C++20 modules and Boost: an analysis](https://anarthal.github.io/cppblog/modules)
 - [C++20 modules and Boost: deep dive](https://anarthal.github.io/cppblog/modules2)
+
+## Helper tools
+
+- [A clang-based modules refactoring tool](https://github.com/ChuanqiXu9/clang-modules-converter)
