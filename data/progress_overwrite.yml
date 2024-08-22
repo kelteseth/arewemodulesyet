@@ -80,7 +80,10 @@ ports:
   status: ⚠️
   tracking_issue: https://github.com/USCiLab/cereal/issues/793
 - name: z4kn4fein-semver
-  status: ⚠️
+  import_statement: semver
+  modules_support_date: 2024/8/21
+  status: ✅
+  current_min_cpp_version: 17
   tracking_issue: https://github.com/z4kn4fein/cpp-semver/issues/7
 - name: kangaru
   status: ⚙️
