@@ -142,6 +142,11 @@ ports:
   status: ✅
   current_min_cpp_version: 20
   tracking_issue: "https://github.com/YaaZ/VulkanMemoryAllocator-Hpp/issues/29"
+- name: boost-pfr
+  import_statement: Boost.PFR
+  modules_support_date: 2024/08/01
+  status: ✅
+  tracking_issue: "https://github.com/boostorg/pfr/pull/177"
 
 ###############################################################################  
 # Libraries that are not part of vcpkg

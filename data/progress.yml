@@ -2455,11 +2455,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/boostorg/pfr
-  modules_support_date: ''
+  import_statement: Boost.PFR
+  modules_support_date: 2024/08/01
   name: boost-pfr
   revision_count: 12
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/boostorg/pfr/pull/177
   version: 1.84.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
