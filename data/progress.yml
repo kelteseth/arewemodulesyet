@@ -3093,7 +3093,7 @@ ports:
   revision_count: 11
   status: ✅
   tracking_issue: ''
-  version: 5.0.0
+  version: 4.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ArkNX/bsio
@@ -14886,11 +14886,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ned14/outcome
-  modules_support_date: ''
+  import_statement: OUTCOME_V2_CXX_MODULE_NAME
+  modules_support_date: 2021/2/17
   name: outcome
   revision_count: 12
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/ned14/outcome/issues/246
   version: 2.2.8
 - current_min_cpp_version: Unknown
   help_wanted: ❔

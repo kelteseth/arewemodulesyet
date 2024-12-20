@@ -163,6 +163,11 @@ ports:
   status: ✅
   help_wanted: ❌
   current_min_cpp_version: 17
+- name: outcome
+  import_statement: OUTCOME_V2_CXX_MODULE_NAME
+  modules_support_date: 2021/2/17
+  status: ✅
+  tracking_issue: "https://github.com/ned14/outcome/issues/246"
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
