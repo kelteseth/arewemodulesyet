@@ -14886,7 +14886,7 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ned14/outcome
-  import_statement: OUTCOME_V2_CXX_MODULE_NAME
+  import_statement: macro-defined
   modules_support_date: 2021/2/17
   name: outcome
   revision_count: 12
