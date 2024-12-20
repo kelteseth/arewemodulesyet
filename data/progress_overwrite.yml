@@ -152,6 +152,11 @@ ports:
   modules_support_date: 2024/09/16
   status: ✅
   tracking_issue: "https://github.com/microsoft/cppgraphqlgen/pull/313"
+- name: boost-regex
+  import_statement: boost.regex 
+  modules_support_date: 2024/12/19
+  status: ✅
+  tracking_issue: "https://github.com/boostorg/regex/pull/174"
 
 ###############################################################################  
 # Libraries that are not part of vcpkg

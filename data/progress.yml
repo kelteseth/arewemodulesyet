@@ -2645,11 +2645,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/boostorg/regex
-  modules_support_date: ''
+  import_statement: boost.regex
+  modules_support_date: 2024/12/19
   name: boost-regex
   revision_count: 24
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/boostorg/regex/pull/174
   version: 1.84.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
