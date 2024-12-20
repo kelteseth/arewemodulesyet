@@ -157,6 +157,12 @@ ports:
   modules_support_date: 2024/12/19
   status: ✅
   tracking_issue: "https://github.com/boostorg/regex/pull/174"
+- name: bshoshany-thread-pool
+  import_statement: BS.thread_pool
+  modules_support_date: 2024/12/19
+  status: ✅
+  help_wanted: ❌
+  current_min_cpp_version: 17
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
