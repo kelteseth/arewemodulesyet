@@ -3084,15 +3084,16 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.12.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
+- current_min_cpp_version: 17
+  help_wanted: ❌
   homepage: https://github.com/bshoshany/thread-pool
-  modules_support_date: ''
+  import_statement: BS.thread_pool
+  modules_support_date: 2024/12/19
   name: bshoshany-thread-pool
   revision_count: 11
-  status: ❔
+  status: ✅
   tracking_issue: ''
-  version: 4.1.0
+  version: 5.0.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ArkNX/bsio
