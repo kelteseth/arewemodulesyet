@@ -18794,7 +18794,7 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
+- current_min_cpp_version: 14
   help_wanted: ❔
   homepage: https://github.com/fnc12/sqlite_orm
   modules_support_date: ""
@@ -18802,7 +18802,7 @@ ports:
   revision_count: 13
   status: ❔
   tracking_issue: ''
-  version: 1.8.2
+  version: 1.9.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://sqlite.org/
