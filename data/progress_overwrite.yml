@@ -168,6 +168,13 @@ ports:
   modules_support_date: 2021/2/17
   status: ✅
   tracking_issue: "https://github.com/ned14/outcome/issues/246"
+- name: sqlite-orm
+  import_statement: sqlite_orm
+  modules_support_date: 2025/02/06
+  status: ✅
+  help_wanted: ❌
+  current_min_cpp_version: 14
+  tracking_issue: https://github.com/fnc12/sqlite_orm/pull/1336
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
