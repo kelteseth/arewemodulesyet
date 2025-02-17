@@ -28,6 +28,7 @@
 | Build2   | ✅             | ✅ 0.17.0 | [Issue Link](https://github.com/build2/build2/issues/333) |
 | Meson    | Partial            | ❌            | [Issue Link](https://github.com/mesonbuild/meson/issues/5024) |
 | Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
+| GNU Autotools | ❌        | ❌                   | |
 | qbs      | ✅             | ❌                 | [Blog Post](https://www.qt.io/blog/qbs-2.5-released) |
 | Scons    | ⚙️             | ❌                 |  [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523)     |
 | ccache     | ❌             | ❌                 | [Issue Link](https://github.com/ccache/ccache/issues/1252)      |
