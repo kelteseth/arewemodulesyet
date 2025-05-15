@@ -286,7 +286,21 @@
             </tr>
         </thead>
         <tbody>
-            {{ range sort .Site.Data.progress.ports "revision_count" "desc" }}
+            {{ $approved := where .Site.Data.progress.ports "status" "✅" }}
+            {{ $others := where .Site.Data.progress.ports "status" "!=" "✅" }}
+            {{ $approve_sorted := (sort $approved "revision_count" "desc") }}
+            {{ $others_sorted := (sort $others "revision_count" "desc") }}
+
+            {{ $combined := slice }}
+
+            {{ range $approve_sorted }}
+                {{ $combined = $combined | append . }}
+            {{ end }}
+            {{ range $others_sorted }}
+                {{ $combined = $combined | append . }}
+            {{ end }}
+
+            {{ range $combined }}
             <tr>
                 <td>{{ .status }}</td>
                 <td>{{ if ne .help_wanted ""}}{{ .help_wanted }}{{ end }}</td>
