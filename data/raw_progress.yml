@@ -4675,15 +4675,6 @@ ports:
   version: 2.1.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://curl.se/
-  modules_support_date: ""
-  name: curl
-  revision_count: 101
-  status: ❔
-  tracking_issue: ''
-  version: 8.7.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/jpbarrette/curlpp
   modules_support_date: ""
   name: curlpp
