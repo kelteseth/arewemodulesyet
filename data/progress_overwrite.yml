@@ -175,6 +175,30 @@ ports:
   help_wanted: ❌
   current_min_cpp_version: 14
   tracking_issue: https://github.com/fnc12/sqlite_orm/pull/1336
+- name: tomlplusplus
+  import_statement: tomlplusplus
+  modules_support_date: 2025/04/01
+  status: ✅
+  help_wanted: ❌
+  tracking_issue: https://github.com/marzer/tomlplusplus/pull/266
+- name: boost-any
+  import_statement: boost.any
+  modules_support_date: 2025/05/12
+  status: ✅
+  help_wanted: ❌
+  tracking_issue: https://github.com/boostorg/any/pull/30
+- name: boost-type-index
+  import_statement: boost.type_index
+  modules_support_date: 2025/05/12
+  status: ✅
+  help_wanted: ❌
+  tracking_issue: https://github.com/apolukhin/type_index/pull/15
+- name: nlohmann-json
+  import_statement: json
+  modules_support_date: 2025/05/01
+  status: ✅
+  help_wanted: ❌
+  tracking_issue: https://github.com/nlohmann/json/pull/4764
 
 ###############################################################################  
 # Libraries that are not part of vcpkg
