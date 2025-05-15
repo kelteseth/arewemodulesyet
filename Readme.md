@@ -50,6 +50,21 @@ hugo serve
 python.exe .\generate_vcpkg_usage_stats.py --merge
 ```
 
+### How to contribute
+
+Edit `data/progress_overwrite.yml` if you want to update status or add new entries which doesn't
+have a vcpkg entry. Edit `data/raw_progress.yml` if you want to add/delete entries.
+
+Then execute the following command to generate `progress.yml`:
+
+```bash
+python.exe .\generate_vcpkg_usage_stats.py --merge
+```
+
+It will be appreciated if you can run `hugo serve` to check your change.
+
+For other documents, see contents in `content`.
+
 ### Optionally rengerate raw_progress.yml
 ```bash
 python.exe generate_vcpkg_usage_stats.py --repo_path=C:\vcpkg
