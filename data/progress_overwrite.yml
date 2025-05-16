@@ -201,7 +201,32 @@ ports:
   tracking_issue: https://github.com/nlohmann/json/pull/4764
 
 ###############################################################################  
-# Libraries that are not part of vcpkg
+# Projects that are not part of vcpkg
+- name: inifinity
+  homepage: https://github.com/infiniflow/infinity
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
+- name: technical-machine
+  homepage: https://github.com/davidstone/technical-machine
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
+- name: bounded-integer
+  homepage: https://github.com/davidstone/bounded-integer
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
+- name: concurrent
+  homepage: https://github.com/davidstone/concurrent
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
+- name: atr
+  homepage: https://github.com/kaimfrai/atr/tree/main
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
 - name: seastar
   homepage: https://github.com/scylladb/seastar/tree/master
   modules_support_date: 2023/3/24
@@ -214,6 +239,27 @@ ports:
   status: ✅
   import_statement: lz
   current_min_cpp_version: 11
+- name: vkfw
+  homepage: https://github.com/Cvelth/vkfw/pull/15
+  modules_support_date: 2025/5/01
+  status: ✅
+  import_statement: vkfw
+- name: co-uring-http
+  homepage: https://github.com/xiaoyang-sde/co-uring-http
+  modules_support_date: 2025/5/15
+  status: ✅
+  import_statement: co_uring_http
+  module_native: ✅
+- name: ClosureOS
+  homepage: https://github.com/arttnba3/ClosureOS
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
+- name: lotus-engine
+  homepage: https://github.com/teschnei/lotus-engine
+  modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue

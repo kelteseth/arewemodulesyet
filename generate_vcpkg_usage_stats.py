@@ -28,7 +28,8 @@ def read_vcpkg_json(json_path):
             "current_min_cpp_version": "Unknown",
             "tracking_issue": "", # Issue that tracks the progress
             "modules_support_date": "",  # Unix timestamp, default empty
-            "help_wanted": "❔"
+            "help_wanted": "❔",
+            "module_native": "", # Whether if the modules are used as a wrapper or natively
         }
     except Exception as e:
         print(colored(f"Error reading {json_path}: {str(e)}", "red"))
@@ -75,7 +76,7 @@ def load_and_merge_yaml(file1, file2, output_file):
     for item in raw_ports_list:
         if item['name'] in overwrite_dict:
             # Only overwrite specific fields
-            for key in ['import_statement','current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'help_wanted', 'status']:
+            for key in ['import_statement','current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'help_wanted', 'status', 'module_native']:
                 if key in overwrite_dict[item['name']]:
                     item[key] = overwrite_dict[item['name']][key]
         merged_ports.append(item)
@@ -92,6 +93,7 @@ def load_and_merge_yaml(file1, file2, output_file):
                 "homepage": item.get("homepage", ""),
                 "modules_support_date": item.get("modules_support_date", ""),
                 "status": item.get("status", "?"),
+                'module_native': item.get("module_native", ""),
                 "tracking_issue": item.get("tracking_issue", ""),
                 "version": item.get("version", ""),
                 "import_statement": item.get("import_statement", "")

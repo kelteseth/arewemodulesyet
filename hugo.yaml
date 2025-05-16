@@ -6,7 +6,7 @@ params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:
     Content: |+
-      This website tracks the most popular C++ libraries, compilers, and build systems. We use vcpkg to get a rough idea of how popular a library is based on how many revisions the port has.
+      This website tracks the most popular C++ projects, compilers, and build systems. We use vcpkg to get a rough idea of how popular a library is based on how many revisions the port has.
 
       We also have an example section to track good projects using modules natively and a document section tracks good articles about modules too.
 

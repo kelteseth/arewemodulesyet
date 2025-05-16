@@ -21869,10 +21869,61 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.13.73
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/infiniflow/infinity
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: inifinity
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/davidstone/technical-machine
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: technical-machine
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/davidstone/bounded-integer
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: bounded-integer
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/davidstone/concurrent
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: concurrent
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/kaimfrai/atr/tree/main
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: atr
+  status: ✅
+  tracking_issue: ''
+  version: ''
 - current_min_cpp_version: 20
   help_wanted: ❔
   homepage: https://github.com/scylladb/seastar/tree/master
   import_statement: seastar
+  module_native: ''
   modules_support_date: 2023/3/24
   name: seastar
   status: ✅
@@ -21882,8 +21933,49 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/MarcDirven/cpp-lazy
   import_statement: lz
+  module_native: ''
   modules_support_date: 2024/4/9
   name: cpp-lazy
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/Cvelth/vkfw/pull/15
+  import_statement: vkfw
+  module_native: ''
+  modules_support_date: 2025/5/01
+  name: vkfw
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/xiaoyang-sde/co-uring-http
+  import_statement: co_uring_http
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: co-uring-http
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/arttnba3/ClosureOS
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: ClosureOS
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/teschnei/lotus-engine
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/5/15
+  name: lotus-engine
   status: ✅
   tracking_issue: ''
   version: ''
