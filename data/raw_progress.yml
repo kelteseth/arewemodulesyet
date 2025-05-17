@@ -5737,15 +5737,6 @@ ports:
   version: 0.28.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libexpat/libexpat
-  modules_support_date: ""
-  name: expat
-  revision_count: 31
-  status: ❔
-  tracking_issue: ''
-  version: 2.6.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/martinmoene/expected-lite
   modules_support_date: ""
   name: expected-lite
@@ -6995,15 +6986,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 22.3.17
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://gmplib.org
-  modules_support_date: ""
-  name: gmp
-  revision_count: 21
-  status: ❔
-  tracking_issue: ''
-  version: 6.3.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://gmsh.info
@@ -15547,15 +15529,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: http://www.portaudio.com
-  modules_support_date: ""
-  name: portaudio
-  revision_count: 22
-  status: ❔
-  tracking_issue: ''
-  version: '19.7'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/PortMidi/portmidi
   modules_support_date: ""
   name: portmidi
@@ -19084,15 +19057,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/xiaoyeli/superlu
-  modules_support_date: ""
-  name: superlu
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 6.0.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/swenson/sort
   modules_support_date: ""
   name: swenson-sort
@@ -21728,15 +21692,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://facebook.github.io/zstd/
-  modules_support_date: ""
-  name: zstd
-  revision_count: 36
-  status: ❔
-  tracking_issue: ''
-  version: 1.5.6
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/mateidavid/zstr
