@@ -21979,3 +21979,13 @@ ports:
   status: ✅
   tracking_issue: ''
   version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://www.dealii.org
+  import_statement: ''
+  module_native: ''
+  modules_support_date: ""
+  name: deal.II
+  status: ⚙️
+  tracking_issue: https://github.com/dealii/dealii/issues/18071
+  version: 9.6.2

@@ -21845,3 +21845,12 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.13.73
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://www.dealii.org
+  modules_support_date: ""
+  name: deal.II
+  revision_count: 1
+  status: ⚙️
+  tracking_issue: https://github.com/dealii/dealii/issues/18071
+  version: 9.6.2
