@@ -197,7 +197,6 @@ ports:
   import_statement: proxy
   modules_support_date: 2025/05/17
   status: ✅
-  help_wanted: ❌
   tracking_issue: https://github.com/microsoft/proxy/pull/293
 
 ###############################################################################  

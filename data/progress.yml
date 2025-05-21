@@ -6464,8 +6464,8 @@ ports:
   modules_support_date: ''
   name: ftxui
   revision_count: 9
-  status: ⚙️
-  tracking_issue: https://github.com/ArthurSonzogni/FTXUI/pull/1015
+  status: ❔
+  tracking_issue: ''
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -13806,13 +13806,13 @@ ports:
   tracking_issue: ''
   version: 2018.05.07
 - current_min_cpp_version: Unknown
-  help_wanted: ❌
+  help_wanted: ❔
   homepage: https://github.com/nlohmann/json
-  modules_support_date: 
+  modules_support_date: ''
   name: nlohmann-json
   revision_count: 25
-  status: ⚙️
-  tracking_issue: https://github.com/nlohmann/json/pull/4764
+  status: ❔
+  tracking_issue: ''
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -14552,16 +14552,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.5.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mikomikotaishi/openJuice
-  import_statement: ''
-  module_native: ✅
-  modules_support_date: 2024/8/7
-  name: openJuice
-  status: ✅
-  tracking_issue: ''
-  version: ''
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.openldap.org/software/
@@ -15718,11 +15708,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/microsoft/proxy
-  modules_support_date: ''
+  import_statement: proxy
+  modules_support_date: 2025/05/17
   name: proxy
   revision_count: 9
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/microsoft/proxy/pull/293
   version: 2.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -18061,8 +18052,8 @@ ports:
   modules_support_date: ''
   name: sfml
   revision_count: 27
-  status: ⚙️
-  tracking_issue: https://github.com/SFML/SFML/pull/3467
+  status: ❔
+  tracking_issue: ''
   version: 2.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -21835,6 +21826,15 @@ ports:
   version: 0.13.73
 - current_min_cpp_version: Unknown
   help_wanted: ❔
+  homepage: https://www.dealii.org
+  modules_support_date: ''
+  name: deal.II
+  revision_count: 1
+  status: ⚙️
+  tracking_issue: https://github.com/dealii/dealii/issues/18071
+  version: 9.6.2
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
   homepage: https://github.com/infiniflow/infinity
   import_statement: ''
   module_native: ✅
@@ -21935,6 +21935,16 @@ ports:
   version: ''
 - current_min_cpp_version: Unknown
   help_wanted: ❔
+  homepage: https://github.com/mikomikotaishi/openJuice
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2024/8/7
+  name: openJuice
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
   homepage: https://github.com/teschnei/lotus-engine
   import_statement: ''
   module_native: ✅
@@ -21943,13 +21953,3 @@ ports:
   status: ✅
   tracking_issue: ''
   version: ''
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://www.dealii.org
-  import_statement: ''
-  module_native: ''
-  modules_support_date: ""
-  name: deal.II
-  status: ⚙️
-  tracking_issue: https://github.com/dealii/dealii/issues/18071
-  version: 9.6.2
