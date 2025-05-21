@@ -17,3 +17,4 @@ about how to develop with modules natively.
 - [technical-machine](https://github.com/davidstone/technical-machine)
 - [atr](https://github.com/kaimfrai/atr/tree/main)
 - [async_simple's modules branch](https://github.com/alibaba/async_simple/tree/CXX20Modules)
+- [openJuice](https://github.com/mikomikotaishi/openJuice)
