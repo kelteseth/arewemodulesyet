@@ -193,12 +193,6 @@ ports:
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/apolukhin/type_index/pull/15
-- name: nlohmann-json
-  import_statement: json
-  modules_support_date: 2025/05/01
-  status: ✅
-  help_wanted: ❌
-  tracking_issue: https://github.com/nlohmann/json/pull/4764
 - name: proxy
   import_statement: proxy
   modules_support_date: 2025/05/17
@@ -259,6 +253,11 @@ ports:
 - name: ClosureOS
   homepage: https://github.com/arttnba3/ClosureOS
   modules_support_date: 2025/5/15
+  status: ✅
+  module_native: ✅
+- name: openJuice
+  homepage: https://github.com/mikomikotaishi/openJuice
+  modules_support_date: 2024/8/7
   status: ✅
   module_native: ✅
 - name: lotus-engine
