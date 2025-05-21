@@ -15707,13 +15707,14 @@ ports:
   tracking_issue: ''
   version: 0.6.4
 - current_min_cpp_version: Unknown
-  help_wanted: ❔
+  help_wanted: ❌
   homepage: https://github.com/microsoft/proxy
-  modules_support_date: ''
+  import_statement: proxy
+  modules_support_date: 2025/05/17
   name: proxy
   revision_count: 9
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/microsoft/proxy/pull/293
   version: 2.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -21826,6 +21827,15 @@ ports:
   version: 0.13.73
 - current_min_cpp_version: Unknown
   help_wanted: ❔
+  homepage: https://www.dealii.org
+  modules_support_date: ''
+  name: deal.II
+  revision_count: 1
+  status: ⚙️
+  tracking_issue: https://github.com/dealii/dealii/issues/18071
+  version: 9.6.2
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
   homepage: https://github.com/infiniflow/infinity
   import_statement: ''
   module_native: ✅
@@ -21934,13 +21944,3 @@ ports:
   status: ✅
   tracking_issue: ''
   version: ''
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://www.dealii.org
-  import_statement: ''
-  module_native: ''
-  modules_support_date: ""
-  name: deal.II
-  status: ⚙️
-  tracking_issue: https://github.com/dealii/dealii/issues/18071
-  version: 9.6.2
