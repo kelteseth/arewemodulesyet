@@ -21953,3 +21953,13 @@ ports:
   status: ✅
   tracking_issue: ''
   version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/MaaXYZ/MaaFramework
+  import_statement: ''
+  module_native: ''
+  modules_support_date: 2024/3/19
+  name: MaaFramework
+  status: ✅
+  tracking_issue: https://github.com/MaaXYZ/MaaFramework/pull/582
+  version: ''
