@@ -269,6 +269,12 @@ ports:
   modules_support_date: 2024/3/19
   tracking_issue: https://github.com/MaaXYZ/MaaFramework/pull/582
   homepage: https://github.com/MaaXYZ/MaaFramework
+- name: cpptrace
+  import_statement: cpptrace
+  status: ✅
+  modules_support_date: 2025/5/27
+  tracking_issue: https://github.com/jeremy-rifkin/cpptrace/pull/248
+  homepage: https://github.com/jeremy-rifkin/cpptrace
 
 ###############################################################################  
 # This is Qt6 and currently all of them share the same issue

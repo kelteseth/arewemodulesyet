@@ -4378,11 +4378,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/jeremy-rifkin/cpptrace
-  modules_support_date: ''
+  import_statement: cpptrace
+  modules_support_date: 2025/5/27
   name: cpptrace
   revision_count: 11
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/jeremy-rifkin/cpptrace/pull/248
   version: 0.5.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
