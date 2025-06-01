@@ -42,7 +42,7 @@ ports:
 - name: itk
   help_wanted: ✅
   current_min_cpp_version: 17
-- name: hikogui 
+- name: hikogui
   help_wanted: ✅
   current_min_cpp_version: 20
   tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
@@ -90,7 +90,7 @@ ports:
   tracking_issue: https://github.com/gracicot/kangaru/issues/124
 - name: glm
   import_statement: glm
-  modules_support_date: 2023/12/30 
+  modules_support_date: 2023/12/30
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/g-truc/glm/pull/1208"
@@ -138,7 +138,7 @@ ports:
   current_min_cpp_version: Unknown
 - name: vulkan-memory-allocator-hpp
   import_statement: vk_mem_alloc_hpp
-  modules_support_date: 2023/9/11 
+  modules_support_date: 2023/9/11
   status: ✅
   current_min_cpp_version: 20
   tracking_issue: "https://github.com/YaaZ/VulkanMemoryAllocator-Hpp/issues/29"
@@ -153,7 +153,7 @@ ports:
   status: ✅
   tracking_issue: "https://github.com/microsoft/cppgraphqlgen/pull/313"
 - name: boost-regex
-  import_statement: boost.regex 
+  import_statement: boost.regex
   modules_support_date: 2024/12/19
   status: ✅
   tracking_issue: "https://github.com/boostorg/regex/pull/174"
@@ -198,8 +198,11 @@ ports:
   modules_support_date: 2025/05/17
   status: ✅
   tracking_issue: https://github.com/microsoft/proxy/pull/293
+- name: asio-grpc
+  status: ⚠️
+  tracking_issue: "https://github.com/Tradias/asio-grpc/issues/119"
 
-###############################################################################  
+###############################################################################
 # Projects that are not part of vcpkg
 - name: inifinity
   homepage: https://github.com/infiniflow/infinity
@@ -276,7 +279,7 @@ ports:
   tracking_issue: https://github.com/jeremy-rifkin/cpptrace/pull/248
   homepage: https://github.com/jeremy-rifkin/cpptrace
 
-###############################################################################  
+###############################################################################
 # This is Qt6 and currently all of them share the same issue
 - name: qtbase
   tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
@@ -384,7 +387,7 @@ ports:
   tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
   status: ⚠️
 
-###############################################################################  
+###############################################################################
 # Qt5 will not get any modules support anytime soon.
 # Is is on life support, please use Qt6
 - name: qt5
