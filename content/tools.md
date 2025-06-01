@@ -8,7 +8,7 @@
 | Apple Clang  | ❌                |
 | GCC          | Partial (14)      |
 
-## Standard Libaries
+## Standard Libraries
 
 | Standard Library | Provides `import std;` |
 |--------------|--------------------|
