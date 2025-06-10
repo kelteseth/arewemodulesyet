@@ -198,13 +198,28 @@ ports:
   modules_support_date: 2025/05/17
   status: ✅
   tracking_issue: https://github.com/microsoft/proxy/pull/293
+- name: ftxui
+  import_statement: ftxui
+  modules_support_date: 2025/06/04
+  status: ✅
+  tracking_issue: https://github.com/ArthurSonzogni/FTXUI/pull/1015
+- name: raylib-cpp
+  import_statement: raylib
+  modules_support_date: 2025/06/02
+  status: ✅
+  tracking_issue: https://github.com/RobLoach/raylib-cpp/pull/360
+- name: scnlib
+  import_statement: scn
+  modules_support_date: 2025/06/02
+  status: ✅
+  tracking_issue: https://github.com/eliaskosunen/scnlib/pull/150
 - name: asio-grpc
   status: ⚠️
-  tracking_issue: "https://github.com/Tradias/asio-grpc/issues/119"
+  tracking_issue: https://github.com/Tradias/asio-grpc/issues/119
 
 ###############################################################################
 # Projects that are not part of vcpkg
-- name: inifinity
+- name: infinity
   homepage: https://github.com/infiniflow/infinity
   modules_support_date: 2025/5/15
   status: ✅
