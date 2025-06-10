@@ -144,12 +144,12 @@ ports:
   tracking_issue: "https://github.com/YaaZ/VulkanMemoryAllocator-Hpp/issues/29"
 - name: boost-pfr
   import_statement: boost.pfr
-  modules_support_date: 2024/08/01
+  modules_support_date: 2024/8/1
   status: ✅
   tracking_issue: "https://github.com/boostorg/pfr/pull/177"
 - name: cppgraphqlgen
   import_statement: GraphQL.Service
-  modules_support_date: 2024/09/16
+  modules_support_date: 2024/9/16
   status: ✅
   tracking_issue: "https://github.com/microsoft/cppgraphqlgen/pull/313"
 - name: boost-regex
@@ -170,49 +170,49 @@ ports:
   tracking_issue: "https://github.com/ned14/outcome/issues/246"
 - name: sqlite-orm
   import_statement: sqlite_orm
-  modules_support_date: 2025/02/06
+  modules_support_date: 2025/2/6
   status: ✅
   help_wanted: ❌
   current_min_cpp_version: 14
   tracking_issue: https://github.com/fnc12/sqlite_orm/pull/1336
 - name: tomlplusplus
   import_statement: tomlplusplus
-  modules_support_date: 2025/04/01
+  modules_support_date: 2025/4/1
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/marzer/tomlplusplus/pull/266
 - name: boost-any
   import_statement: boost.any
-  modules_support_date: 2025/05/12
+  modules_support_date: 2025/5/12
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/boostorg/any/pull/30
 - name: boost-type-index
   import_statement: boost.type_index
-  modules_support_date: 2025/05/12
+  modules_support_date: 2025/5/12
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/apolukhin/type_index/pull/15
 - name: proxy
   import_statement: proxy
-  modules_support_date: 2025/05/17
+  modules_support_date: 2025/5/17
   status: ✅
   tracking_issue: https://github.com/microsoft/proxy/pull/293
-- name: ftxui
-  import_statement: ftxui
-  modules_support_date: 2025/06/04
-  status: ✅
-  tracking_issue: https://github.com/ArthurSonzogni/FTXUI/pull/1015
 - name: raylib-cpp
   import_statement: raylib
-  modules_support_date: 2025/06/02
+  modules_support_date: 2025/6/2
   status: ✅
   tracking_issue: https://github.com/RobLoach/raylib-cpp/pull/360
 - name: scnlib
   import_statement: scn
-  modules_support_date: 2025/06/02
+  modules_support_date: 2025/6/2
   status: ✅
   tracking_issue: https://github.com/eliaskosunen/scnlib/pull/150
+- name: ftxui
+  import_statement: ftxui
+  modules_support_date: 2025/6/4
+  status: ✅
+  tracking_issue: https://github.com/ArthurSonzogni/FTXUI/pull/1015
 - name: asio-grpc
   status: ⚠️
   tracking_issue: https://github.com/Tradias/asio-grpc/issues/119
