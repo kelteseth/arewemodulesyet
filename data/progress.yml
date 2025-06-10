@@ -17748,7 +17748,7 @@ ports:
   help_wanted: ❔
   homepage: https://scnlib.dev/
   import_statement: scn
-  modules_support_date: ''
+  modules_support_date: 2025/6/2
   name: scnlib
   revision_count: 10
   status: ✅
