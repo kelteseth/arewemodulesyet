@@ -293,6 +293,30 @@ ports:
   modules_support_date: 2025/5/27
   tracking_issue: https://github.com/jeremy-rifkin/cpptrace/pull/248
   homepage: https://github.com/jeremy-rifkin/cpptrace
+- name: phasar
+  import_statement: phasar.*
+  status: ✅
+  modules_support_date: 2025/6/22
+  tracking_issue: https://github.com/secure-software-engineering/phasar/pull/775
+  homepage: https://github.com/secure-software-engineering/phasar
+- name: libassert
+  import_statement: libassert
+  status: ✅
+  modules_support_date: 2025/6/20
+  tracking_issue: https://github.com/jeremy-rifkin/libassert/pull/143
+  homepage: https://github.com/jeremy-rifkin/libassert
+- name: reflect
+  import_statement: reflect
+  status: ✅
+  modules_support_date: 2025/4/18
+  tracking_issue: https://github.com/qlibs/reflect/pull/49
+  homepage: https://github.com/qlibs/reflect
+- name: ser20
+  import_statement: ser20
+  status: ✅
+  modules_support_date: 2022/6/26
+  homepage: https://github.com/royjacobson/ser20
+
 
 ###############################################################################
 # This is Qt6 and currently all of them share the same issue
