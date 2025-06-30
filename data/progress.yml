@@ -9380,11 +9380,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/jeremy-rifkin/libassert
-  modules_support_date: ''
+  import_statement: libassert
+  modules_support_date: 2025/6/20
   name: libassert
   revision_count: 7
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/jeremy-rifkin/libassert/pull/143
   version: 2.0.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -21977,4 +21978,34 @@ ports:
   name: MaaFramework
   status: ✅
   tracking_issue: https://github.com/MaaXYZ/MaaFramework/pull/582
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/secure-software-engineering/phasar
+  import_statement: phasar.*
+  module_native: ''
+  modules_support_date: 2025/6/22
+  name: phasar
+  status: ✅
+  tracking_issue: https://github.com/secure-software-engineering/phasar/pull/775
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/qlibs/reflect
+  import_statement: reflect
+  module_native: ''
+  modules_support_date: 2025/4/18
+  name: reflect
+  status: ✅
+  tracking_issue: https://github.com/qlibs/reflect/pull/49
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/royjacobson/ser20
+  import_statement: ser20
+  module_native: ''
+  modules_support_date: 2022/6/26
+  name: ser20
+  status: ✅
+  tracking_issue: ''
   version: ''
