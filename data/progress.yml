@@ -13812,12 +13812,12 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/nlohmann/json
   import_statement: nlohmann.json
-  modules_support_date: ''
+  modules_support_date: 2025/6/29
   name: nlohmann-json
   revision_count: 25
-  status: ⚙️
+  status: ✅
   tracking_issue: https://github.com/nlohmann/json/pull/4799
-  version: Unknown
+  version: 3.12.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/stevengj/nlopt
