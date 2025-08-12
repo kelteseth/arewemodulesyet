@@ -6847,15 +6847,15 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.1.36
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
+- current_min_cpp_version: 23
+  help_wanted: ❌
   homepage: https://github.com/stephenberry/glaze
   modules_support_date: ''
   name: glaze
-  revision_count: 31
-  status: ❔
-  tracking_issue: ''
-  version: 2.4.5
+  revision_count: 32
+  status: ⚙️
+  tracking_issue: 'https://github.com/stephenberry/glaze/issues/1586'
+  version: 5.5.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/cginternals/glbinding
