@@ -321,6 +321,12 @@ ports:
   status: ✅
   modules_support_date: 2022/6/26
   homepage: https://github.com/royjacobson/ser20
+- name: entt
+  help_wanted: ❔
+  homepage: https://github.com/skypjack/entt
+  modules_support_date: ''
+  status: ⚙️
+  tracking_issue: https://github.com/skypjack/entt/pull/1243
 
 
 ###############################################################################

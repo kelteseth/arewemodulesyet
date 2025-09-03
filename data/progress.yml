@@ -1637,7 +1637,7 @@ ports:
   help_wanted: ❌
   homepage: https://github.com/boostorg/any
   import_statement: boost.any
-  modules_support_date: 2025/05/12
+  modules_support_date: 2025/5/12
   name: boost-any
   revision_count: 23
   status: ✅
@@ -2457,7 +2457,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/boostorg/pfr
   import_statement: boost.pfr
-  modules_support_date: 2024/08/01
+  modules_support_date: 2024/8/1
   name: boost-pfr
   revision_count: 12
   status: ✅
@@ -2846,7 +2846,7 @@ ports:
   help_wanted: ❌
   homepage: https://github.com/boostorg/type_index
   import_statement: boost.type_index
-  modules_support_date: 2025/05/12
+  modules_support_date: 2025/5/12
   name: boost-type-index
   revision_count: 23
   status: ✅
@@ -4306,7 +4306,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/microsoft/cppgraphqlgen
   import_statement: GraphQL.Service
-  modules_support_date: 2024/09/16
+  modules_support_date: 2024/9/16
   name: cppgraphqlgen
   revision_count: 30
   status: ✅
@@ -5661,8 +5661,8 @@ ports:
   modules_support_date: ''
   name: entt
   revision_count: 33
-  status: ❔
-  tracking_issue: ''
+  status: ⚙️
+  tracking_issue: https://github.com/skypjack/entt/pull/1243
   version: 3.13.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -6468,7 +6468,7 @@ ports:
   revision_count: 9
   status: ✅
   tracking_issue: https://github.com/ArthurSonzogni/FTXUI/pull/1015
-  version: 6.1.9
+  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/Naios/function2
@@ -6854,7 +6854,7 @@ ports:
   name: glaze
   revision_count: 32
   status: ⚙️
-  tracking_issue: 'https://github.com/stephenberry/glaze/issues/1586'
+  tracking_issue: https://github.com/stephenberry/glaze/issues/1586
   version: 5.5.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -13817,7 +13817,7 @@ ports:
   revision_count: 25
   status: ✅
   tracking_issue: https://github.com/nlohmann/json/pull/4799
-  version: 3.12.1
+  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/stevengj/nlopt
@@ -15713,7 +15713,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/microsoft/proxy
   import_statement: proxy
-  modules_support_date: 2025/05/17
+  modules_support_date: 2025/5/17
   name: proxy
   revision_count: 9
   status: ✅
@@ -17032,17 +17032,7 @@ ports:
   revision_count: 20
   status: ❔
   tracking_issue: ''
-  version: '5.5.0'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/RobLoach/raylib-cpp
-  import_statement: raylib
-  modules_support_date: 2025/6/2
-  name: raylib-cpp
-  revision_count: 20
-  status: ✅
-  tracking_issue: https://github.com/RobLoach/raylib-cpp/pull/360
-  version: '5.5.0'
+  version: '5.0'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/rbdl/rbdl
@@ -17754,7 +17744,7 @@ ports:
   revision_count: 10
   status: ✅
   tracking_issue: https://github.com/eliaskosunen/scnlib/pull/150
-  version: 4.0.1
+  version: 2.0.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ricab/scope_guard
@@ -18794,7 +18784,7 @@ ports:
   help_wanted: ❌
   homepage: https://github.com/fnc12/sqlite_orm
   import_statement: sqlite_orm
-  modules_support_date: 2025/02/06
+  modules_support_date: 2025/2/6
   name: sqlite-orm
   revision_count: 13
   status: ✅
@@ -18812,13 +18802,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/SRombauts/SQLiteCpp
-  import_statement: sqlite
-  modules_support_date: 
+  modules_support_date: ''
   name: sqlitecpp
   revision_count: 14
-  status: ⚙️
-  tracking_issue: https://github.com/SRombauts/SQLiteCpp/pull/513
-  version: 3.3.3
+  status: ❔
+  tracking_issue: ''
+  version: 3.3.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/rbock/sqlpp11
@@ -19742,7 +19731,7 @@ ports:
   help_wanted: ❌
   homepage: https://marzer.github.io/tomlplusplus/
   import_statement: tomlplusplus
-  modules_support_date: 2025/04/01
+  modules_support_date: 2025/4/1
   name: tomlplusplus
   revision_count: 13
   status: ✅
@@ -21849,6 +21838,16 @@ ports:
   status: ⚙️
   tracking_issue: https://github.com/dealii/dealii/issues/18071
   version: 9.6.2
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: ''
+  import_statement: raylib
+  module_native: ''
+  modules_support_date: 2025/6/2
+  name: raylib-cpp
+  status: ✅
+  tracking_issue: https://github.com/RobLoach/raylib-cpp/pull/360
+  version: ''
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/infiniflow/infinity
