@@ -26,10 +26,10 @@
 | XMake   | ✅            | ✅                |   [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
 | Zork++   | ✅            | ✅                |   [Project](https://github.com/zerodaycode/Zork) |
 | Build2   | ✅             | ✅ 0.17.0 | [Issue Link](https://github.com/build2/build2/issues/333) |
+| qbs      | ✅ 2.5         | ✅ 3.1             | [Tutorial](https://qbs.io//docs/tutorial-10/) |
 | Meson    | Partial            | ❌            | [Issue Link](https://github.com/mesonbuild/meson/issues/5024) |
 | Gnu Make | ✅             | ❌                 | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo)      |
 | GNU Autotools | ❌        | ❌                   | |
-| qbs      | ✅ 2.5         | ✅ 3.0 (experimental) | [Blog Post](https://www.qt.io/blog/qbs-2.5-released) |
 | Scons    | ⚙️             | ❌                 |  [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523)     |
 | ccache     | ❌             | ❌                 | [Issue Link](https://github.com/ccache/ccache/issues/1252)      |
 | sccache     | ❌             | ❌                 | [Issue Link](https://github.com/mozilla/sccache/issues/2095)      |
