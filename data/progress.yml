@@ -7697,11 +7697,12 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/STEllAR-GROUP/hpx
-  modules_support_date: ''
+  import_statement: HPX.*
+  modules_support_date: 2024/9/6
   name: hpx
   revision_count: 34
-  status: ⚠️
-  tracking_issue: https://github.com/STEllAR-GROUP/hpx/issues/6014
+  status: ✅
+  tracking_issue: ''
   version: 1.9.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -8537,8 +8538,8 @@ ports:
   modules_support_date: ''
   name: jwt-cpp
   revision_count: 8
-  status: ❔
-  tracking_issue: ''
+  status: ⚙️
+  tracking_issue: https://github.com/Thalhammer/jwt-cpp/pull/395
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -14352,10 +14353,11 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/kcat/openal-soft
-  modules_support_date: ''
+  import_statement: openal.*
+  modules_support_date: 2025/9/2
   name: openal-soft
   revision_count: 39
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: 1.23.1
 - current_min_cpp_version: Unknown
@@ -15451,10 +15453,11 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/pocoproject/poco
-  modules_support_date: ''
+  import_statement: Poco
+  modules_support_date: 2025/9/20
   name: poco
   revision_count: 46
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: 1.13.3
 - current_min_cpp_version: Unknown
@@ -17057,8 +17060,8 @@ ports:
   modules_support_date: ''
   name: re2
   revision_count: 37
-  status: ❔
-  tracking_issue: ''
+  status: ⚙️
+  tracking_issue: https://code-review.googlesource.com/c/re2/+/64010
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -17522,10 +17525,11 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/thestk/rtmidi
-  modules_support_date: ''
+  import_statement: rtmidi
+  modules_support_date: 2025/10/20
   name: rtmidi
   revision_count: 10
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: 5.0.0
 - current_min_cpp_version: Unknown
@@ -22005,6 +22009,46 @@ ports:
   module_native: ''
   modules_support_date: 2022/6/26
   name: ser20
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/colinator/zerialize
+  import_statement: zerialize
+  module_native: ''
+  modules_support_date: 2025/9/30
+  name: zerialize
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/skift-org/skift
+  import_statement: Strata.*
+  module_native: ''
+  modules_support_date: 2025/10/5
+  name: skift
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/kokkos/kokkos
+  import_statement: kokkos.*
+  module_native: ''
+  modules_support_date: 2025/10/1
+  name: kokkos
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/AlexWorx/ALib-Class-Library
+  import_statement: ALib.*
+  module_native: ''
+  modules_support_date: 2025/10/1
+  name: ALib
   status: ✅
   tracking_issue: ''
   version: ''
