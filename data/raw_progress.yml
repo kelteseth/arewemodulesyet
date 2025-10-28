@@ -19038,14 +19038,14 @@ ports:
   tracking_issue: ''
   version: Unknown
 - current_min_cpp_version: Unknown
-  help_wanted: ❔
+  help_wanted: ✅
   homepage: http://suitesparse.com
   modules_support_date: ""
   name: suitesparse
   revision_count: 16
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
+  status: ⚠️
+  tracking_issue: 'https://github.com/DrTimothyAldenDavis/SuiteSparse/issues/902'
+  version: 7.11.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://computation.llnl.gov/projects/sundials
