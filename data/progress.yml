@@ -6389,15 +6389,6 @@ ports:
   version: 1.3.10
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://www.freetype.org/
-  modules_support_date: ''
-  name: freetype
-  revision_count: 53
-  status: ❔
-  tracking_issue: ''
-  version: 2.13.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/rougier/freetype-gl
   modules_support_date: ''
   name: freetype-gl
@@ -6892,15 +6883,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://developer.gnome.org/glib/
-  modules_support_date: ''
-  name: glib
-  revision_count: 50
-  status: ❔
-  tracking_issue: ''
-  version: 2.78.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://gitlab.gnome.org/GNOME/glib-networking
@@ -9444,15 +9426,6 @@ ports:
   version: 1.0.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/mongodb/mongo-c-driver/tree/master/src/libbson
-  modules_support_date: ''
-  name: libbson
-  revision_count: 41
-  status: ❔
-  tracking_issue: ''
-  version: 1.26.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://gitlab.com/inivation/dv/libcaer
   modules_support_date: ''
   name: libcaer
@@ -10353,15 +10326,6 @@ ports:
   version: '3.6'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://tukaani.org/xz/
-  modules_support_date: ''
-  name: liblzma
-  revision_count: 28
-  status: ❔
-  tracking_issue: ''
-  version: 5.4.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://codeberg.org/tenacityteam/libmad
   modules_support_date: ''
   name: libmad
@@ -10801,15 +10765,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/glennrp/libpng
-  modules_support_date: ''
-  name: libpng
-  revision_count: 56
-  status: ❔
-  tracking_issue: ''
-  version: 1.6.43
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -11782,15 +11737,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.1.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
-  modules_support_date: ''
-  name: libxml2
-  revision_count: 30
-  status: ❔
-  tracking_issue: ''
-  version: 2.11.7
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/rioki/libxmlmm
@@ -13052,15 +12998,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mongodb/mongo-c-driver
-  modules_support_date: ''
-  name: mongo-c-driver
-  revision_count: 46
-  status: ❔
-  tracking_issue: ''
-  version: 1.26.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/mongodb/mongo-cxx-driver
@@ -14360,15 +14297,6 @@ ports:
   status: ✅
   tracking_issue: ''
   version: 1.23.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/OpenMathLib/OpenBLAS
-  modules_support_date: ''
-  name: openblas
-  revision_count: 48
-  status: ❔
-  tracking_issue: ''
-  version: 0.3.27
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/Open-Cascade-SAS/OCCT
