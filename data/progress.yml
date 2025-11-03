@@ -17426,10 +17426,11 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/thestk/rtaudio
-  modules_support_date: ''
+  import_statement: rt.audio
+  modules_support_date: 2025/11/1
   name: rtaudio
   revision_count: 11
-  status: ❔
+  status: ✅
   tracking_issue: ''
   version: 6.0.1
 - current_min_cpp_version: Unknown
@@ -18999,7 +19000,7 @@ ports:
   name: suitesparse
   revision_count: 16
   status: ⚠️
-  tracking_issue: 'https://github.com/DrTimothyAldenDavis/SuiteSparse/issues/902'
+  tracking_issue: https://github.com/DrTimothyAldenDavis/SuiteSparse/issues/902
   version: 7.11.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
@@ -21977,6 +21978,66 @@ ports:
   module_native: ''
   modules_support_date: 2025/10/1
   name: ALib
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/qlibs/sml
+  import_statement: sml
+  module_native: ''
+  modules_support_date: 2025/04/1
+  name: sml
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/qlibs/mp
+  import_statement: mp
+  module_native: ''
+  modules_support_date: 2025/05/1
+  name: mp
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/martinus/unordered_dense
+  import_statement: ankerl.unordered_dense
+  module_native: ''
+  modules_support_date: 2023/08/20
+  name: unordered_dense
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/jslepicka/nemulator
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/04/1
+  name: nemulator
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/eduard-permyakov/peredvizhnikov-engine
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2023/11/1
+  name: permedvizhnikov-engine
+  status: ✅
+  tracking_issue: ''
+  version: ''
+- current_min_cpp_version: Unknown
+  help_wanted: ❔
+  homepage: https://github.com/superg/redumper
+  import_statement: ''
+  module_native: ✅
+  modules_support_date: 2025/04/1
+  name: redumper
   status: ✅
   tracking_issue: ''
   version: ''
