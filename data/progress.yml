@@ -21765,7 +21765,8 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.dealii.org
-  modules_support_date: ''
+  import_statement: dealii
+  modules_support_date: 2025/7/22
   name: deal.II
   revision_count: 1
   status: ✅
