@@ -12,6 +12,16 @@
         <div id="finished-rate-text" style="text-align: right; "></div>
     </div>
 
+    <div class="progress-container" style="width: 100%;">
+        <div style="height: 600px">
+            <canvas id="project-cumulative-chart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@^2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@^1"></script>
+    <script src="/js/historical_plot.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const table = document.getElementById('progress-table');
@@ -73,6 +83,8 @@
             } else {
                 document.getElementById('finished-text').innerText = ""
             }
+
+            plotHistoricalData();
         });
     </script>
 
