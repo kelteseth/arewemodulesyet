@@ -4,15 +4,6 @@ header:
 ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: 3fd
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 2.6.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.7-zip.org
   modules_support_date: ''
   name: 7zip
@@ -94,15 +85,6 @@ ports:
   version: 2.7.7
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: ade
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 0.1.2d
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/ornladios/ADIOS2
   modules_support_date: ''
   name: adios2
@@ -121,15 +103,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/inie0722/CTL
-  modules_support_date: ''
-  name: air-ctl
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 1.1.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/badaix/aixlog
   modules_support_date: ''
   name: aixlog
@@ -137,15 +110,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.5.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/aklomp/base64
-  modules_support_date: ''
-  name: aklomp-base64
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 0.5.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/macosforge/alac
@@ -173,15 +137,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.8.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/aliyun/aliyun-oss-c-sdk
-  modules_support_date: ''
-  name: aliyun-oss-c-sdk
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 3.10.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://liballeg.org/
@@ -236,15 +191,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.33
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ampl/asl
-  modules_support_date: ''
-  name: ampl-asl
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ampl/mp
@@ -409,15 +355,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/fredrik-johansson/arb
-  modules_support_date: ''
-  name: arb
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 2.21.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Ultimaker/libArcus
   modules_support_date: ''
   name: arcus
@@ -452,15 +389,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.3.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/P-H-C/phc-winner-argon2
-  modules_support_date: ''
-  name: argon2
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: '20190702'
 - current_min_cpp_version: 17
   help_wanted: ❔
   homepage: https://github.com/p-ranav/argparse
@@ -654,15 +582,6 @@ ports:
   version: '1.3'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/naasking/async.h
-  modules_support_date: ''
-  name: asynch
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: ''
   modules_support_date: ''
   name: asyncplusplus
@@ -708,15 +627,6 @@ ports:
   version: 2.36.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: atl
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: '0'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Atliac/minitest
   modules_support_date: ''
   name: atliac-minitest
@@ -748,15 +658,6 @@ ports:
   modules_support_date: ''
   name: attr
   revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/aubio/aubio
-  modules_support_date: ''
-  name: aubio
-  revision_count: 19
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -818,15 +719,6 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/apache/avro
   modules_support_date: ''
-  name: avro-c
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 1.11.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/apache/avro
-  modules_support_date: ''
   name: avro-cpp
   revision_count: 5
   status: ❔
@@ -843,69 +735,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-auth
-  modules_support_date: ''
-  name: aws-c-auth
-  revision_count: 12
-  status: ❔
-  tracking_issue: ''
-  version: 0.7.16
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-cal
-  modules_support_date: ''
-  name: aws-c-cal
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 0.6.10
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-common
-  modules_support_date: ''
-  name: aws-c-common
-  revision_count: 20
-  status: ❔
-  tracking_issue: ''
-  version: 0.9.14
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-compression
-  modules_support_date: ''
-  name: aws-c-compression
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.18
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-event-stream
-  modules_support_date: ''
-  name: aws-c-event-stream
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: 0.4.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-http
-  modules_support_date: ''
-  name: aws-c-http
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.8.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-io
-  modules_support_date: ''
-  name: aws-c-io
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 0.14.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/awslabs/aws-c-mqtt
   modules_support_date: ''
   name: aws-c-mqtt
@@ -913,33 +742,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.10.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-s3
-  modules_support_date: ''
-  name: aws-c-s3
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 0.5.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-c-sdkutils
-  modules_support_date: ''
-  name: aws-c-sdkutils
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 0.1.15
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/awslabs/aws-checksums
-  modules_support_date: ''
-  name: aws-checksums
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.1.18
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/awslabs/aws-crt-cpp
@@ -973,15 +775,6 @@ ports:
   modules_support_date: ''
   name: azmq
   revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Azure/azure-c-shared-utility
-  modules_support_date: ''
-  name: azure-c-shared-utility
-  revision_count: 38
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -1032,15 +825,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/Azure/azure-iot-sdk-c
-  modules_support_date: ''
-  name: azure-iot-sdk-c
-  revision_count: 44
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/microsoft/Azure-Kinect-Sensor-SDK
   modules_support_date: ''
   name: azure-kinect-sensor-sdk
@@ -1048,15 +832,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: azure-macro-utils-c
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/eventhubs/azure-messaging-eventhubs-checkpointstore-blob
@@ -1176,42 +951,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/Azure/azure-uamqp-c
-  modules_support_date: ''
-  name: azure-uamqp-c
-  revision_count: 27
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Azure/azure-uhttp-c
-  modules_support_date: ''
-  name: azure-uhttp-c
-  revision_count: 26
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Azure/azure-umqtt-c
-  modules_support_date: ''
-  name: azure-umqtt-c
-  revision_count: 29
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: b64
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 2.0.0.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/bombela/backward-cpp
   modules_support_date: ''
   name: backward-cpp
@@ -1221,15 +960,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/baresip/re
-  modules_support_date: ''
-  name: baresip-libre
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: 3.11.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/BinomialLLC/basis_universal
   modules_support_date: ''
   name: basisu
@@ -1237,24 +967,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.16.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/BelledonneCommunications/bcg729
-  modules_support_date: ''
-  name: bcg729
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.1.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/bitdefender/bddisasm
-  modules_support_date: ''
-  name: bddisasm
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 2.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -1419,15 +1131,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: binn
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: '3.0'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://bitmagic.io
   modules_support_date: ''
   name: bitmagic
@@ -1500,15 +1203,6 @@ ports:
   version: 1.5.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: blas
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://bitbucket.org/blaze-lib/blaze
   modules_support_date: ''
   name: blaze
@@ -1552,15 +1246,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Blosc/c-blosc
-  modules_support_date: ''
-  name: blosc
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: 1.21.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.bloomberg.com/professional/support/api-library/
@@ -1748,15 +1433,6 @@ ports:
   modules_support_date: ''
   name: boost-circular-buffer
   revision_count: 23
-  status: ❔
-  tracking_issue: ''
-  version: 1.84.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: boost-cmake
-  revision_count: 1
   status: ❔
   tracking_issue: ''
   version: 1.84.0
@@ -2501,15 +2177,6 @@ ports:
   version: 1.84.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/boostorg/predef
-  modules_support_date: ''
-  name: boost-predef
-  revision_count: 23
-  status: ❔
-  tracking_issue: ''
-  version: 1.84.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/boostorg/preprocessor
   modules_support_date: ''
   name: boost-preprocessor
@@ -3188,24 +2855,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/c-ares/c-ares
-  modules_support_date: ''
-  name: c-ares
-  revision_count: 26
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/eerimoq/dbg-macro
-  modules_support_date: ''
-  name: c-dbg-macro
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/biojppm/c4core
   modules_support_date: ''
   name: c4core
@@ -3213,15 +2862,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.1.11
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/offscale/c89stringutils
-  modules_support_date: ''
-  name: c89stringutils
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 0.0.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/rioki/c9y
@@ -3287,15 +2927,6 @@ ports:
   version: 4.0.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/percipioxyz/camport3
-  modules_support_date: ''
-  name: camport3
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 1.6.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/a-e-k/canvas_ity
   modules_support_date: ''
   name: canvas-ity
@@ -3312,24 +2943,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/capstone-engine/capstone
-  modules_support_date: ''
-  name: capstone
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 5.0.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://likle.github.io/cargs/
-  modules_support_date: ''
-  name: cargs
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 1.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/googlecartographer/cartographer
@@ -3377,15 +2990,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: cblas
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/zer0mem/cccapstone
   modules_support_date: ''
   name: cccapstone
@@ -3393,15 +2997,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 9b4128ee1153e78288a1b5433e2c06a0d47a4c4e
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/danfis/libccd
-  modules_support_date: ''
-  name: ccd
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: '2.1'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://heasarc.gsfc.nasa.gov/fitsio/CCfits/
@@ -3503,24 +3098,6 @@ ports:
   version: 3.2.20
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/recp/cglm
-  modules_support_date: ''
-  name: cglm
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/jkuhlmann/cgltf
-  modules_support_date: ''
-  name: cgltf
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: '1.13'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://cgns.org/
   modules_support_date: ''
   name: cgns
@@ -3564,24 +3141,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 7.0.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libcheck/check
-  modules_support_date: ''
-  name: check
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.15.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/slembcke/Chipmunk2D
-  modules_support_date: ''
-  name: chipmunk
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 7.0.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: http://www.jedrea.com/chmlib/
@@ -3656,24 +3215,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/civetweb/civetweb
-  modules_support_date: ''
-  name: civetweb
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: '1.16'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/DaveGamble/cJSON
-  modules_support_date: ''
-  name: cjson
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: 1.7.17
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.clamav.net
   modules_support_date: ''
   name: clamav
@@ -3708,15 +3249,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.1.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: clblas
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: '2.12'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/CNugteren/CLBlast
@@ -3809,15 +3341,6 @@ ports:
   version: 1.1.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/clMathLibraries/clRNG
-  modules_support_date: ''
-  name: clrng
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/martinmoene/clue
   modules_support_date: ''
   name: clue
@@ -3831,15 +3354,6 @@ ports:
   modules_support_date: ''
   name: cmakerc
   revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/commonmark/cmark
-  modules_support_date: ''
-  name: cmark
-  revision_count: 8
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -3861,15 +3375,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/nats-io/nats.c
-  modules_support_date: ''
-  name: cnats
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 3.8.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/johnmcfarlane/cnl
@@ -4341,15 +3846,6 @@ ports:
   version: 3.7.6
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/cppp-project/cppp-reiconv
-  modules_support_date: ''
-  name: cppp-reiconv
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 2.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Microsoft/cpprestsdk
   modules_support_date: ''
   name: cpprestsdk
@@ -4448,24 +3944,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.9.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/anrieff/libcpuid
-  modules_support_date: ''
-  name: cpuid
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 0.6.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/pytorch/cpuinfo
-  modules_support_date: ''
-  name: cpuinfo
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://fungos.github.io/cr-simple-c-hot-reload/
@@ -4689,15 +4167,6 @@ ports:
   modules_support_date: ''
   name: curlpp
   revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/RandyGaul/cute_headers
-  modules_support_date: ''
-  name: cute-headers
-  revision_count: 2
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -5144,15 +4613,6 @@ ports:
   version: 3.5.2b
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/dlfcn-win32/dlfcn-win32
-  modules_support_date: ''
-  name: dlfcn-win32
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/davisking/dlib
   modules_support_date: ''
   name: dlib
@@ -5252,15 +4712,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/mackron/dr_libs
-  modules_support_date: ''
-  name: drlibs
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/an-tao/drogon
   modules_support_date: ''
   name: drogon
@@ -5306,15 +4757,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/Aloshi/dukglue
-  modules_support_date: ''
-  name: dukglue
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/svaarala/duktape
   modules_support_date: ''
   name: duktape
@@ -5322,15 +4764,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.7.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/kode54/dumb
-  modules_support_date: ''
-  name: dumb
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 2.0.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://gitlab.com/inivation/dv/dv-processing
@@ -5396,15 +4829,6 @@ ports:
   version: 2.09.12
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/mapbox/earcut.hpp
-  modules_support_date: ''
-  name: earcut-hpp
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 2.2.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/electronicarts/EASTL
   modules_support_date: ''
   name: eastl
@@ -5430,15 +4854,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/EasyHook/EasyHook
-  modules_support_date: ''
-  name: easyhook
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 2.7.7097.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/abumq/easyloggingpp
@@ -5504,15 +4919,6 @@ ports:
   version: 1.0.7.15
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/orlp/ed25519
-  modules_support_date: ''
-  name: ed25519
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.teuniz.net/edflib/
   modules_support_date: ''
   name: edflib
@@ -5562,15 +4968,6 @@ ports:
   modules_support_date: ''
   name: egl
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/KhronosGroup/EGL-Registry
-  modules_support_date: ''
-  name: egl-registry
-  revision_count: 9
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -5910,15 +5307,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ariya/FastLZ
-  modules_support_date: ''
-  name: fastlz
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/romeric/Fastor
   modules_support_date: ''
   name: fastor
@@ -5989,33 +5377,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: fdlibm
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: '5.3'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://ffmpeg.org
-  modules_support_date: ''
-  name: ffmpeg
-  revision_count: 122
-  status: ❔
-  tracking_issue: ''
-  version: 6.1.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/FFmpeg/nv-codec-headers
-  modules_support_date: ''
-  name: ffnvcodec
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 12.1.14.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.fftw.org/
@@ -6090,15 +5451,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/al-sabr/FlashRuntimeExtensions
-  modules_support_date: ''
-  name: flash-runtime-extensions
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: '2.4'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/facebookresearch/flashlight
   modules_support_date: ''
   name: flashlight-cpu
@@ -6162,15 +5514,6 @@ ports:
   version: 1.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/SanderMertens/flecs
-  modules_support_date: ''
-  name: flecs
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 3.2.11
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.flintlib.org/
   modules_support_date: ''
   name: flint
@@ -6187,24 +5530,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.3.9
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/divideconcept/FluidLite
-  modules_support_date: ''
-  name: fluidlite
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/FluidSynth/fluidsynth
-  modules_support_date: ''
-  name: fluidsynth
-  revision_count: 24
-  status: ❔
-  tracking_issue: ''
-  version: 2.3.5
 - current_min_cpp_version: 20
   help_wanted: ❔
   homepage: https://github.com/tcbrindle/flux
@@ -6261,15 +5586,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2024.04.22.00
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mobius3/font-chef
-  modules_support_date: ''
-  name: font-chef
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 1.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://gitlab.freedesktop.org/xorg/font/util
@@ -6371,15 +5687,6 @@ ports:
   version: '20190125'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/FreeRDP/FreeRDP
-  modules_support_date: ''
-  name: freerdp
-  revision_count: 41
-  status: ❔
-  tracking_issue: ''
-  version: 3.4.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.freetds.org
   modules_support_date: ''
   name: freetds
@@ -6387,15 +5694,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.3.10
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/rougier/freetype-gl
-  modules_support_date: ''
-  name: freetype-gl
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.gaia-gis.it/gaia-sins/freexl-sources
@@ -6660,15 +5958,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/codeplea/genann
-  modules_support_date: ''
-  name: genann
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/BrunoLevy/geogram
   modules_support_date: ''
   name: geogram
@@ -6777,37 +6066,10 @@ ports:
   version: 1.5.14
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: gherkin-c
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://sourceforge.net/projects/giflib/
-  modules_support_date: ''
-  name: giflib
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 5.2.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/ginkgo-project/ginkgo
   modules_support_date: ''
   name: ginkgo
   revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/KarypisLab/GKlib/
-  modules_support_date: ''
-  name: gklib
-  revision_count: 4
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -6820,24 +6082,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/skaslev/gl3w
-  modules_support_date: ''
-  name: gl3w
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Dav1dde/glad
-  modules_support_date: ''
-  name: glad
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 0.1.36
 - current_min_cpp_version: 23
   help_wanted: ❌
   homepage: https://github.com/stephenberry/glaze
@@ -6865,15 +6109,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.2.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/glfw/glfw
-  modules_support_date: ''
-  name: glfw3
-  revision_count: 33
-  status: ❔
-  tracking_issue: ''
-  version: '3.4'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://gli.g-truc.net
@@ -7444,24 +6679,6 @@ ports:
   version: 0.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/uber/h3
-  modules_support_date: ''
-  name: h3
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/h5py/h5py/tree/master/lzf
-  modules_support_date: ''
-  name: h5py-lzf
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/halide/Halide
   modules_support_date: ''
   name: halide
@@ -7597,15 +6814,6 @@ ports:
   version: 1.10.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libusb/hidapi
-  modules_support_date: ''
-  name: hidapi
-  revision_count: 12
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/BlueBrain/HighFive
   modules_support_date: ''
   name: highfive
@@ -7640,15 +6848,6 @@ ports:
   status: ❔
   tracking_issue: https://github.com/hikogui/hikogui/issues/460
   version: 0.8.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/redis/hiredis
-  modules_support_date: ''
-  name: hiredis
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://hjson.github.io
@@ -7688,15 +6887,6 @@ ports:
   version: 1.9.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/nodejs/http-parser
-  modules_support_date: ''
-  name: http-parser
-  revision_count: 12
-  status: ❔
-  tracking_issue: ''
-  version: 2.9.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: ''
   modules_support_date: ''
   name: hungarian
@@ -7713,15 +6903,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.7.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/open-mpi/hwloc
-  modules_support_date: ''
-  name: hwloc
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 2.10.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.hyperscan.io
@@ -8138,15 +7319,6 @@ ports:
   version: '58'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ndevilla/iniparser
-  modules_support_date: ''
-  name: iniparser
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/mcmtroffaes/inipp
   modules_support_date: ''
   name: inipp
@@ -8228,15 +7400,6 @@ ports:
   version: '0'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/intel/isa-l
-  modules_support_date: ''
-  name: isal
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 2.30.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/ismrmrd/ismrmrd
   modules_support_date: ''
   name: ismrmrd
@@ -8309,33 +7472,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/akheron/jansson
-  modules_support_date: ''
-  name: jansson
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: '2.14'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/jasper-software/jasper
-  modules_support_date: ''
-  name: jasper
-  revision_count: 18
-  status: ❔
-  tracking_issue: ''
-  version: 4.2.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ArtifexSoftware/jbig2dec
-  modules_support_date: ''
-  name: jbig2dec
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: '0.20'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.cl.cam.ac.uk/~mgk25/jbigkit
   modules_support_date: ''
   name: jbigkit
@@ -8403,15 +7539,6 @@ ports:
   modules_support_date: ''
   name: jsmn
   revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/json-c/json-c
-  modules_support_date: ''
-  name: json-c
-  revision_count: 9
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -8525,15 +7652,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/4creators/jxrlib
-  modules_support_date: ''
-  name: jxrlib
-  revision_count: 20
-  status: ❔
-  tracking_issue: ''
-  version: 2019.10.9
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://kaitai.io/
   modules_support_date: ''
   name: kaitai-struct-cpp-stl-runtime
@@ -8550,15 +7668,6 @@ ports:
   status: ⚙️
   tracking_issue: https://github.com/gracicot/kangaru/issues/124
   version: 4.3.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/skywind3000/kcp
-  modules_support_date: ''
-  name: kcp
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: '1.7'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/KDAB/KDAlgorithms
@@ -8604,15 +7713,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.5.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/coruus/keccak-tiny
-  modules_support_date: ''
-  name: keccak-tiny
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -9065,24 +8165,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/kuba--/zip
-  modules_support_date: ''
-  name: kubazip
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/kubernetes-client/c/
-  modules_support_date: ''
-  name: kubernetes
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 0.6.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/microsoft/Kuku
   modules_support_date: ''
   name: kuku
@@ -9155,15 +8237,6 @@ ports:
   version: 3.4.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/launchdarkly/c-server-sdk
-  modules_support_date: ''
-  name: launch-darkly-server
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 2.8.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/JustasMasiulis/lazy_importer
   modules_support_date: ''
   name: lazy-importer
@@ -9180,15 +8253,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mm2/Little-CMS
-  modules_support_date: ''
-  name: lcms
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: '2.14'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -9227,15 +8291,6 @@ ports:
   version: 0.3.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/DanBloomberg/leptonica
-  modules_support_date: ''
-  name: leptonica
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 1.84.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Esri/lerc
   modules_support_date: ''
   name: lerc
@@ -9272,15 +8327,6 @@ ports:
   version: '2.6'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/lexbor/lexbor
-  modules_support_date: ''
-  name: lexbor
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 2.3.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://www.naughter.com/aa.html
   modules_support_date: ''
   name: libaaplus
@@ -9308,15 +8354,6 @@ ports:
   version: 1.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/dfoxfranke/libaes_siv
-  modules_support_date: ''
-  name: libaes-siv
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://sourceforge.net/projects/aifftools
   modules_support_date: ''
   name: libaiff
@@ -9333,33 +8370,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 8.1.72
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/xiph/libao
-  modules_support_date: ''
-  name: libao
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://www.libarchive.org
-  modules_support_date: ''
-  name: libarchive
-  revision_count: 31
-  status: ❔
-  tracking_issue: ''
-  version: 3.7.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libass/libass
-  modules_support_date: ''
-  name: libass
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.17.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/jeremy-rifkin/libassert
@@ -9379,42 +8389,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.5.7
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ivmai/libatomic_ops
-  modules_support_date: ''
-  name: libatomic-ops
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 7.8.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/AOMediaCodec/libavif
-  modules_support_date: ''
-  name: libavif
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/BLAKE2/libb2
-  modules_support_date: ''
-  name: libb2
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 0.98.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ianlancetaylor/libbacktrace
-  modules_support_date: ''
-  name: libbacktrace
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -9453,15 +8427,6 @@ ports:
   version: '2.69'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/PJK/libcbor
-  modules_support_date: ''
-  name: libcbor
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 0.11.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/khizmax/libcds
   modules_support_date: ''
   name: libcds
@@ -9487,15 +8452,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.7.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/martinh/libconfuse
-  modules_support_date: ''
-  name: libconfuse
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/owent/libcopp
@@ -9552,15 +8508,6 @@ ports:
   version: 0.6.13
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/rgamble/libcsv
-  modules_support_date: ''
-  name: libcsv
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 3.0.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/efficient/libcuckoo
   modules_support_date: ''
   name: libcuckoo
@@ -9615,15 +8562,6 @@ ports:
   version: 1.0.15
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ebiggers/libdeflate
-  modules_support_date: ''
-  name: libdeflate
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: '1.20'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://sourceforge.net/projects/bastard
   modules_support_date: ''
   name: libdisasm
@@ -9669,15 +8607,6 @@ ports:
   version: 0.6.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/davea42/libdwarf-code
-  modules_support_date: ''
-  name: libdwarf
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 0.9.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://www.libe57.org/
   modules_support_date: ''
   name: libe57
@@ -9696,15 +8625,6 @@ ports:
   version: 3.1.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/jiixyj/libebur128
-  modules_support_date: ''
-  name: libebur128
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/ph3at/libenvpp
   modules_support_date: ''
   name: libenvpp
@@ -9712,42 +8632,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/anholt/libepoxy
-  modules_support_date: ''
-  name: libepoxy
-  revision_count: 21
-  status: ❔
-  tracking_issue: ''
-  version: 1.5.10
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/openstack/liberasurecode
-  modules_support_date: ''
-  name: liberasurecode
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 1.6.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: http://software.schmorp.de/pkg/libev.html
-  modules_support_date: ''
-  name: libev
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: '4.33'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libevent/libevent
-  modules_support_date: ''
-  name: libevent
-  revision_count: 22
-  status: ❔
-  tracking_issue: ''
-  version: 2.1.12+20230128
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/microsoft/LinuxTracepoints/
@@ -9768,15 +8652,6 @@ ports:
   version: 1.3.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/criticalstack/libevhtp
-  modules_support_date: ''
-  name: libevhtp
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.18
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://libexif.github.io/
   modules_support_date: ''
   name: libexif
@@ -9784,15 +8659,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.6.24
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ofiwg/libfabric
-  modules_support_date: ''
-  name: libfabric
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/libffi/libffi
@@ -9885,33 +8751,6 @@ ports:
   version: '1.5'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libfuse/libfuse
-  modules_support_date: ''
-  name: libfuse
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 3.16.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://gnupg.org/software/libgcrypt/index.html
-  modules_support_date: ''
-  name: libgcrypt
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 1.10.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libgd/libgd
-  modules_support_date: ''
-  name: libgd
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/OSGeo/libgeotiff
   modules_support_date: ''
   name: libgeotiff
@@ -9928,15 +8767,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 4.4.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libgit2/libgit2
-  modules_support_date: ''
-  name: libgit2
-  revision_count: 23
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://bitbucket.org/mpyne/game-music-emu/wiki/Home
@@ -9984,15 +8814,6 @@ ports:
   version: '2.1'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/fadingred/libgpod
-  modules_support_date: ''
-  name: libgpod
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://download.savannah.nongnu.org/releases/gta
   modules_support_date: ''
   name: libgta
@@ -10027,15 +8848,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.3.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libharu/libharu
-  modules_support_date: ''
-  name: libharu
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: 2.4.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/erikmuttersbach/libhdfs3
@@ -10074,24 +8886,6 @@ ports:
   version: 1.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/jedisct1/libhydrogen
-  modules_support_date: ''
-  name: libhydrogen
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libical/libical
-  modules_support_date: ''
-  name: libical
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 3.0.17
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://gitlab.freedesktop.org/xorg/lib/libice
   modules_support_date: ''
   name: libice
@@ -10108,15 +8902,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '1.17'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/svi-opensource/libics
-  modules_support_date: ''
-  name: libics
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 1.6.6
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://codeberg.org/tenacityteam/libid3tag
@@ -10155,15 +8940,6 @@ ports:
   version: 2.5.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/TimothyGu/libilbc
-  modules_support_date: ''
-  name: libilbc
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 3.0.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://www.libimobiledevice.org
   modules_support_date: ''
   name: libimobiledevice
@@ -10189,24 +8965,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libjpeg-turbo/libjpeg-turbo
-  modules_support_date: ''
-  name: libjpeg-turbo
-  revision_count: 45
-  status: ❔
-  tracking_issue: ''
-  version: 3.0.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/paullouisageneau/libjuice
-  modules_support_date: ''
-  name: libjuice
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/libjxl/libjxl
@@ -10281,15 +9039,6 @@ ports:
   version: '243'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/radarsat1/liblo
-  modules_support_date: ''
-  name: liblo
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: '0.32'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/ywh233/LRC-Tools
   modules_support_date: ''
   name: liblrc
@@ -10306,15 +9055,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.16.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/litespeedtech/lsquic
-  modules_support_date: ''
-  name: liblsquic
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 3.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: http://software.schmorp.de/pkg/liblzf.html
@@ -10335,33 +9075,6 @@ ports:
   version: 0.16.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/file/file
-  modules_support_date: ''
-  name: libmagic
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: '5.45'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/MariaDB/mariadb-connector-c
-  modules_support_date: ''
-  name: libmariadb
-  revision_count: 32
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/maxmind/libmaxminddb
-  modules_support_date: ''
-  name: libmaxminddb
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 1.9.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/MediaArea/MediaInfoLib
   modules_support_date: ''
   name: libmediainfo
@@ -10378,15 +9091,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.5.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/videolabs/libmicrodns
-  modules_support_date: ''
-  name: libmicrodns
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.gnu.org/software/libmicrohttpd/
@@ -10414,15 +9118,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 3.3.11.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/stephane/libmodbus
-  modules_support_date: ''
-  name: libmodbus
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 3.1.10
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://code.google.com/p/libmodman
@@ -10486,15 +9181,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.7.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ArtifexSoftware/mupdf
-  modules_support_date: ''
-  name: libmupdf
-  revision_count: 17
-  status: ❔
-  tracking_issue: ''
-  version: 1.23.11
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/mysql/mysql-server
@@ -10614,15 +9300,6 @@ ports:
   version: 0.10.9
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://www.xiph.org/ogg
-  modules_support_date: ''
-  name: libogg
-  revision_count: 16
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://openmpt.org/
   modules_support_date: ''
   name: libopenmpt
@@ -10650,15 +9327,6 @@ ports:
   version: 1.5.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/xiph/libopusenc
-  modules_support_date: ''
-  name: libopusenc
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://sourceforge.net/projects/liborigin/
   modules_support_date: ''
   name: liborigin
@@ -10666,15 +9334,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 3.0.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/goToMain/libosdp
-  modules_support_date: ''
-  name: libosdp
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 3.0.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.gnu.org/software/osip/
@@ -10726,15 +9385,6 @@ ports:
   modules_support_date: ''
   name: libpcap
   revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libyal/libpff
-  modules_support_date: ''
-  name: libpff
-  revision_count: 6
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -10803,15 +9453,6 @@ ports:
   version: '1.1'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libproxy/libproxy
-  modules_support_date: ''
-  name: libproxy
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: 0.4.18
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: rockdaboot.github.io/libpsl
   modules_support_date: ''
   name: libpsl
@@ -10819,15 +9460,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.21.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libyal/libqcow
-  modules_support_date: ''
-  name: libqcow
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: '20221124'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: http://libqglviewer.com/
@@ -10839,15 +9471,6 @@ ports:
   version: 2.9.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/fukuchi/libqrencode
-  modules_support_date: ''
-  name: libqrencode
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/qtrest/qtrest
   modules_support_date: ''
   name: libqtrest
@@ -10857,24 +9480,6 @@ ports:
   version: 0.4.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/alanxz/rabbitmq-c
-  modules_support_date: ''
-  name: librabbitmq
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.14.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/HOST-Oman/libraqm
-  modules_support_date: ''
-  name: libraqm
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 0.10.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.libraw.org
   modules_support_date: ''
   name: libraw
@@ -10882,15 +9487,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.21.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/edenhill/librdkafka
-  modules_support_date: ''
-  name: librdkafka
-  revision_count: 29
-  status: ❔
-  tracking_issue: ''
-  version: 2.3.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.gnu.org/software/libredwg/
@@ -10956,15 +9552,6 @@ ports:
   version: 1.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: http://libsndfile.github.io/libsamplerate/
-  modules_support_date: ''
-  name: libsamplerate
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/sass/libsass
   modules_support_date: ''
   name: libsass
@@ -10999,15 +9586,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.21.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ingeniamc/sercomm
-  modules_support_date: ''
-  name: libsercomm
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://libsigcplusplus.github.io/libsigcplusplus/
@@ -11055,24 +9633,6 @@ ports:
   version: 1.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/sahlberg/libsmb2
-  modules_support_date: ''
-  name: libsmb2
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/erikd/libsndfile
-  modules_support_date: ''
-  name: libsndfile
-  revision_count: 19
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://invent.kde.org/libraries/snoretoast
   modules_support_date: ''
   name: libsnoretoast
@@ -11080,24 +9640,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.8.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://libsodium.org/
-  modules_support_date: ''
-  name: libsodium
-  revision_count: 25
-  status: ❔
-  tracking_issue: ''
-  version: 1.0.19
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/waywardgeek/sonic
-  modules_support_date: ''
-  name: libsonic
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: http://libsound.io/
@@ -11136,15 +9678,6 @@ ports:
   version: 5.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/FreeSpacenav/libspnav
-  modules_support_date: ''
-  name: libspnav
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/randy408/libspng
   modules_support_date: ''
   name: libspng
@@ -11172,15 +9705,6 @@ ports:
   version: 1.5.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/cisco/libsrtp/
-  modules_support_date: ''
-  name: libsrtp
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 2.5.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.libssh.org/
   modules_support_date: ''
   name: libssh
@@ -11188,15 +9712,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.10.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://www.libssh2.org
-  modules_support_date: ''
-  name: libssh2
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: 1.11.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://snowball.tartarus.org/
@@ -11226,15 +9741,6 @@ ports:
   version: '3.32'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/systemd/systemd
-  modules_support_date: ''
-  name: libsystemd
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: '255'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://repo.or.cz/libtar.git
   modules_support_date: ''
   name: libtar
@@ -11260,24 +9766,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.24.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/memononen/libtess2
-  modules_support_date: ''
-  name: libtess2
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/xiph/theora
-  modules_support_date: ''
-  name: libtheora
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.0alpha1-20170719
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -11361,24 +9849,6 @@ ports:
   version: 1.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/vmt/udis86
-  modules_support_date: ''
-  name: libudis86
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ortclib/udns
-  modules_support_date: ''
-  name: libudns
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: '0.4'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/andlabs/libui
   modules_support_date: ''
   name: libui
@@ -11386,15 +9856,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/adah1972/libunibreak
-  modules_support_date: ''
-  name: libunibreak
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: '6.1'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/facebookexperimental/libunifex
@@ -11433,15 +9894,6 @@ ports:
   version: '2.5'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libusb/libusb
-  modules_support_date: ''
-  name: libusb
-  revision_count: 26
-  status: ❔
-  tracking_issue: ''
-  version: 1.0.27
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://sourceforge.net/projects/libusb-win32
   modules_support_date: ''
   name: libusb-win32
@@ -11469,24 +9921,6 @@ ports:
   version: 1.0.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libuv/libuv
-  modules_support_date: ''
-  name: libuv
-  revision_count: 50
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libuvc/libuvc
-  modules_support_date: ''
-  name: libuvc
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 0.0.7
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/abedra/libvault
   modules_support_date: ''
   name: libvault
@@ -11505,42 +9939,6 @@ ports:
   version: '20231127'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libyal/libvmdk
-  modules_support_date: ''
-  name: libvmdk
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: '20221124'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/xiph/vorbis
-  modules_support_date: ''
-  name: libvorbis
-  revision_count: 17
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.7
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/webmproject/libvpx
-  modules_support_date: ''
-  name: libvpx
-  revision_count: 42
-  status: ❔
-  tracking_issue: ''
-  version: 1.13.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/wanduow/wandio
-  modules_support_date: ''
-  name: libwandio
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 4.2.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/webmproject/libwebm
   modules_support_date: ''
   name: libwebm
@@ -11548,24 +9946,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.0.28
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/webmproject/libwebp
-  modules_support_date: ''
-  name: libwebp
-  revision_count: 40
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/warmcat/libwebsockets
-  modules_support_date: ''
-  name: libwebsockets
-  revision_count: 41
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.x.org/wiki/
@@ -11638,15 +10018,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.99.8
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Drako/libxdiff
-  modules_support_date: ''
-  name: libxdiff
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: '0.23'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://gitlab.freedesktop.org/xorg/lib/libxdmcp
@@ -11728,15 +10099,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/jmcnamara/libxlsxwriter
-  modules_support_date: ''
-  name: libxlsxwriter
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 1.1.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/rioki/libxmlmm
@@ -11874,15 +10236,6 @@ ports:
   version: 1.1.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/yaml/libyaml
-  modules_support_date: ''
-  name: libyaml
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://chromium.googlesource.com/libyuv/libyuv
   modules_support_date: ''
   name: libyuv
@@ -11908,15 +10261,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 9.0.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/nih-at/libzip
-  modules_support_date: ''
-  name: libzip
-  revision_count: 22
-  status: ❔
-  tracking_issue: ''
-  version: 1.10.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ctabin/libzippp
@@ -11962,15 +10306,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '2.2'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/datenwolf/linmath.h
-  modules_support_date: ''
-  name: linmath
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/lionkor/commandline/
@@ -12027,15 +10362,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/nodejs/llhttp
-  modules_support_date: ''
-  name: llhttp
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 9.2.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/LLNL/units
   modules_support_date: ''
   name: llnl-units
@@ -12054,15 +10380,6 @@ ports:
   version: 17.0.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/LMDB/lmdb
-  modules_support_date: ''
-  name: lmdb
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.9.31
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Soundux/lockpp
   modules_support_date: ''
   name: lockpp
@@ -12079,15 +10396,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: lodepng-c
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: deprecated
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/log4cplus/log4cplus
@@ -12198,60 +10506,6 @@ ports:
   version: 5.4.6
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/lunarmodules/lua-compat-5.3
-  modules_support_date: ''
-  name: lua-compat53
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: '0.10'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/vinniefalco/LuaBridge
-  modules_support_date: ''
-  name: luabridge
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: '2.8'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/kunitoki/LuaBridge3
-  modules_support_date: ''
-  name: luabridge3
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 3.0-rc3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/keplerproject/luafilesystem
-  modules_support_date: ''
-  name: luafilesystem
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 1.8.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/LuaJIT/LuaJIT
-  modules_support_date: ''
-  name: luajit
-  revision_count: 21
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/lunarmodules/luasec
-  modules_support_date: ''
-  name: luasec
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://lunarmodules.github.io/luasocket/
   modules_support_date: ''
   name: luasocket
@@ -12288,15 +10542,6 @@ ports:
   version: 2.3.9
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/luvit/luv
-  modules_support_date: ''
-  name: luv
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://lv2plug.in
   modules_support_date: ''
   name: lv2
@@ -12306,15 +10551,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/lz4/lz4
-  modules_support_date: ''
-  name: lz4
-  revision_count: 17
-  status: ❔
-  tracking_issue: ''
-  version: 1.9.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/avaneev/lzav
   modules_support_date: ''
   name: lzav
@@ -12322,15 +10558,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '3.13'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/lzfse/lzfse
-  modules_support_date: ''
-  name: lzfse
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: '1.0'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.oberhumer.com/opensource/lzo/
@@ -12559,15 +10786,6 @@ ports:
   version: 1.38.9
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/felselva/mathc
-  modules_support_date: ''
-  name: mathc
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: ''
   modules_support_date: ''
   name: mathgl
@@ -12575,15 +10793,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 8.0.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/tbeu/matio
-  modules_support_date: ''
-  name: matio
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 1.5.26
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/lava/matplotlib-cpp
@@ -12613,33 +10822,6 @@ ports:
   version: 1.7.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ARMmbed/mbedtls
-  modules_support_date: ''
-  name: mbedtls
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 2.28.7
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mchehab/zbar
-  modules_support_date: ''
-  name: mchehab-zbar
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 0.23.90
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/zeroc-ice/mcpp
-  modules_support_date: ''
-  name: mcpp
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 2.7.2.14
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/NVIDIA/MDL-SDK
   modules_support_date: ''
   name: mdl-sdk
@@ -12647,24 +10829,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2021.1.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mjansson/mdns
-  modules_support_date: ''
-  name: mdns
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/apple-oss-distributions/mDNSResponder
-  modules_support_date: ''
-  name: mdnsresponder
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 1557.140.5.0.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/kokkos/mdspan
@@ -12680,15 +10844,6 @@ ports:
   modules_support_date: ''
   name: mecab
   revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/fancycode/MemoryModule
-  modules_support_date: ''
-  name: memorymodule
-  revision_count: 2
   status: ❔
   tracking_issue: ''
   version: Unknown
@@ -12721,15 +10876,6 @@ ports:
   version: '0.20'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/KarypisLab/METIS
-  modules_support_date: ''
-  name: metis
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/jandrewrogers/MetroHash
   modules_support_date: ''
   name: metrohash
@@ -12757,15 +10903,6 @@ ports:
   version: 1.35.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/mattiasgustavsson/libs
-  modules_support_date: ''
-  name: mgnlibs
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: ''
   modules_support_date: ''
   name: mhook
@@ -12784,15 +10921,6 @@ ports:
   version: 0.1.0-alpha4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/mmikk/MikkTSpace
-  modules_support_date: ''
-  name: mikktspace
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Milerius/imgui-sfml-shared
   modules_support_date: ''
   name: milerius-sfml-imgui
@@ -12800,60 +10928,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '1.1'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/microsoft/mimalloc
-  modules_support_date: ''
-  name: mimalloc
-  revision_count: 20
-  status: ❔
-  tracking_issue: ''
-  version: 2.1.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/BIC-MNI/libminc
-  modules_support_date: ''
-  name: minc
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 2.4.03
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/TsudaKageyu/minhook
-  modules_support_date: ''
-  name: minhook
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/mackron/miniaudio
-  modules_support_date: ''
-  name: miniaudio
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 0.11.21
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/emoon/minifb
-  modules_support_date: ''
-  name: minifb
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/lieff/minimp3
-  modules_support_date: ''
-  name: minimp3
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/minio/minio-cpp
@@ -12910,15 +10984,6 @@ ports:
   version: 3.0.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/madler/zlib
-  modules_support_date: ''
-  name: minizip
-  revision_count: 17
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/zlib-ng/minizip-ng
   modules_support_date: ''
   name: minizip-ng
@@ -12946,15 +11011,6 @@ ports:
   version: 4.3.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/witwall/mman-win32
-  modules_support_date: ''
-  name: mman
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: git-f5ff813
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://tishion.github.io/mmLoader/
   modules_support_date: ''
   name: mmloader
@@ -12962,15 +11018,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/vurtun/mmx
-  modules_support_date: ''
-  name: mmx
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.mnn.zone/
@@ -13226,15 +11273,6 @@ ports:
   version: 0.43.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/microsoft/msquic
-  modules_support_date: ''
-  name: ms-quic
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Chlumsky/msdfgen
   modules_support_date: ''
   name: msdfgen
@@ -13253,15 +11291,6 @@ ports:
   version: 6.0.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/msgpack/msgpack-c
-  modules_support_date: ''
-  name: msgpack-c
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 6.0.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://msgpack.org
   modules_support_date: ''
   name: msgpack11
@@ -13269,15 +11298,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.0.10
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/chemeris/msinttypes
-  modules_support_date: ''
-  name: msinttypes
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/microsoft/msix-packaging
@@ -13350,15 +11370,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.3.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/PeterScott/murmur3
-  modules_support_date: ''
-  name: murmur3
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/aappleby/smhasher
@@ -13469,15 +11480,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/open-source-patterns/nanojsonc
-  modules_support_date: ''
-  name: nanojsonc
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 1.0.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://nanomsg.org/
   modules_support_date: ''
   name: nanomsg
@@ -13586,15 +11588,6 @@ ports:
   version: '6.4'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/microsoft/ndis-driver-library
-  modules_support_date: ''
-  name: ndis-driver-library
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Neargye/semver
   modules_support_date: ''
   name: neargye-semver
@@ -13611,24 +11604,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/intel/ARM_NEON_2_x86_SSE
-  modules_support_date: ''
-  name: neon2sse
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Unidata/netcdf-c
-  modules_support_date: ''
-  name: netcdf-c
-  revision_count: 23
-  status: ❔
-  tracking_issue: ''
-  version: 4.8.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/Unidata/netcdf-cxx4
@@ -13694,15 +11669,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ngtcp2/nghttp3
-  modules_support_date: ''
-  name: nghttp3
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 1.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: http://ngspice.sourceforge.net/
   modules_support_date: ''
   name: ngspice
@@ -13712,15 +11678,6 @@ ports:
   version: '41'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ngtcp2/ngtcp2
-  modules_support_date: ''
-  name: ngtcp2
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/ousnius/nifly
   modules_support_date: ''
   name: nifly
@@ -13728,15 +11685,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/NIFTI-Imaging/nifti_clib
-  modules_support_date: ''
-  name: nifticlib
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/nlohmann/fifo_map
@@ -13803,15 +11751,6 @@ ports:
   version: 1.3.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/Maratyszcza/NNPACK
-  modules_support_date: ''
-  name: nnpack
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/nodejs/node-addon-api
   modules_support_date: ''
   name: node-addon-api
@@ -13857,15 +11796,6 @@ ports:
   version: 11.3.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/NordicSemiconductor/pc-ble-driver
-  modules_support_date: ''
-  name: nrf-ble-driver
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 4.1.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://releases.mozilla.org/pub/nspr/
   modules_support_date: ''
   name: nspr
@@ -13882,15 +11812,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '3.99'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/google/nsync
-  modules_support_date: ''
-  name: nsync
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 1.26.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/JustasMasiulis/nt_wrapper
@@ -13918,24 +11839,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.2.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/Immediate-Mode-UI/Nuklear
-  modules_support_date: ''
-  name: nuklear
-  revision_count: 26
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/numactl/numactl
-  modules_support_date: ''
-  name: numactl
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 2.0.18
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://dpilger26.github.io/NumCpp
@@ -14041,15 +11944,6 @@ ports:
   modules_support_date: ''
   name: oatpp-postgresql
   revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/oatpp/oatpp-sqlite
-  modules_support_date: ''
-  name: oatpp-sqlite
-  revision_count: 5
   status: ❔
   tracking_issue: ''
   version: 1.3.0
@@ -14217,15 +12111,6 @@ ports:
   version: '3.4'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/kkos/oniguruma
-  modules_support_date: ''
-  name: oniguruma
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 6.9.7.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://onnx.ai
   modules_support_date: ''
   name: onnx
@@ -14324,15 +12209,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/KhronosGroup/OpenCL-Headers
-  modules_support_date: ''
-  name: opencl
-  revision_count: 13
-  status: ❔
-  tracking_issue: ''
-  version: v2023.02.06
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://opencolorio.org/
@@ -14434,24 +12310,6 @@ ports:
   version: '1.4'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: opengl
-  revision_count: 18
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/KhronosGroup/OpenGL-Registry
-  modules_support_date: ''
-  name: opengl-registry
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.openh264.org/
   modules_support_date: ''
   name: openh264
@@ -14549,60 +12407,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.2.0.33
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/OpenSCAP/openscap
-  modules_support_date: ''
-  name: openscap
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.7
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://openslide.org/
-  modules_support_date: ''
-  name: openslide
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 3.4.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://www.openssl.org
-  modules_support_date: ''
-  name: openssl
-  revision_count: 83
-  status: ❔
-  tracking_issue: ''
-  version: 3.3.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: openssl-unix
-  revision_count: 16
-  status: ❔
-  tracking_issue: ''
-  version: deprecated
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: openssl-uwp
-  revision_count: 16
-  status: ❔
-  tracking_issue: ''
-  version: deprecated
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: ''
-  modules_support_date: ''
-  name: openssl-windows
-  revision_count: 23
-  status: ❔
-  tracking_issue: ''
-  version: deprecated
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/PixarAnimationStudios/OpenSubdiv
@@ -14713,24 +12517,6 @@ ports:
   version: 3.6.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/xiph/opus
-  modules_support_date: ''
-  name: opus
-  revision_count: 18
-  status: ❔
-  tracking_issue: ''
-  version: 1.5.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/xiph/opusfile
-  modules_support_date: ''
-  name: opusfile
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 0.12+20221121
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://orc.apache.org/
   modules_support_date: ''
   name: orc
@@ -14831,15 +12617,6 @@ ports:
   version: 2.19.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/eclipse/paho.mqtt.c
-  modules_support_date: ''
-  name: paho-mqtt
-  revision_count: 20
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.13
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/eclipse/paho.mqtt.cpp
   modules_support_date: ''
   name: paho-mqttpp3
@@ -14930,15 +12707,6 @@ ports:
   version: '0'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/kgabis/parson
-  modules_support_date: ''
-  name: parson
-  revision_count: 12
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://crypto.stanford.edu/pbc
   modules_support_date: ''
   name: pbc
@@ -14993,15 +12761,6 @@ ports:
   version: '8.45'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/PCRE2Project/pcre2
-  modules_support_date: ''
-  name: pcre2
-  revision_count: 25
-  status: ❔
-  tracking_issue: ''
-  version: '10.43'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://pdal.io/
   modules_support_date: ''
   name: pdal
@@ -15009,15 +12768,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.5.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/PDAL/CAPI#readme
-  modules_support_date: ''
-  name: pdal-c
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 2.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://pdcurses.org/
@@ -15083,15 +12833,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/ntop/PF_RING
-  modules_support_date: ''
-  name: pfring
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 8.4.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: ''
   modules_support_date: ''
   name: pfultz2-linq
@@ -15108,15 +12849,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/victorfisac/Physac
-  modules_support_date: ''
-  name: physac
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: '1.1'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://icculus.org/physfs/
@@ -15182,15 +12914,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/dascandy/pixel
-  modules_support_date: ''
-  name: pixel
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.cairographics.org/releases
   modules_support_date: ''
   name: pixman
@@ -15198,15 +12921,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.43.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/pkgconf/pkgconf
-  modules_support_date: ''
-  name: pkgconf
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 2.2.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://invent.kde.org/libraries/plasma-wayland-protocols/-/tree/master/
@@ -15290,15 +13004,6 @@ ports:
   version: 1.8.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/saprykin/plibsys
-  modules_support_date: ''
-  name: plibsys
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 0.0.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/SergiusTheBest/plog
   modules_support_date: ''
   name: plog
@@ -15326,24 +13031,6 @@ ports:
   version: 0.4.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/pmem/pmdk
-  modules_support_date: ''
-  name: pmdk
-  revision_count: 18
-  status: ❔
-  tracking_issue: ''
-  version: 1.12.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/pmp-library/pmp-library
-  modules_support_date: ''
-  name: pmp-library
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 3.0.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: ''
   modules_support_date: ''
   name: pngpp
@@ -15369,15 +13056,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/pocketpy/pocketpy
-  modules_support_date: ''
-  name: pocketpy
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/pocoproject/poco
@@ -15469,15 +13147,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/nemequ/portable-snippets
-  modules_support_date: ''
-  name: portable-snippets
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/PortMidi/portmidi
@@ -15606,15 +13275,6 @@ ports:
   version: 3.21.12
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/protobuf-c/protobuf-c
-  modules_support_date: ''
-  name: protobuf-c
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/PragmaTwice/protopuf
   modules_support_date: ''
   name: protopuf
@@ -15677,15 +13337,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/wdas/ptex
-  modules_support_date: ''
-  name: ptex
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 2.4.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -15839,15 +13490,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/qhull/qhull
-  modules_support_date: ''
-  name: qhull
-  revision_count: 16
-  status: ❔
-  tracking_issue: ''
-  version: 8.0.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/pytorch/QNNPACK
@@ -16795,15 +14437,6 @@ ports:
   version: 3.8.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/dlbeer/quirc
-  modules_support_date: ''
-  name: quirc
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: '1.2'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://sourceforge.net/projects/qwt
   modules_support_date: ''
   name: qwt
@@ -16948,24 +14581,6 @@ ports:
   version: '1.9'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/raysan5/raylib
-  modules_support_date: ''
-  name: raygui
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: '4.0'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/raysan5/raylib
-  modules_support_date: ''
-  name: raylib
-  revision_count: 20
-  status: ❔
-  tracking_issue: ''
-  version: '5.0'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/rbdl/rbdl
   modules_support_date: ''
   name: rbdl
@@ -17036,15 +14651,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '8.2'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/xiaozhuai/readline-win32
-  modules_support_date: ''
-  name: readline-win32
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: '5.0'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.gaia-gis.it/gaia-sins/readosm-sources
@@ -17137,15 +14743,6 @@ ports:
   version: 0.0.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/DaanDeMeyer/reproc
-  modules_support_date: ''
-  name: reproc
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 14.2.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/qicosmos/rest_rpc
   modules_support_date: ''
   name: rest-rpc
@@ -17189,33 +14786,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.7.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/christophercrouzet/rexo
-  modules_support_date: ''
-  name: rexo
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/rhash/RHash
-  modules_support_date: ''
-  name: rhash
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.4
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/offscale/rhasheq
-  modules_support_date: ''
-  name: rhasheq
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/libdmusic/riffcpp
@@ -17535,15 +15105,6 @@ ports:
   version: 0.11.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/aws/s2n-tls
-  modules_support_date: ''
-  name: s2n
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.8
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/dcleblanc/SafeInt
   modules_support_date: ''
   name: safeint
@@ -17551,15 +15112,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 3.0.28
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/HappySeaFox/sail
-  modules_support_date: ''
-  name: sail
-  revision_count: 23
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -17596,15 +15148,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 9.10.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/sass/sassc
-  modules_support_date: ''
-  name: sassc
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 3.6.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://saucer.github.io/
@@ -17806,24 +15349,6 @@ ports:
   version: 1.0.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/libsdl-org/SDL_image
-  modules_support_date: ''
-  name: sdl2-image
-  revision_count: 18
-  status: ❔
-  tracking_issue: ''
-  version: 2.8.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/libsdl-org/SDL_mixer
-  modules_support_date: ''
-  name: sdl2-mixer
-  revision_count: 25
-  status: ❔
-  tracking_issue: ''
-  version: 2.8.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://wohlsoft.github.io/SDL-Mixer-X
   modules_support_date: ''
   name: sdl2-mixer-ext
@@ -17860,15 +15385,6 @@ ports:
   version: 0.16.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/sandialabs/seacas
-  modules_support_date: ''
-  name: seacas
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/microsoft/SEAL
   modules_support_date: ''
   name: seal
@@ -17885,15 +15401,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.4.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/bitcoin-core/secp256k1
-  modules_support_date: ''
-  name: secp256k1
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/kmhofmann/selene
@@ -17921,15 +15428,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 0.7.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/septag/dmon
-  modules_support_date: ''
-  name: septag-dmon
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -17995,15 +15493,6 @@ ports:
   version: 2.6.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/mjsottile/sfsexp
-  modules_support_date: ''
-  name: sfsexp
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/shader-slang/slang
   modules_support_date: ''
   name: shader-slang
@@ -18047,24 +15536,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.10.3-1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ShiftMediaProject/gnutls
-  modules_support_date: ''
-  name: shiftmedia-libgnutls
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 3.7.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ShiftMediaProject/libgpg-error
-  modules_support_date: ''
-  name: shiftmedia-libgpg-error
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: '1.45'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/Milerius/shiva
@@ -18121,15 +15592,6 @@ ports:
   version: 1.0.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/coin3d/simage
-  modules_support_date: ''
-  name: simage
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://simtk.org/home/simbody
   modules_support_date: ''
   name: simbody
@@ -18146,15 +15608,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 5.3.128
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/simd-everywhere/simde
-  modules_support_date: ''
-  name: simde
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: 0.8.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://simdjson.org/
@@ -18209,15 +15662,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: '4.22'
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ashvardanian/SimSIMD
-  modules_support_date: ''
-  name: simsimd
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 1.4.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/webmproject/sjpeg
@@ -18290,15 +15734,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 2.4.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/vpetrigo/smf
-  modules_support_date: ''
-  name: smf
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: 0.1.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.libsdl.org/projects/smpeg/
@@ -18400,24 +15835,6 @@ ports:
   version: 1.0.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/OpenEtherCATsociety/SOEM
-  modules_support_date: ''
-  name: soem
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/paralin/soil
-  modules_support_date: ''
-  name: soil
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/SpartanJ/SOIL2
   modules_support_date: ''
   name: soil2
@@ -18425,15 +15842,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.3.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/floooh/sokol
-  modules_support_date: ''
-  name: sokol
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ThePhD/sol2
@@ -18571,15 +15979,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/spdk/isa-l
-  modules_support_date: ''
-  name: spdk-isal
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/gabime/spdlog
   modules_support_date: ''
   name: spdlog
@@ -18596,15 +15995,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/xiph/speex
-  modules_support_date: ''
-  name: speex
-  revision_count: 12
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://speex.org/
@@ -18724,24 +16114,6 @@ ports:
   tracking_issue: https://github.com/fnc12/sqlite_orm/pull/1336
   version: 1.9.1
 - current_min_cpp_version: Unknown
-  help_wanted: 💀
-  homepage: https://sqlite.org/
-  modules_support_date: ''
-  name: sqlite3
-  revision_count: 66
-  status: ❔
-  tracking_issue: ''
-  version: 3.45.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/SRombauts/SQLiteCpp
-  modules_support_date: ''
-  name: sqlitecpp
-  revision_count: 14
-  status: ❔
-  tracking_issue: ''
-  version: 3.3.1
-- current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/rbock/sqlpp11
   modules_support_date: ''
@@ -18858,15 +16230,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/nothings/stb
-  modules_support_date: ''
-  name: stb
-  revision_count: 22
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/NVIDIA/stdexec
@@ -19139,15 +16502,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/tcltk/tcl
-  modules_support_date: ''
-  name: tcl
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: core-9-0-a1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://sourceforge.net/projects/tclap/
   modules_support_date: ''
   name: tclap
@@ -19245,15 +16599,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.7.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/orangeduck/tgc
-  modules_support_date: ''
-  name: tgc
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://tgui.eu
@@ -19356,24 +16701,6 @@ ports:
   version: 2.1.25
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/kokke/tiny-AES-c
-  modules_support_date: ''
-  name: tiny-aes-c
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/kokke/tiny-bignum-c
-  modules_support_date: ''
-  name: tiny-bignum-c
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/tiny-dnn/tiny-dnn
   modules_support_date: ''
   name: tiny-dnn
@@ -19392,15 +16719,6 @@ ports:
   version: 2.0.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/kokke/tiny-regex-c
-  modules_support_date: ''
-  name: tiny-regex-c
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/intel/tinycbor
   modules_support_date: ''
   name: tinycbor
@@ -19417,15 +16735,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/cxong/tinydir
-  modules_support_date: ''
-  name: tinydir
-  revision_count: 5
-  status: ❔
-  tracking_issue: ''
-  version: 1.2.6
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/cdcseacave/TinyEXIF
@@ -19672,15 +16981,6 @@ ports:
   version: 3.4.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/torch/torch7
-  modules_support_date: ''
-  name: torch-th
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/wolfpld/tracy
   modules_support_date: ''
   name: tracy
@@ -19706,15 +17006,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/laurikari/tre
-  modules_support_date: ''
-  name: tre
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 0.8.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/DatabaseGroup/tree-similarity
@@ -19834,15 +17125,6 @@ ports:
   version: 2.1.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/powturbo/Turbo-Base64
-  modules_support_date: ''
-  name: turbobase64
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/magiblot/tvision
   modules_support_date: ''
   name: tvision
@@ -19897,15 +17179,6 @@ ports:
   version: '4.11'
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/Azure/umock-c
-  modules_support_date: ''
-  name: umock-c
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/uni-algo/uni-algo
   modules_support_date: ''
   name: uni-algo
@@ -19913,15 +17186,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/unicorn-engine/unicorn
-  modules_support_date: ''
-  name: unicorn
-  revision_count: 24
-  status: ❔
-  tracking_issue: ''
-  version: 2.0.1
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/CaptainCrowbar/unicorn-lib
@@ -19951,15 +17215,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/lurcher/unixODBC
-  modules_support_date: ''
-  name: unixodbc
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 2.3.11
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/martinus/unordered_dense
   modules_support_date: ''
   name: unordered-dense
@@ -19985,15 +17240,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 7.0.7
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/protocolbuffers/upb/
-  modules_support_date: ''
-  name: upb
-  revision_count: 8
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/ros/urdfdom
@@ -20059,24 +17305,6 @@ ports:
   version: 2.3.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/uNetworking/uSockets
-  modules_support_date: ''
-  name: usockets
-  revision_count: 15
-  status: ❔
-  tracking_issue: ''
-  version: 0.8.6
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/sctplab/usrsctp
-  modules_support_date: ''
-  name: usrsctp
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 0.9.5.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/protocolbuffers/protobuf
   modules_support_date: ''
   name: utf8-range
@@ -20093,15 +17321,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/JuliaLang/utf8proc
-  modules_support_date: ''
-  name: utf8proc
-  revision_count: 9
-  status: ❔
-  tracking_issue: ''
-  version: 2.9.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/nemtrif/utfcpp
@@ -20573,15 +17792,6 @@ ports:
   version: 0.1.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/vsg-dev/vsgXchange
-  modules_support_date: ''
-  name: vsgxchange
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 1.0.5
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/Kitware/VTK
   modules_support_date: ''
   name: vtk
@@ -20746,24 +17956,6 @@ ports:
   version: 0.13.5
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/rafat/wavelib
-  modules_support_date: ''
-  name: wavelib
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/dbry/WavPack
-  modules_support_date: ''
-  name: wavpack
-  revision_count: 16
-  status: ❔
-  tracking_issue: ''
-  version: 5.6.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://wayland.freedesktop.org
   modules_support_date: ''
   name: wayland
@@ -20807,15 +17999,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.0.2277.86
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/piscisaureus/wepoll
-  modules_support_date: ''
-  name: wepoll
-  revision_count: 4
-  status: ❔
-  tracking_issue: ''
-  version: 1.5.8
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -21052,15 +18235,6 @@ ports:
   version: 3.2.4
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/wangyi-fudan/wyhash
-  modules_support_date: ''
-  name: wyhash
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://developer.x-plane.com/sdk/
   modules_support_date: ''
   name: x-plane
@@ -21250,15 +18424,6 @@ ports:
   version: 1.5.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/brechtsanders/xlsxio
-  modules_support_date: ''
-  name: xlsxio
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 0.2.34
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.aleksey.com/xmlsec/
   modules_support_date: ''
   name: xmlsec
@@ -21266,15 +18431,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.3.3
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/google/XNNPACK
-  modules_support_date: ''
-  name: xnnpack
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://xcb.freedesktop.org/
@@ -21394,24 +18550,6 @@ ports:
   version: 1.4.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/Cyan4973/xxHash
-  modules_support_date: ''
-  name: xxhash
-  revision_count: 11
-  status: ❔
-  tracking_issue: ''
-  version: 0.8.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/lloyd/yajl
-  modules_support_date: ''
-  name: yajl
-  revision_count: 3
-  status: ❔
-  tracking_issue: ''
-  version: 2.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/jbeder/yaml-cpp
   modules_support_date: ''
   name: yaml-cpp
@@ -21421,15 +18559,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/VirusTotal/yara
-  modules_support_date: ''
-  name: yara
-  revision_count: 10
-  status: ❔
-  tracking_issue: ''
-  version: 4.3.2
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/niXman/yas
   modules_support_date: ''
   name: yas
@@ -21437,15 +18566,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 7.1.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/yasm/yasm
-  modules_support_date: ''
-  name: yasm
-  revision_count: 6
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
@@ -21491,15 +18611,6 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 1.5.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
-  homepage: https://github.com/ibireme/yyjson
-  modules_support_date: ''
-  name: yyjson
-  revision_count: 7
-  status: ❔
-  tracking_issue: ''
-  version: 0.8.0
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://github.com/Z3Prover/z3
@@ -21584,15 +18695,6 @@ ports:
   version: 0.2.3
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://www.zlib.net/
-  modules_support_date: ''
-  name: zlib
-  revision_count: 37
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.1
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/zlib-ng/zlib-ng
   modules_support_date: ''
   name: zlib-ng
@@ -21674,15 +18776,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/soasis/encoding_tables
-  modules_support_date: ''
-  name: ztd-encoding-tables
-  revision_count: 1
-  status: ❔
-  tracking_issue: ''
-  version: Unknown
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://github.com/soasis/idk
   modules_support_date: ''
   name: ztd-idk
@@ -21728,15 +18821,6 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/zyantific/zycore-c
-  modules_support_date: ''
-  name: zycore
-  revision_count: 2
-  status: ❔
-  tracking_issue: ''
-  version: 1.3.0
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://zydis.re
   modules_support_date: ''
   name: zydis
@@ -21755,23 +18839,23 @@ ports:
   version: Unknown
 - current_min_cpp_version: Unknown
   help_wanted: ❔
-  homepage: https://github.com/gdraheim/zziplib
-  modules_support_date: ''
-  name: zziplib
-  revision_count: 17
-  status: ❔
-  tracking_issue: ''
-  version: 0.13.73
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
   homepage: https://www.dealii.org
-  import_statement: dealii
   modules_support_date: 2025/7/22
   name: deal.II
   revision_count: 1
   status: ✅
   tracking_issue: https://github.com/dealii/dealii/issues/18071
   version: 9.7.0
+- current_min_cpp_version: Unknown
+  help_wanted: 💀
+  homepage: ''
+  import_statement: ''
+  module_native: ''
+  modules_support_date: ''
+  name: sqlite3
+  status: '?'
+  tracking_issue: ''
+  version: ''
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: ''
