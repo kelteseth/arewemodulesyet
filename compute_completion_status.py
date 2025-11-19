@@ -5,8 +5,11 @@ import subprocess
 import json
 import os
 import yaml
-import datetime
+from datetime import datetime
 from pathlib import Path
+
+GIT_DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S %z"
+ISO_DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S%z"
 
 MASTER_BRANCH = "master"
 OUTPUT_FILE = Path("static") / "data" / "cumulative_stats.json"
@@ -20,18 +23,22 @@ DATA_FILES = [
 PROGRESS_FILE = DATA_DIR / "progress.yml"
 
 
+def parse_git_datetime(date_str: str) -> datetime:
+    "Parse a Git date into a Python datetime"
+    return datetime.strptime(date_str, GIT_DATETIME_FORMAT)
+
+
+def parse_iso_datetime(date_str: str) -> datetime:
+    "Parse a ISO date into a Python datetime"
+    return datetime.strptime(date_str, ISO_DATETIME_FORMAT)
+
+
 def git_date_to_iso(git_date_str: str) -> str:
     "Convert a git date into a ISO date (parseable by Luxon)"
 
-    input_format = "%Y-%m-%d %H:%M:%S %z"
-    output_format = "%Y-%m-%dT%H:%M:%S%z"
-
     try:
-        # 1. Analizza la stringa di input nella struttura datetime
-        dt_object = datetime.datetime.strptime(git_date_str, input_format)
-
-        # 2. Riformatta l'oggetto datetime nel formato ISO 8601 corretto
-        iso_str = dt_object.strftime(output_format)
+        dt_object = parse_git_datetime(git_date_str)
+        iso_str = dt_object.strftime(ISO_DATETIME_FORMAT)
 
         return iso_str
 
@@ -55,15 +62,10 @@ def run_git_command(command: list[str]) -> str:
         raise
 
 
-def parse_datetime(date_str: str) -> datetime.datetime:
-    "Parse a Git ISO date into a Python datetime"
-    return datetime.datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S %z")
-
-
 def get_latest_date(filepath: Path) -> tuple[str | None, list[dict[str, int | str]]]:
     """
     Reads the existing JSON file and returns the date of the last processed
-    commit (if it exist) in the ISO format required by 'git log --since' and
+    commit (if it exist) in the format required by 'git log --since' and
     the data file itself.
     """
     if not filepath.exists():
@@ -79,35 +81,30 @@ def get_latest_date(filepath: Path) -> tuple[str | None, list[dict[str, int | st
 
     if existing_data:
         # Initialize the latest date tracker
-        latest_date = None
-        latest_date_string = None
+        latest_date: datetime | None = None
 
         # 1. Iterate through all entries to find the maximum date
         for entry in existing_data:
             date_str = str(entry.get("commit_date", ""))
             if date_str:
-                # Use datetime.datetime.strptime with the specific format
-                # The format string %Y-%m-%d %H:%M:%S %z matches the
-                # "2025-11-05 21:38:28 -0700" style.
                 try:
-                    current_date = parse_datetime(date_str)
+                    current_date = parse_iso_datetime(date_str)
 
                     if latest_date is None or current_date > latest_date:
                         latest_date = current_date
-                        latest_date_string = date_str  # Keep the original format
                 except ValueError:
                     # Handle any entries with incorrectly formatted dates
                     print(f"Skipping entry with malformed date: {date_str}")
 
-        # Git log --since expects a date format like "YYYY-MM-DD HH:MM:SS TZ"
-        # We return the exact string, and the existing data list.
-        print(f"Latest commit date found: {latest_date_string}")
-        return latest_date_string, existing_data
+        print(f"Latest commit date found: {latest_date}")
+        return latest_date, existing_data
 
     return None, []
 
 
-def get_commit_history(since_date_str: str | None = None) -> list[dict[str, int | str]]:
+def get_commit_history(
+    since_date: datetime | None = None,
+) -> list[dict[str, int | str]]:
     """Gets commit SHA and author date for all commits on the main branch."""
 
     git_command = [
@@ -118,11 +115,18 @@ def get_commit_history(since_date_str: str | None = None) -> list[dict[str, int 
         MASTER_BRANCH,
     ]
 
-    since_date: datetime.datetime | None = None
-    if since_date_str:
+    if since_date:
         # Add the filtering argument to the git log command
-        git_command.append(f'--since="{since_date_str}"')
-        since_date = parse_datetime(since_date_str)
+        git_command.append(
+            (
+                '--since="{since_date_str}"'.format(
+                    since_date_str=datetime.strftime(
+                        since_date,
+                        GIT_DATETIME_FORMAT,
+                    ),
+                )
+            ),
+        )
 
     # --pretty=format:'%H|%ad' gets SHA and date, separated by a pipe
     log_output = run_git_command(git_command)
@@ -132,7 +136,7 @@ def get_commit_history(since_date_str: str | None = None) -> list[dict[str, int 
     for line in log_output.splitlines():
         sha, date = line.split("|", 1)
 
-        cur_datetime = parse_datetime(date)
+        cur_datetime = parse_git_datetime(date)
         if (not since_date) or (cur_datetime > since_date):
             history.append({"sha": sha, "date": date})
 
@@ -142,13 +146,9 @@ def get_commit_history(since_date_str: str | None = None) -> list[dict[str, int 
 def process_history() -> None:
     """Iterate through history and collect data."""
 
-    # 1. Get the last recorded date and existing data (Optimized step)
     since_date, historical_data = get_latest_date(OUTPUT_FILE)
+    new_commits = get_commit_history(since_date=since_date)
 
-    # 2. Get history, only including commits newer than the last recorded one
-    new_commits = get_commit_history(since_date_str=since_date)
-
-    # Create the output directory if it doesn't exist
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
     # Use git reset --hard to ensure a clean state before starting

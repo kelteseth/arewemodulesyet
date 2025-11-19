@@ -55,10 +55,11 @@ python.exe .\generate_vcpkg_usage_stats.py --merge
 Edit `data/progress_overwrite.yml` if you want to update status or add new entries which doesn't
 have a vcpkg entry. Edit `data/raw_progress.yml` if you want to add/delete entries.
 
-Then execute the following command to generate `progress.yml`:
+Then execute the following commands to generate `progress.yml` and update `static/data/cumulative_stats.json`:
 
 ```bash
 python.exe .\generate_vcpkg_usage_stats.py --merge
+python.exe .\compute_completion_status.py
 ```
 
 It will be appreciated if you can run `hugo serve` to check your change.
