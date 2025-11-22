@@ -1,9 +1,6 @@
-#!/usr/bin/env python3
-
 from typing import Any
 import subprocess
 import json
-import os
 import yaml
 from datetime import datetime
 from pathlib import Path
@@ -14,6 +11,7 @@ ISO_DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S%z"
 MASTER_BRANCH = "master"
 OUTPUT_FILE = Path("static") / "data" / "cumulative_stats.json"
 DATA_DIR = Path("data")
+GENERATION_SCRIPT = Path("tools") / "merge_vcpkg_package_list_progress.py"
 DATA_FILES = [
     DATA_DIR / "progress_overwrite.yml",
     DATA_DIR / "raw_progress.yml",

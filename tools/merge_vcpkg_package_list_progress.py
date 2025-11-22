@@ -1,6 +1,7 @@
 import os
 import argparse
 import yaml
+from datetime import datetime
 
 def load_and_merge_yaml(file1, file2, output_file):
     print("\n ", file1, "\n ", file2, "\n ", output_file)
@@ -45,6 +46,52 @@ def load_and_merge_yaml(file1, file2, output_file):
                 "version": item.get("version", ""),
                 "import_statement": item.get("import_statement", "")
             })
+    
+    # Calculate progress statistics
+    total_projects = len(merged_ports)
+    completed_projects = sum(1 for item in merged_ports if item.get('status') == '✅')
+    progress_percent = (completed_projects / total_projects * 100) if total_projects > 0 else 0
+    
+    # Collect dates for projects with modules support
+    modules_support_dates = [
+        item['modules_support_date'] 
+        for item in merged_ports 
+        if item.get('status') == '✅' and item.get('modules_support_date', '').strip()
+    ]
+    
+    # Calculate estimated completion date
+    estimated_completion_date = None
+    if modules_support_dates:
+        try:
+            # Parse dates in format "2020/6/23"
+            timestamps = []
+            for date_str in modules_support_dates:
+                parts = date_str.split('/')
+                if len(parts) == 3:
+                    year, month, day = int(parts[0]), int(parts[1]), int(parts[2])
+                    timestamps.append(datetime(year, month, day).timestamp())
+            
+            if timestamps:
+                oldest_timestamp = min(timestamps)
+                current_timestamp = datetime.now().timestamp()
+                months_passed = (current_timestamp - oldest_timestamp) / (30 * 24 * 3600)
+                
+                if months_passed > 0:
+                    monthly_rate = len(timestamps) / months_passed
+                    remaining_projects = total_projects - completed_projects
+                    months_to_completion = remaining_projects / monthly_rate
+                    estimated_completion_timestamp = current_timestamp + months_to_completion * 30 * 24 * 3600
+                    estimated_completion_date = datetime.fromtimestamp(estimated_completion_timestamp).strftime('%Y-%m-%d')
+        except Exception as e:
+            print(f"Warning: Could not calculate estimated completion date: {e}")
+    
+    # Add progress stats to header
+    raw_ports['total_projects'] = total_projects
+    raw_ports['completed_projects'] = completed_projects
+    raw_ports['progress_percent'] = round(progress_percent, 2)
+    if estimated_completion_date:
+        raw_ports['estimated_completion_date'] = estimated_completion_date
+    
     # Reconstruct the merged data with header
     merged_data = {
         'header': raw_ports,
