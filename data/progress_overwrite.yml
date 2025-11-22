@@ -4,13 +4,6 @@
 # - ⚙️ Worked on
 # - ⚠️ Reported
 # - ❌ Corresponding tracking issue was closed and no planned support anytime soon.
-# - 💀 Needs support old library/compiler/build tool to even start adding support for `modules`.
-# - 🤡 Maintainer does want to keep it oldschool. No plan to update anytime soon.
-
-# ### help_wanted
-# - ✅ Yes
-# - ❌ No
-# - 💀 Does not allow outside contributions
 
 ports:
 - name: fmt
@@ -40,10 +33,8 @@ ports:
   status: ⚠️
   tracking_issue: "https://gitlab.kitware.com/vtk/vtk/-/issues/19337"
 - name: itk
-  help_wanted: ✅
   current_min_cpp_version: 17
 - name: hikogui
-  help_wanted: ✅
   current_min_cpp_version: 20
   tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
 - name: async-simple
@@ -51,8 +42,6 @@ ports:
   modules_support_date: 2023/6/19
   status: ✅
   current_min_cpp_version: 20
-- name: sqlite3
-  help_wanted: 💀
 - current_min_cpp_version: 14
   homepage: https://github.com/googleapis/google-cloud-cpp
   name: google-cloud-cpp
@@ -163,7 +152,6 @@ ports:
   import_statement: BS.thread_pool
   modules_support_date: 2024/12/19
   status: ✅
-  help_wanted: ❌
   current_min_cpp_version: 17
 - name: outcome
   import_statement: macro-defined
@@ -174,26 +162,22 @@ ports:
   import_statement: sqlite_orm
   modules_support_date: 2025/2/6
   status: ✅
-  help_wanted: ❌
   current_min_cpp_version: 14
   tracking_issue: https://github.com/fnc12/sqlite_orm/pull/1336
 - name: tomlplusplus
   import_statement: tomlplusplus
   modules_support_date: 2025/4/1
   status: ✅
-  help_wanted: ❌
   tracking_issue: https://github.com/marzer/tomlplusplus/pull/266
 - name: boost-any
   import_statement: boost.any
   modules_support_date: 2025/5/12
   status: ✅
-  help_wanted: ❌
   tracking_issue: https://github.com/boostorg/any/pull/30
 - name: boost-type-index
   import_statement: boost.type_index
   modules_support_date: 2025/5/12
   status: ✅
-  help_wanted: ❌
   tracking_issue: https://github.com/apolukhin/type_index/pull/15
 - name: proxy
   import_statement: proxy
@@ -324,7 +308,6 @@ ports:
   modules_support_date: 2022/6/26
   homepage: https://github.com/royjacobson/ser20
 - name: entt
-  help_wanted: ❔
   homepage: https://github.com/skypjack/entt
   modules_support_date: ''
   status: ⚙️
@@ -365,13 +348,11 @@ ports:
   modules_support_date: 2025/10/1
   homepage: https://github.com/AlexWorx/ALib-Class-Library
 - name: re2
-  help_wanted: ❔
   homepage: https://github.com/google/re2
   modules_support_date: ''
   status: ⚙️
   tracking_issue: https://code-review.googlesource.com/c/re2/+/64010
 - name: jwt-cpp
-  help_wanted: ❔
   homepage: https://github.com/Thalhammer/jwt-cpp
   modules_support_date: ''
   status: ⚙️
@@ -411,7 +392,6 @@ ports:
   module_native: ✅
   modules_support_date: 2025/04/1
   homepage: https://github.com/superg/redumper
-
 
 ###############################################################################
 # This is Qt6 and currently all of them share the same issue

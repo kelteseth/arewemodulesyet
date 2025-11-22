@@ -3,3 +3,73 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Center header and adjust menu for monospace font */
+.nav {
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+.logo {
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+#menu {
+    flex-shrink: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#menu a {
+    font-size: 15px;
+}
+
+#menu li + li {
+    margin-inline-start: 12px;
+}
+
+/* Mobile responsive navigation */
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 20px;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+    }
+    
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #menu li {
+        margin: 8px 0;
+    }
+    
+    #menu li + li {
+        margin-inline-start: 0;
+    }
+    
+    #menu a {
+        font-size: 16px;
+        padding: 8px 16px;
+        display: block;
+    }
+}

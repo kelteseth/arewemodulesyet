@@ -1,0 +1,34 @@
+<!-- Progress Plot Only -->
+<div class="progress-stats">
+    <div class="progress-container" style="width: 100%;">
+        <div style="height: 600px">
+            <canvas id="project-cumulative-chart"></canvas>
+        </div>
+    </div>
+    
+    <!-- Display Header Information -->
+    <div style="margin-bottom: 1rem; margin-top: 1rem; font-size: small; color: gray;">
+        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> Website last built: {{ now.Format "2 January 2006" }}
+        </p>
+    </div>
+    
+    <script src="/js/chart.js"></script>
+    <script src="/js/luxon.min.js"></script>
+    <script src="/js/chartjs-adapter-luxon.min.js"></script>
+    <script src="/js/historical_plot.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            plotHistoricalData();
+            
+            // Listen for theme changes
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    // Small delay to allow the theme change to complete
+                    setTimeout(updateChartTheme, 50);
+                });
+            }
+        });
+    </script>
+</div>

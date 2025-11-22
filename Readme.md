@@ -9,11 +9,11 @@ Example port
 ports: 
 - name: fmt
   # Can be different from lib name. For example vulkan-cpp uses vulkan_cpp!
+  # `fmt` becomes: `import fmt;`
   import_statement: fmt
-  # Date since when the lib has modules support. Used for extrapolating finish date
+  # Date since when the lib has modules support. Used for extrapolating finish date (YYYY/M/DD)
   modules_support_date: 2024/5/22 
   status: ✅
-  help_wanted: ❌
   current_min_cpp_version: 11
   # These are often multiple issues, but always try to link the main issue
   tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"
@@ -27,28 +27,14 @@ Note that most projects do not even have an issue for tracking `modules` support
 - ⚙️ Worked on
 - ⚠️ Reported
 - ❌ Corresponding tracking issue was closed and no planned support anytime soon.
-- 💀 Needs support old library/compiler/build tool to even start adding support for `modules`.
-- 🤡 Maintainer does want to keep it oldschool. No plan to update anytime soon.
-
-### help_wanted
-- ✅ Yes
-- ❌ No
-- 💀 Does not allow outside contributions
 
 ### Dependencies
-1. [Hugo](https://gohugo.io/)
-1. [Python3](https://www.python.org/downloads/) and the `pip` dependencies below. 
-1. Optional: Latest [vcpkg](https://github.com/microsoft/vcpkg)
-
-```bash
-# Install python dependencies
-pip install pyyaml gitpython termcolor
-# Start local hugo
-hugo serve
-# Update your progress_overwrite.yml and genererate progress.yml
-# hugo will then automatically refresh
-python.exe .\generate_vcpkg_usage_stats.py --merge
-```
+1. [Install Hugo Extended](https://gohugo.io/)
+    -  🪟 `winget install Hugo.Hugo.Extended`
+    -  🐧 & 🍏 [Download on Github](https://github.com/gohugoio/hugo/releases)
+1. [Python 3 via uv](https://docs.astral.sh/uv/)
+    -  🪟 `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+    -  🐧 & 🍏 `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
 ### How to contribute
 
@@ -58,17 +44,17 @@ have a vcpkg entry. Edit `data/raw_progress.yml` if you want to add/delete entri
 Then execute the following commands to generate `progress.yml` and update `static/data/cumulative_stats.json`:
 
 ```bash
-python.exe .\generate_vcpkg_usage_stats.py --merge
-python.exe .\compute_completion_status.py
+uv run  tools/merge_vcpkg_package_list_progress.py
+uv run  tools/compute_completion_status.py
 ```
 
 It will be appreciated if you can run `hugo serve` to check your change.
 
 For other documents, see contents in `content`.
 
-### Optionally rengerate raw_progress.yml
+### Optionally regenerate raw_progress.yml
 ```bash
-python.exe generate_vcpkg_usage_stats.py --repo_path=C:\vcpkg
+uv run  tools/generate_vcpkg_package_list.py
 ```
 
 ### Website structure

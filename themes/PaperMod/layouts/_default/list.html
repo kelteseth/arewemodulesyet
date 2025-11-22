@@ -38,18 +38,15 @@
 </div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
-
-{{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
-{{- end }}
-
-{{- $paginator := .Paginate $pages }}
-
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- if and .IsHome site.Params.homeInfoParams }}
 {{- partial "home_info.html" . }}
 {{- end }}
+
+{{- if not .IsHome }}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- $paginator := .Paginate $pages }}
 
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
@@ -115,6 +112,8 @@
   </nav>
 </footer>
 {{- end }}
+
+{{- end }}{{/* end .IsHome */}}
 
 {{- end }}{{/* end profileMode */}}
 

@@ -1,0 +1,27 @@
+<!-- Progress Plot Only -->
+<div class="progress-stats">
+    <div class="progress-container" style="width: 100%;">
+        <div style="height: 600px">
+            <canvas id="project-cumulative-chart"></canvas>
+        </div>
+    </div>
+    <script src="/js/chart.js"></script>
+    <script src="/js/luxon.min.js"></script>
+    <script src="/js/chartjs-adapter-luxon.min.js"></script>
+    <script src="/js/historical_plot.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            plotHistoricalData();
+            
+            // Listen for theme changes
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    // Small delay to allow the theme change to complete
+                    setTimeout(updateChartTheme, 50);
+                });
+            }
+        });
+    </script>
+</div>

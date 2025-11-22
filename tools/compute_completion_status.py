@@ -14,7 +14,6 @@ ISO_DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S%z"
 MASTER_BRANCH = "master"
 OUTPUT_FILE = Path("static") / "data" / "cumulative_stats.json"
 DATA_DIR = Path("data")
-GENERATION_SCRIPT = Path("generate_vcpkg_usage_stats.py")
 DATA_FILES = [
     DATA_DIR / "progress_overwrite.yml",
     DATA_DIR / "raw_progress.yml",
@@ -179,7 +178,7 @@ def process_history() -> None:
             if GENERATION_SCRIPT.exists():
                 # Suppress output of the sub-script
                 _ = subprocess.run(
-                    ["python3", str(GENERATION_SCRIPT), "--merge"],
+                    ["python3", str(GENERATION_SCRIPT)],
                     check=True,
                     capture_output=True,
                 )
