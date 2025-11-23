@@ -574,7 +574,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/alibaba/async_simple
   import_statement: async_simple
-  modules_support_date: 2023/6/19
+  modules_support_date: 2023-06-19
   name: async-simple
   revision_count: 2
   status: ✅
@@ -1322,7 +1322,7 @@ ports:
   help_wanted: ❌
   homepage: https://github.com/boostorg/any
   import_statement: boost.any
-  modules_support_date: 2025/5/12
+  modules_support_date: 2025-05-12
   name: boost-any
   revision_count: 23
   status: ✅
@@ -2133,7 +2133,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/boostorg/pfr
   import_statement: boost.pfr
-  modules_support_date: 2024/8/1
+  modules_support_date: 2024-08-01
   name: boost-pfr
   revision_count: 12
   status: ✅
@@ -2513,7 +2513,7 @@ ports:
   help_wanted: ❌
   homepage: https://github.com/boostorg/type_index
   import_statement: boost.type_index
-  modules_support_date: 2025/5/12
+  modules_support_date: 2025-05-12
   name: boost-type-index
   revision_count: 23
   status: ✅
@@ -3811,7 +3811,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/microsoft/cppgraphqlgen
   import_statement: GraphQL.Service
-  modules_support_date: 2024/9/16
+  modules_support_date: 2024-09-16
   name: cppgraphqlgen
   revision_count: 30
   status: ✅
@@ -3875,7 +3875,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/jeremy-rifkin/cpptrace
   import_statement: cpptrace
-  modules_support_date: 2025/5/27
+  modules_support_date: 2025-05-27
   name: cpptrace
   revision_count: 11
   status: ✅
@@ -4092,7 +4092,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/hanickadot/compile-time-regular-expressions
   import_statement: ctre
-  modules_support_date: 2024/5/17
+  modules_support_date: 2024-05-17
   name: ctre
   revision_count: 11
   status: ✅
@@ -5290,7 +5290,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/spnda/fastgltf
   import_statement: fastgltf
-  modules_support_date: 2024/5/15
+  modules_support_date: 2024-05-15
   name: fastgltf
   revision_count: 8
   status: ✅
@@ -5534,7 +5534,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/tcbrindle/flux
   import_statement: flux
-  modules_support_date: 2023/8/3
+  modules_support_date: 2023-08-03
   name: flux
   revision_count: 1
   status: ✅
@@ -5752,7 +5752,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/ArthurSonzogni/FTXUI
   import_statement: ftxui
-  modules_support_date: 2025/6/4
+  modules_support_date: 2025-06-04
   name: ftxui
   revision_count: 9
   status: ✅
@@ -6879,7 +6879,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/STEllAR-GROUP/hpx
   import_statement: HPX.*
-  modules_support_date: 2024/9/6
+  modules_support_date: 2024-09-06
   name: hpx
   revision_count: 34
   status: ✅
@@ -8374,7 +8374,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/jeremy-rifkin/libassert
   import_statement: libassert
-  modules_support_date: 2025/6/20
+  modules_support_date: 2025-06-20
   name: libassert
   revision_count: 7
   status: ✅
@@ -10589,7 +10589,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/Neargye/magic_enum
   import_statement: magic_enum
-  modules_support_date: 2024/5/9
+  modules_support_date: 2024-05-09
   name: magic-enum
   revision_count: 21
   status: ✅
@@ -11130,7 +11130,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/mpusz/units
   import_statement: mp_units
-  modules_support_date: 2024/1/6
+  modules_support_date: 2024-01-06
   name: mp-units
   revision_count: 6
   status: ✅
@@ -11698,7 +11698,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/nlohmann/json
   import_statement: nlohmann.json
-  modules_support_date: 2025/6/29
+  modules_support_date: 2025-06-29
   name: nlohmann-json
   revision_count: 25
   status: ✅
@@ -12176,7 +12176,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/kcat/openal-soft
   import_statement: openal.*
-  modules_support_date: 2025/9/2
+  modules_support_date: 2025-09-02
   name: openal-soft
   revision_count: 39
   status: ✅
@@ -13060,7 +13060,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/pocoproject/poco
   import_statement: Poco
-  modules_support_date: 2025/9/20
+  modules_support_date: 2025-09-20
   name: poco
   revision_count: 46
   status: ✅
@@ -13304,7 +13304,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/microsoft/proxy
   import_statement: proxy
-  modules_support_date: 2025/5/17
+  modules_support_date: 2025-05-17
   name: proxy
   revision_count: 9
   status: ✅
@@ -15215,7 +15215,7 @@ ports:
   help_wanted: ❔
   homepage: https://scnlib.dev/
   import_statement: scn
-  modules_support_date: 2025/6/2
+  modules_support_date: 2025-06-02
   name: scnlib
   revision_count: 10
   status: ✅
@@ -16107,7 +16107,7 @@ ports:
   help_wanted: ❌
   homepage: https://github.com/fnc12/sqlite_orm
   import_statement: sqlite_orm
-  modules_support_date: 2025/2/6
+  modules_support_date: 2025-02-06
   name: sqlite-orm
   revision_count: 13
   status: ✅
@@ -16603,7 +16603,7 @@ ports:
   help_wanted: ❔
   homepage: https://tgui.eu
   import_statement: tgui
-  modules_support_date: 2024/1/13
+  modules_support_date: 2024-01-13
   name: tgui
   revision_count: 16
   status: ✅
@@ -16973,7 +16973,7 @@ ports:
   help_wanted: ❌
   homepage: https://marzer.github.io/tomlplusplus/
   import_statement: tomlplusplus
-  modules_support_date: 2025/4/1
+  modules_support_date: 2025-04-01
   name: tomlplusplus
   revision_count: 13
   status: ✅
@@ -17721,7 +17721,7 @@ ports:
   help_wanted: ❔
   homepage: https://vladimirshaleev.github.io/ipaddress/
   import_statement: ipaddress
-  modules_support_date: 2024/6/2
+  modules_support_date: 2024-06-02
   name: vladimirshaleev-ipaddress
   revision_count: 1
   status: ✅
@@ -17867,7 +17867,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/YaaZ/VulkanMemoryAllocator-Hpp
   import_statement: vk_mem_alloc_hpp
-  modules_support_date: 2023/9/11
+  modules_support_date: 2023-09-11
   name: vulkan-memory-allocator-hpp
   revision_count: 3
   status: ✅
@@ -18624,7 +18624,7 @@ ports:
   help_wanted: ❔
   homepage: https://github.com/z4kn4fein/cpp-semver
   import_statement: semver
-  modules_support_date: 2024/8/21
+  modules_support_date: 2024-08-21
   name: z4kn4fein-semver
   revision_count: 1
   status: ✅
@@ -18840,7 +18840,7 @@ ports:
 - current_min_cpp_version: Unknown
   help_wanted: ❔
   homepage: https://www.dealii.org
-  modules_support_date: 2025/7/22
+  modules_support_date: 2025-07-22
   name: deal.II
   revision_count: 1
   status: ✅
@@ -18861,7 +18861,7 @@ ports:
   homepage: ''
   import_statement: raylib
   module_native: ''
-  modules_support_date: 2025/6/2
+  modules_support_date: 2025-06-02
   name: raylib-cpp
   status: ✅
   tracking_issue: https://github.com/RobLoach/raylib-cpp/pull/360
@@ -18871,7 +18871,7 @@ ports:
   homepage: https://github.com/infiniflow/infinity
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: infinity
   status: ✅
   tracking_issue: ''
@@ -18881,7 +18881,7 @@ ports:
   homepage: https://github.com/davidstone/technical-machine
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: technical-machine
   status: ✅
   tracking_issue: ''
@@ -18891,7 +18891,7 @@ ports:
   homepage: https://github.com/davidstone/bounded-integer
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: bounded-integer
   status: ✅
   tracking_issue: ''
@@ -18901,7 +18901,7 @@ ports:
   homepage: https://github.com/davidstone/concurrent
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: concurrent
   status: ✅
   tracking_issue: ''
@@ -18911,7 +18911,7 @@ ports:
   homepage: https://github.com/kaimfrai/atr/tree/main
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: atr
   status: ✅
   tracking_issue: ''
@@ -18921,7 +18921,7 @@ ports:
   homepage: https://github.com/scylladb/seastar/tree/master
   import_statement: seastar
   module_native: ''
-  modules_support_date: 2023/3/24
+  modules_support_date: 2023-03-24
   name: seastar
   status: ✅
   tracking_issue: ''
@@ -18931,7 +18931,7 @@ ports:
   homepage: https://github.com/MarcDirven/cpp-lazy
   import_statement: lz
   module_native: ''
-  modules_support_date: 2024/4/9
+  modules_support_date: 2024-04-09
   name: cpp-lazy
   status: ✅
   tracking_issue: ''
@@ -18941,7 +18941,7 @@ ports:
   homepage: https://github.com/Cvelth/vkfw/pull/15
   import_statement: vkfw
   module_native: ''
-  modules_support_date: 2025/5/01
+  modules_support_date: 2025-05-01
   name: vkfw
   status: ✅
   tracking_issue: ''
@@ -18951,7 +18951,7 @@ ports:
   homepage: https://github.com/xiaoyang-sde/co-uring-http
   import_statement: co_uring_http
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: co-uring-http
   status: ✅
   tracking_issue: ''
@@ -18961,7 +18961,7 @@ ports:
   homepage: https://github.com/arttnba3/ClosureOS
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: ClosureOS
   status: ✅
   tracking_issue: ''
@@ -18971,7 +18971,7 @@ ports:
   homepage: https://github.com/mikomikotaishi/openJuice
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2024/8/7
+  modules_support_date: 2024-08-07
   name: openJuice
   status: ✅
   tracking_issue: ''
@@ -18981,7 +18981,7 @@ ports:
   homepage: https://github.com/teschnei/lotus-engine
   import_statement: ''
   module_native: ✅
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   name: lotus-engine
   status: ✅
   tracking_issue: ''
@@ -18991,7 +18991,7 @@ ports:
   homepage: https://github.com/MaaXYZ/MaaFramework
   import_statement: ''
   module_native: ''
-  modules_support_date: 2024/3/19
+  modules_support_date: 2024-03-19
   name: MaaFramework
   status: ✅
   tracking_issue: https://github.com/MaaXYZ/MaaFramework/pull/582
@@ -19001,7 +19001,7 @@ ports:
   homepage: https://github.com/secure-software-engineering/phasar
   import_statement: phasar.*
   module_native: ''
-  modules_support_date: 2025/6/22
+  modules_support_date: 2025-06-22
   name: phasar
   status: ✅
   tracking_issue: https://github.com/secure-software-engineering/phasar/pull/775
@@ -19011,7 +19011,7 @@ ports:
   homepage: https://github.com/qlibs/reflect
   import_statement: reflect
   module_native: ''
-  modules_support_date: 2025/4/18
+  modules_support_date: 2025-04-18
   name: reflect
   status: ✅
   tracking_issue: https://github.com/qlibs/reflect/pull/49
@@ -19021,7 +19021,7 @@ ports:
   homepage: https://github.com/royjacobson/ser20
   import_statement: ser20
   module_native: ''
-  modules_support_date: 2022/6/26
+  modules_support_date: 2022-06-26
   name: ser20
   status: ✅
   tracking_issue: ''
@@ -19031,7 +19031,7 @@ ports:
   homepage: https://github.com/colinator/zerialize
   import_statement: zerialize
   module_native: ''
-  modules_support_date: 2025/9/30
+  modules_support_date: 2025-09-30
   name: zerialize
   status: ✅
   tracking_issue: ''
