@@ -13,6 +13,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 body {
     font-family: 'Source Code Pro', monospace;
+    background-image: url('/images/funky-lines.webp');
+}
+
+body.dark {
+    background-image: url('/images/funky-lines-dark.webp');
 }
 
 /* Center header and adjust menu for monospace font */

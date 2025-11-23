@@ -29,10 +29,7 @@
     --border: rgb(51, 51, 51);
 }
 
-.list {
+main {
     background: var(--code-bg);
-}
-
-.dark.list {
-    background: var(--theme);
+    border-radius: 10px;
 }

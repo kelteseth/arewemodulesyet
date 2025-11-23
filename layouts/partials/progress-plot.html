@@ -1,14 +1,20 @@
 <!-- Progress Plot Only -->
 <div class="progress-stats">
+    <h2 style="text-align: center; margin-bottom: 2rem;">C++20 modules for a brighter future – and your help!</h2>
+    
+    <p style="text-align: center; margin-bottom: 2rem; color: gray;">
+        Faster compilation • Better encapsulation • No macro leakage • No include order issues
+    </p>
+
     <div class="progress-container" style="width: 100%;">
-        <div style="height: 600px">
+        <div style="height: 400px">
             <canvas id="project-cumulative-chart"></canvas>
         </div>
     </div>
     
     <!-- Display Header Information -->
-    <div style="margin-bottom: 1rem; margin-top: 1rem; font-size: small; color: gray;">
-        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> Website last built: {{ now.Format "2 January 2006" }}
+    <div style="margin-bottom: 1rem; margin-top: 1rem; font-size: x-small; color: gray; text-align: center;">
+        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}
         </p>
     </div>
     

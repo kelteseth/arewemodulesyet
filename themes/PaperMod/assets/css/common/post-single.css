@@ -1,7 +1,9 @@
+/* Not needed anymore for title
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
 }
+*/
 
 .post-title {
     margin-bottom: 2px;
@@ -131,6 +133,8 @@
 
 .post-content table {
     margin-bottom: var(--content-gap);
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .post-content table th,
@@ -143,6 +147,17 @@
 
 .post-content table th {
     text-align: start;
+    background-color: var(--tertiary);
+    font-weight: 600;
+}
+
+/* Alternating row backgrounds */
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) tbody tr:nth-child(odd) {
+    background-color: var(--theme);
+}
+
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) tbody tr:nth-child(even) {
+    background-color: var(--code-bg);
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
