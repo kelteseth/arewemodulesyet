@@ -15,12 +15,20 @@ OUTPUT_FILE = Path("static") / "data" / "cumulative_stats.json"
 DATA_DIR = Path("data")
 GENERATED_DIR = DATA_DIR / "generated"
 GENERATION_SCRIPT = Path("tools") / "merge_vcpkg_package_list_progress.py"
-DATA_FILES = [
+
+# New file structure (current)
+NEW_DATA_FILES = [
     DATA_DIR / "vcpkg_overrides.yml",
     DATA_DIR / "external_projects.yml",
     GENERATED_DIR / "vcpkg_packages.yml",
-    GENERATION_SCRIPT,
 ]
+
+# Old file structure (for historical commits)
+OLD_DATA_FILES = [
+    DATA_DIR / "raw_progress.yml",
+    DATA_DIR / "progress_overwrite.yml",
+]
+
 PROGRESS_FILE = DATA_DIR / "progress.yml"
 
 
@@ -210,14 +218,43 @@ def process_history() -> None:
             ),
         )
 
+        # Determine which files exist in this commit
+        data_files_to_checkout = []
         try:
+            # Check for new structure files
+            for f in NEW_DATA_FILES:
+                try:
+                    run_git_command(["git", "cat-file", "-e", f"{commit['sha']}:{f}"])
+                    data_files_to_checkout.append(f)
+                except subprocess.CalledProcessError:
+                    pass
+            
+            # Check for old structure files
+            for f in OLD_DATA_FILES:
+                try:
+                    run_git_command(["git", "cat-file", "-e", f"{commit['sha']}:{f}"])
+                    data_files_to_checkout.append(f)
+                except subprocess.CalledProcessError:
+                    pass
+            
+            # Check for generation script
+            try:
+                run_git_command(["git", "cat-file", "-e", f"{commit['sha']}:{GENERATION_SCRIPT}"])
+                data_files_to_checkout.append(GENERATION_SCRIPT)
+            except subprocess.CalledProcessError:
+                pass
+
+            if not data_files_to_checkout:
+                print(f"  No data files found, skipping...")
+                continue
+
             # 1. Temporarily checkout the necessary files for this commit
             checkout_command = [
                 "git",
                 "checkout",
                 str(commit["sha"]),
                 "--",
-            ] + [str(x) for x in DATA_FILES]
+            ] + [str(x) for x in data_files_to_checkout]
             _ = run_git_command(checkout_command)
 
             # 2. Run the original generation script
@@ -252,7 +289,7 @@ def process_history() -> None:
 
         except Exception as e:
             # Continue to the next commit even if one fails
-            print(f"Skipping commit {commit['sha']} due to error: {e}")
+            print(f"  Skipping commit {commit['sha'][:8]} due to error: {e}")
 
         finally:
             # 4. Clean up (remove generated file and reset checked-out files)
@@ -260,10 +297,14 @@ def process_history() -> None:
                 PROGRESS_FILE.unlink()
 
             # Restore the original state of the checked-out files
-            restore_command = ["git", "checkout", "HEAD", "--"] + [
-                str(x) for x in DATA_FILES
-            ]
-            _ = run_git_command(restore_command)
+            if data_files_to_checkout:
+                restore_command = ["git", "checkout", "HEAD", "--"] + [
+                    str(x) for x in data_files_to_checkout
+                ]
+                try:
+                    _ = run_git_command(restore_command)
+                except subprocess.CalledProcessError:
+                    pass  # Files may not exist in HEAD
 
     # Restore to original branch/commit
     print()
