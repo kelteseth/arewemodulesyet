@@ -2,8 +2,10 @@ from typing import Any
 import subprocess
 import json
 import yaml
+import sys
 from datetime import datetime
 from pathlib import Path
+from termcolor import colored
 
 GIT_DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S %z"
 ISO_DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%S%z"
@@ -142,23 +144,68 @@ def get_commit_history(
     return history
 
 
+def check_git_safety() -> bool:
+    """
+    Check if it's safe to run git operations that modify the working tree.
+    Returns True if safe, False otherwise.
+    """
+    # Check for uncommitted changes
+    status = run_git_command(["git", "status", "--porcelain"])
+    if status:
+        print(colored("⚠️  WARNING: You have uncommitted changes!", "red", attrs=["bold"]))
+        print(colored("This script will modify your git working tree.", "yellow"))
+        print(colored("Uncommitted changes:", "yellow"))
+        for line in status.splitlines()[:10]:
+            print(f"  {line}")
+        if len(status.splitlines()) > 10:
+            print(f"  ... and {len(status.splitlines()) - 10} more")
+        print()
+        return False
+    
+    # Check current branch
+    current_branch = run_git_command(["git", "rev-parse", "--abbrev-ref", "HEAD"])
+    print(colored(f"📍 Current branch: {current_branch}", "blue"))
+    
+    return True
+
+
 def process_history() -> None:
     """Iterate through history and collect data."""
+    
+    print()
+    print(colored("🔍 Computing historical completion status...", "cyan", attrs=["bold"]))
+    print()
+    
+    # Safety check before doing anything destructive
+    if not check_git_safety():
+        print(colored("❌ Aborting: Please commit or stash your changes first.", "red"))
+        print(colored("   Run: git stash", "yellow"))
+        print(colored("   Then run this script again.", "yellow"))
+        sys.exit(1)
+    
+    # Store current branch/commit to restore later
+    original_ref = run_git_command(["git", "rev-parse", "HEAD"])
+    original_branch = run_git_command(["git", "rev-parse", "--abbrev-ref", "HEAD"])
+    print(colored(f"📌 Will restore to: {original_branch} ({original_ref[:8]})", "blue"))
+    print()
 
     since_date, historical_data = get_latest_date(OUTPUT_FILE)
     new_commits = get_commit_history(since_date=since_date)
 
-    OUTPUT_FILE.parent.mkdir(exist_ok=True)
+    if not new_commits:
+        print(colored("✅ No new commits to process.", "green"))
+        return
 
-    # Use git reset --hard to ensure a clean state before starting
-    _ = run_git_command(["git", "reset", "--hard", MASTER_BRANCH])
+    OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
     for idx, commit in enumerate(new_commits):
         print(
-            "{idx}/{tot} Processing commit {sha} ({date})…".format(
-                idx=idx + 1,
-                tot=len(new_commits),
-                sha=commit["sha"],
+            colored(
+                "{idx}/{tot}".format(idx=idx + 1, tot=len(new_commits)),
+                "cyan",
+            )
+            + " Processing commit {sha} ({date})…".format(
+                sha=commit["sha"][:8],
                 date=commit["date"],
             ),
         )
@@ -218,8 +265,12 @@ def process_history() -> None:
             ]
             _ = run_git_command(restore_command)
 
-    # Final cleanup to ensure repo is on main branch state
-    _ = run_git_command(["git", "reset", "--hard", MASTER_BRANCH])
+    # Restore to original branch/commit
+    print()
+    print(colored(f"🔄 Restoring to original state: {original_branch}...", "blue"))
+    _ = run_git_command(["git", "checkout", original_branch])
+    _ = run_git_command(["git", "reset", "--hard", original_ref])
+    print(colored("✅ Repository restored successfully.", "green"))
 
     # Reverse the history to plot chronologically (oldest commit first)
     historical_data.reverse()
@@ -228,7 +279,8 @@ def process_history() -> None:
     with OUTPUT_FILE.open("wt") as f:
         json.dump(historical_data, f, indent=4)
 
-    print(f"\n{len(historical_data)} data points in {OUTPUT_FILE}")
+    print()
+    print(colored(f"📊 {len(historical_data)} data points written to {OUTPUT_FILE}", "green", attrs=["bold"]))
 
 
 if __name__ == "__main__":
