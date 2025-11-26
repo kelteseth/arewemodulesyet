@@ -2,3 +2,5 @@
 public
 tools/vcpkg/
 tmp/
+
+data/progress.yml
