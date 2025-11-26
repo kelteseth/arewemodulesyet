@@ -1,9 +1,14 @@
-# ### status
-# - ❔ Default: No set. Help wanted for every lib that has this status!
+# Overrides for vcpkg packages
+#
+# This file contains metadata overrides for packages that exist in vcpkg.
+# The data here is merged with the auto-generated vcpkg_packages.yml.
+#
+# ### Status Legend
+# - ❔ Default: Not set. Help wanted for every lib that has this status!
 # - ✅ Full support
-# - ⚙️ Worked on
-# - ⚠️ Reported
-# - ❌ Corresponding tracking issue was closed and no planned support anytime soon.
+# - ⚙️ Work in progress
+# - ⚠️ Issue reported
+# - ❌ No support planned (tracking issue was closed)
 
 ports:
 - name: fmt
@@ -207,106 +212,18 @@ ports:
   modules_support_date: 2025/6/29
   status: ✅
   tracking_issue: https://github.com/nlohmann/json/pull/4799
-
-###############################################################################
-# Projects that are not part of vcpkg
-- name: infinity
-  homepage: https://github.com/infiniflow/infinity
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: technical-machine
-  homepage: https://github.com/davidstone/technical-machine
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: bounded-integer
-  homepage: https://github.com/davidstone/bounded-integer
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: concurrent
-  homepage: https://github.com/davidstone/concurrent
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: atr
-  homepage: https://github.com/kaimfrai/atr/tree/main
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: seastar
-  homepage: https://github.com/scylladb/seastar/tree/master
-  modules_support_date: 2023/3/24
-  status: ✅
-  import_statement: seastar
-  current_min_cpp_version: 20
-- name: cpp-lazy
-  homepage: https://github.com/MarcDirven/cpp-lazy
-  modules_support_date: 2024/4/9
-  status: ✅
-  import_statement: lz
-  current_min_cpp_version: 11
-- name: vkfw
-  homepage: https://github.com/Cvelth/vkfw/pull/15
-  modules_support_date: 2025/5/01
-  status: ✅
-  import_statement: vkfw
-- name: co-uring-http
-  homepage: https://github.com/xiaoyang-sde/co-uring-http
-  modules_support_date: 2025/5/15
-  status: ✅
-  import_statement: co_uring_http
-  module_native: ✅
-- name: ClosureOS
-  homepage: https://github.com/arttnba3/ClosureOS
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: openJuice
-  homepage: https://github.com/mikomikotaishi/openJuice
-  modules_support_date: 2024/8/7
-  status: ✅
-  module_native: ✅
-- name: lotus-engine
-  homepage: https://github.com/teschnei/lotus-engine
-  modules_support_date: 2025/5/15
-  status: ✅
-  module_native: ✅
-- name: MaaFramework
-  status: ✅
-  modules_support_date: 2024/3/19
-  tracking_issue: https://github.com/MaaXYZ/MaaFramework/pull/582
-  homepage: https://github.com/MaaXYZ/MaaFramework
 - name: cpptrace
   import_statement: cpptrace
   status: ✅
   modules_support_date: 2025/5/27
   tracking_issue: https://github.com/jeremy-rifkin/cpptrace/pull/248
   homepage: https://github.com/jeremy-rifkin/cpptrace
-- name: phasar
-  import_statement: phasar.*
-  status: ✅
-  modules_support_date: 2025/6/22
-  tracking_issue: https://github.com/secure-software-engineering/phasar/pull/775
-  homepage: https://github.com/secure-software-engineering/phasar
 - name: libassert
   import_statement: libassert
   status: ✅
   modules_support_date: 2025/6/20
   tracking_issue: https://github.com/jeremy-rifkin/libassert/pull/143
   homepage: https://github.com/jeremy-rifkin/libassert
-- name: reflect
-  import_statement: reflect
-  status: ✅
-  modules_support_date: 2025/4/18
-  tracking_issue: https://github.com/qlibs/reflect/pull/49
-  homepage: https://github.com/qlibs/reflect
-- name: ser20
-  import_statement: ser20
-  status: ✅
-  modules_support_date: 2022/6/26
-  homepage: https://github.com/royjacobson/ser20
 - name: entt
   homepage: https://github.com/skypjack/entt
   modules_support_date: ''
@@ -322,51 +239,21 @@ ports:
   import_statement: rtmidi
   modules_support_date: 2025/10/20
   homepage: https://github.com/thestk/rtmidi/
-- name: zerialize
-  status: ✅
-  import_statement: zerialize
-  modules_support_date: 2025/9/30
-  homepage: https://github.com/colinator/zerialize
 - name: openal-soft
   status: ✅
   import_statement: openal.*
   modules_support_date: 2025/9/2
   homepage: https://github.com/kcat/openal-soft
-- name: skift
-  status: ✅
-  import_statement: Strata.*
-  modules_support_date: 2025/10/5
-  homepage: https://github.com/skift-org/skift
 - name: kokkos
   status: ✅
   import_statement: kokkos.*
   modules_support_date: 2025/10/1
   homepage: https://github.com/kokkos/kokkos
-- name: ALib
-  status: ✅
-  import_statement: ALib.*
-  modules_support_date: 2025/10/1
-  homepage: https://github.com/AlexWorx/ALib-Class-Library
 - name: re2
   homepage: https://github.com/google/re2
   modules_support_date: ''
   status: ⚙️
   tracking_issue: https://code-review.googlesource.com/c/re2/+/64010
-- name: jwt-cpp
-  homepage: https://github.com/Thalhammer/jwt-cpp
-  modules_support_date: ''
-  status: ⚙️
-  tracking_issue: https://github.com/Thalhammer/jwt-cpp/pull/395
-- name: sml
-  status: ✅
-  import_statement: sml
-  modules_support_date: 2025/04/1
-  homepage: https://github.com/qlibs/sml
-- name: mp
-  status: ✅
-  import_statement: mp
-  modules_support_date: 2025/05/1
-  homepage: https://github.com/qlibs/mp
 - name: unordered_dense
   status: ✅
   import_statement: ankerl.unordered_dense
@@ -377,24 +264,9 @@ ports:
   import_statement: rt.audio
   modules_support_date: 2025/11/1
   homepage: https://github.com/thestk/rtaudio
-- name: nemulator
-  status: ✅
-  module_native: ✅
-  modules_support_date: 2025/04/1
-  homepage: https://github.com/jslepicka/nemulator
-- name: permedvizhnikov-engine
-  status: ✅
-  module_native: ✅
-  modules_support_date: 2023/11/1
-  homepage: https://github.com/eduard-permyakov/peredvizhnikov-engine
-- name: redumper
-  status: ✅
-  module_native: ✅
-  modules_support_date: 2025/04/1
-  homepage: https://github.com/superg/redumper
 
 ###############################################################################
-# This is Qt6 and currently all of them share the same issue
+# Qt6 - All share the same tracking issue
 - name: qtbase
   tracking_issue: "https://bugreports.qt.io/browse/QTBUG-103271"
   status: ⚠️
@@ -502,8 +374,7 @@ ports:
   status: ⚠️
 
 ###############################################################################
-# Qt5 will not get any modules support anytime soon.
-# Is is on life support, please use Qt6
+# Qt5 - End of life, will not get modules support
 - name: qt5
   status: ❌
 - name: qt5-base

@@ -1,72 +1,80 @@
 # Are we modules yet? Not even close, lol.
 
-This website will track the most popular C++ projects, compilers and build systems. We use vcpkg to get a rough idea on how popular a library is via how many revisions the port has. For more information, checkout the python script that parses the data: `generate_vcpkg_usage_stats.py`.  
+This website tracks C++20 modules support across popular libraries using vcpkg port revision counts to estimate popularity.
 
-## Legend for `progress_overwrite.yml`
+## Data Files
 
-Example port 
-``` yml
-ports: 
+**Auto-generated** (`data/generated/` - DO NOT EDIT):
+- `vcpkg_packages.yml` - Generated from vcpkg repository
+
+**Manual** (`data/`):
+- `vcpkg_overrides.yml` - Override vcpkg package metadata
+- `external_projects.yml` - Projects not in vcpkg
+
+**Output** (`data/`):
+- `progress.yml` - Merged result displayed on website
+
+## YAML Fields
+
+Example entry in `vcpkg_overrides.yml`:
+```yml
+ports:
 - name: fmt
-  # Can be different from lib name. For example vulkan-cpp uses vulkan_cpp!
-  # `fmt` becomes: `import fmt;`
-  import_statement: fmt
-  # Date since when the lib has modules support. Used for extrapolating finish date (YYYY/M/DD)
-  modules_support_date: 2024/5/22 
+  import_statement: fmt              # Module import name (e.g., `import fmt;`)
+  modules_support_date: 2022/10/11   # Date modules added (YYYY/M/DD)
   status: ✅
   current_min_cpp_version: 11
-  # These are often multiple issues, but always try to link the main issue
   tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"
 ```
 
-Note that most projects do not even have an issue for tracking `modules` support. If so you would have to create one, so we can track it here.
+Note: Most projects don't have a modules tracking issue. If one doesn't exist, please create one so we can track it here.
 
-### status
-- ❔ Default: No set. Help wanted for every lib that has this status!
+### Status Legend
+- ❔ Unknown - Help wanted!
 - ✅ Full support
-- ⚙️ Worked on
-- ⚠️ Reported
-- ❌ Corresponding tracking issue was closed and no planned support anytime soon.
+- ⚙️ Work in progress
+- ⚠️ Issue reported
+- ❌ No support planned
 
-### Dependencies
-1. [Install Hugo Extended](https://gohugo.io/)
-    -  🪟 `winget install Hugo.Hugo.Extended`
-    -  🐧 & 🍏 [Download on Github](https://github.com/gohugoio/hugo/releases)
-1. [Python 3 via uv](https://docs.astral.sh/uv/)
-    -  🪟 `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-    -  🐧 & 🍏 `curl -LsSf https://astral.sh/uv/install.sh | sh`
+## Dependencies
+1. [Hugo Extended](https://gohugo.io/)
+   - 🪟 `winget install Hugo.Hugo.Extended`
+   - 🐧🍏 [GitHub releases](https://github.com/gohugoio/hugo/releases)
+2. [Python 3 via uv](https://docs.astral.sh/uv/)
+   - 🪟 `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+   - 🐧🍏 `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
-### How to contribute
+## Contributing
 
-Edit `data/progress_overwrite.yml` if you want to update status or add new entries which doesn't
-have a vcpkg entry. Edit `data/raw_progress.yml` if you want to add/delete entries.
+**Edit vcpkg package status:** `data/vcpkg_overrides.yml`  
+**Add external projects:** `data/external_projects.yml`
 
-Then execute the following commands to generate `progress.yml` and update `static/data/cumulative_stats.json`:
-
+Generate merged data:
 ```bash
-uv run  tools/merge_vcpkg_package_list_progress.py
-uv run  tools/compute_completion_status.py
+uv run tools/merge_vcpkg_package_list_progress.py
+uv run tools/compute_completion_status.py
+hugo serve  # Preview changes
 ```
 
-It will be appreciated if you can run `hugo serve` to check your change.
-
-For other documents, see contents in `content`.
-
-### Optionally regenerate raw_progress.yml
+**Regenerate vcpkg data (optional):**
 ```bash
-uv run  tools/generate_vcpkg_package_list.py
+uv run tools/generate_vcpkg_package_list.py
 ```
 
-### Website structure
+## Project Structure
 ```
-- /data
-    - raw_progress.yml          # Raw parsed vcpkg list
-    - progress_overwrite.yml    # Additional infos added by hand like status, progress
-    - progress.yml              # Merged result that is displayed on the website
-- /layouts/partials/
-    - progress-module.html      # Diagram and table for the home page
-- /content/
-    - tools.md                  # Tools site
-    - documents.md              # Documents site
-    - examples.md               # Examples site
+data/
+├── vcpkg_overrides.yml       # Manual: vcpkg package overrides
+├── external_projects.yml     # Manual: non-vcpkg projects
+├── progress.yml              # Output: merged result for website
+└── generated/
+    └── vcpkg_packages.yml    # Auto-generated from vcpkg (DO NOT EDIT)
+layouts/partials/
+├── progress-table.html       # Table component
+├── progress-plot.html        # Chart component
+└── home-content.html         # Home page content
+content/
+├── tools.md
+├── documents.md
+└── examples.md
 ```
