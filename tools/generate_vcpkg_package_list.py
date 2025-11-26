@@ -28,7 +28,7 @@ def read_vcpkg_json(json_path):
             # The following are empty and getting overwritten by hand
             "current_min_cpp_version": "Unknown",
             "tracking_issue": "", # Issue that tracks the progress
-            "modules_support_date": "",  # Unix timestamp, default empty
+            "modules_support_date": "",  # ISO 8601 date (YYYY-MM-DD), default empty
             "module_native": "", # Whether if the modules are used as a wrapper or natively
         }
     except Exception as e:

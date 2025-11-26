@@ -21,7 +21,7 @@ Example entry in `vcpkg_overrides.yml`:
 ports:
 - name: fmt
   import_statement: fmt              # Module import name (e.g., `import fmt;`)
-  modules_support_date: 2022/10/11   # Date modules added (YYYY/M/DD)
+  modules_support_date: 2022-10-11   # Date modules added (ISO 8601: YYYY-MM-DD)
   status: ✅
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"

@@ -1,8 +1,16 @@
 import os
 import argparse
 import yaml
-from datetime import datetime
+from datetime import datetime, date
 from termcolor import colored
+
+def get_date_value(date_val):
+    """Convert a date value to string, handling both string and date objects."""
+    if date_val is None:
+        return ''
+    if isinstance(date_val, (datetime, date)):
+        return date_val.strftime('%Y-%m-%d')
+    return str(date_val).strip()
 
 def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_projects_file, output_file):
     print()
@@ -62,20 +70,21 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     progress_percent = (completed_projects / total_projects * 100) if total_projects > 0 else 0
     
     # Collect dates for projects with modules support
-    modules_support_dates = [
-        item['modules_support_date'] 
-        for item in merged_ports 
-        if item.get('status') == '✅' and item.get('modules_support_date', '').strip()
-    ]
+    modules_support_dates = []
+    for item in merged_ports:
+        if item.get('status') == '✅':
+            date_val = get_date_value(item.get('modules_support_date'))
+            if date_val:
+                modules_support_dates.append(date_val)
     
     # Calculate estimated completion date
     estimated_completion_date = None
     if modules_support_dates:
         try:
-            # Parse dates in format "2020/6/23"
+            # Parse dates in ISO 8601 format "YYYY-MM-DD"
             timestamps = []
             for date_str in modules_support_dates:
-                parts = date_str.split('/')
+                parts = date_str.split('-')
                 if len(parts) == 3:
                     year, month, day = int(parts[0]), int(parts[1]), int(parts[2])
                     timestamps.append(datetime(year, month, day).timestamp())
