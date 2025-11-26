@@ -27,7 +27,7 @@ ports:
   tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/121"
 - name: flux
   import_statement: flux
-  modules_support_date: 2023/8/3
+  modules_support_date: 2023-08-03
   status: ✅
   current_min_cpp_version: 20
 - name: protobuf
@@ -48,7 +48,7 @@ ports:
   tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
 - name: async-simple
   import_statement: async_simple
-  modules_support_date: 2023/6/19
+  modules_support_date: 2023-06-19
   status: ✅
   current_min_cpp_version: 20
 - name: sqlite3
@@ -76,14 +76,14 @@ ports:
 - name: hpx
   import_statement: HPX.*
   status: ✅
-  modules_support_date: 2024/9/6
+  modules_support_date: 2024-09-06
   homepage: https://github.com/STEllAR-GROUP/hpx
 - name: cereal
   status: ⚠️
   tracking_issue: https://github.com/USCiLab/cereal/issues/793
 - name: z4kn4fein-semver
   import_statement: semver
-  modules_support_date: 2024/8/21
+  modules_support_date: 2024-08-21
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: https://github.com/z4kn4fein/cpp-semver/issues/7
@@ -104,19 +104,19 @@ ports:
   tracking_issue: "https://github.com/p-ranav/argparse/pull/290"
 - name: magic-enum
   import_statement: magic_enum
-  modules_support_date: 2024/5/9
+  modules_support_date: 2024-05-09
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/Neargye/magic_enum/pull/343"
 - name: fastgltf
   import_statement: fastgltf
-  modules_support_date: 2024/5/15
+  modules_support_date: 2024-05-15
   status: ✅
   current_min_cpp_version: 17
   tracking_issue: "https://github.com/spnda/fastgltf/pull/61"
 - name: mp-units
   homepage: https://github.com/mpusz/mp-units
-  modules_support_date: 2024/1/6
+  modules_support_date: 2024-01-06
   status: ✅
   import_statement: mp_units
   tracking_issue: "https://github.com/mpusz/mp-units/pull/350"
@@ -124,34 +124,34 @@ ports:
   homepage: https://github.com/hanickadot/compile-time-regular-expressions
   import_statement: ctre
   status: ✅
-  modules_support_date: 2024/5/17
+  modules_support_date: 2024-05-17
   current_min_cpp_version: 17
   version: '3.9.0'
 - name: tgui
   import_statement: tgui
   status: ✅
-  modules_support_date: 2024/1/13
+  modules_support_date: 2024-01-13
 - name: vladimirshaleev-ipaddress
   homepage: https://vladimirshaleev.github.io/ipaddress/
   import_statement: ipaddress
   tracking_issue: https://github.com/VladimirShaleev/ipaddress/pull/8
   status: ✅
-  modules_support_date: 2024/6/2
+  modules_support_date: 2024-06-02
   current_min_cpp_version: Unknown
 - name: vulkan-memory-allocator-hpp
   import_statement: vk_mem_alloc_hpp
-  modules_support_date: 2023/9/11
+  modules_support_date: 2023-09-11
   status: ✅
   current_min_cpp_version: 20
   tracking_issue: "https://github.com/YaaZ/VulkanMemoryAllocator-Hpp/issues/29"
 - name: boost-pfr
   import_statement: boost.pfr
-  modules_support_date: 2024/8/1
+  modules_support_date: 2024-08-01
   status: ✅
   tracking_issue: "https://github.com/boostorg/pfr/pull/177"
 - name: cppgraphqlgen
   import_statement: GraphQL.Service
-  modules_support_date: 2024/9/16
+  modules_support_date: 2024-09-16
   status: ✅
   tracking_issue: "https://github.com/microsoft/cppgraphqlgen/pull/313"
 - name: boost-regex
@@ -172,47 +172,47 @@ ports:
   tracking_issue: "https://github.com/ned14/outcome/issues/246"
 - name: sqlite-orm
   import_statement: sqlite_orm
-  modules_support_date: 2025/2/6
+  modules_support_date: 2025-02-06
   status: ✅
   help_wanted: ❌
   current_min_cpp_version: 14
   tracking_issue: https://github.com/fnc12/sqlite_orm/pull/1336
 - name: tomlplusplus
   import_statement: tomlplusplus
-  modules_support_date: 2025/4/1
+  modules_support_date: 2025-04-01
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/marzer/tomlplusplus/pull/266
 - name: boost-any
   import_statement: boost.any
-  modules_support_date: 2025/5/12
+  modules_support_date: 2025-05-12
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/boostorg/any/pull/30
 - name: boost-type-index
   import_statement: boost.type_index
-  modules_support_date: 2025/5/12
+  modules_support_date: 2025-05-12
   status: ✅
   help_wanted: ❌
   tracking_issue: https://github.com/apolukhin/type_index/pull/15
 - name: proxy
   import_statement: proxy
-  modules_support_date: 2025/5/17
+  modules_support_date: 2025-05-17
   status: ✅
   tracking_issue: https://github.com/microsoft/proxy/pull/293
 - name: raylib-cpp
   import_statement: raylib
-  modules_support_date: 2025/6/2
+  modules_support_date: 2025-06-02
   status: ✅
   tracking_issue: https://github.com/RobLoach/raylib-cpp/pull/360
 - name: scnlib
   import_statement: scn
-  modules_support_date: 2025/6/2
+  modules_support_date: 2025-06-02
   status: ✅
   tracking_issue: https://github.com/eliaskosunen/scnlib/pull/150
 - name: ftxui
   import_statement: ftxui
-  modules_support_date: 2025/6/4
+  modules_support_date: 2025-06-04
   status: ✅
   tracking_issue: https://github.com/ArthurSonzogni/FTXUI/pull/1015
 - name: asio-grpc
@@ -220,7 +220,7 @@ ports:
   tracking_issue: https://github.com/Tradias/asio-grpc/issues/119
 - name: nlohmann-json
   import_statement: nlohmann.json
-  modules_support_date: 2025/6/29
+  modules_support_date: 2025-06-29
   status: ✅
   tracking_issue: https://github.com/nlohmann/json/pull/4799
 
@@ -228,100 +228,100 @@ ports:
 # Projects that are not part of vcpkg
 - name: infinity
   homepage: https://github.com/infiniflow/infinity
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: technical-machine
   homepage: https://github.com/davidstone/technical-machine
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: bounded-integer
   homepage: https://github.com/davidstone/bounded-integer
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: concurrent
   homepage: https://github.com/davidstone/concurrent
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: atr
   homepage: https://github.com/kaimfrai/atr/tree/main
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: seastar
   homepage: https://github.com/scylladb/seastar/tree/master
-  modules_support_date: 2023/3/24
+  modules_support_date: 2023-03-24
   status: ✅
   import_statement: seastar
   current_min_cpp_version: 20
 - name: cpp-lazy
   homepage: https://github.com/MarcDirven/cpp-lazy
-  modules_support_date: 2024/4/9
+  modules_support_date: 2024-04-09
   status: ✅
   import_statement: lz
   current_min_cpp_version: 11
 - name: vkfw
   homepage: https://github.com/Cvelth/vkfw/pull/15
-  modules_support_date: 2025/5/01
+  modules_support_date: 2025-05-01
   status: ✅
   import_statement: vkfw
 - name: co-uring-http
   homepage: https://github.com/xiaoyang-sde/co-uring-http
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   import_statement: co_uring_http
   module_native: ✅
 - name: ClosureOS
   homepage: https://github.com/arttnba3/ClosureOS
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: openJuice
   homepage: https://github.com/mikomikotaishi/openJuice
-  modules_support_date: 2024/8/7
+  modules_support_date: 2024-08-07
   status: ✅
   module_native: ✅
 - name: lotus-engine
   homepage: https://github.com/teschnei/lotus-engine
-  modules_support_date: 2025/5/15
+  modules_support_date: 2025-05-15
   status: ✅
   module_native: ✅
 - name: MaaFramework
   status: ✅
-  modules_support_date: 2024/3/19
+  modules_support_date: 2024-03-19
   tracking_issue: https://github.com/MaaXYZ/MaaFramework/pull/582
   homepage: https://github.com/MaaXYZ/MaaFramework
 - name: cpptrace
   import_statement: cpptrace
   status: ✅
-  modules_support_date: 2025/5/27
+  modules_support_date: 2025-05-27
   tracking_issue: https://github.com/jeremy-rifkin/cpptrace/pull/248
   homepage: https://github.com/jeremy-rifkin/cpptrace
 - name: phasar
   import_statement: phasar.*
   status: ✅
-  modules_support_date: 2025/6/22
+  modules_support_date: 2025-06-22
   tracking_issue: https://github.com/secure-software-engineering/phasar/pull/775
   homepage: https://github.com/secure-software-engineering/phasar
 - name: libassert
   import_statement: libassert
   status: ✅
-  modules_support_date: 2025/6/20
+  modules_support_date: 2025-06-20
   tracking_issue: https://github.com/jeremy-rifkin/libassert/pull/143
   homepage: https://github.com/jeremy-rifkin/libassert
 - name: reflect
   import_statement: reflect
   status: ✅
-  modules_support_date: 2025/4/18
+  modules_support_date: 2025-04-18
   tracking_issue: https://github.com/qlibs/reflect/pull/49
   homepage: https://github.com/qlibs/reflect
 - name: ser20
   import_statement: ser20
   status: ✅
-  modules_support_date: 2022/6/26
+  modules_support_date: 2022-06-26
   homepage: https://github.com/royjacobson/ser20
 - name: entt
   help_wanted: ❔
@@ -332,7 +332,7 @@ ports:
 - name: poco
   status: ✅
   import_statement: Poco
-  modules_support_date: 2025/9/20
+  modules_support_date: 2025-09-20
   homepage: https://github.com/pocoproject/poco
 - name: rtmidi
   status: ✅
@@ -342,12 +342,12 @@ ports:
 - name: zerialize
   status: ✅
   import_statement: zerialize
-  modules_support_date: 2025/9/30
+  modules_support_date: 2025-09-30
   homepage: https://github.com/colinator/zerialize
 - name: openal-soft
   status: ✅
   import_statement: openal.*
-  modules_support_date: 2025/9/2
+  modules_support_date: 2025-09-02
   homepage: https://github.com/kcat/openal-soft
 - name: skift
   status: ✅

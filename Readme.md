@@ -11,7 +11,7 @@ ports:
   # Can be different from lib name. For example vulkan-cpp uses vulkan_cpp!
   import_statement: fmt
   # Date since when the lib has modules support. Used for extrapolating finish date
-  modules_support_date: 2024/5/22 
+  modules_support_date: 2024-05-22
   status: ✅
   help_wanted: ❌
   current_min_cpp_version: 11
