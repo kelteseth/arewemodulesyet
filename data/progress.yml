@@ -7218,14 +7218,15 @@ ports:
   status: ❔
   tracking_issue: ''
   version: 3.1.11
-- current_min_cpp_version: Unknown
-  help_wanted: ❔
+- current_min_cpp_version: 11
+  help_wanted: ❌
   homepage: https://github.com/ocornut/imgui
-  modules_support_date: ''
+  import_statement: imgui
+  modules_support_date: 2025/8/7
   name: imgui
   revision_count: 54
-  status: ❔
-  tracking_issue: ''
+  status: ✅
+  tracking_issue: https://github.com/stripe2933/imgui-module
   version: 1.90.2
 - current_min_cpp_version: Unknown
   help_wanted: ❔
