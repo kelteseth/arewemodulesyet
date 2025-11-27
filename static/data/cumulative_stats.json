@@ -1,726 +1,21 @@
 [
     {
-        "commit_date": "2025-11-05T21:38:28-0700",
+        "commit_date": "2025-11-19T03:00:27+0100",
         "completed": 62,
-        "total": 2442
+        "total": 2118
     },
     {
-        "commit_date": "2025-11-04T03:12:58+0100",
+        "commit_date": "2025-11-24T09:19:57+0300",
         "completed": 62,
-        "total": 2442
+        "total": 2118
     },
     {
-        "commit_date": "2025-11-03T14:24:12+0800",
-        "completed": 61,
-        "total": 2442
+        "commit_date": "2025-11-27T13:17:11+0900",
+        "completed": 63,
+        "total": 2118
     },
     {
-        "commit_date": "2025-10-29T02:47:54+0100",
-        "completed": 54,
-        "total": 2436
-    },
-    {
-        "commit_date": "2025-10-29T02:47:32+0100",
-        "completed": 54,
-        "total": 2444
-    },
-    {
-        "commit_date": "2025-10-21T11:25:19+0800",
-        "completed": 54,
-        "total": 2444
-    },
-    {
-        "commit_date": "2025-10-15T12:16:56+0300",
-        "completed": 46,
-        "total": 2440
-    },
-    {
-        "commit_date": "2025-09-02T21:16:21-0500",
-        "completed": 46,
-        "total": 2440
-    },
-    {
-        "commit_date": "2025-08-12T03:13:05+0100",
-        "completed": 46,
-        "total": 2440
-    },
-    {
-        "commit_date": "2025-06-29T22:22:57-0400",
-        "completed": 46,
-        "total": 2440
-    },
-    {
-        "commit_date": "2025-06-30T01:08:51+0300",
-        "completed": 45,
-        "total": 2440
-    },
-    {
-        "commit_date": "2025-06-26T15:35:47+0800",
-        "completed": 45,
-        "total": 2440
-    },
-    {
-        "commit_date": "2025-06-10T14:12:12+0000",
-        "completed": 41,
-        "total": 2437
-    },
-    {
-        "commit_date": "2025-06-10T14:11:00+0000",
-        "completed": 41,
-        "total": 2437
-    },
-    {
-        "commit_date": "2025-06-10T14:09:58+0000",
-        "completed": 41,
-        "total": 2437
-    },
-    {
-        "commit_date": "2025-06-10T14:05:07+0000",
-        "completed": 38,
-        "total": 2436
-    },
-    {
-        "commit_date": "2025-06-01T08:57:51+0300",
-        "completed": 38,
-        "total": 2436
-    },
-    {
-        "commit_date": "2025-05-27T09:59:51+0800",
-        "completed": 38,
-        "total": 2436
-    },
-    {
-        "commit_date": "2025-05-22T11:47:19+0800",
-        "completed": 37,
-        "total": 2436
-    },
-    {
-        "commit_date": "2025-05-21T12:52:46+0800",
-        "completed": 36,
-        "total": 2435
-    },
-    {
-        "commit_date": "2025-05-21T04:04:56+0000",
-        "completed": 36,
-        "total": 2435
-    },
-    {
-        "commit_date": "2025-05-21T04:04:25+0000",
-        "completed": 36,
-        "total": 2435
-    },
-    {
-        "commit_date": "2025-05-21T03:56:33+0000",
-        "completed": 36,
-        "total": 2435
-    },
-    {
-        "commit_date": "2025-05-21T03:52:58+0000",
-        "completed": 36,
-        "total": 2434
-    },
-    {
-        "commit_date": "2025-05-21T03:43:23+0000",
-        "completed": 36,
-        "total": 2434
-    },
-    {
-        "commit_date": "2025-05-21T11:49:19+0800",
-        "completed": 36,
-        "total": 2434
-    },
-    {
-        "commit_date": "2025-05-17T15:55:44+0200",
-        "completed": 35,
-        "total": 2434
-    },
-    {
-        "commit_date": "2025-05-17T16:09:21+0200",
-        "completed": 35,
-        "total": 2439
-    },
-    {
-        "commit_date": "2025-05-16T14:37:26+0800",
-        "completed": 35,
-        "total": 2438
-    },
-    {
-        "commit_date": "2025-05-15T17:20:30+0800",
-        "completed": 26,
-        "total": 2429
-    },
-    {
-        "commit_date": "2025-05-15T17:15:53+0800",
-        "completed": 26,
-        "total": 2429
-    },
-    {
-        "commit_date": "2025-05-15T13:28:00+0800",
-        "completed": 26,
-        "total": 2430
-    },
-    {
-        "commit_date": "2025-05-15T10:46:57+0800",
-        "completed": 26,
-        "total": 2430
-    },
-    {
-        "commit_date": "2025-02-17T23:35:43+0100",
-        "completed": 22,
-        "total": 2430
-    },
-    {
-        "commit_date": "2025-02-06T17:42:36+0100",
-        "completed": 22,
-        "total": 2430
-    },
-    {
-        "commit_date": "2025-02-06T18:17:10+0200",
-        "completed": 22,
-        "total": 2430
-    },
-    {
-        "commit_date": "2025-01-14T21:48:02+0300",
-        "completed": 21,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-12-26T11:40:53+0800",
-        "completed": 21,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-12-20T15:42:13+0800",
-        "completed": 21,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-12-20T15:32:27+0800",
-        "completed": 21,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-12-20T14:45:59+0800",
-        "completed": 20,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-12-19T23:24:42-0500",
-        "completed": 20,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-12-20T10:44:23+0800",
-        "completed": 19,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-09-20T11:48:30+0800",
-        "completed": 18,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-09-11T15:20:21+0800",
-        "completed": 17,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-08-22T09:48:55+0800",
-        "completed": 16,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-08-21T19:32:08+0200",
-        "completed": 16,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-08-06T11:34:31+0800",
-        "completed": 15,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-08-06T11:30:05+0800",
-        "completed": 15,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-08-06T09:57:27+0800",
-        "completed": 15,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-08-06T01:40:00+0900",
-        "completed": 15,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-07-09T23:33:45+0800",
-        "completed": 14,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-06-19T10:24:00+0800",
-        "completed": 14,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-06-17T09:54:16+0800",
-        "completed": 14,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-06-16T14:48:06+0300",
-        "completed": 14,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-06-07T15:00:51+0800",
-        "completed": 14,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-06-07T14:37:44+0800",
-        "completed": 14,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-05-26T12:21:35+0800",
-        "completed": 13,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-05-26T10:41:49+0800",
-        "completed": 13,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-05-24T17:20:00+0800",
-        "completed": 13,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-05-22T15:40:01+0800",
-        "completed": 12,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-21T22:20:58+0800",
-        "completed": 12,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-21T14:43:54+0200",
-        "completed": 12,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-21T16:15:24+0800",
-        "completed": 12,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-21T15:46:36+0800",
-        "completed": 12,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-21T15:27:40+0800",
-        "completed": 11,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-21T14:34:11+0800",
-        "completed": 10,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-20T11:00:11+0800",
-        "completed": 9,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-20T10:34:40+0800",
-        "completed": 9,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-16T09:54:08+0800",
-        "completed": 9,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-16T09:47:03+0800",
-        "completed": 9,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-16T00:30:56+0200",
-        "completed": 9,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-14T15:54:18+0800",
-        "completed": 8,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-14T15:30:38+0800",
-        "completed": 8,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-05-14T15:29:28+0800",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-10T16:40:10+0900",
-        "completed": 8,
-        "total": 2430
-    },
-    {
-        "commit_date": "2024-05-09T14:54:25+0000",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-09T14:49:13+0200",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-09T10:26:05+0200",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-09T10:25:34+0200",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-09T10:24:53+0200",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-07T10:19:16+0100",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-06T20:43:05-0400",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-06T18:15:11+0900",
-        "completed": 7,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T13:56:36+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T13:54:24+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T13:50:54+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T13:48:23+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T13:44:19+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T13:40:06+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T12:43:25+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-03T08:06:16+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-02T14:09:42+0200",
-        "completed": 5,
-        "total": 2429
-    },
-    {
-        "commit_date": "2024-05-02T11:12:50+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-02T09:13:38+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-02T09:10:03+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-02T09:09:34+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-02T08:46:31+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-01T17:01:13-0700",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-01T21:38:49+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-01T13:18:48-0400",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-01T18:00:32+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-01T17:05:35+0200",
-        "completed": 5,
-        "total": 2427
-    },
-    {
-        "commit_date": "2024-05-01T16:24:41+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-05-01T16:15:06+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-05-01T15:33:15+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T19:03:50+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T16:41:24+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T10:40:32-0400",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T09:06:11-0400",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T11:57:12+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T11:52:36+0200",
-        "completed": 3,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-29T17:06:53+0800",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T12:43:02+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T12:32:34+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T11:28:04+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T11:02:38+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T11:02:21+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T10:39:32+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T10:38:10+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-28T10:25:32+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T22:14:25+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T03:00:29-0700",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T02:54:56-0700",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T02:40:12-0700",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T02:22:50-0700",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T11:51:16+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T11:32:57+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T11:12:11+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T10:54:28+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T08:33:51+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T08:32:55+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T02:32:40+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-27T02:30:11+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T22:14:19+0000",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T17:41:26+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T17:41:15+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T16:21:30+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T16:15:32+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T16:15:10+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T16:03:52+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T15:44:52+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T15:11:11+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T15:05:01+0200",
-        "completed": 2,
-        "total": 2426
-    },
-    {
-        "commit_date": "2024-04-26T15:01:43+0200",
+        "commit_date": "2024-04-26T14:58:09+0200",
         "completed": 2,
         "total": 2426
     },
@@ -730,8 +25,728 @@
         "total": 2426
     },
     {
-        "commit_date": "2024-04-26T14:58:09+0200",
+        "commit_date": "2024-04-26T15:01:43+0200",
         "completed": 2,
         "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T15:05:01+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T15:11:11+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T15:44:52+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T16:03:52+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T16:15:10+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T16:15:32+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T16:21:30+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T17:41:15+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T17:41:26+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-26T22:14:19+0000",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T02:30:11+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T02:32:40+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T08:32:55+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T08:33:51+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T10:54:28+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T11:12:11+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T11:32:57+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T11:51:16+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T02:22:50-0700",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T02:40:12-0700",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T02:54:56-0700",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T03:00:29-0700",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-27T22:14:25+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T10:25:32+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T10:38:10+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T10:39:32+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T11:02:21+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T11:02:38+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T11:28:04+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T12:32:34+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-28T12:43:02+0200",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T17:06:53+0800",
+        "completed": 2,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T11:52:36+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T11:57:12+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T09:06:11-0400",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T10:40:32-0400",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T16:41:24+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-04-29T19:03:50+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-05-01T15:33:15+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-05-01T16:15:06+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-05-01T16:24:41+0200",
+        "completed": 3,
+        "total": 2426
+    },
+    {
+        "commit_date": "2024-05-01T17:05:35+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-01T18:00:32+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-01T13:18:48-0400",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-01T21:38:49+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-01T17:01:13-0700",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-02T08:46:31+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-02T09:09:34+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-02T09:10:03+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-02T09:13:38+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-02T11:12:50+0200",
+        "completed": 5,
+        "total": 2427
+    },
+    {
+        "commit_date": "2024-05-02T14:09:42+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T08:06:16+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T12:43:25+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T13:40:06+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T13:44:19+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T13:48:23+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T13:50:54+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T13:54:24+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-03T13:56:36+0200",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-06T18:15:11+0900",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-06T20:43:05-0400",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-07T10:19:16+0100",
+        "completed": 5,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-09T10:24:53+0200",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-09T10:25:34+0200",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-09T10:26:05+0200",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-09T14:49:13+0200",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-09T14:54:25+0000",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-10T16:40:10+0900",
+        "completed": 8,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-05-14T15:29:28+0800",
+        "completed": 7,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-14T15:30:38+0800",
+        "completed": 8,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-05-14T15:54:18+0800",
+        "completed": 8,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-16T00:30:56+0200",
+        "completed": 9,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-16T09:47:03+0800",
+        "completed": 9,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-16T09:54:08+0800",
+        "completed": 9,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-20T10:34:40+0800",
+        "completed": 9,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-20T11:00:11+0800",
+        "completed": 9,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-21T14:34:11+0800",
+        "completed": 10,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-21T15:27:40+0800",
+        "completed": 11,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-21T15:46:36+0800",
+        "completed": 12,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-21T16:15:24+0800",
+        "completed": 12,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-21T14:43:54+0200",
+        "completed": 12,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-21T22:20:58+0800",
+        "completed": 12,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-22T15:40:01+0800",
+        "completed": 12,
+        "total": 2429
+    },
+    {
+        "commit_date": "2024-05-24T17:20:00+0800",
+        "completed": 13,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-05-26T10:41:49+0800",
+        "completed": 13,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-05-26T12:21:35+0800",
+        "completed": 13,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-06-07T14:37:44+0800",
+        "completed": 14,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-06-07T15:00:51+0800",
+        "completed": 14,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-06-16T14:48:06+0300",
+        "completed": 14,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-06-17T09:54:16+0800",
+        "completed": 14,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-06-19T10:24:00+0800",
+        "completed": 14,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-07-09T23:33:45+0800",
+        "completed": 14,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-08-06T01:40:00+0900",
+        "completed": 15,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-08-06T09:57:27+0800",
+        "completed": 15,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-08-06T11:30:05+0800",
+        "completed": 15,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-08-06T11:34:31+0800",
+        "completed": 15,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-08-21T19:32:08+0200",
+        "completed": 16,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-08-22T09:48:55+0800",
+        "completed": 16,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-09-11T15:20:21+0800",
+        "completed": 17,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-09-20T11:48:30+0800",
+        "completed": 18,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-12-20T10:44:23+0800",
+        "completed": 19,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-12-19T23:24:42-0500",
+        "completed": 20,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-12-20T14:45:59+0800",
+        "completed": 20,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-12-20T15:32:27+0800",
+        "completed": 21,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-12-20T15:42:13+0800",
+        "completed": 21,
+        "total": 2430
+    },
+    {
+        "commit_date": "2024-12-26T11:40:53+0800",
+        "completed": 21,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-01-14T21:48:02+0300",
+        "completed": 21,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-02-06T18:17:10+0200",
+        "completed": 22,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-02-06T17:42:36+0100",
+        "completed": 22,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-02-17T23:35:43+0100",
+        "completed": 22,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-05-15T10:46:57+0800",
+        "completed": 26,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-05-15T13:28:00+0800",
+        "completed": 26,
+        "total": 2430
+    },
+    {
+        "commit_date": "2025-05-15T17:15:53+0800",
+        "completed": 26,
+        "total": 2429
+    },
+    {
+        "commit_date": "2025-05-15T17:20:30+0800",
+        "completed": 26,
+        "total": 2429
+    },
+    {
+        "commit_date": "2025-05-16T14:37:26+0800",
+        "completed": 35,
+        "total": 2438
+    },
+    {
+        "commit_date": "2025-05-17T16:09:21+0200",
+        "completed": 35,
+        "total": 2439
+    },
+    {
+        "commit_date": "2025-05-17T15:55:44+0200",
+        "completed": 35,
+        "total": 2434
+    },
+    {
+        "commit_date": "2025-05-21T11:49:19+0800",
+        "completed": 36,
+        "total": 2434
+    },
+    {
+        "commit_date": "2025-05-21T03:43:23+0000",
+        "completed": 36,
+        "total": 2434
+    },
+    {
+        "commit_date": "2025-05-21T03:52:58+0000",
+        "completed": 36,
+        "total": 2434
+    },
+    {
+        "commit_date": "2025-05-21T03:56:33+0000",
+        "completed": 36,
+        "total": 2435
+    },
+    {
+        "commit_date": "2025-05-21T04:04:25+0000",
+        "completed": 36,
+        "total": 2435
+    },
+    {
+        "commit_date": "2025-05-21T04:04:56+0000",
+        "completed": 36,
+        "total": 2435
+    },
+    {
+        "commit_date": "2025-05-21T12:52:46+0800",
+        "completed": 36,
+        "total": 2435
+    },
+    {
+        "commit_date": "2025-05-22T11:47:19+0800",
+        "completed": 37,
+        "total": 2436
+    },
+    {
+        "commit_date": "2025-05-27T09:59:51+0800",
+        "completed": 38,
+        "total": 2436
+    },
+    {
+        "commit_date": "2025-06-01T08:57:51+0300",
+        "completed": 38,
+        "total": 2436
+    },
+    {
+        "commit_date": "2025-06-10T14:05:07+0000",
+        "completed": 38,
+        "total": 2436
+    },
+    {
+        "commit_date": "2025-06-10T14:09:58+0000",
+        "completed": 41,
+        "total": 2437
+    },
+    {
+        "commit_date": "2025-06-10T14:11:00+0000",
+        "completed": 41,
+        "total": 2437
+    },
+    {
+        "commit_date": "2025-06-10T14:12:12+0000",
+        "completed": 41,
+        "total": 2437
+    },
+    {
+        "commit_date": "2025-06-26T15:35:47+0800",
+        "completed": 45,
+        "total": 2440
+    },
+    {
+        "commit_date": "2025-06-30T01:08:51+0300",
+        "completed": 45,
+        "total": 2440
+    },
+    {
+        "commit_date": "2025-06-29T22:22:57-0400",
+        "completed": 46,
+        "total": 2440
+    },
+    {
+        "commit_date": "2025-08-12T03:13:05+0100",
+        "completed": 46,
+        "total": 2440
+    },
+    {
+        "commit_date": "2025-09-02T21:16:21-0500",
+        "completed": 46,
+        "total": 2440
+    },
+    {
+        "commit_date": "2025-10-15T12:16:56+0300",
+        "completed": 46,
+        "total": 2440
+    },
+    {
+        "commit_date": "2025-10-21T11:25:19+0800",
+        "completed": 54,
+        "total": 2444
+    },
+    {
+        "commit_date": "2025-10-29T02:47:32+0100",
+        "completed": 54,
+        "total": 2444
+    },
+    {
+        "commit_date": "2025-10-29T02:47:54+0100",
+        "completed": 54,
+        "total": 2436
+    },
+    {
+        "commit_date": "2025-11-03T14:24:12+0800",
+        "completed": 61,
+        "total": 2442
+    },
+    {
+        "commit_date": "2025-11-04T03:12:58+0100",
+        "completed": 62,
+        "total": 2442
+    },
+    {
+        "commit_date": "2025-11-05T21:38:28-0700",
+        "completed": 62,
+        "total": 2442
     }
 ]
