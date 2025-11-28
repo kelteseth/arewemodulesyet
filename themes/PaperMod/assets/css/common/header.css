@@ -6,6 +6,7 @@
     margin-inline-start: auto;
     margin-inline-end: auto;
     line-height: var(--header-height);
+    
 }
 
 .nav a {
@@ -20,6 +21,10 @@
 
 .logo {
     flex-wrap: inherit;
+    background: var(--code-bg);
+    padding: 1rem;
+    margin-bottom: 0px;
+    border-radius: 12px;
 }
 
 .logo a {
@@ -55,6 +60,11 @@ body:not(.dark) #sun {
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    border-radius: 6px;
+    margin-inline-end: 8px;
+    background: var(--code-bg);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #menu li + li {
@@ -67,7 +77,9 @@ body:not(.dark) #sun {
 
 #menu .active {
     font-weight: 500;
-    border-bottom: 2px solid currentColor;
+    border-bottom: 2px solid #ffbb00;
+    border-image: linear-gradient(135deg, #ffbb00 0%, #ff5722 100%) 1;
+    padding-bottom: 4px;
 }
 
 .lang-switch li,

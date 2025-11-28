@@ -1,0 +1,215 @@
+# Excluded C Libraries
+#
+# This file contains a list of well-known C libraries that are excluded from
+# the C++ modules progress tracking. Since C libraries cannot use C++20 modules,
+# they are filtered out to provide a more accurate picture of C++ library
+# modules adoption.
+#
+# These libraries are written in C and provide C APIs, even if they may have
+# thin C++ wrappers available separately.
+
+libraries:
+# Compression libraries
+- zlib
+- zlib-ng
+- bzip2
+- lz4
+- zstd
+- brotli
+- liblzma
+- minizip
+- minizip-ng
+- blosc
+- blosc2
+
+# Image format libraries
+- libpng
+- libjpeg-turbo
+- tiff
+- libwebp
+- giflib
+- jxrlib
+- libavif
+- openjpeg
+- libspng
+- stb # Single-file C headers
+
+# Audio/Video libraries
+- ffmpeg
+- libsndfile
+- libogg
+- libvorbis
+- libflac
+- opus
+- opusfile
+- portaudio
+- mpg123
+- mp3lame
+- libsamplerate
+- soxr
+- libao
+- alsa
+
+# Cryptography & Security
+- openssl
+- mbedtls
+- wolfssl
+- libsodium
+- libressl
+- nettle
+- libgcrypt
+- libgpg-error
+- argon2
+
+# Networking
+- curl
+- libssh
+- libssh2
+- libuv
+- libevent
+- libev
+- c-ares
+- nghttp3
+- ngtcp2
+- libmicrohttpd
+- libwebsockets
+- mongoose
+- civetweb
+- librabbitmq
+- librdkafka
+- nanomsg
+- nng
+
+# Database clients
+- libpq # PostgreSQL C client
+- libmysql
+- sqlite3
+- hiredis
+- mongo-c-driver
+- lmdb
+
+# XML/JSON/Data parsing
+- libxml2
+- libxslt
+- expat
+- mxml
+- cjson
+- yyjson
+- jansson
+- json-c
+- cmark
+- cmark-gfm
+- libyaml
+
+# Text/Regex
+- pcre
+- pcre2
+- oniguruma
+- tre
+- libiconv
+- libunistring
+- utf8proc
+
+# System libraries
+- libffi
+- gettext
+- gettext-libintl
+- glib
+- dbus
+- libcap
+- liburing
+
+# Graphics/Windowing (C libraries)
+- sdl2
+- sdl2-image
+- sdl2-mixer
+- sdl2-net
+- sdl2-ttf
+- sdl2-gfx
+- sdl1
+- glfw3
+- libx11
+- xcb
+- libxkbcommon
+- wayland
+- fontconfig
+- freetype
+- cairo
+- pango
+- pixman
+
+# Archive libraries
+- libarchive
+- libzip
+- zziplib
+- unrar
+
+# Math/Scientific (C libraries)
+- fftw3
+- gsl
+- openblas
+- lapack
+- blas
+- cblas
+
+# AWS C libraries
+- aws-c-auth
+- aws-c-cal
+- aws-c-common
+- aws-c-compression
+- aws-c-event-stream
+- aws-c-http
+- aws-c-io
+- aws-c-mqtt
+- aws-c-s3
+- aws-c-sdkutils
+- aws-checksums
+
+# Azure C libraries
+- azure-c-shared-utility
+- azure-iot-sdk-c
+- azure-macro-utils-c
+- azure-uamqp-c
+- azure-uhttp-c
+- azure-umqtt-c
+
+# Other well-known C libraries
+- libuuid
+- check # C unit testing
+- cmocka # C unit testing
+- mimalloc
+- jemalloc
+- apr # Apache Portable Runtime
+- apr-util
+- libbson
+- libyuv
+- quirc
+- libusb
+- hidapi
+- libftdi
+- libgit2
+- gherkin-c
+- aliyun-oss-c-sdk
+- avro-c
+- lodepng-c
+- secp256k1
+- gmp
+- mpfr
+- mpc
+- flint
+- arb
+- libb2 # BLAKE2 hashing library (C 96.7%)
+- libbacktrace # Backtrace library (C 55%)
+- libva # Video Acceleration API (C 96.5%)
+- xxhash # Extremely fast hash algorithm (C 93.4%)
+- libfuse # Filesystem in Userspace (C 65.9%)
+- libidn2 # Internationalized Domain Names (C 65.7%)
+- liburing # io_uring library (C 94.1%)
+- libepoxy # OpenGL function pointer management (C 71.6%)
+- libgpg-error # GnuPG error library (C 55.7%)
+- pthreads
+- pthreadpool
+- libdivide
+- readline
+- ncurses
+- pdcurses

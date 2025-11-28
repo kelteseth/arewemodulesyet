@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Excluded C Libraries</h1>
+        <div class="post-description">
+            C libraries excluded from C++ modules progress tracking
+        </div>
+    </header>
+
+    <div class="post-content">
+        <p>Total: <strong>{{ len .Site.Data.excluded_c_libraries.libraries }}</strong> C libraries excluded</p>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Library Name</th>
+                    <th >vcpkg Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $index, $lib := .Site.Data.excluded_c_libraries.libraries }}
+                <tr>
+                    <td>{{ add $index 1 }}</td>
+                    <td><code>{{ $lib }}</code></td>
+                    <td><a href="https://vcpkg.io/en/package/{{ $lib }}" target="_blank" rel="noopener">vcpkg</a></td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</article>
+{{ end }}
