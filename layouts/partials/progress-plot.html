@@ -58,7 +58,7 @@
     
     <!-- Display Header Information -->
     <div style="margin-bottom: 1rem; margin-top: 1rem; font-size: x-small; color: gray; text-align: center;">
-        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}
+        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}
         </p>
     </div>
     

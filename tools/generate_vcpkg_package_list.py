@@ -4,15 +4,16 @@ import json
 import argparse
 import yaml
 import time
-import shutil
 import tempfile
 from git import Repo
 from termcolor import colored
 
-def get_git_revision_count(repo, file_path):
+
+def get_git_revision_count(repo: Repo, file_path: str) -> int:
+    """Get commit count for a file using git rev-list (much faster than iter_commits)."""
     try:
-        # Get count of commits affecting the file
-        return len(list(repo.iter_commits(paths=file_path)))
+        count = repo.git.rev_list("--count", "HEAD", "--", file_path)
+        return int(count)
     except Exception as e:
         print(colored(f"Error retrieving revisions for {file_path}: {str(e)}", "red"))
         return 0
@@ -77,6 +78,7 @@ def main():
         except Exception as e:
             print(colored(f"Error updating repository: {str(e)}", "red"))
             print(colored("Continuing with existing state...", "yellow"))
+            repo = Repo(repo_path)
     else:
         print(colored(f"Cloning vcpkg repository to {repo_path}...", "blue"))
         os.makedirs(repo_path, exist_ok=True)
@@ -89,6 +91,8 @@ def main():
     ports_data = []
     file_count = 0
     total_files = sum(1 for root, dirs, files in os.walk(ports_dir) if 'portfile.cmake' in files and 'vcpkg.json' in files)
+
+    # Walk through the ports directory
 
     # Walk through the ports directory
     for root, dirs, files in os.walk(ports_dir):
@@ -112,7 +116,7 @@ def main():
     
     current_time = int(time.time())
     header_info = {
-        'generated_date':  current_time,
+        'generated_date': current_time,
         'vcpkg_commit_hash': repo.head.commit.hexsha
     }
     output_data = {'header': header_info, 'ports': ports_data}

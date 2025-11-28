@@ -2,14 +2,35 @@
 
 This website tracks C++20 modules support across popular libraries using vcpkg port revision counts to estimate popularity.
 
+## How Projects Are Counted
+
+**Total C++ Projects:**
+```
+  vcpkg packages (baseline)
+- Excluded C libraries (pure C, can't use modules)
++ External projects (notable C++ projects not in vcpkg)
+= Total C++ projects tracked
+```
+
+**Completed Projects (with modules support):**
+```
+  vcpkg packages with ✅ status (from vcpkg_overrides.yml)
++ External projects with ✅ status (from external_projects.yml)
+= Total completed
+```
+
+> **Note:** Only packages that exist in vcpkg can be overridden via `vcpkg_overrides.yml`. 
+> Projects not in vcpkg must be added to `external_projects.yml`.
+
 ## Data Files
 
 **Auto-generated** (`data/generated/` - DO NOT EDIT):
 - `vcpkg_packages.yml` - Generated from vcpkg repository
 
 **Manual** (`data/`):
-- `vcpkg_overrides.yml` - Override vcpkg package metadata
+- `vcpkg_overrides.yml` - Override vcpkg package metadata (must exist in vcpkg)
 - `external_projects.yml` - Projects not in vcpkg
+- `excluded_c_libraries.yml` - C libraries to exclude from tracking
 
 **Output** (`data/`):
 - `progress.yml` - Merged result displayed on website
@@ -66,9 +87,14 @@ uv run tools/generate_vcpkg_package_list.py
 data/
 ├── vcpkg_overrides.yml       # Manual: vcpkg package overrides
 ├── external_projects.yml     # Manual: non-vcpkg projects
+├── excluded_c_libraries.yml  # Manual: C libraries to exclude
 ├── progress.yml              # Output: merged result for website
 └── generated/
     └── vcpkg_packages.yml    # Auto-generated from vcpkg (DO NOT EDIT)
+tools/
+├── generate_vcpkg_package_list.py      # Fetches vcpkg data
+├── merge_vcpkg_package_list_progress.py # Merges all data → progress.yml
+└── compute_completion_status.py        # Generates historical stats
 layouts/partials/
 ├── progress-table.html       # Table component
 ├── progress-plot.html        # Chart component

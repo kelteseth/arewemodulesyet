@@ -34,6 +34,7 @@ OUTPUT_FILE = Path("static") / "data" / "cumulative_stats.json"
 VCPKG_PACKAGES = GENERATED_DIR / "vcpkg_packages.yml"
 VCPKG_OVERRIDES = DATA_DIR / "vcpkg_overrides.yml"
 EXTERNAL_PROJECTS = DATA_DIR / "external_projects.yml"
+EXCLUDED_C_LIBS = DATA_DIR / "excluded_c_libraries.yml"
 
 MASTER_BRANCH = "master"
 
@@ -90,6 +91,20 @@ def load_historical_data() -> list[dict]:
     return data
 
 
+def load_excluded_c_libraries(content: str | None) -> set[str]:
+    """Load the set of C library names to exclude from tracking."""
+    if not content:
+        return set()
+    
+    try:
+        data = yaml.safe_load(StringIO(content))
+        if data and "libraries" in data:
+            return set(data["libraries"])
+    except Exception:
+        pass
+    return set()
+
+
 def get_latest_date(data: list[dict]) -> datetime | None:
     """Find the most recent date in the data."""
     if not data:
@@ -127,14 +142,27 @@ def get_commits_since(since_date: datetime | None) -> list[dict]:
     return commits
 
 
-def merge_yaml_data(vcpkg_packages: str, vcpkg_overrides: str | None, external_projects: str | None) -> tuple[int, int]:
+def merge_yaml_data(
+    vcpkg_packages: str,
+    vcpkg_overrides: str | None,
+    external_projects: str | None,
+    excluded_c_libs: set[str] | None = None,
+) -> tuple[int, int]:
     """
     Merge YAML data in memory (mimics merge_vcpkg_package_list_progress.py logic).
     Returns (completed, total).
     """
+    if excluded_c_libs is None:
+        excluded_c_libs = set()
+    
     # Parse vcpkg packages
     packages = yaml.safe_load(StringIO(vcpkg_packages))
-    ports = {p["name"]: p for p in packages.get("ports", [])}
+    ports = {}
+    for p in packages.get("ports", []):
+        # Skip excluded C libraries
+        if p["name"] in excluded_c_libs:
+            continue
+        ports[p["name"]] = p
     
     # Apply overrides
     if vcpkg_overrides:
@@ -147,7 +175,7 @@ def merge_yaml_data(vcpkg_packages: str, vcpkg_overrides: str | None, external_p
     # Add external projects
     if external_projects:
         external = yaml.safe_load(StringIO(external_projects))
-        for project in external.get("ports", []):
+        for project in external.get("projects", []):
             ports[project["name"]] = project
     
     # Count
@@ -157,7 +185,7 @@ def merge_yaml_data(vcpkg_packages: str, vcpkg_overrides: str | None, external_p
     return completed, total
 
 
-def process_commit(sha: str, date: str) -> dict | None:
+def process_commit(sha: str, date: str, excluded_c_libs: set[str]) -> dict | None:
     """Process a single commit and return stats using git show (no checkout)."""
     # Read vcpkg_packages (required)
     vcpkg_packages = git_show(sha, VCPKG_PACKAGES)
@@ -169,7 +197,9 @@ def process_commit(sha: str, date: str) -> dict | None:
     external_projects = git_show(sha, EXTERNAL_PROJECTS)
     
     try:
-        completed, total = merge_yaml_data(vcpkg_packages, vcpkg_overrides, external_projects)
+        completed, total = merge_yaml_data(
+            vcpkg_packages, vcpkg_overrides, external_projects, excluded_c_libs
+        )
         return {
             "commit_date": to_iso_date(date),
             "completed": completed,
@@ -208,6 +238,16 @@ def main() -> None:
     print(colored("📊 Computing historical completion status...", "cyan", attrs=["bold"]))
     print()
     
+    # Load excluded C libraries from local file (used for all calculations)
+    excluded_c_libs_file = EXCLUDED_C_LIBS
+    if excluded_c_libs_file.exists():
+        with excluded_c_libs_file.open("r") as f:
+            excluded_c_libs = load_excluded_c_libraries(f.read())
+        print(colored(f"🚫 Loaded {len(excluded_c_libs)} excluded C libraries", "blue"))
+    else:
+        excluded_c_libs = set()
+        print(colored("⚠️  No excluded C libraries file found", "yellow"))
+    
     # Load historical data
     historical = load_historical_data()
     latest_date = get_latest_date(historical)
@@ -232,7 +272,7 @@ def main() -> None:
                 end=" "
             )
             
-            stats = process_commit(commit["sha"], commit["date"])
+            stats = process_commit(commit["sha"], commit["date"], excluded_c_libs)
             if stats:
                 new_data.append(stats)
                 print(colored(f"✓ {stats['completed']}/{stats['total']}", "green"))

@@ -112,6 +112,11 @@ projects:
   import_statement: ALib.*
   modules_support_date: 2025-10-01
   homepage: https://github.com/AlexWorx/ALib-Class-Library
+- name: kokkos
+  status: ✅
+  import_statement: kokkos.*
+  modules_support_date: 2025-10-01
+  homepage: https://github.com/kokkos/kokkos
 - name: jwt-cpp
   homepage: https://github.com/Thalhammer/jwt-cpp
   modules_support_date: ''

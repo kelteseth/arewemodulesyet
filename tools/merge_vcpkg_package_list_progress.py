@@ -12,15 +12,31 @@ def get_date_value(date_val):
         return date_val.strftime('%Y-%m-%d')
     return str(date_val).strip()
 
-def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_projects_file, output_file):
+def load_excluded_c_libraries(excluded_file):
+    """Load the list of C libraries to exclude from tracking."""
+    if not os.path.exists(excluded_file):
+        return set()
+    
+    with open(excluded_file, 'r', encoding='utf-8') as f:
+        data = yaml.safe_load(f)
+    
+    if data and 'libraries' in data:
+        return set(data['libraries'])
+    return set()
+
+def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_projects_file, excluded_c_libs_file, output_file):
     print()
     print(colored("📦 Merging C++ modules progress data...", "cyan", attrs=["bold"]))
     print()
     print(colored("  Input files:", "blue"))
-    print(f"    • vcpkg_packages:   {colored(vcpkg_packages_file, 'white')}")
-    print(f"    • vcpkg_overrides:  {colored(vcpkg_overrides_file, 'white')}")
-    print(f"    • external_projects: {colored(external_projects_file, 'white')}")
+    print(f"    • vcpkg_packages:     {colored(vcpkg_packages_file, 'white')}")
+    print(f"    • vcpkg_overrides:    {colored(vcpkg_overrides_file, 'white')}")
+    print(f"    • external_projects:  {colored(external_projects_file, 'white')}")
+    print(f"    • excluded_c_libs:    {colored(excluded_c_libs_file, 'white')}")
     print()
+    
+    # Load excluded C libraries
+    excluded_c_libs = load_excluded_c_libraries(excluded_c_libs_file)
     
     with open(vcpkg_packages_file, 'r', encoding='utf-8') as f:
         vcpkg_packages = yaml.safe_load(f)
@@ -31,17 +47,35 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     with open(external_projects_file, 'r', encoding='utf-8') as f:
         external_projects = yaml.safe_load(f)
     
+    # Extract vcpkg package names for validation
+    vcpkg_ports_list = vcpkg_packages['ports']
+    vcpkg_package_names = {item['name'] for item in vcpkg_ports_list}
+    
+    # Sanity check: verify all excluded C libraries exist in vcpkg
+    invalid_exclusions = excluded_c_libs - vcpkg_package_names
+    if invalid_exclusions:
+        print(colored("  ⚠️  Warning: Invalid entries in excluded_c_libraries.yml", "yellow", attrs=["bold"]))
+        print(colored("     These libraries don't exist in vcpkg:", "yellow"))
+        for lib in sorted(invalid_exclusions):
+            print(f"       • {colored(lib, 'red')}")
+        print()
+    
     # Create a dictionary from the overrides data for easy access
     overrides_ports = vcpkg_overrides.get('ports', [])
     overrides_dict = {item['name']: item for item in overrides_ports}
     
-    # Extract the vcpkg packages data
+    # Extract the vcpkg packages header
     header_info = vcpkg_packages['header']
-    vcpkg_ports_list = vcpkg_packages['ports']
     
-    # Merge vcpkg packages with overrides
+    # Filter out C libraries and merge vcpkg packages with overrides
     merged_ports = []
+    excluded_count = 0
     for item in vcpkg_ports_list:
+        # Skip excluded C libraries
+        if item['name'] in excluded_c_libs:
+            excluded_count += 1
+            continue
+        
         if item['name'] in overrides_dict:
             # Only overwrite specific fields
             for key in ['import_statement', 'current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'status', 'module_native']:
@@ -138,7 +172,8 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     print(f"    • {colored(output_file, 'white')}")
     print()
     print(colored("  Statistics:", "blue"))
-    print(f"    • Total projects:     {colored(str(total_projects), 'yellow')}")
+    print(f"    • C libs excluded:    {colored(str(excluded_count), 'red')}")
+    print(f"    • C++ projects:       {colored(str(total_projects), 'yellow')}")
     print(f"    • With modules (✅):  {colored(str(completed_projects), 'green')}")
     print(f"    • Progress:           {colored(f'{progress_percent:.1f}%', 'cyan')}")
     if estimated_completion_date:
@@ -161,9 +196,10 @@ def main():
     vcpkg_packages_path = os.path.join(generated_path, 'vcpkg_packages.yml')
     vcpkg_overrides_path = os.path.join(data_path, 'vcpkg_overrides.yml')
     external_projects_path = os.path.join(data_path, 'external_projects.yml')
+    excluded_c_libs_path = os.path.join(data_path, 'excluded_c_libraries.yml')
     progress_path = os.path.join(data_path, 'progress.yml')
     
-    load_and_merge_yaml(vcpkg_packages_path, vcpkg_overrides_path, external_projects_path, progress_path)
+    load_and_merge_yaml(vcpkg_packages_path, vcpkg_overrides_path, external_projects_path, excluded_c_libs_path, progress_path)
 
 if __name__ == '__main__':
     main()
