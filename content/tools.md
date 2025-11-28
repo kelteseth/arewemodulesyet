@@ -13,7 +13,7 @@
 |------------------|------------------------|------|
 | MSSTL            | ✅ (17.10)             |      |
 | libc++           | Partial (18)           |      |
-| libstdc++        | ❌                     |      |
+| libstdc++        | Partial (15)       |      |
 
 ## Build Tools
 
@@ -29,7 +29,7 @@
 | Meson         | Partial       | ❌            | [Issue Link](https://github.com/mesonbuild/meson/issues/5024) |
 | Gnu Make      | ✅            | ❌            | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo) |
 | GNU Autotools | ❌            | ❌            |      |
-| Scons         | ⚙️            | ❌            | [PR for GCC support](https://github.com/SCons/scons/projects/14#card-86356523) |
+| Scons         | ⚙️            | ❌            | [PR for GCC support](https://github.com/SCons/scons/pull/4248) |
 | ccache        | ❌            | ❌            | [Issue Link](https://github.com/ccache/ccache/issues/1252) |
 | sccache       | ❌            | ❌            | [Issue Link](https://github.com/mozilla/sccache/issues/2095) |
 | Bazel         | ❌            | ❌            | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005) |
