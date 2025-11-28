@@ -276,6 +276,16 @@
                 color: var(--input-text-color);
             }
 
+            th.rotated {
+                max-width: 2em;
+                white-space: nowrap;
+                text-overflow: visible;
+            }
+
+            th.rotated > div {
+                transform: rotate(340deg);
+            }
+
             .truncate-text-name {
                 max-width: 290px;
                 white-space: nowrap;
@@ -302,10 +312,10 @@
         </style>
         <thead>
             <tr style="text-align: left;">
-                <th>Status</th>
-                <th>Modules Native</th>
-                <th>Help<br>Wanted</th>
-                <th>Name</th>
+                <th class="rotated"><div>Status</div></th>
+                <th class="rotated"><div><br>Modules Native?</div></th>
+                <th class="rotated"><div><br><br>Help Wanted?</div></th>
+                <th>&emsp; Name</th>
                 <th>Import Statement</th>
                 <th>Popularity</th>
                 <th>Version</th>
