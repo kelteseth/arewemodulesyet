@@ -1,2 +1,6 @@
 .hugo_build.lock
 public
+tools/vcpkg/
+tmp/
+
+data/progress.yml

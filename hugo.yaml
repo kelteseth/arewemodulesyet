@@ -1,33 +1,29 @@
 baseURL: https://arewemodulesyet.org
 languageCode: en-us
 title: Are We Modules Yet?
-theme: ["PaperMod"]
+theme: [ "PaperMod" ]
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:
-    Content: |+
-      This website tracks the most popular C++ projects, compilers, and build systems. We use vcpkg to get a rough idea of how popular a library is based on how many revisions the port has.
-
-      We also have an example section to track good projects using modules natively and a document section tracks good articles about modules too.
-
-      Feel free to contribute to these lists.
     Image: images/cpp_needs_you.webp
 menu:
   main:
-    # - name: News
-    #   url: post
-    #   weight: 1
-    - name: ⚙️ Tools Support
-      url: /Tools/
-      weight: 1
-    - name: Docs
-      url: /Documents/
-      weight: 2
-    - name: Examples
-      url: /Examples/
-      weight: 3
-    - name: Follow me
-      url: https://bsky.app/profile/kelteseth.bsky.social
-    - name: Contribute on Github
-      url: https://github.com/kelteseth/arewemodulesyet/
-    
+  - name: 🏠 Home
+    url: /
+    weight: 1
+  - name: 📦 Projects
+    url: /projects/
+    weight: 2
+  - name: ⚙️ Tools Support
+    url: /Tools/
+    weight: 3
+  - name: 📚 Docs
+    url: /Documents/
+    weight: 4
+  - name: 💡 Examples
+    url: /Examples/
+    weight: 5
+  - name: ☁️ Follow me
+    url: https://bsky.app/profile/kelteseth.bsky.social
+  - name: 💻 Github
+    url: https://github.com/kelteseth/arewemodulesyet/

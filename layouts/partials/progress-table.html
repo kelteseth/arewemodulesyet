@@ -1,0 +1,687 @@
+<!-- Progress Table -->
+<style>
+    :root {
+        /* Light theme colors */
+        --text-color: #333;
+        --background-color-th: #e0e0e0;
+        --link-color: #0066cc;
+        --input-text-color: #333;
+        --row-color-primary: #ffffff;
+        --row-color-secondary: #f0f0f0;
+        --progress-table-max-width: 1100px;
+        --col-status: 70px;
+        --col-native: 90px;
+        --col-name: 220px;
+        --col-import: 360px;
+        --col-popularity: 90px;
+        --col-version: 80px;
+        --col-support: 120px;
+        --col-tracking: 70px;
+    }
+
+    body.dark {
+        /* Dark theme colors */
+        --text-color: #ddd;
+        --background-color-th: #222;
+        --link-color: steelblue;
+        --input-text-color: #827b7b;
+        --row-color-primary: #333333;
+        --row-color-secondary: #2a2a2a;
+    }
+</style>
+
+<!-- Filter Checkboxes with Descriptions -->
+<div class="checkboxes-and-info-container">
+    <div class="checkboxes-container">
+        <div class="checkboxes-section">
+            <div class="section-title">Status Filters</div>
+            <div class="checkbox-grid status-filters">
+                <label class="checkbox-with-desc">
+                    <input type="checkbox" id="status-check" onchange="onSearchInput()"/>
+                    <span class="checkbox-emoji">✅</span>
+                    <span class="checkbox-desc">Full support</span>
+                </label>
+                <label class="checkbox-with-desc">
+                    <input type="checkbox" id="status-question" onchange="onSearchInput()"/>
+                    <span class="checkbox-emoji">❔</span>
+                    <span class="checkbox-desc">Unknown/Not set</span>
+                </label>
+                <label class="checkbox-with-desc">
+                    <input type="checkbox" id="status-working" onchange="onSearchInput()"/>
+                    <span class="checkbox-emoji">⚙️</span>
+                    <span class="checkbox-desc">Work in progress</span>
+                </label>
+                <label class="checkbox-with-desc">
+                    <input type="checkbox" id="status-warning" onchange="onSearchInput()"/>
+                    <span class="checkbox-emoji">⚠️</span>
+                    <span class="checkbox-desc">Issue reported</span>
+                </label>
+                <label class="checkbox-with-desc">
+                    <input type="checkbox" id="status-cross" onchange="onSearchInput()"/>
+                    <span class="checkbox-emoji">❌</span>
+                    <span class="checkbox-desc">No planned support</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="checkboxes-section">
+            <div class="section-title">Additional Filters</div>
+            <div class="checkbox-grid">
+                <label class="checkbox-with-desc">
+                    <input type="checkbox" id="module-native-check" onchange="onSearchInput()"/>
+                    <span class="checkbox-emoji">✅</span>
+                    <span class="checkbox-desc">🚀 Native Modules (using modules internally, not just wrapping headers)</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display Header Information -->
+    <div class="header-info">
+        <h5>Info:</h5>
+        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}
+        </p>
+    </div>
+</div>
+
+<div id="input-bar">
+    <!-- Centered Search Input -->
+    <input type="text" id="search-input" onkeyup="onSearchInput()" placeholder="Search projects...">
+</div>
+
+<style>
+    #input-bar {
+        display: flex;
+        justify-content: center;
+        padding-bottom: .5rem;
+        margin-top: 0.75rem;
+    }
+
+    #search-input {
+        color: var(--input-text-color);
+        background-color: var(--row-color-secondary);
+        padding: 12px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        border: 1px solid var(--background-color-th);
+        border-radius: 4px;
+    }
+
+    .checkboxes-and-info-container {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+    }
+
+    .checkboxes-container {
+        flex: 4;
+    }
+
+    .header-info {
+        flex: 1;
+        font-size: small;
+        color: gray;
+        padding-top: 0;
+    }
+
+    .header-info p {
+        margin: 0;
+    }
+
+    .header-info a {
+        color: var(--link-color);
+    }
+
+    .checkboxes-section {
+        margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+        font-size: 1.1rem;
+        color: var(--text-color);
+    }
+
+    .checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 0.3rem;
+    }
+
+    .checkbox-grid.status-filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+
+    .checkbox-grid.status-filters .checkbox-with-desc {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .checkbox-with-desc {
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 0.5rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .checkbox-with-desc:hover {
+        background-color: var(--row-color-secondary);
+    }
+
+    .checkbox-with-desc input[type="checkbox"] {
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+
+    .checkbox-emoji {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .checkbox-desc {
+        color: var(--text-color);
+        font-size: 0.9rem;
+    }
+
+    .checkbox-with-desc.disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+
+    .checkbox-with-desc.disabled input[type="checkbox"] {
+        cursor: not-allowed;
+    }
+</style>
+
+<div class="progress-table-container">
+<table id="progress-table">
+    <style>
+        .progress-table-container {
+            max-width: var(--progress-table-max-width);
+            margin: 0 auto 2rem;
+            overflow-x: hidden;
+        }
+
+        #progress-table {
+            width: 100%;
+            max-width: var(--progress-table-max-width);
+            margin: 0 auto;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: var(--background-color-th);
+            padding: 8px;
+            color: var(--text-color);
+        }
+
+        td {
+            padding: 8px;
+            color: var(--text-color);
+        }
+
+        td a {
+            color: var(--link-color);
+        }
+
+        /* Alternating row backgrounds using CSS variables for row colors */
+        tr:nth-child(odd) {
+            background-color: var(--row-color-primary);
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--row-color-secondary);
+        }
+
+
+        
+        #progress-table th {
+            overflow: hidden;
+            white-space: normal;
+            word-wrap: break-word;
+            font-size: 0.85em;
+        }
+        
+        #progress-table td {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: break-all;
+            padding: 4px !important;
+        }
+
+        /* Column width distribution */
+        #progress-table th:nth-child(1), /* Status */
+        #progress-table td:nth-child(1) {
+            width: var(--col-status);
+            min-width: var(--col-status);
+            max-width: var(--col-status);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #progress-table th:nth-child(2), /* Modules Native */
+        #progress-table td:nth-child(2) {
+            width: var(--col-native);
+            min-width: var(--col-native);
+            max-width: var(--col-native);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #progress-table th:nth-child(3), /* Name */
+        #progress-table td:nth-child(3) {
+            width: var(--col-name);
+            min-width: var(--col-name);
+            max-width: var(--col-name);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #progress-table th:nth-child(4), /* Import Statement */
+        #progress-table td:nth-child(4) {
+            width: var(--col-import);
+            min-width: var(--col-import);
+            max-width: var(--col-import);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #progress-table th:nth-child(5), /* Popularity */
+        #progress-table td:nth-child(5) {
+            width: var(--col-popularity);
+            min-width: var(--col-popularity);
+            max-width: var(--col-popularity);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #progress-table th:nth-child(6), /* Version */
+        #progress-table td:nth-child(6) {
+            width: var(--col-version);
+            min-width: var(--col-version);
+            max-width: var(--col-version);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        #progress-table th:nth-child(7), /* Modules Support Since */
+        #progress-table td:nth-child(7) {
+            width: var(--col-support);
+            min-width: var(--col-support);
+            max-width: var(--col-support);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #progress-table th:nth-child(8), /* Tracking Issue */
+        #progress-table td:nth-child(8) {
+            width: var(--col-tracking);
+            min-width: var(--col-tracking);
+            max-width: var(--col-tracking);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        #search-input::placeholder {
+            color: var(--input-text-color);
+        }
+
+        .sort-indicator {
+            font-size: 0.8em;
+            margin-left: 4px;
+        }
+
+        th:hover {
+            background-color: var(--row-color-secondary);
+        }
+
+        .truncate-text-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .truncate-text-version {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .import-statement {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--row-color-secondary);
+            color: var(--text-color);
+            padding: 1px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+    </style>
+    <thead>
+        <tr style="text-align: left;">
+            <th onclick="sortTable(0)" style="cursor: pointer; ">Status <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(1)" style="cursor: pointer; ">Modules Native <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(2)" style="cursor: pointer; ">Name <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(3)" style="cursor: pointer; ">Import Statement <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(4)" style="cursor: pointer; ">Popularity <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(5)" style="cursor: pointer; ">Version <span class="sort-indicator"></span></th>
+            <!-- <th>Min C++<br>Version</th> -->
+            <th onclick="sortTable(6)" style="cursor: pointer;">Modules<br>Support Since <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(7)" style="cursor: pointer; ">Tracking Issue <span class="sort-indicator"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $approved := where .Site.Data.progress.ports "status" "✅" }}
+        {{ $others := where .Site.Data.progress.ports "status" "!=" "✅" }}
+        {{ $approve_sorted := (sort $approved "revision_count" "desc") }}
+        {{ $others_sorted := (sort $others "revision_count" "desc") }}
+
+        {{ $combined := slice }}
+
+        {{ range $approve_sorted }}
+            {{ $combined = $combined | append . }}
+        {{ end }}
+        {{ range $others_sorted }}
+            {{ $combined = $combined | append . }}
+        {{ end }}
+
+        {{ range $combined }}
+        <tr>
+            <td>{{ .status }}</td>
+            <td>{{ .module_native }}</td>
+            <td class="truncate-text-name"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
+            <td>
+                {{ if isset . "import_statement" }}
+                {{ if ne .import_statement ""}}
+                    <span class="import-statement">import {{ .import_statement }};</span>
+                {{ end }}
+                {{end }}
+            </td>
+            <td>{{ .revision_count }}</td>
+            <td class="truncate-text-version">{{ .version }}</td>
+            <!-- <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td> -->
+            <td>
+                {{ if ne .modules_support_date ""}}
+                {{ .modules_support_date }}
+                {{ end }}
+            </td>
+            <td>
+                {{ if ne .tracking_issue ""}}
+                <a href="{{ .tracking_issue }}">🔗</a>
+                {{end }}
+            </td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
+</div>
+
+<!-- Script for filtering and sorting -->
+<script>
+    /**
+     * Check if the checkbox matches the filter
+     * @param {string} colText
+     * @param {Array<{ checked: boolean, text: string }>} checkboxesInfo
+     * @returns {boolean}
+     */
+    function colMatchesCheckbox(colText, checkboxesInfo) {
+        // if the filter matches one of the checkboxes
+        return checkboxesInfo.some(checkboxInfo => {
+            if (checkboxInfo.checked) {
+                return colText === checkboxInfo.text;
+            }
+        });
+    }
+
+    /**
+     * Check if a row matches the filter
+     * @param {string} colText
+     * @param {string} filter
+     * @returns {boolean}
+     */
+    function colMatches(colText, filter) {
+        if (filter === "") {
+            return true;
+        }
+        return colText.toUpperCase().includes(filter);
+    }
+
+    /**
+     * Get the checkbox information
+     * @param {NodeListOf<HTMLInputElement>} checkboxes
+     * @returns {Array<{ checked: boolean, text: string }>}
+     */
+    function getCheckboxInfo(checkboxes) {
+        return Array.from(checkboxes)
+            .map(checkboxInput => {
+                if (!(checkboxInput instanceof HTMLInputElement)) {
+                    return null;
+                }
+
+                // Get the emoji from the next sibling span
+                const emojiSpan = checkboxInput.nextElementSibling;
+                if (!emojiSpan || !emojiSpan.textContent) {
+                    return null;
+                }
+
+                return { checked: checkboxInput.checked, text: emojiSpan.textContent };
+            })
+            .filter(checkboxInfo => checkboxInfo !== null);
+    }
+
+    // Get the element references
+    const input = document.getElementById("search-input");
+    if (!(input instanceof HTMLInputElement)) {
+        throw new Error("Search input not found");
+    }
+    const table = document.getElementById("progress-table");
+    if (!(table instanceof HTMLTableElement)) {
+        throw new Error("Progress table not found");
+    }
+    const rows = table.getElementsByTagName("tr");
+    const statusCheckboxes = document.querySelectorAll(".checkbox-with-desc input[id^='status-']");
+    const modulesNativeCheckboxes = document.querySelectorAll(".checkbox-with-desc input[id^='module-native-']");
+
+    // Sorting state
+    let sortState = {
+        column: -1,
+        ascending: true
+    };
+
+    // Store original order
+    const tbody = table.querySelector("tbody");
+    const originalOrder = tbody ? Array.from(tbody.getElementsByTagName("tr")).map(row => row.cloneNode(true)) : [];
+
+    /**
+     * Sort table by column
+     * @param {number} columnIndex
+     */
+    function sortTable(columnIndex) {
+        const tbody = table.querySelector("tbody");
+        if (!tbody) return;
+
+        // If clicking the same column twice in ascending order, reset to default
+        if (sortState.column === columnIndex && sortState.ascending) {
+            resetToDefaultSort();
+            return;
+        }
+
+        const rowsArray = Array.from(tbody.getElementsByTagName("tr"));
+        
+        // Toggle sort direction if clicking the same column
+        if (sortState.column === columnIndex) {
+            sortState.ascending = !sortState.ascending;
+        } else {
+            sortState.column = columnIndex;
+            sortState.ascending = true;
+        }
+
+        // Clear all sort indicators
+        const indicators = table.querySelectorAll(".sort-indicator");
+        indicators.forEach(indicator => indicator.textContent = "");
+
+        // Set current sort indicator
+        const currentHeader = table.querySelectorAll("th")[columnIndex];
+        const currentIndicator = currentHeader.querySelector(".sort-indicator");
+        if (currentIndicator) {
+            currentIndicator.textContent = sortState.ascending ? "▲" : "▼";
+        }
+
+        rowsArray.sort((rowA, rowB) => {
+            const cellA = rowA.getElementsByTagName("td")[columnIndex];
+            const cellB = rowB.getElementsByTagName("td")[columnIndex];
+            
+            let textA = cellA.textContent || "";
+            let textB = cellB.textContent || "";
+
+            // Special handling for popularity column (numeric sort)
+            if (columnIndex === 4) {
+                const numA = parseInt(textA) || 0;
+                const numB = parseInt(textB) || 0;
+                return sortState.ascending ? numA - numB : numB - numA;
+            }
+
+            // Special handling for date column
+            if (columnIndex === 6) {
+                const dateA = new Date(textA).getTime() || 0;
+                const dateB = new Date(textB).getTime() || 0;
+                return sortState.ascending ? dateA - dateB : dateB - dateA;
+            }
+
+            // Text comparison for other columns
+            const comparison = textA.localeCompare(textB);
+            return sortState.ascending ? comparison : -comparison;
+        });
+
+        // Clear and re-append sorted rows
+        rowsArray.forEach(row => tbody.appendChild(row));
+    }
+
+    /**
+     * Reset table to default sort order (✅ status first)
+     */
+    function resetToDefaultSort() {
+        const tbody = table.querySelector("tbody");
+        if (!tbody) return;
+
+        // Clear all sort indicators
+        const indicators = table.querySelectorAll(".sort-indicator");
+        indicators.forEach(indicator => indicator.textContent = "");
+
+        // Reset sort state
+        sortState.column = -1;
+        sortState.ascending = true;
+
+        // Clear and restore original order
+        while (tbody.firstChild) {
+            tbody.removeChild(tbody.firstChild);
+        }
+        originalOrder.forEach(row => tbody.appendChild(row.cloneNode(true)));
+    }
+
+    function onSearchInput() {
+        const statusCheckboxesInfo = getCheckboxInfo(statusCheckboxes);
+        const allStatusUnchecked = statusCheckboxesInfo.every(checkboxInfo => !checkboxInfo.checked);
+
+        const modulesNativeCheckboxesInfo = getCheckboxInfo(modulesNativeCheckboxes);
+        const allModulesNativeUnchecked = modulesNativeCheckboxesInfo.every(checkboxInfo => !checkboxInfo.checked);
+
+        // Disable status checkboxes if modules native is checked
+        const anyModulesNativeChecked = !allModulesNativeUnchecked;
+        statusCheckboxes.forEach(checkbox => {
+            const label = checkbox.closest('.checkbox-with-desc');
+            if (anyModulesNativeChecked) {
+                checkbox.disabled = true;
+                checkbox.checked = false;
+                if (label) label.classList.add('disabled');
+            } else {
+                checkbox.disabled = false;
+                if (label) label.classList.remove('disabled');
+            }
+        });
+
+        // Disable modules native checkboxes if any status is checked
+        const anyStatusChecked = !allStatusUnchecked;
+        modulesNativeCheckboxes.forEach(checkbox => {
+            const label = checkbox.closest('.checkbox-with-desc');
+            if (anyStatusChecked) {
+                checkbox.disabled = true;
+                checkbox.checked = false;
+                if (label) label.classList.add('disabled');
+            } else {
+                checkbox.disabled = false;
+                if (label) label.classList.remove('disabled');
+            }
+        });
+
+        // make the search case-insensitive
+        /** @type {string} */
+        const filter = input.value.toUpperCase();
+
+        let i_row = 0;
+        for (const row of rows) {
+            // Skip the first row (header)
+            if (i_row == 0) {
+                i_row++;
+                continue;
+            }
+
+            const cols = row.getElementsByTagName("td");
+
+            // Check if the row contains the search status
+            let matches = false;
+            let checkboxMatches = allModulesNativeUnchecked && allStatusUnchecked;
+
+            let j_col = 0;
+            for (const col of cols) {
+                const colText = col.textContent;
+                if (colText === null) {
+                    j_col++;
+                    continue;
+                }
+
+                if (j_col == 0) {
+                    checkboxMatches = allStatusUnchecked || colMatchesCheckbox(colText, statusCheckboxesInfo);
+                } else if (j_col == 1) {
+                    checkboxMatches = checkboxMatches && (allModulesNativeUnchecked || colMatchesCheckbox(colText, modulesNativeCheckboxesInfo));
+                } else {
+                    matches = checkboxMatches && colMatches(colText, filter);
+                }
+
+                if (matches) {
+                    break;
+                }
+
+                j_col++;
+            };
+
+            // show or hide the row based on the search
+            row.style.display = matches ? "" : "none";
+
+            i_row++;
+        }
+    }
+</script>
