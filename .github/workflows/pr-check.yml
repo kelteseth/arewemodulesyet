@@ -41,10 +41,11 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+        # To test locally: python -m http.server 8000 --directory public
         run: |
           hugo \
             --minify \
-            --baseURL "/"
+            --baseURL "http://localhost:8000/"
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
