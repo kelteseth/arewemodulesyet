@@ -36,7 +36,7 @@ VCPKG_OVERRIDES = DATA_DIR / "vcpkg_overrides.yml"
 EXTERNAL_PROJECTS = DATA_DIR / "external_projects.yml"
 EXCLUDED_C_LIBS = DATA_DIR / "excluded_c_libraries.yml"
 
-MASTER_BRANCH = "master"
+MASTER_BRANCH = "origin/master"
 
 
 def run_git(args: list[str], silent: bool = False) -> str:

@@ -43,6 +43,13 @@ jobs:
       uses: actions/checkout@v4
       with:
         submodules: recursive
+        fetch-depth: 0  # Full history for compute_completion_status.py
+    - name: Setup uv
+      uses: astral-sh/setup-uv@v4
+    - name: Generate data files
+      run: |
+        uv run tools/merge_vcpkg_package_list_progress.py
+        uv run tools/compute_completion_status.py
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
