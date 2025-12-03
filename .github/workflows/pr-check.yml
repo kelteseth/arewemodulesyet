@@ -27,6 +27,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0  # Full history for compute_completion_status.py
+      - name: Fetch master branch
+        run: git fetch origin master
       - name: Setup uv
         uses: astral-sh/setup-uv@v4
       - name: Generate data files
