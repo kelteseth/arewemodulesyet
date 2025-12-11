@@ -213,3 +213,7 @@ libraries:
 - readline
 - ncurses
 - pdcurses
+
+- vulkan
+- vulkan-memory-allocator
+- vulkan-loader

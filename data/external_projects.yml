@@ -132,6 +132,41 @@ projects:
   import_statement: mp
   modules_support_date: 2025-05-01
   homepage: https://github.com/qlibs/mp
+- name: jmp
+  status: ✅
+  import_statement: jmp
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/jmp
+- name: perf
+  status: ✅
+  import_statement: perf
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/perf
+- name: mph
+  status: ✅
+  import_statement: mph
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/mph
+- name: di
+  status: ✅
+  import_statement: di
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/di
+- name: swar
+  status: ✅
+  import_statement: swar
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/swar
+- name: mem
+  status: ✅
+  import_statement: mem
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/mem
+- name: ut
+  status: ✅
+  import_statement: ut
+  modules_support_date: 2025-05-01
+  homepage: https://github.com/qlibs/ut
 - name: nemulator
   status: ✅
   module_native: ✅
@@ -147,3 +182,14 @@ projects:
   module_native: ✅
   modules_support_date: 2025-04-01
   homepage: https://github.com/superg/redumper
+- name: memgraph
+  status: ✅
+  import_statement: memgraph.*
+  modules_support_date: 2025-010-01
+  homepage: https://github.com/memgraph/memgraph
+- name: Soul-Engine
+  homepage: https://github.com/synodic/Soul-Engine
+  modules_support_date: 2025-11-15
+  status: ✅
+  module_native: ✅
+  mport_statement: synodic.soul.*

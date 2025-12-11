@@ -18,11 +18,17 @@ ports:
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/fmtlib/fmt/pull/3134"
 - name: vulkan-hpp
-  import_statement: vulkan_hpp
-  modules_support_date: 2020-06-23
+  import_statement: vulkan
+  modules_support_date: 2023-06-23
   status: ✅
   current_min_cpp_version: 11
-  tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/121"
+  tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/1580"
+- homepage: https://github.com/KhronosGroup/Vulkan-Headers
+  module_native: ''
+  modules_support_date: ''
+  name: vulkan-headers
+  import_statement: vulkan_hpp
+  status: ✅
 - name: flux
   import_statement: flux
   modules_support_date: 2023-08-03
@@ -236,7 +242,7 @@ ports:
   homepage: https://github.com/pocoproject/poco
 - name: rtmidi
   status: ✅
-  import_statement: rtmidi
+  import_statement: rt.midi
   modules_support_date: 2025-10-20
   homepage: https://github.com/thestk/rtmidi/
 - name: openal-soft
@@ -259,6 +265,23 @@ ports:
   import_statement: ankerl.unordered_dense
   modules_support_date: 2023-08-20
   homepage: https://github.com/martinus/unordered_dense
+- name: imgui
+  import_statement: imgui
+  modules_support_date: 2025/8/7
+  status: ✅
+  tracking_issue: https://github.com/stripe2933/imgui-module
+- name: sqlpp23
+  import_statement: sqlpp23.*
+  modules_support_date: 2025/6/29
+  status: ✅
+  tracking_issue: https://github.com/rbock/sqlpp23
+- name: glaze
+  homepage: https://github.com/stephenberry/glaze
+  modules_support_date: ''
+  status: ⚙️
+  import_statement: glaze
+  tracking_issue: https://github.com/stephenberry/glaze/pull/2100
+
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
