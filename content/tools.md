@@ -12,8 +12,8 @@
 | Standard Library | Provides `import std;` | Info |
 |------------------|------------------------|------|
 | MSSTL            | ✅ (17.10)             |      |
-| libc++           | Partial (18)           |      |
-| libstdc++        | Partial (15)       |      |
+| libc++           | ✅ (18)           |      |
+| libstdc++        | ✅ (15)       |      |
 
 ## Build Tools
 
