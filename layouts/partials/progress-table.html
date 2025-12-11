@@ -12,9 +12,9 @@
         --col-status: 70px;
         --col-native: 90px;
         --col-name: 220px;
-        --col-import: 330px;
+        --col-import: 320px;
         --col-popularity: 90px;
-        --col-version: 110px;
+        --col-version: 120px;
         --col-support: 120px;
         --col-tracking: 70px;
     }
@@ -258,8 +258,9 @@
         /* Text overflow handling */
         #progress-table th,
         #progress-table td {
-            overflow: hidden;
-            text-overflow: ellipsis;
+            overflow: scroll;
+            scrollbar-width: none;
+            text-overflow: clip;
         }
         #progress-table th:hover,
         #progress-table td:hover {
