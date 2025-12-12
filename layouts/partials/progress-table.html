@@ -12,9 +12,9 @@
         --col-status: 70px;
         --col-native: 90px;
         --col-name: 220px;
-        --col-import: 360px;
+        --col-import: 320px;
         --col-popularity: 90px;
-        --col-version: 80px;
+        --col-version: 120px;
         --col-support: 120px;
         --col-tracking: 70px;
     }
@@ -244,18 +244,27 @@
 
         
         #progress-table th {
-            overflow: hidden;
             white-space: normal;
             word-wrap: break-word;
             font-size: 0.85em;
         }
         
         #progress-table td {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
             word-break: break-all;
             padding: 4px !important;
+            white-space: nowrap;
+        }
+
+        /* Text overflow handling */
+        #progress-table th,
+        #progress-table td {
+            overflow: scroll;
+            scrollbar-width: none;
+            text-overflow: clip;
+        }
+        #progress-table th:hover,
+        #progress-table td:hover {
+            overflow: visible;
         }
 
         /* Column width distribution */
@@ -265,9 +274,6 @@
             min-width: var(--col-status);
             max-width: var(--col-status);
             text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         
         #progress-table th:nth-child(2), /* Modules Native */
@@ -276,9 +282,6 @@
             min-width: var(--col-native);
             max-width: var(--col-native);
             text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         
         #progress-table th:nth-child(3), /* Name */
@@ -286,9 +289,6 @@
             width: var(--col-name);
             min-width: var(--col-name);
             max-width: var(--col-name);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         
         #progress-table th:nth-child(4), /* Import Statement */
@@ -296,9 +296,6 @@
             width: var(--col-import);
             min-width: var(--col-import);
             max-width: var(--col-import);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         
         #progress-table th:nth-child(5), /* Popularity */
@@ -307,9 +304,6 @@
             min-width: var(--col-popularity);
             max-width: var(--col-popularity);
             text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         
         #progress-table th:nth-child(6), /* Version */
@@ -317,9 +311,6 @@
             width: var(--col-version);
             min-width: var(--col-version);
             max-width: var(--col-version);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
             text-align: center;
         }
         
@@ -329,9 +320,6 @@
             min-width: var(--col-support);
             max-width: var(--col-support);
             text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         
         #progress-table th:nth-child(8), /* Tracking Issue */
@@ -340,9 +328,6 @@
             min-width: var(--col-tracking);
             max-width: var(--col-tracking);
             text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
 
         #search-input::placeholder {
@@ -356,18 +341,6 @@
 
         th:hover {
             background-color: var(--row-color-secondary);
-        }
-
-        .truncate-text-name {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .truncate-text-version {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .import-statement {
@@ -412,7 +385,7 @@
         <tr>
             <td>{{ .status }}</td>
             <td>{{ .module_native }}</td>
-            <td class="truncate-text-name"><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
+            <td><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
             <td>
                 {{ if isset . "import_statement" }}
                 {{ if ne .import_statement ""}}
@@ -421,7 +394,7 @@
                 {{end }}
             </td>
             <td>{{ .revision_count }}</td>
-            <td class="truncate-text-version">{{ .version }}</td>
+            <td>{{ .version }}</td>
             <!-- <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td> -->
             <td>
                 {{ if ne .modules_support_date ""}}
