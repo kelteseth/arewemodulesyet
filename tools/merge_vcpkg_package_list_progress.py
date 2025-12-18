@@ -78,7 +78,7 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
         
         if item['name'] in overrides_dict:
             # Only overwrite specific fields
-            for key in ['import_statement', 'current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'status', 'module_native']:
+            for key in ['import_statement', 'current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'status', 'modules_native']:
                 if key in overrides_dict[item['name']]:
                     item[key] = overrides_dict[item['name']][key]
         merged_ports.append(item)
@@ -92,7 +92,7 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
             "homepage": item.get("homepage", ""),
             "modules_support_date": item.get("modules_support_date", ""),
             "status": item.get("status", "?"),
-            'module_native': item.get("module_native", ""),
+            'modules_native': item.get("modules_native", ""),
             "tracking_issue": item.get("tracking_issue", ""),
             "version": item.get("version", ""),
             "import_statement": item.get("import_statement", "")

@@ -24,7 +24,7 @@ ports:
   current_min_cpp_version: 11
   tracking_issue: "https://github.com/KhronosGroup/Vulkan-Hpp/issues/1580"
 - homepage: https://github.com/KhronosGroup/Vulkan-Headers
-  module_native: ''
+  modules_native: ''
   modules_support_date: ''
   name: vulkan-headers
   import_statement: vulkan_hpp
