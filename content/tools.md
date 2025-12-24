@@ -32,8 +32,8 @@
 | HMake         | ✅            | ✅            | ✅           |      |
 | GNU Autotools | ❌            | ❌            | ❌           |      |
 | Scons         | ⚙️            | ❌            | ❌           | [PR for GCC support](https://github.com/SCons/scons/pull/4248) |
-| ccache        | ⚙️            | ❌            | ❌           | [Issue Link](https://github.com/ccache/ccache/issues/1252) |
-| sccache       | ❌            | ❌            | ❌           | [Issue Link](https://github.com/mozilla/sccache/issues/2095) |
+| ccache        | ⚙️            | ❌            | ❌           | [PR](https://github.com/ccache/ccache/pull/1523) |
+| sccache       | ⚙️            | ❌            | ❌           | [PR (clang)](https://github.com/mozilla/sccache/pull/2516) |
 | Bazel         | ✅            | ⚙️            | ❌           | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005) |
 | Gradle        | ❌            | ❌            | ❌           | [Issue Link](https://github.com/gradle/gradle/issues/29009) |
 | fastbuild     | ❌            | ❌            | ❌           | [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026) |
