@@ -240,11 +240,18 @@ ports:
   import_statement: Poco
   modules_support_date: 2025-09-20
   homepage: https://github.com/pocoproject/poco
+  tracking_issue: https://github.com/pocoproject/poco/pull/4999
+- name: sfml
+  status: ⚙️
+  import_statement: sfml
+  homepage: https://github.com/SFML/SFML
+  tracking_issue: https://github.com/SFML/SFML/pull/3467
 - name: rtmidi
   status: ✅
   import_statement: rt.midi
   modules_support_date: 2025-10-20
   homepage: https://github.com/thestk/rtmidi/
+  tracking_issue: https://github.com/thestk/rtmidi/pull/364
 - name: openal-soft
   status: ✅
   import_statement: openal.*
@@ -260,6 +267,7 @@ ports:
   import_statement: rt.audio
   modules_support_date: 2025-11-01
   homepage: https://github.com/thestk/rtaudio
+  tracking_issue: https://github.com/thestk/rtaudio/pull/463
 - name: unordered-dense
   status: ✅
   import_statement: ankerl.unordered_dense
@@ -281,6 +289,24 @@ ports:
   status: ⚙️
   import_statement: glaze
   tracking_issue: https://github.com/stephenberry/glaze/pull/2100
+- name: cpp-httplib
+  homepage: https://github.com/yhirose/cpp-httplib
+  modules_support_date: ''
+  status: ⚙️
+  import_statement: httplib
+  tracking_issue: https://github.com/yhirose/cpp-httplib/pull/2295
+- name: tinyxml2
+  homepage: https://github.com/stephenberry/glaze
+  modules_support_date: ''
+  status: ⚙️
+  import_statement: tinyxml2
+  tracking_issue: https://github.com/leethomason/tinyxml2/pull/1051
+- name: sqlitecpp
+  homepage: https://github.com/SRombauts/SQLiteCpp
+  modules_support_date: ''
+  status: ⚙️
+  import_statement: sqlite
+  tracking_issue: https://github.com/SRombauts/SQLiteCpp/pull/513
 
 
 ###############################################################################

@@ -17,25 +17,27 @@
 
 ## Build Tools
 
-| Tool          | C++20 Modules | `import std;` | Info |
-|---------------|---------------|---------------|------|
-| Ninja         | ✅ 1.11       | ✅ 1.11       |      |
-| MSBuild       | ✅            | ✅            |      |
-| CMake         | ✅ 3.28       | ✅ 3.30       | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
-| XMake         | ✅            | ✅            | [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
-| Zork++        | ✅            | ✅            | [Project](https://github.com/zerodaycode/Zork) |
-| Build2        | ✅            | ✅ 0.17.0     | [Issue Link](https://github.com/build2/build2/issues/333) |
-| qbs           | ✅ 2.5        | ✅ 3.1        | [Tutorial](https://qbs.io//docs/tutorial-10/) |
-| Meson         | Partial       | ❌            | [Issue Link](https://github.com/mesonbuild/meson/issues/5024) |
-| Gnu Make      | ✅            | ❌            | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo) |
-| GNU Autotools | ❌            | ❌            |      |
-| Scons         | ⚙️            | ❌            | [PR for GCC support](https://github.com/SCons/scons/pull/4248) |
-| ccache        | ⚙️            | ❌            | [Issue Link](https://github.com/ccache/ccache/issues/1252) |
-| sccache       | ❌            | ❌            | [Issue Link](https://github.com/mozilla/sccache/issues/2095) |
-| Bazel         | ✅            | ⚙️            | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005) |
-| Gradle        | ❌            | ❌            | [Issue Link](https://github.com/gradle/gradle/issues/29009) |
-| fastbuild     | ❌            | ❌            | [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026) |
-| qmake         | ❌            | ❌            | 💀 Deprecated and should no longer be used! |
+| Tool          | C++20 Modules | `import std;` | Header Units | Info |
+|---------------|---------------|---------------|--------------|------|
+| Ninja         | ✅ 1.11       | ✅ 1.11       | ❌           |      |
+| MSBuild       | ✅            | ✅            | ❌           |      |
+| CMake         | ✅ 3.28       | ✅ 3.30       | ❌           | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
+| XMake         | ✅            | ✅            | ✅           | [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
+| Zork++        | ✅            | ✅            | ❌           | [Project](https://github.com/zerodaycode/Zork) |
+| Build2        | ✅            | ✅ 0.17.0     | ❌           | [Issue Link](https://github.com/build2/build2/issues/333) |
+| qbs           | ✅ 2.5        | ✅ 3.1        | ❌           | [Tutorial](https://qbs.io//docs/tutorial-10/) |
+| Meson         | Partial       | ❌            | ❌           | [Issue Link](https://github.com/mesonbuild/meson/issues/5024) |
+| Gnu Make      | ✅            | ❌            | ❌           | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo) |
+| Cabin         | ❌            | ❌            | ❌           |      |
+| HMake         | ✅            | ✅            | ✅           |      |
+| GNU Autotools | ❌            | ❌            | ❌           |      |
+| Scons         | ⚙️            | ❌            | ❌           | [PR for GCC support](https://github.com/SCons/scons/pull/4248) |
+| ccache        | ⚙️            | ❌            | ❌           | [Issue Link](https://github.com/ccache/ccache/issues/1252) |
+| sccache       | ❌            | ❌            | ❌           | [Issue Link](https://github.com/mozilla/sccache/issues/2095) |
+| Bazel         | ✅            | ⚙️            | ❌           | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005) |
+| Gradle        | ❌            | ❌            | ❌           | [Issue Link](https://github.com/gradle/gradle/issues/29009) |
+| fastbuild     | ❌            | ❌            | ❌           | [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026) |
+| qmake         | ❌            | ❌            | ❌           | 💀 Deprecated and should no longer be used! |
 
 ## Language Server (IDE Support)
 
