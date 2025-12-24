@@ -122,6 +122,7 @@ projects:
   homepage: https://github.com/Thalhammer/jwt-cpp
   modules_support_date: ''
   status: ⚙️
+  import_statement: jwt_cpp
   tracking_issue: https://github.com/Thalhammer/jwt-cpp/pull/395
 - name: sml
   status: ✅
@@ -199,7 +200,7 @@ projects:
   modules_support_date: 2025-09-06
   status: ✅
   modules_native: ✅
-  import_statement: stdx.*
+  import_statement: stdx
 - name: ProtoComm
   homepage: https://github.com/ozguronsoy/ProtoComm
   modules_support_date: 2025-11-20
@@ -211,3 +212,9 @@ projects:
   status: ⚙️
   import_statement: asyncio
   tracking_issue: https://github.com/Hackerl/asyncio/pull/2
+- name: siv3d
+  homepage: https://github.com/Siv3D/OpenSiv3D
+  modules_support_date: ''
+  import_statement: s3d.*
+  status: ⚠️
+  tracking_issue: https://github.com/Siv3D/OpenSiv3D/issues/1327
