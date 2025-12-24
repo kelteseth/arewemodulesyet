@@ -89,6 +89,7 @@ ports:
   tracking_issue: https://github.com/z4kn4fein/cpp-semver/issues/7
 - name: kangaru
   status: ⚙️
+  import_statement: kangaru
   tracking_issue: https://github.com/gracicot/kangaru/issues/124
 - name: glm
   import_statement: glm
@@ -233,6 +234,7 @@ ports:
 - name: entt
   homepage: https://github.com/skypjack/entt
   modules_support_date: ''
+  import_statement: entt
   status: ⚙️
   tracking_issue: https://github.com/skypjack/entt/pull/1243
 - name: poco
@@ -260,6 +262,7 @@ ports:
 - name: re2
   homepage: https://github.com/google/re2
   modules_support_date: ''
+  import_statement: re2
   status: ⚙️
   tracking_issue: https://code-review.googlesource.com/c/re2/+/64010
 - name: rtaudio
@@ -307,12 +310,6 @@ ports:
   status: ⚙️
   import_statement: sqlite
   tracking_issue: https://github.com/SRombauts/SQLiteCpp/pull/513
-- name: siv3d
-  homepage: https://github.com/Siv3D/OpenSiv3D
-  modules_support_date: ''
-  status: ⚠️
-  tracking_issue: https://github.com/Siv3D/OpenSiv3D/issues/1327
-
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
