@@ -307,6 +307,11 @@ ports:
   status: ⚙️
   import_statement: sqlite
   tracking_issue: https://github.com/SRombauts/SQLiteCpp/pull/513
+- name: siv3d
+  homepage: https://github.com/Siv3D/OpenSiv3D
+  modules_support_date: ''
+  status: ⚠️
+  tracking_issue: https://github.com/Siv3D/OpenSiv3D/issues/1327
 
 
 ###############################################################################
