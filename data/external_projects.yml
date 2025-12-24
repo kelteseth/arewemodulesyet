@@ -70,6 +70,7 @@ projects:
   modules_support_date: 2024-08-07
   status: ✅
   modules_native: ✅
+  import_statement: openjuice.*
 - name: lotus-engine
   homepage: https://github.com/teschnei/lotus-engine
   modules_support_date: 2025-05-15
@@ -185,11 +186,28 @@ projects:
 - name: memgraph
   status: ✅
   import_statement: memgraph.*
-  modules_support_date: 2025-010-01
+  modules_support_date: 2025-10-01
   homepage: https://github.com/memgraph/memgraph
 - name: Soul-Engine
   homepage: https://github.com/synodic/Soul-Engine
   modules_support_date: 2025-11-15
   status: ✅
   modules_native: ✅
-  mport_statement: synodic.soul.*
+  import_statement: synodic.soul.*
+- name: stdlibx
+  homepage: https://github.com/mikomikotaishi/stdlibx
+  modules_support_date: 2025-09-06
+  status: ✅
+  modules_native: ✅
+  import_statement: stdx.*
+- name: ProtoComm
+  homepage: https://github.com/ozguronsoy/ProtoComm
+  modules_support_date: 2025-11-20
+  status: ✅
+  import_statement: ProtoComm
+  tracking_issue: https://github.com/ozguronsoy/ProtoComm/pull/1
+- name: asyncio
+  homepage: https://github.com/Hackerl/asyncio
+  status: ⚙️
+  import_statement: asyncio
+  tracking_issue: https://github.com/Hackerl/asyncio/pull/2
