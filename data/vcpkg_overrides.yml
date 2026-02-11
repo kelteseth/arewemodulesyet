@@ -295,7 +295,7 @@ ports:
 - name: cpp-httplib
   homepage: https://github.com/yhirose/cpp-httplib
   modules_support_date: ''
-  status: ⚙️
+  status: ✅
   import_statement: httplib
   tracking_issue: https://github.com/yhirose/cpp-httplib/pull/2295
 - name: tinyxml2
@@ -310,6 +310,30 @@ ports:
   status: ⚙️
   import_statement: sqlite
   tracking_issue: https://github.com/SRombauts/SQLiteCpp/pull/513
+- name: curlpp
+  homepage: https://github.com/jpbarrette/curlpp
+  modules_support_date: ''
+  status: ✅
+  import_statement: curlpp
+  tracking_issue: https://github.com/jpbarrette/curlpp/pull/182
+- name: taskflow
+  homepage: https://github.com/taskflow/taskflow
+  modules_support_date: ''
+  status: ✅
+  import_statement: tf
+  tracking_issue: https://github.com/taskflow/taskflow/pull/750
+- name: poco
+  homepage: https://github.com/pocoproject/poco
+  modules_support_date: ''
+  status: ✅
+  import_statement: Poco
+  tracking_issue: https://github.com/pocoproject/poco/pull/4999
+- name: cli11
+  homepage: https://github.com/CLIUtils/CLI11
+  modules_support_date: ''
+  status: ✅
+  import_statement: cli11
+  tracking_issue: https://github.com/CLIUtils/CLI11/pull/1286
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
