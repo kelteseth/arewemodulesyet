@@ -120,7 +120,7 @@ projects:
   homepage: https://github.com/kokkos/kokkos
 - name: jwt-cpp
   homepage: https://github.com/Thalhammer/jwt-cpp
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   status: ⚙️
   import_statement: jwt_cpp
   tracking_issue: https://github.com/Thalhammer/jwt-cpp/pull/395
@@ -214,80 +214,80 @@ projects:
   tracking_issue: https://github.com/Hackerl/asyncio/pull/2
 - name: siv3d
   homepage: https://github.com/Siv3D/OpenSiv3D
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: s3d.*
   status: ⚠️
   tracking_issue: https://github.com/Siv3D/OpenSiv3D/issues/1327
 - name: TheAtlasEngine
   homepage: https://github.com/engine3d-dev/TheAtlasEngine
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: atlas.*
   status: ✅
   modules_native: ✅
   tracking_issue: https://github.com/engine3d-dev/TheAtlasEngine/pull/168
 - name: gf2
   homepage: https://github.com/nessan/gf2
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: gf2
   status: ✅
   tracking_issue: https://github.com/nessan/gf2/pull/1
 - name: ulight
   homepage: https://github.com/eisenwave/ulight
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: ulight
   status: ✅
   tracking_issue: https://github.com/eisenwave/ulight/pull/145
 - name: OpFlow
   homepage: https://github.com/OpFlow-dev/OpFlow
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: opflow
   status: ✅
   tracking_issue:
 - name: plotlypp
   homepage: https://github.com/jimmyorourke/plotlypp
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: plotlypp
   status: ✅
   tracking_issue: https://github.com/jimmyorourke/plotlypp/pull/1
 - name: luacpp
   homepage: https://github.com/jordanvrtanoski/luacpp
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: LuaCpp
   status: ✅
   tracking_issue: https://github.com/jordanvrtanoski/luacpp/pull/29
 - name: execution
   homepage: https://github.com/bemanproject/execution/pull/194
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: beman.execution
   status: ✅
   tracking_issue: https://github.com/bemanproject/execution/pull/194
 - name: scope
   homepage: https://github.com/bemanproject/scope
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: beman.scope
   status: ✅
   tracking_issue: https://github.com/bemanproject/scope/commit/00ef6eb9c88f01310053591c95cf8bb4eaf2a3b8
 - name: audio-cpp
   homepage: https://github.com/engine3d-dev/audio-cpp
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: audio
   status: ✅
   tracking_issue: https://github.com/engine3d-dev/audio-cpp/commit/7deef89f588389686283aca2ac574d59b6db766e#diff-6517fead3d8d5560e22cf09a840ff29dd5224c244cbe29cf89b6634b61647405
 - name: libremidi
   homepage: https://github.com/celtera/libremidi
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: libremidi
   status: ✅
   tracking_issue: https://github.com/celtera/libremidi/commit/f089df01dfd6a2c12b98c5d8423cbe48fd15978f
 - name: pragma
   homepage: https://github.com/Silverlan/pragma
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: pragma.*
   status: ✅
   modules_native: ✅
 - name: network_system
   homepage: https://github.com/kcenon/network_system
-  modules_support_date: ''
+  modules_support_date: 2026-2-10
   import_statement: kcenon.network
   status: ✅
   tracking_issue: https://github.com/kcenon/network_system

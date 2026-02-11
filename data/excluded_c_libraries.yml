@@ -217,3 +217,37 @@ libraries:
 - vulkan
 - vulkan-memory-allocator
 - vulkan-loader
+
+# Threading libraries
+- pthread
+- pthread-stubs
+- tinycthread
+
+# Serialization
+- msgpack-c
+- protobuf-c
+- nanopb
+
+# UI/Embedded frameworks
+- nuklear
+- sokol
+
+# Small utility libraries
+- cute-headers
+- uthash
+- pcg
+- tiny-aes-c
+- tiny-bignum-c
+- tiny-regex-c
+- tree-sitter-c
+
+# Testing (C)
+- umock-c
+
+# Hardware/USB
+- libusb-win32
+- libftdi1
+
+# Crypto
+- libtomcrypt
+- libtommath
