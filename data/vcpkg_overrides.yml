@@ -285,8 +285,8 @@ ports:
   import_statement: sm.*
   modules_support_date: 2026/3/27
   status: ✅
-  tracking_issue: https://github.com/sebsjames/maths
-- homepage: https://sebsjames.github.io/maths/
+  tracking_issue: https://github.com/sebsjames/maths/pull/120
+  homepage: https://sebsjames.github.io/maths/
   modules_native: ✅
 - name: sqlpp23
   import_statement: sqlpp23.*
