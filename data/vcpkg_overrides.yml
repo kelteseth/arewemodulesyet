@@ -278,7 +278,7 @@ ports:
   homepage: https://github.com/martinus/unordered_dense
 - name: imgui
   import_statement: imgui
-  modules_support_date: 2025-08-7
+  modules_support_date: 2025-08-07
   status: ✅
   tracking_issue: https://github.com/stripe2933/imgui-module
 - name: sebsjames-maths
@@ -288,11 +288,6 @@ ports:
   tracking_issue: https://github.com/sebsjames/maths/pull/120
   homepage: https://sebsjames.github.io/maths/
   modules_native: ✅
-- name: sqlpp23
-  import_statement: sqlpp23.*
-  modules_support_date: 2025-06-29
-  status: ✅
-  tracking_issue: https://github.com/rbock/sqlpp23
 - name: glaze
   homepage: https://github.com/stephenberry/glaze
   modules_support_date: ''

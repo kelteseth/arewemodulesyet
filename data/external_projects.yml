@@ -303,3 +303,8 @@ projects:
   import_statement: kcenon.common
   status: ✅
   tracking_issue: https://github.com/kcenon/common_system
+- name: sqlpp23
+  import_statement: sqlpp23.*
+  modules_support_date: 2025-06-29
+  status: ✅
+  tracking_issue: https://github.com/rbock/sqlpp23
