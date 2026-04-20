@@ -46,6 +46,12 @@
 | Clangd             | ✅  | [C++20 Modules in clangd](https://chuanqixu9.github.io/c++/2025/12/03/Clangd-support-for-Modules.en.html) |
 | vscode-cmake-tools | ❌            | [Issue Link](https://github.com/microsoft/vscode-cmake-tools/issues/3335) |
 
+## Static analyzers
+
+| Tool          | C++20 Modules      | `import std;` | Header Units | Info |
+|---------------|--------------------|---------------|--------------|------|
+| Sonar         | Experimental       | ✅            | ❌          | [Modules documentation](https://docs.sonarsource.com/sonarqube-cloud/analyzing-source-code/languages/c-family/customizing-the-analysis#cpp-20-modules) | 
+
 ## Preprocessor
 
 | Tool   | C++20 Modules | Info |
