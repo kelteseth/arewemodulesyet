@@ -21,7 +21,7 @@
 |---------------|---------------|---------------|--------------|------|
 | Ninja         | ✅ 1.11       | ✅ 1.11       | ❌           |      |
 | MSBuild       | ✅            | ✅            | ❌           |      |
-| CMake         | ✅ 3.28       | ✅ 3.30       | ❌           | [Issue Link](https://gitlab.kitware.com/cmake/cmake/-/issues/18355) |
+| CMake         | ✅ 3.28       | ⚙️ 3.30       | ❌           | Support for `import std;` is experimental ([blog post](https://www.kitware.com/import-std-in-cmake-3-30/)). |
 | XMake         | ✅            | ✅            | ✅           | [Release](https://github.com/xmake-io/xmake/wiki/Xmake-v2.7.1-Released,-Better-Cplusplus-Modules-Support) |
 | Zork++        | ✅            | ✅            | ❌           | [Project](https://github.com/zerodaycode/Zork) |
 | Build2        | ✅            | ✅ 0.17.0     | ❌           | [Issue Link](https://github.com/build2/build2/issues/333) |
