@@ -336,6 +336,26 @@ ports:
   status: ✅
   import_statement: cli11
   tracking_issue: https://github.com/CLIUtils/CLI11/pull/1286
+- name: boost-conversion
+  import_statement: boost.conversion
+  modules_support_date: 2026-02-25
+  status: ✅
+  tracking_issue: https://github.com/boostorg/conversion/pull/34
+- name: boost-stacktrace
+  import_statement: boost.stacktrace
+  modules_support_date: 2026-05-09
+  status: ✅
+  tracking_issue: https://github.com/boostorg/stacktrace/pull/230
+- name: boost-dll
+  import_statement: boost.dll
+  modules_support_date: ''
+  status: ⚙️
+  tracking_issue: https://github.com/boostorg/dll/pull/111
+- name: boost-lexical-cast
+  import_statement: boost.lexical_cast
+  modules_support_date: 2026-04-24
+  status: ✅
+  tracking_issue: https://github.com/boostorg/lexical_cast/pull/96
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
