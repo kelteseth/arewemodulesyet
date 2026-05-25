@@ -348,8 +348,8 @@ ports:
   tracking_issue: https://github.com/boostorg/stacktrace/pull/230
 - name: boost-dll
   import_statement: boost.dll
-  modules_support_date: ''
-  status: ⚙️
+  modules_support_date: 2026-05-09
+  status: ✅
   tracking_issue: https://github.com/boostorg/dll/pull/111
 - name: boost-lexical-cast
   import_statement: boost.lexical_cast
