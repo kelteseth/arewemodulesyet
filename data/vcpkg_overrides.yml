@@ -236,7 +236,7 @@ ports:
   modules_support_date: ''
   import_statement: entt
   status: ⚙️
-  tracking_issue: https://github.com/skypjack/entt/pull/1243
+  tracking_issue: https://github.com/skypjack/entt/pull/1290
 - name: poco
   status: ✅
   import_statement: Poco
@@ -264,7 +264,7 @@ ports:
   modules_support_date: ''
   import_statement: re2
   status: ⚙️
-  tracking_issue: https://code-review.googlesource.com/c/re2/+/64010
+  tracking_issue: https://github.com/google/re2/pull/599
 - name: rtaudio
   status: ✅
   import_statement: rt.audio
@@ -293,7 +293,7 @@ ports:
   modules_support_date: ''
   status: ⚙️
   import_statement: glaze
-  tracking_issue: https://github.com/stephenberry/glaze/pull/2100
+  tracking_issue: https://github.com/stephenberry/glaze/pull/2408
 - name: cpp-httplib
   homepage: https://github.com/yhirose/cpp-httplib
   modules_support_date: 2026-02-10
@@ -301,11 +301,11 @@ ports:
   import_statement: httplib
   tracking_issue: https://github.com/yhirose/cpp-httplib/pull/2295
 - name: tinyxml2
-  homepage: https://github.com/stephenberry/glaze
+  homepage: https://github.com/leethomason/tinyxml2
   modules_support_date: ''
   status: ⚙️
   import_statement: tinyxml2
-  tracking_issue: https://github.com/leethomason/tinyxml2/pull/1051
+  tracking_issue: https://github.com/leethomason/tinyxml2/pull/1078
 - name: sqlitecpp
   homepage: https://github.com/SRombauts/SQLiteCpp
   modules_support_date: 2026-02-10
@@ -356,6 +356,68 @@ ports:
   modules_support_date: 2026-04-24
   status: ✅
   tracking_issue: https://github.com/boostorg/lexical_cast/pull/96
+- name: cppwinrt
+  status: ✅
+  import_statement: winrt
+  modules_support_date: 2026-05-20
+  homepage: https://github.com/microsoft/cppwinrt
+  tracking_issue: https://github.com/microsoft/cppwinrt/pull/1575
+- name: tbb
+  status: ✅
+  import_statement: tbb
+  modules_support_date: 2026-05-13
+  homepage: https://github.com/uxlfoundation/oneTBB
+  tracking_issue: https://github.com/uxlfoundation/oneTBB/pull/2068
+- name: libcoro
+  status: ⚙️
+  import_statement: coro
+  homepage: https://github.com/jbaldwin/libcoro
+  tracking_issue: https://github.com/jbaldwin/libcoro/pull/447
+- name: cpr
+  status: ⚙️
+  import_statement: cpr
+  homepage: https://github.com/libcpr/cpr
+  tracking_issue: https://github.com/libcpr/cpr/pull/1288
+- name: upa-url
+  status: ⚙️
+  import_statement: upa
+  homepage: https://github.com/upa-url/upa
+  tracking_issue: https://github.com/upa-url/upa/pull/194
+- name: reflectcpp
+  status: ⚙️
+  import_statement: reflectcpp
+  homepage: https://github.com/getml/reflect-cpp
+  tracking_issue: https://github.com/getml/reflect-cpp/pull/669
+- name: tsl-ordered-map
+  status: ⚙️
+  homepage: https://github.com/Tessil/ordered-map
+  tracking_issue: https://github.com/Tessil/ordered-map/pull/54
+- name: boost-beast
+  status: ⚙️
+  import_statement: boost.beast
+  tracking_issue: https://github.com/boostorg/beast/pull/3068
+- name: boost-mp11
+  status: ⚙️
+  import_statement: boost.mp11
+  tracking_issue: https://github.com/boostorg/mp11/pull/113
+- name: boost-charconv
+  status: ⚙️
+  import_statement: boost.charconv
+  tracking_issue: https://github.com/boostorg/charconv/pull/292
+- name: boost-throw-exception
+  status: ⚙️
+  import_statement: boost.throw_exception
+  tracking_issue: https://github.com/boostorg/throw_exception/pull/30
+- name: boost-core
+  status: ⚙️
+  import_statement: boost.core
+  tracking_issue: https://github.com/boostorg/core/pull/212
+- name: boost-config
+  status: ⚙️
+  tracking_issue: https://github.com/boostorg/config/pull/535
+- name: boost-assert
+  status: ⚙️
+  tracking_issue: https://github.com/boostorg/assert/pull/45
 
 ###############################################################################
 # Qt6 - All share the same tracking issue

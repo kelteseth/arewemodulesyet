@@ -209,7 +209,7 @@ projects:
   tracking_issue: https://github.com/ozguronsoy/ProtoComm/pull/1
 - name: asyncio
   homepage: https://github.com/Hackerl/asyncio
-  status: ⚙️
+  status: ❌
   import_statement: asyncio
   tracking_issue: https://github.com/Hackerl/asyncio/pull/2
 - name: siv3d
@@ -308,3 +308,43 @@ projects:
   modules_support_date: 2025-06-29
   status: ✅
   tracking_issue: https://github.com/rbock/sqlpp23
+- name: transform_view
+  homepage: https://github.com/bemanproject/transform_view
+  modules_support_date: 2026-05-03
+  status: ✅
+  import_statement: beman.transform_view
+  tracking_issue: https://github.com/bemanproject/transform_view/pull/29
+- name: utf_view
+  homepage: https://github.com/bemanproject/utf_view
+  modules_support_date: 2026-05-04
+  status: ✅
+  import_statement: beman.utf_view
+  tracking_issue: https://github.com/bemanproject/utf_view/pull/203
+- name: exemplar
+  homepage: https://github.com/bemanproject/exemplar
+  modules_support_date: 2026-05-04
+  status: ✅
+  import_statement: beman.exemplar
+  tracking_issue: https://github.com/bemanproject/exemplar/pull/380
+- name: scan_view
+  homepage: https://github.com/bemanproject/scan_view
+  modules_support_date: 2026-05-13
+  status: ✅
+  import_statement: beman.scan_view
+  tracking_issue: https://github.com/bemanproject/scan_view/pull/15
+- name: net
+  homepage: https://github.com/bemanproject/net
+  modules_support_date: 2026-02-23
+  status: ✅
+  import_statement: beman.net
+  tracking_issue: https://github.com/bemanproject/net/pull/40
+- name: messaging_system
+  homepage: https://github.com/kcenon/messaging_system
+  modules_support_date: 2026-01-03
+  status: ✅
+  import_statement: kcenon.messaging
+  tracking_issue: https://github.com/kcenon/messaging_system/pull/205
+- name: nontype_functional
+  homepage: https://github.com/zhihaoy/nontype_functional
+  status: ⚙️
+  tracking_issue: https://github.com/zhihaoy/nontype_functional/pull/18
