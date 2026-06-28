@@ -425,6 +425,7 @@ ports:
   tracking_issue: "https://github.com/cursey/safetyhook/pull/107"
 - name: sdl3
   tracking_issue: "https://github.com/libsdl-org/SDL/issues/9771"
+  status: ⚠️
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
