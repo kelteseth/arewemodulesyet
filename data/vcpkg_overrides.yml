@@ -426,6 +426,11 @@ ports:
 - name: sdl3
   tracking_issue: "https://github.com/libsdl-org/SDL/issues/9771"
   status: ⚠️
+- name: libhat
+  import_statement: libhat
+  modules_support_date: 2025-04-30
+  status: ✅
+  tracking_issue: "https://github.com/BasedInc/libhat/pull/29"
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
