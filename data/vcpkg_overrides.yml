@@ -431,6 +431,16 @@ ports:
   modules_support_date: 2025-04-30
   status: ✅
   tracking_issue: "https://github.com/BasedInc/libhat/pull/29"
+- name: boost-math
+  import_statement: boost.math
+  modules_support_date: 2025-08-05
+  status: ✅
+  tracking_issue: "https://github.com/boostorg/math/pull/1422"
+- name: boost-decimal
+  import_statement: boost.decimal
+  modules_support_date: 2025-07-17
+  status: ✅
+  tracking_issue: "https://github.com/boostorg/decimal/issues/999"
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
