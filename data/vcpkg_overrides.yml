@@ -379,10 +379,13 @@ ports:
   homepage: https://github.com/libcpr/cpr
   tracking_issue: https://github.com/libcpr/cpr/pull/1288
 - name: upa-url
-  status: ⚙️
-  import_statement: upa
+  status: ✅
+  import_statement: upa.url
+  current_min_cpp_version: 17
+  modules_support_date: 2026-07-11
   homepage: https://github.com/upa-url/upa
   tracking_issue: https://github.com/upa-url/upa/pull/194
+  version: 2.5.0
 - name: reflectcpp
   status: ⚙️
   import_statement: reflectcpp
