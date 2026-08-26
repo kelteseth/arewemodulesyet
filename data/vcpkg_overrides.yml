@@ -236,7 +236,7 @@ ports:
   modules_support_date: ''
   import_statement: entt
   status: ⚙️
-  tracking_issue: https://github.com/skypjack/entt/pull/1290
+  tracking_issue: https://github.com/skypjack/entt/pull/1337
 - name: poco
   status: ✅
   import_statement: Poco
