@@ -47,7 +47,33 @@ ports:
   current_min_cpp_version: 17
 - name: hikogui
   current_min_cpp_version: 20
-  tracking_issue: "https://github.com/hikogui/hikogui/issues/460"
+  import_statement: hikogui
+  modules_support_date: 2023-11-07
+  status: ✅
+  modules_native: ✅
+  tracking_issue: https://github.com/hikoworks/hikogui/commit/4f2fd47b5a6015129a009db2f14139f1c54f9da0
+- name: bext-ut
+  current_min_cpp_version: 20
+  import_statement: boost.ut
+  modules_support_date: 2025-04-01
+  status: ✅
+  tracking_issue: https://github.com/boost-ext/ut/commit/6bbd6ac34bd2b1963782db2d514894fc2f383754
+- name: cpp-lazy
+  current_min_cpp_version: 11
+  import_statement: lz
+  modules_support_date: 2024-04-09
+  status: ✅
+  tracking_issue: https://github.com/Kaaserne/cpp-lazy/commit/7ad401d1e84096852d7053a323d706811a92b3c7
+- name: jwt-cpp
+  import_statement: jwt_cpp
+  modules_support_date: 2026-02-10
+  status: ⚙️
+  tracking_issue: https://github.com/Thalhammer/jwt-cpp/pull/395
+- name: libremidi
+  import_statement: libremidi
+  modules_support_date: 2026-02-10
+  status: ✅
+  tracking_issue: https://github.com/celtera/libremidi/commit/f089df01dfd6a2c12b98c5d8423cbe48fd15978f
 - name: async-simple
   import_statement: async_simple
   modules_support_date: 2023-06-19
@@ -392,7 +418,10 @@ ports:
   homepage: https://github.com/getml/reflect-cpp
   tracking_issue: https://github.com/getml/reflect-cpp/pull/669
 - name: tsl-ordered-map
-  status: ⚙️
+  status: ✅
+  import_statement: tsl.ordered_map
+  modules_support_date: 2026-06-13
+  current_min_cpp_version: 20
   homepage: https://github.com/Tessil/ordered-map
   tracking_issue: https://github.com/Tessil/ordered-map/pull/54
 - name: boost-beast
