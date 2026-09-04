@@ -444,6 +444,24 @@ ports:
   modules_support_date: 2025-07-17
   status: ✅
   tracking_issue: "https://github.com/boostorg/decimal/issues/999"
+- name: quill
+  homepage: https://github.com/odygrd/quill
+  import_statement: quill
+  modules_support_date: 2026-06-13
+  status: ✅
+  tracking_issue: https://github.com/odygrd/quill/commit/991d8b29bd8c6100facfa7a6ade7b5c40448119c
+- name: stdexec
+  homepage: https://github.com/NVIDIA/stdexec
+  import_statement: stdexec
+  modules_support_date: 2026-07-27
+  status: ✅
+  tracking_issue: https://github.com/NVIDIA/stdexec/commit/f0e8ae6fdc6c188389b146bb854b80d399724b04
+- name: llnl-units
+  homepage: https://github.com/LLNL/units
+  import_statement: units
+  modules_support_date: 2026-03-30
+  status: ✅
+  tracking_issue: https://github.com/llnl/units/commit/4fcfc004612d0867e71f9eeb436c57ab6e54fbdf
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
