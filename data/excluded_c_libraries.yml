@@ -21,6 +21,7 @@ libraries:
 - minizip-ng
 - blosc
 - blosc2
+- libdeflate
 
 # Image format libraries
 - libpng
@@ -49,6 +50,8 @@ libraries:
 - soxr
 - libao
 - alsa
+- libvpx
+- miniaudio
 
 # Cryptography & Security
 - openssl
@@ -60,6 +63,7 @@ libraries:
 - libgcrypt
 - libgpg-error
 - argon2
+- s2n
 
 # Networking
 - curl
@@ -73,10 +77,15 @@ libraries:
 - ngtcp2
 - libmicrohttpd
 - libwebsockets
+- libcoap
+- libpcap
+- libmodbus
 - mongoose
 - civetweb
 - librabbitmq
 - librdkafka
+- nghttp2
+- paho-mqtt
 - nanomsg
 - nng
 
@@ -100,6 +109,13 @@ libraries:
 - cmark
 - cmark-gfm
 - libyaml
+- libcbor
+- libconfuse
+- libcsv
+- libxlsxwriter
+- md4c
+- tinycbor
+- uriparser
 
 # Text/Regex
 - pcre
@@ -118,6 +134,8 @@ libraries:
 - dbus
 - libcap
 - liburing
+- cpuinfo
+- zycore
 
 # Graphics/Windowing (C libraries)
 - sdl2
@@ -137,6 +155,8 @@ libraries:
 - cairo
 - pango
 - pixman
+- chipmunk
+- raylib
 
 # Archive libraries
 - libarchive
@@ -151,6 +171,8 @@ libraries:
 - lapack
 - blas
 - cblas
+- cspice
+- netcdf-c
 
 # AWS C libraries
 - aws-c-auth
@@ -251,3 +273,8 @@ libraries:
 # Crypto
 - libtomcrypt
 - libtommath
+
+# Language runtimes implemented in C
+- lua
+- luajit
+- quickjs-ng
