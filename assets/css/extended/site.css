@@ -256,12 +256,14 @@
     }
 }
 
-/* --- Resource lists (Docs) ---------------------------------------------- */
+/* --- Resource lists (Docs, Examples) ------------------------------------ */
 /* Pages with `layout: resources` render their link lists as rows; the link
-   render hook adds the host name for pages with `linkHosts: true`. */
+   render hook adds the host name for pages with `linkHosts: true`. A list
+   item may carry a description paragraph below the link. */
 
-.resources h2 {
-    margin: 28px 0 10px;
+.resources h2,
+.resources h3 {
+    margin: 28px 0 8px;
     font-size: var(--tbl-fs-small);
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -269,20 +271,51 @@
     color: var(--secondary);
 }
 
-.resources h2:first-child {
+.resources h2:first-child,
+.resources h3:first-child {
     margin-top: 20px;
+}
+
+/* Section intro */
+.resources > p {
+    max-width: 72ch;
+    margin: 0 0 10px;
+    font-size: var(--tbl-fs);
+    line-height: 1.5;
+    color: var(--secondary);
 }
 
 .resources ul {
     display: grid;
     gap: 6px;
-    margin: 0;
+    margin: 0 0 4px;
     padding: 0;
     list-style: none;
 }
 
 .resources li {
     margin: 0;
+    padding: 10px 14px;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--tbl-radius);
+}
+
+.resources li:hover {
+    border-color: var(--secondary);
+}
+
+.resources li p {
+    margin: 0;
+}
+
+/* Description under the link */
+.resources li p + p {
+    margin-top: 6px;
+    max-width: 72ch;
+    font-size: var(--tbl-fs);
+    line-height: 1.5;
+    color: var(--secondary);
 }
 
 .resources a.resource-link {
@@ -291,22 +324,20 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 4px 16px;
-    padding: 10px 14px;
     color: var(--primary);
-    background: var(--code-bg);
-    border: 1px solid var(--border);
-    border-radius: var(--tbl-radius);
     box-shadow: none;
     text-decoration: none;
 }
 
-.resources a.resource-link:hover {
-    border-color: var(--secondary);
+.resources a.resource-link:hover .resource-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .resources a.resource-link:focus-visible {
     outline: 2px solid var(--primary);
-    outline-offset: 1px;
+    outline-offset: 2px;
+    border-radius: 2px;
 }
 
 .resources .resource-title {

@@ -1,12 +1,19 @@
-{{- /* Pages with `linkHosts: true` show the link target's host next to the
-       link text (used by the Docs resource list). Other pages keep the
-       default anchor. */ -}}
-{{- $host := "" }}
+{{- /* Pages with `linkHosts: true` show where a link goes next to its text
+       (used by the Docs and Examples resource lists): the host name, or
+       owner/repo for GitHub links. Other pages keep the default anchor. */ -}}
+{{- $where := "" }}
 {{- if .Page.Params.linkHosts }}
-  {{- with urls.Parse .Destination }}{{ $host = .Host }}{{ end }}
+  {{- with urls.Parse .Destination }}
+    {{- $where = .Host }}
+    {{- if eq .Host "github.com" }}
+      {{- $parts := slice }}
+      {{- range split (strings.Trim .Path "/") "/" }}{{ if and . (lt (len $parts) 2) }}{{ $parts = $parts | append . }}{{ end }}{{ end }}
+      {{- if eq (len $parts) 2 }}{{ $where = delimit $parts "/" }}{{ end }}
+    {{- end }}
+  {{- end }}
 {{- end }}
-{{- if $host -}}
-<a href="{{ .Destination | safeURL }}" class="resource-link"{{ with .Title }} title="{{ . }}"{{ end }}><span class="resource-title">{{ .Text }}</span><span class="resource-host">{{ $host }}</span></a>
+{{- if $where -}}
+<a href="{{ .Destination | safeURL }}" class="resource-link"{{ with .Title }} title="{{ . }}"{{ end }}><span class="resource-title">{{ .Text }}</span><span class="resource-host">{{ $where }}</span></a>
 {{- else -}}
 <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>
 {{- end -}}
