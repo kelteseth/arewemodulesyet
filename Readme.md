@@ -1,6 +1,6 @@
 # Are we modules yet? Not even close, lol.
 
-This website tracks C++20 modules support across popular libraries using vcpkg port revision counts to estimate popularity.
+This website tracks C++20 modules support across popular libraries. Completed (`✅`) projects are kept first. Within each status group, projects with GitHub data are ranked by stars, followed by projects using vcpkg port revision counts as fallback, then projects with neither metric in their original order. Users can switch to vcpkg-first sorting, which reverses the primary and fallback metrics while retaining the status-first rule.
 
 ## How Projects Are Counted
 
@@ -26,6 +26,7 @@ This website tracks C++20 modules support across popular libraries using vcpkg p
 
 **Auto-generated** (`data/generated/` - DO NOT EDIT):
 - `vcpkg_packages.yml` - Generated from vcpkg repository
+- `github_stars.yml` - Cached star counts for GitHub repositories
 
 **Manual** (`data/`):
 - `vcpkg_overrides.yml` - Override vcpkg package metadata (must exist in vcpkg)
@@ -72,10 +73,15 @@ Note: Most projects don't have a modules tracking issue. If one doesn't exist, p
 
 Generate merged data:
 ```bash
+uv run tools/generate_github_stars.py
 uv run tools/merge_vcpkg_package_list_progress.py
 uv run tools/compute_completion_status.py
 hugo serve  # Preview changes
 ```
+
+The star generator uses GitHub GraphQL when `GITHUB_TOKEN` or `GH_TOKEN` is set. Without a token it uses the public ecosyste.ms repository metadata service, follows GitHub repository redirects, and uses the public GitHub REST API only for live repositories missing from the mirror. Repositories are detected from GitHub homepages and tracking issues; set `github_repository: owner/repository` in an override or external-project entry when neither points to the canonical repository.
+
+To retry only repositories that are still missing from an existing cache, run `uv run tools/generate_github_stars.py --only-missing`.
 
 **Regenerate vcpkg data (optional):**
 ```bash
@@ -90,9 +96,11 @@ data/
 ├── excluded_c_libraries.yml  # Manual: C libraries to exclude
 ├── progress.yml              # Output: merged result for website
 └── generated/
-    └── vcpkg_packages.yml    # Auto-generated from vcpkg (DO NOT EDIT)
+    ├── vcpkg_packages.yml    # Auto-generated from vcpkg (DO NOT EDIT)
+    └── github_stars.yml      # Auto-generated GitHub star cache
 tools/
 ├── generate_vcpkg_package_list.py      # Fetches vcpkg data
+├── generate_github_stars.py            # Fetches GitHub star counts
 ├── merge_vcpkg_package_list_progress.py # Merges all data → progress.yml
 └── compute_completion_status.py        # Generates historical stats
 layouts/partials/

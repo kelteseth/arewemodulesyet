@@ -31,8 +31,13 @@ jobs:
         run: git fetch origin master
       - name: Setup uv
         uses: astral-sh/setup-uv@v4
+      - name: Run tests
+        run: uv run python -m unittest discover -s tests -v
       - name: Generate data files
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          uv run tools/generate_github_stars.py --provider github
           uv run tools/merge_vcpkg_package_list_progress.py
           uv run tools/compute_completion_status.py
       - name: Install Node.js dependencies

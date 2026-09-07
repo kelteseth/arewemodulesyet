@@ -11,9 +11,9 @@
         --progress-table-max-width: 1100px;
         --col-status: 70px;
         --col-native: 90px;
-        --col-name: 220px;
-        --col-import: 320px;
-        --col-popularity: 90px;
+        --col-name: 210px;
+        --col-import: 300px;
+        --col-popularity: 120px;
         --col-version: 120px;
         --col-support: 120px;
         --col-tracking: 70px;
@@ -79,20 +79,27 @@
     <!-- Display Header Information -->
     <div class="header-info">
         <h5>Info:</h5>
-        <p>Popularity based on vcpkg port updates: Generated Date: {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} Count parsed from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this git commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}
+        <p>Popularity defaults to GitHub stars, with ✅ projects kept first. Within each status group, projects with GitHub data come first, followed by the vcpkg fallback, then projects with neither metric in their original order. The vcpkg option applies the same tiers in reverse. {{ with .Site.Data.progress.header.github_stars_generated_date }}Stars updated {{ dateFormat "2 January 2006" (time .) }}. {{ end }}vcpkg data generated {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}.
         </p>
     </div>
 </div>
 
 <div id="input-bar">
-    <!-- Centered Search Input -->
     <input type="text" id="search-input" onkeyup="onSearchInput()" placeholder="Search projects...">
+    <label class="popularity-sort-control" for="popularity-sort">
+        Sort popularity by
+        <select id="popularity-sort" onchange="onPopularityModeChange()">
+            <option value="github" selected>GitHub stars</option>
+            <option value="vcpkg">vcpkg port updates</option>
+        </select>
+    </label>
 </div>
 
 <style>
     #input-bar {
         display: flex;
-        justify-content: center;
+        gap: 0.75rem;
+        align-items: end;
         padding-bottom: .5rem;
         margin-top: 0.75rem;
     }
@@ -101,11 +108,42 @@
         color: var(--input-text-color);
         background-color: var(--row-color-secondary);
         padding: 12px;
-        width: 100%;
+        flex: 1;
+        width: auto;
         max-width: 100%;
         font-size: 16px;
         border: 1px solid var(--background-color-th);
         border-radius: 4px;
+    }
+
+    .popularity-sort-control {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        min-width: 190px;
+        color: var(--text-color);
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    #popularity-sort {
+        color: var(--input-text-color);
+        background-color: var(--row-color-secondary);
+        padding: 12px;
+        border: 1px solid var(--background-color-th);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 640px) {
+        #input-bar {
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        .popularity-sort-control {
+            min-width: 0;
+        }
     }
 
     .checkboxes-and-info-container {
@@ -352,6 +390,13 @@
             border: 1px solid #ccc;
             display: inline-block;
         }
+
+        .popularity-source {
+            display: block;
+            color: gray;
+            font-size: 0.7em;
+            line-height: 1.1;
+        }
     </style>
     <thead>
         <tr style="text-align: left;">
@@ -359,7 +404,7 @@
             <th onclick="sortTable(1)" style="cursor: pointer; ">Modules Native <span class="sort-indicator"></span></th>
             <th onclick="sortTable(2)" style="cursor: pointer; ">Name <span class="sort-indicator"></span></th>
             <th onclick="sortTable(3)" style="cursor: pointer; ">Import Statement <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(4)" style="cursor: pointer; ">Popularity <span class="sort-indicator"></span></th>
+            <th onclick="sortTable(4)" style="cursor: pointer; "><span id="popularity-header-label">GitHub Stars</span> <span class="sort-indicator"></span></th>
             <th onclick="sortTable(5)" style="cursor: pointer; ">Version <span class="sort-indicator"></span></th>
             <!-- <th>Min C++<br>Version</th> -->
             <th onclick="sortTable(6)" style="cursor: pointer;">Modules<br>Support Since <span class="sort-indicator"></span></th>
@@ -369,20 +414,36 @@
     <tbody>
         {{ $approved := where .Site.Data.progress.ports "status" "✅" }}
         {{ $others := where .Site.Data.progress.ports "status" "!=" "✅" }}
-        {{ $approve_sorted := (sort $approved "revision_count" "desc") }}
-        {{ $others_sorted := (sort $others "revision_count" "desc") }}
+        {{ $approved_primary := where $approved "github_sort_tier" 0 }}
+        {{ $approved_fallback := where $approved "github_sort_tier" 1 }}
+        {{ $approved_default := where $approved "github_sort_tier" 2 }}
+        {{ $others_primary := where $others "github_sort_tier" 0 }}
+        {{ $others_fallback := where $others "github_sort_tier" 1 }}
+        {{ $others_default := where $others "github_sort_tier" 2 }}
 
         {{ $combined := slice }}
 
-        {{ range $approve_sorted }}
+        {{ range (sort $approved_primary "github_sort_value" "desc") }}
             {{ $combined = $combined | append . }}
         {{ end }}
-        {{ range $others_sorted }}
+        {{ range (sort $approved_fallback "github_sort_value" "desc") }}
+            {{ $combined = $combined | append . }}
+        {{ end }}
+        {{ range (sort $approved_default "default_order" "asc") }}
+            {{ $combined = $combined | append . }}
+        {{ end }}
+        {{ range (sort $others_primary "github_sort_value" "desc") }}
+            {{ $combined = $combined | append . }}
+        {{ end }}
+        {{ range (sort $others_fallback "github_sort_value" "desc") }}
+            {{ $combined = $combined | append . }}
+        {{ end }}
+        {{ range (sort $others_default "default_order" "asc") }}
             {{ $combined = $combined | append . }}
         {{ end }}
 
         {{ range $combined }}
-        <tr>
+        <tr data-status="{{ .status }}" data-project-name="{{ .name }}" data-default-order="{{ .default_order }}">
             <td>{{ .status }}</td>
             <td>{{ .modules_native }}</td>
             <td><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
@@ -393,7 +454,21 @@
                 {{ end }}
                 {{end }}
             </td>
-            <td>{{ .revision_count }}</td>
+            <td class="popularity-cell"
+                data-github-stars="{{ if isset . "github_stars" }}{{ .github_stars }}{{ end }}"
+                data-vcpkg-revisions="{{ if isset . "revision_count" }}{{ .revision_count }}{{ end }}"
+                data-popularity-value="{{ .github_sort_value }}">
+                {{ if isset . "github_stars" }}
+                    <span class="popularity-value">★ {{ .github_stars }}</span>
+                    <span class="popularity-source">GitHub</span>
+                {{ else if isset . "revision_count" }}
+                    <span class="popularity-value">{{ .revision_count }}</span>
+                    <span class="popularity-source">vcpkg fallback</span>
+                {{ else }}
+                    <span class="popularity-value">—</span>
+                    <span class="popularity-source">No data</span>
+                {{ end }}
+            </td>
             <td>{{ .version }}</td>
             <!-- <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td> -->
             <td>
@@ -477,6 +552,11 @@
     const rows = table.getElementsByTagName("tr");
     const statusCheckboxes = document.querySelectorAll(".checkbox-with-desc input[id^='status-']");
     const modulesNativeCheckboxes = document.querySelectorAll(".checkbox-with-desc input[id^='modules-native-']");
+    const popularitySelect = document.getElementById("popularity-sort");
+    if (!(popularitySelect instanceof HTMLSelectElement)) {
+        throw new Error("Popularity sort selector not found");
+    }
+    const popularityHeaderLabel = document.getElementById("popularity-header-label");
 
     // Sorting state
     let sortState = {
@@ -484,9 +564,94 @@
         ascending: true
     };
 
-    // Store original order
     const tbody = table.querySelector("tbody");
-    const originalOrder = tbody ? Array.from(tbody.getElementsByTagName("tr")).map(row => row.cloneNode(true)) : [];
+    let popularityMode = "github";
+
+    function optionalMetric(cell, dataKey) {
+        const rawValue = cell.dataset[dataKey];
+        if (rawValue === undefined || rawValue === "") return null;
+        const value = Number(rawValue);
+        return Number.isFinite(value) ? value : null;
+    }
+
+    function popularityForRow(row, mode) {
+        const cell = row.querySelector(".popularity-cell");
+        if (!(cell instanceof HTMLTableCellElement)) {
+            return { value: null, source: "none", fallback: false, tier: 2 };
+        }
+
+        const stars = optionalMetric(cell, "githubStars");
+        const revisions = optionalMetric(cell, "vcpkgRevisions");
+        if (mode === "vcpkg") {
+            return revisions !== null
+                ? { value: revisions, source: "vcpkg", fallback: false, tier: 0 }
+                : stars !== null
+                    ? { value: stars, source: "github", fallback: true, tier: 1 }
+                    : { value: null, source: "none", fallback: false, tier: 2 };
+        }
+        return stars !== null
+            ? { value: stars, source: "github", fallback: false, tier: 0 }
+            : revisions !== null
+                ? { value: revisions, source: "vcpkg", fallback: true, tier: 1 }
+                : { value: null, source: "none", fallback: false, tier: 2 };
+    }
+
+    function renderPopularity(row, mode) {
+        const cell = row.querySelector(".popularity-cell");
+        if (!(cell instanceof HTMLTableCellElement)) return;
+        const metric = popularityForRow(row, mode);
+        const value = cell.querySelector(".popularity-value");
+        const source = cell.querySelector(".popularity-source");
+        cell.dataset.popularityValue = metric.value === null ? "" : String(metric.value);
+
+        if (value) {
+            const prefix = metric.source === "github" ? "★ " : "";
+            value.textContent = metric.value === null ? "—" : prefix + metric.value.toLocaleString();
+        }
+        if (source) {
+            if (metric.source === "none") {
+                source.textContent = "No data";
+            } else if (metric.fallback) {
+                source.textContent = metric.source === "github" ? "GitHub fallback" : "vcpkg fallback";
+            } else {
+                source.textContent = metric.source === "github" ? "GitHub" : "vcpkg";
+            }
+        }
+    }
+
+    function applyPopularityMode(mode) {
+        const tbody = table.querySelector("tbody");
+        if (!tbody) return;
+        popularityMode = mode === "vcpkg" ? "vcpkg" : "github";
+        const rowsArray = Array.from(tbody.getElementsByTagName("tr"));
+        rowsArray.forEach(row => renderPopularity(row, popularityMode));
+        rowsArray.sort((rowA, rowB) => {
+            const statusComparison = Number(rowB.dataset.status === "✅") - Number(rowA.dataset.status === "✅");
+            if (statusComparison !== 0) return statusComparison;
+
+            const popularityA = popularityForRow(rowA, popularityMode);
+            const popularityB = popularityForRow(rowB, popularityMode);
+            const tierComparison = popularityA.tier - popularityB.tier;
+            if (tierComparison !== 0) return tierComparison;
+
+            if (popularityA.tier < 2 && popularityA.value !== popularityB.value) {
+                return (popularityB.value ?? 0) - (popularityA.value ?? 0);
+            }
+            return Number(rowA.dataset.defaultOrder) - Number(rowB.dataset.defaultOrder);
+        });
+        rowsArray.forEach(row => tbody.appendChild(row));
+
+        table.querySelectorAll(".sort-indicator").forEach(indicator => indicator.textContent = "");
+        sortState.column = -1;
+        sortState.ascending = true;
+        if (popularityHeaderLabel) {
+            popularityHeaderLabel.textContent = popularityMode === "github" ? "GitHub Stars" : "vcpkg Updates";
+        }
+    }
+
+    function onPopularityModeChange() {
+        applyPopularityMode(popularitySelect.value);
+    }
 
     /**
      * Sort table by column
@@ -496,8 +661,8 @@
         const tbody = table.querySelector("tbody");
         if (!tbody) return;
 
-        // If clicking the same column twice in ascending order, reset to default
-        if (sortState.column === columnIndex && sortState.ascending) {
+        // Cycle each column through ascending, descending, and default order.
+        if (sortState.column === columnIndex && !sortState.ascending) {
             resetToDefaultSort();
             return;
         }
@@ -532,8 +697,18 @@
 
             // Special handling for popularity column (numeric sort)
             if (columnIndex === 4) {
-                const numA = parseInt(textA) || 0;
-                const numB = parseInt(textB) || 0;
+                const statusComparison = Number(rowB.dataset.status === "✅") - Number(rowA.dataset.status === "✅");
+                if (statusComparison !== 0) return statusComparison;
+
+                const popularityA = popularityForRow(rowA, popularityMode);
+                const popularityB = popularityForRow(rowB, popularityMode);
+                const tierComparison = popularityA.tier - popularityB.tier;
+                if (tierComparison !== 0) return tierComparison;
+                if (popularityA.tier === 2) {
+                    return Number(rowA.dataset.defaultOrder) - Number(rowB.dataset.defaultOrder);
+                }
+                const numA = popularityA.value ?? 0;
+                const numB = popularityB.value ?? 0;
                 return sortState.ascending ? numA - numB : numB - numA;
             }
 
@@ -554,25 +729,10 @@
     }
 
     /**
-     * Reset table to default sort order (✅ status first)
+     * Reset table to the selected popularity mode (✅ status first)
      */
     function resetToDefaultSort() {
-        const tbody = table.querySelector("tbody");
-        if (!tbody) return;
-
-        // Clear all sort indicators
-        const indicators = table.querySelectorAll(".sort-indicator");
-        indicators.forEach(indicator => indicator.textContent = "");
-
-        // Reset sort state
-        sortState.column = -1;
-        sortState.ascending = true;
-
-        // Clear and restore original order
-        while (tbody.firstChild) {
-            tbody.removeChild(tbody.firstChild);
-        }
-        originalOrder.forEach(row => tbody.appendChild(row.cloneNode(true)));
+        applyPopularityMode(popularityMode);
     }
 
     function onSearchInput() {
@@ -657,4 +817,6 @@
             i_row++;
         }
     }
+
+    applyPopularityMode(popularitySelect.value);
 </script>

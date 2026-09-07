@@ -393,7 +393,14 @@ ports:
   import_statement: tbb
   modules_support_date: 2026-05-13
   homepage: https://github.com/uxlfoundation/oneTBB
+  github_repository: uxlfoundation/oneTBB
   tracking_issue: https://github.com/uxlfoundation/oneTBB/pull/2068
+- name: nmslib
+  homepage: https://github.com/nmslib/nmslib
+  github_repository: nmslib/nmslib
+- name: sqlite-flux
+  homepage: https://github.com/a-alomran/sqlite_flux
+  github_repository: a-alomran/sqlite_flux
 - name: libcoro
   status: ⚙️
   import_statement: coro

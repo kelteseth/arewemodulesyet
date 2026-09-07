@@ -47,7 +47,10 @@ jobs:
     - name: Setup uv
       uses: astral-sh/setup-uv@v4
     - name: Generate data files
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        uv run tools/generate_github_stars.py --provider github
         uv run tools/merge_vcpkg_package_list_progress.py
         uv run tools/compute_completion_status.py
     - name: Setup Pages

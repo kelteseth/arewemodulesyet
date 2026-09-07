@@ -4,6 +4,38 @@ import yaml
 from datetime import datetime, date
 from termcolor import colored
 
+from generate_github_stars import normalize_github_repository, repository_for_project
+
+
+def add_popularity_data(item, github_stars, override=None):
+    """Attach popularity metrics plus primary/fallback/no-data sort tiers."""
+    repository = repository_for_project(item, override)
+    if repository:
+        item["github_repository"] = repository
+        if repository in github_stars:
+            item["github_stars"] = github_stars[repository]
+
+    stars = item.get("github_stars")
+    revisions = item.get("revision_count")
+    item["github_sort_tier"] = 0 if stars is not None else (1 if revisions is not None else 2)
+    item["vcpkg_sort_tier"] = 0 if revisions is not None else (1 if stars is not None else 2)
+    item["github_sort_value"] = stars if stars is not None else (revisions if revisions is not None else 0)
+    item["vcpkg_sort_value"] = revisions if revisions is not None else (stars if stars is not None else 0)
+    return item
+
+
+def load_github_stars(github_stars_file):
+    if not os.path.exists(github_stars_file):
+        return {}, {}
+    with open(github_stars_file, 'r', encoding='utf-8') as f:
+        data = yaml.safe_load(f) or {}
+    stars = {
+        normalize_github_repository(repository): int(count)
+        for repository, count in data.get('repositories', {}).items()
+        if normalize_github_repository(repository) is not None
+    }
+    return stars, data.get('header', {})
+
 def get_date_value(date_val):
     """Convert a date value to string, handling both string and date objects."""
     if date_val is None:
@@ -24,7 +56,7 @@ def load_excluded_c_libraries(excluded_file):
         return set(data['libraries'])
     return set()
 
-def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_projects_file, excluded_c_libs_file, output_file):
+def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_projects_file, excluded_c_libs_file, github_stars_file, output_file):
     print()
     print(colored("📦 Merging C++ modules progress data...", "cyan", attrs=["bold"]))
     print()
@@ -33,6 +65,7 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     print(f"    • vcpkg_overrides:    {colored(vcpkg_overrides_file, 'white')}")
     print(f"    • external_projects:  {colored(external_projects_file, 'white')}")
     print(f"    • excluded_c_libs:    {colored(excluded_c_libs_file, 'white')}")
+    print(f"    • github_stars:       {colored(github_stars_file, 'white')}")
     print()
     
     # Load excluded C libraries
@@ -46,6 +79,8 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     
     with open(external_projects_file, 'r', encoding='utf-8') as f:
         external_projects = yaml.safe_load(f)
+
+    github_stars, github_stars_header = load_github_stars(github_stars_file)
     
     # Extract vcpkg package names for validation
     vcpkg_ports_list = vcpkg_packages['ports']
@@ -70,23 +105,25 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     # Filter out C libraries and merge vcpkg packages with overrides
     merged_ports = []
     excluded_count = 0
-    for item in vcpkg_ports_list:
+    for source_item in vcpkg_ports_list:
+        item = dict(source_item)
         # Skip excluded C libraries
         if item['name'] in excluded_c_libs:
             excluded_count += 1
             continue
         
-        if item['name'] in overrides_dict:
+        override = overrides_dict.get(item['name'], {})
+        if override:
             # Only overwrite specific fields
-            for key in ['import_statement', 'current_min_cpp_version', 'tracking_issue', 'modules_support_date', 'status', 'modules_native']:
-                if key in overrides_dict[item['name']]:
-                    item[key] = overrides_dict[item['name']][key]
-        merged_ports.append(item)
+            for key in ['import_statement', 'current_min_cpp_version', 'homepage', 'tracking_issue', 'modules_support_date', 'status', 'modules_native', 'github_repository']:
+                if key in override:
+                    item[key] = override[key]
+        merged_ports.append(add_popularity_data(item, github_stars, override))
     
     # Add external projects (not in vcpkg)
     external_ports = external_projects.get('projects', [])
     for item in external_ports:
-        merged_ports.append({
+        external_item = {
             "name": item.get("name", "Unknown"),
             "current_min_cpp_version": item.get("current_min_cpp_version", "Unknown"),
             "homepage": item.get("homepage", ""),
@@ -95,8 +132,15 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
             'modules_native': item.get("modules_native", ""),
             "tracking_issue": item.get("tracking_issue", ""),
             "version": item.get("version", ""),
-            "import_statement": item.get("import_statement", "")
-        })
+            "import_statement": item.get("import_statement", ""),
+            "github_repository": item.get("github_repository", "")
+        }
+        merged_ports.append(add_popularity_data(external_item, github_stars))
+
+    # Keep source-file order available as the stable final fallback. This is
+    # especially important for projects that have neither popularity metric.
+    for default_order, item in enumerate(merged_ports):
+        item["default_order"] = default_order
     
     # Calculate progress statistics
     total_projects = len(merged_ports)
@@ -141,6 +185,9 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
     header_info['total_projects'] = total_projects
     header_info['completed_projects'] = completed_projects
     header_info['progress_percent'] = round(progress_percent, 2)
+    if github_stars_header:
+        header_info['github_stars_generated_date'] = github_stars_header.get('generated_date')
+        header_info['github_stars_provider'] = github_stars_header.get('provider')
     if estimated_completion_date:
         header_info['estimated_completion_date'] = estimated_completion_date
     
@@ -160,6 +207,7 @@ def load_and_merge_yaml(vcpkg_packages_file, vcpkg_overrides_file, external_proj
 # To modify data, edit these source files instead:
 #   - data/vcpkg_overrides.yml    (vcpkg package overrides)
 #   - data/external_projects.yml  (non-vcpkg projects)
+#   - data/generated/github_stars.yml (generated GitHub star cache)
 ###############################################################################
 
 """
@@ -197,9 +245,10 @@ def main():
     vcpkg_overrides_path = os.path.join(data_path, 'vcpkg_overrides.yml')
     external_projects_path = os.path.join(data_path, 'external_projects.yml')
     excluded_c_libs_path = os.path.join(data_path, 'excluded_c_libraries.yml')
+    github_stars_path = os.path.join(generated_path, 'github_stars.yml')
     progress_path = os.path.join(data_path, 'progress.yml')
     
-    load_and_merge_yaml(vcpkg_packages_path, vcpkg_overrides_path, external_projects_path, excluded_c_libs_path, progress_path)
+    load_and_merge_yaml(vcpkg_packages_path, vcpkg_overrides_path, external_projects_path, excluded_c_libs_path, github_stars_path, progress_path)
 
 if __name__ == '__main__':
     main()
