@@ -40,12 +40,12 @@ jobs:
     - name: Install Dart Sass
       run: sudo snap install dart-sass
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         submodules: recursive
         fetch-depth: 0  # Full history for compute_completion_status.py
     - name: Setup uv
-      uses: astral-sh/setup-uv@v4
+      uses: astral-sh/setup-uv@v7
     - name: Generate data files
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
