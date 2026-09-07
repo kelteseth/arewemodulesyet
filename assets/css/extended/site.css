@@ -12,10 +12,14 @@
     --tbl-fs: 14px;
     --tbl-fs-small: 12px;
     --tbl-radius: 6px;
+    /* Resource-list rows: a light tint on the white card, recessed to the
+       page background on the dark card. */
+    --row-bg: var(--code-bg);
 }
 
 .dark {
     --accent: #e5652b;
+    --row-bg: var(--theme);
 }
 
 /* The theme stretches the content card to the viewport height, which leaves
@@ -148,6 +152,11 @@
 
 /* --- Home page ---------------------------------------------------------- */
 
+/* Same space above and below the home content (the theme doubles the bottom) */
+.first-entry.home-info {
+    margin-bottom: var(--gap);
+}
+
 .home-info .home-lead {
     margin: 0 0 8px;
     text-align: center;
@@ -191,10 +200,12 @@
     font-variant-numeric: tabular-nums;
 }
 
+/* Two columns: text fills the space up to a fixed gap, image on the right;
+   both are vertically centred so their edges line up. */
 .home-info .home-body {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 40px;
     margin-top: 32px;
 }
 
@@ -206,12 +217,15 @@
 }
 
 .home-info .home-body-text p {
-    max-width: 62ch;
     margin: 0 0 14px;
 }
 
+.home-info .home-body-text p:last-child {
+    margin-bottom: 0;
+}
+
 .home-info .home-body-image {
-    flex: 0 0 300px;
+    flex: 0 0 340px;
 }
 
 .home-info .home-body-image img {
@@ -296,7 +310,7 @@
 .resources li {
     margin: 0;
     padding: 10px 14px;
-    background: var(--code-bg);
+    background: var(--row-bg);
     border: 1px solid var(--border);
     border-radius: var(--tbl-radius);
 }
