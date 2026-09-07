@@ -1,7 +1,11 @@
 baseURL: https://arewemodulesyet.org
-languageCode: en-us
+locale: en-us
 title: Are We Modules Yet?
 theme: [ "PaperMod" ]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:

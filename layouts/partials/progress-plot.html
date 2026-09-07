@@ -15,12 +15,12 @@
     <!-- Progress Bar -->
     <div class="progress-bar-container">
         <div class="progress-bar-track">
-            {{ $progressPercent := .Site.Data.progress.header.progress_percent }}
+            {{ $progressPercent := hugo.Data.progress.header.progress_percent }}
             <div class="progress-bar-fill" style="width: {{ $progressPercent }}%;"></div>
         </div>
         <p class="progress-bar-text">
-            <strong>{{ .Site.Data.progress.header.completed_projects }}</strong> of <strong>{{ .Site.Data.progress.header.total_projects }}</strong> projects complete
-            {{ with .Site.Data.progress.header.estimated_completion_date }}
+            <strong>{{ hugo.Data.progress.header.completed_projects }}</strong> of <strong>{{ hugo.Data.progress.header.total_projects }}</strong> projects complete
+            {{ with hugo.Data.progress.header.estimated_completion_date }}
                 • Estimated completion: <strong>{{ dateFormat "2 January 2006" (time .) }}</strong>
             {{ end }}
         </p>
@@ -58,7 +58,7 @@
     
     <!-- Display Header Information -->
     <div style="margin-bottom: 1rem; margin-top: 1rem; font-size: x-small; color: gray; text-align: center;">
-        <p>Project popularity defaults to GitHub stars, with vcpkg port updates as fallback. vcpkg data generated {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}.
+        <p>Project popularity defaults to GitHub stars, with vcpkg port updates as fallback. vcpkg data generated {{ dateFormat "2 January 2006" (time hugo.Data.progress.header.generated_date) }} from <a href="https://github.com/microsoft/vcpkg/commit/{{ hugo.Data.progress.header.vcpkg_commit_hash }}">this commit.</a> <a href="/excluded-c-libraries/">{{ len hugo.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}.
         </p>
     </div>
     

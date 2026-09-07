@@ -79,7 +79,7 @@
     <!-- Display Header Information -->
     <div class="header-info">
         <h5>Info:</h5>
-        <p>Popularity defaults to GitHub stars, with ✅ projects kept first. Within each status group, projects with GitHub data come first, followed by the vcpkg fallback, then projects with neither metric in their original order. The vcpkg option applies the same tiers in reverse. {{ with .Site.Data.progress.header.github_stars_generated_date }}Stars updated {{ dateFormat "2 January 2006" (time .) }}. {{ end }}vcpkg data generated {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}.
+        <p>Popularity defaults to GitHub stars, with ✅ projects kept first. Within each status group, projects with GitHub data come first, followed by the vcpkg fallback, then projects with neither metric in their original order. The vcpkg option applies the same tiers in reverse. {{ with hugo.Data.progress.header.github_stars_generated_date }}Stars updated {{ dateFormat "2 January 2006" (time .) }}. {{ end }}vcpkg data generated {{ dateFormat "2 January 2006" (time hugo.Data.progress.header.generated_date) }} from <a href="https://github.com/microsoft/vcpkg/commit/{{ hugo.Data.progress.header.vcpkg_commit_hash }}">this commit.</a> <a href="/excluded-c-libraries/">{{ len hugo.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}.
         </p>
     </div>
 </div>
@@ -412,8 +412,8 @@
         </tr>
     </thead>
     <tbody>
-        {{ $approved := where .Site.Data.progress.ports "status" "✅" }}
-        {{ $others := where .Site.Data.progress.ports "status" "!=" "✅" }}
+        {{ $approved := where hugo.Data.progress.ports "status" "✅" }}
+        {{ $others := where hugo.Data.progress.ports "status" "!=" "✅" }}
         {{ $approved_primary := where $approved "github_sort_tier" 0 }}
         {{ $approved_fallback := where $approved "github_sort_tier" 1 }}
         {{ $approved_default := where $approved "github_sort_tier" 2 }}

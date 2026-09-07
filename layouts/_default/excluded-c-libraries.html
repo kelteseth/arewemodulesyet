@@ -8,7 +8,7 @@
     </header>
 
     <div class="post-content">
-        <p>Total: <strong>{{ len .Site.Data.excluded_c_libraries.libraries }}</strong> C libraries excluded</p>
+        <p>Total: <strong>{{ len hugo.Data.excluded_c_libraries.libraries }}</strong> C libraries excluded</p>
 
         <table >
             <thead>
@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                {{ range $index, $lib := .Site.Data.excluded_c_libraries.libraries }}
+                {{ range $index, $lib := hugo.Data.excluded_c_libraries.libraries }}
                 <tr>
                     <td>{{ add $index 1 }}</td>
                     <td><code>{{ $lib }}</code></td>
