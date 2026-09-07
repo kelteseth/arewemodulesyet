@@ -111,7 +111,7 @@ body:not(.dark) .main {
     width: calc(100% - var(--gap) * 2);
     max-width: var(--frame-width);
     margin: 0 auto;
-    padding: 28px 0 22px;
+    padding: 48px 0 28px;
     line-height: 1.2;
 }
 
@@ -232,7 +232,7 @@ button#theme-toggle:focus-visible {
 @media (max-width: 960px) {
     .nav {
         gap: 10px 16px;
-        padding: 20px 0 16px;
+        padding: 28px 0 18px;
     }
 
     .logo-switches {
