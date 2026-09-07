@@ -18,6 +18,8 @@ menu:
   - name: Projects
     url: /projects/
     weight: 2
+    params:
+      primary: true # rendered as the highlighted nav item
   - name: Tools
     url: /Tools/
     weight: 3

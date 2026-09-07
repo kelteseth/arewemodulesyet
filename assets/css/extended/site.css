@@ -31,6 +31,9 @@
        --accent is a single orange for data marks (chart line), stepped per theme
        so it keeps >= 3:1 contrast on the card surface. */
     --accent: #f26a1b;
+    /* Orange for text on the page background: 5.0:1 on white, 5.9:1 on
+       the dark page (4.9:1 on the hatched band behind the header). */
+    --accent-text: #c2470a;
     --accent-gradient: linear-gradient(135deg, #ffbb00 0%, #ff5722 100%);
     --accent-gradient-h: linear-gradient(90deg, #ff9500, #ff5722);
     /* Type scale: base 16, minor third (1.2) */
@@ -55,6 +58,7 @@
 
 .dark {
     --accent: #e5652b;
+    --accent-text: #f7772f;
     --bg-tile: url('/images/funky-lines-dark.webp');
     --row-bg: var(--theme);
 }
@@ -171,6 +175,19 @@ body:not(.dark) .main {
 
 #menu .ext-icon {
     opacity: 0.7;
+}
+
+/* The primary destination (menu entry with `params.primary`) is set in the
+   brand orange at semibold; still a plain link, just the one in colour. */
+#menu .menu-primary a,
+#menu .menu-primary .active {
+    font-weight: 600;
+    color: var(--accent-text);
+}
+
+#menu .menu-primary a:hover {
+    color: var(--accent-text);
+    filter: brightness(1.12);
 }
 
 .logo-switches {
