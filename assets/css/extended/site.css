@@ -1,6 +1,30 @@
-/* Site-wide additions, loaded after the PaperMod stylesheet.
-   Shared tokens and the rules that keep content pages consistent with the
-   projects table (layouts/partials/progress-table.html). */
+/* Site-wide styles, loaded after the PaperMod stylesheet.
+   Fonts, page frame (background, header, content card), type scale, and the
+   rules that keep content pages consistent with the projects table
+   (layouts/partials/progress-table.html). */
+
+/* --- Fonts -------------------------------------------------------------- */
+/* Source Code Pro in two real weights. Anything asking for bold (700) falls
+   back to the 600 face instead of a browser-synthesised bold. */
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Regular.ttf.woff2') format('woff2'),
+         url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Semibold.ttf.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Tokens ------------------------------------------------------------- */
 
 :root {
     /* Brand accent: the yellow-orange gradient also used for the active nav item.
@@ -9,9 +33,21 @@
     --accent: #f26a1b;
     --accent-gradient: linear-gradient(135deg, #ffbb00 0%, #ff5722 100%);
     --accent-gradient-h: linear-gradient(90deg, #ff9500, #ff5722);
-    --tbl-fs: 14px;
-    --tbl-fs-small: 12px;
+    /* Type scale: base 16, minor third (1.2) */
+    --fs-caption: 12px;
+    --fs-table: 14px;
+    --fs-body: 16px;
+    --fs-h3: 19px;
+    --fs-h2: 23px;
+    --fs-h1: 28px;
+    --tbl-fs: var(--fs-table);
+    --tbl-fs-small: var(--fs-caption);
     --tbl-radius: 6px;
+    /* Page frame */
+    --frame-width: calc(var(--main-width) + var(--gap) * 2);
+    --card-pad-x: 40px;
+    --card-pad-y: 32px;
+    --bg-tile: url('/images/funky-lines.webp');
     /* Resource-list rows: a light tint on the white card, recessed to the
        page background on the dark card. */
     --row-bg: var(--code-bg);
@@ -19,13 +55,215 @@
 
 .dark {
     --accent: #e5652b;
+    --bg-tile: url('/images/funky-lines-dark.webp');
     --row-bg: var(--theme);
 }
 
-/* The theme stretches the content card to the viewport height, which leaves
-   a large empty area under short pages; let it size to its content. */
+/* --- Page frame --------------------------------------------------------- */
+
+body {
+    min-height: 100vh;
+    font-family: 'Source Code Pro', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+    font-size: var(--fs-body);
+    /* The hatched tile is strongest behind the header and fades to the flat
+       page colour behind the content, so it frames the page instead of
+       wallpapering it. The fade layer must not repeat, and the body has to
+       be at least viewport-high so it covers the whole canvas. */
+    background-color: var(--theme);
+    background-image: linear-gradient(to bottom, transparent, var(--theme) 720px), var(--bg-tile);
+    background-repeat: no-repeat, repeat;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+/* The content card: the only surface on the page. Same width as the header
+   row, with a gutter on small screens. The theme also stretches it to the
+   viewport height; let it size to its content. */
 .main {
+    width: calc(100% - var(--gap) * 2);
     min-height: 0;
+    padding: var(--card-pad-y) var(--card-pad-x) 40px;
+    border-radius: var(--radius);
+}
+
+/* On the white page the light-grey card needs an edge; the dark card
+   already stands out from its background. */
+body:not(.dark) .main {
+    border: 1px solid var(--border);
+}
+
+/* --- Header ------------------------------------------------------------- */
+/* One row aligned with the card edges: wordmark, page links, theme toggle.
+   No boxes around the parts; the card below is the only container. */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 32px;
+    width: calc(100% - var(--gap) * 2);
+    max-width: var(--frame-width);
+    margin: 0 auto;
+    padding: 28px 0 22px;
+    line-height: 1.2;
+}
+
+.logo {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.logo a {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    overflow: visible;
+    background: none;
+    border-radius: 0;
+}
+
+#menu li + li {
+    margin: 0;
+}
+
+#menu a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+    font-size: 15px;
+    color: var(--secondary);
+    border-radius: 4px;
+}
+
+#menu a:hover {
+    color: var(--primary);
+}
+
+#menu a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+#menu .active {
+    padding-bottom: 3px;
+    font-weight: 600;
+    color: var(--primary);
+    border-bottom: 2px solid #ff9500;
+    border-image: var(--accent-gradient-h) 1;
+}
+
+#menu .ext-icon {
+    opacity: 0.7;
+}
+
+.logo-switches {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+button#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    color: var(--secondary);
+    background: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+button#theme-toggle:hover {
+    color: var(--primary);
+    background: color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
+button#theme-toggle:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+/* Below ~960px the row no longer fits: wordmark and toggle share the first
+   line, the page links wrap underneath. */
+@media (max-width: 960px) {
+    .nav {
+        gap: 10px 16px;
+        padding: 20px 0 16px;
+    }
+
+    .logo-switches {
+        margin-inline-start: auto;
+    }
+
+    #menu {
+        order: 3;
+        flex-basis: 100%;
+        margin: 0 -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --card-pad-x: 16px;
+        --card-pad-y: 20px;
+    }
+
+    .logo a {
+        font-size: 19px;
+    }
+}
+
+/* --- Type scale --------------------------------------------------------- */
+
+.post-title,
+.post-content h1 {
+    font-size: var(--fs-h1);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.post-content h2 {
+    margin: 36px 0 12px;
+    font-size: var(--fs-h2);
+    font-weight: 600;
+}
+
+.post-content h3 {
+    margin: 28px 0 10px;
+    font-size: var(--fs-h3);
+    font-weight: 600;
+}
+
+.post-content > h2:first-child,
+.post-content > h3:first-child {
+    margin-top: 4px;
 }
 
 /* --- Small muted meta line (data freshness, counts) ------------------- */
@@ -152,18 +390,23 @@
 
 /* --- Home page ---------------------------------------------------------- */
 
-/* Same space above and below the home content (the theme doubles the bottom) */
+/* The card padding already provides the top space; keep a little extra for
+   the hero and the same amount below (the theme doubles the bottom). */
 .first-entry.home-info {
-    margin-bottom: var(--gap);
+    margin: 8px 0 var(--gap);
 }
 
 .home-info .home-lead {
     margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     text-align: center;
 }
 
 .home-info .home-tagline {
     margin: 0 0 24px;
+    font-size: 15px;
     text-align: center;
     color: var(--secondary);
 }
@@ -260,6 +503,10 @@
 }
 
 @media (max-width: 760px) {
+    .home-info .home-lead {
+        font-size: 22px;
+    }
+
     .home-info .home-body {
         flex-direction: column;
     }
