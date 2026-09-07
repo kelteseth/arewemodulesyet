@@ -157,36 +157,8 @@
         line-height: 1;
     }
 
-    /* Meta line: result count, data freshness */
-    .progress-meta {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 2px 8px;
-        margin: 12px 0 0;
-        font-size: var(--pt-fs-small);
-        color: var(--secondary);
-    }
-
-    .progress-meta #result-count {
-        color: var(--primary);
-        font-weight: 600;
-        font-variant-numeric: tabular-nums;
-    }
-
-    .progress-meta a,
-    .progress-help a {
-        color: inherit;
-        box-shadow: none;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-    }
-
-    .progress-meta a:hover,
-    .progress-help a:hover {
-        color: var(--primary);
-    }
-
+    /* .progress-meta (result count, data freshness) is shared site-wide;
+       see assets/css/extended/site.css */
     .progress-help {
         margin: 2px 0 12px;
         font-size: var(--pt-fs-small);

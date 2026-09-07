@@ -1,29 +1,26 @@
 
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
+    {{- with .Title }}
     <header>
-        <h1 style="font-size: 4rem;">{{ .Title | markdownify }}</h1>
+        <h1>{{ . | markdownify }}</h1>
     </header>
-    
+    {{- end }}
+
     {{ partial "progress-plot.html" $ }}
-    
-    <div style="display: flex; align-items: center; margin-top: 2rem;">
-        <!-- Text container -->
-        <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
-            <div>
-                {{ partial "home-content.html" $ }}
-            </div>
+
+    <div class="home-body">
+        <div class="home-body-text">
+            {{ partial "home-content.html" $ }}
         </div>
-    
-        <!-- Image container, only displayed if an image is set -->
-        {{ if .Image }}
-        <div style="flex: 0 1 1200px; margin-left: 20px;">
-            <img src="{{ .Image }}"  style="width: 100%; height: auto;">
+
+        {{- if .Image }}
+        <div class="home-body-image">
+            <img src="{{ .Image }}" alt="C++ needs you: help other open source projects support C++20 modules" loading="lazy">
         </div>
-        {{ end }}
+        {{- end }}
     </div>
-    
-    
+
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>

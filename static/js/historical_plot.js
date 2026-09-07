@@ -1,48 +1,65 @@
 let chartInstance = null;
 
+const CHART_FONT = "'Source Code Pro', monospace";
+
 function isDarkTheme() {
     return document.body.classList.contains('dark');
+}
+
+// Read a CSS custom property from the theme so the chart follows the site palette.
+function cssVar(name, fallback) {
+    const value = getComputedStyle(document.body).getPropertyValue(name).trim();
+    return value || fallback;
 }
 
 function getThemeColors() {
     const isDark = isDarkTheme();
     return {
-        textColor: isDark ? '#ddd' : '#333',
-        gridColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
-        completedBorder: isDark ? 'rgba(75, 192, 192, 1)' : 'rgba(75, 192, 192, 1)',
-        completedBackground: isDark ? 'rgba(75, 192, 192, 0.8)' : 'rgba(75, 192, 192, 0.8)',
-        totalBorder: isDark ? 'rgba(255, 99, 132, 1)' : 'rgba(255, 99, 132, 1)',
-        totalBackground: isDark ? 'rgba(255, 99, 132, 0.8)' : 'rgba(255, 99, 132, 0.8)'
+        textColor: cssVar('--secondary', isDark ? '#9b9c9d' : '#6c6c6c'),
+        legendColor: cssVar('--content', isDark ? '#c4c4c5' : '#1f1f1f'),
+        // Grid stays recessive: the theme border in light mode is too faint on dark.
+        gridColor: isDark ? cssVar('--tertiary', '#414244') : cssVar('--border', '#eeeeee'),
+        surface: cssVar('--entry', isDark ? '#2e2e33' : '#ffffff'),
+        border: cssVar('--border', isDark ? '#333333' : '#eeeeee'),
+        title: cssVar('--primary', isDark ? '#dadadb' : '#1e1e1e'),
+        // Completed projects carry the story; the total is a dashed reference line.
+        completed: cssVar('--accent', isDark ? '#3987e5' : '#2a78d6'),
+        total: cssVar('--secondary', isDark ? '#9b9c9d' : '#6c6c6c')
     };
+}
+
+function applyThemeColors(chart, colors) {
+    chart.data.datasets[0].borderColor = colors.completed;
+    chart.data.datasets[0].backgroundColor = colors.completed;
+    chart.data.datasets[0].pointBorderColor = colors.surface;
+    chart.data.datasets[1].borderColor = colors.total;
+    chart.data.datasets[1].backgroundColor = colors.total;
+    chart.data.datasets[1].pointBorderColor = colors.surface;
+
+    for (const axis of [chart.options.scales.x, chart.options.scales.y]) {
+        axis.ticks.color = colors.textColor;
+        axis.grid.color = colors.gridColor;
+        axis.border.color = colors.gridColor;
+    }
+    chart.options.scales.y.title.color = colors.textColor;
+
+    chart.options.plugins.legend.labels.color = colors.legendColor;
+    chart.options.plugins.tooltip.backgroundColor = colors.surface;
+    chart.options.plugins.tooltip.borderColor = colors.border;
+    chart.options.plugins.tooltip.titleColor = colors.title;
+    chart.options.plugins.tooltip.bodyColor = colors.legendColor;
 }
 
 function updateChartTheme() {
     if (!chartInstance) return;
-    
-    const colors = getThemeColors();
-    
-    // Update dataset colors
-    chartInstance.data.datasets[0].borderColor = colors.completedBorder;
-    chartInstance.data.datasets[0].backgroundColor = colors.completedBackground;
-    chartInstance.data.datasets[1].borderColor = colors.totalBorder;
-    chartInstance.data.datasets[1].backgroundColor = colors.totalBackground;
-    
-    // Update scales colors
-    chartInstance.options.scales.x.ticks.color = colors.textColor;
-    chartInstance.options.scales.x.grid.color = colors.gridColor;
-    chartInstance.options.scales.y.ticks.color = colors.textColor;
-    chartInstance.options.scales.y.grid.color = colors.gridColor;
-    chartInstance.options.scales.y.title.color = colors.textColor;
-    
-    // Update legend colors
-    chartInstance.options.plugins.legend.labels.color = colors.textColor;
-    
+    applyThemeColors(chartInstance, getThemeColors());
     chartInstance.update();
 }
 
 function plotHistoricalData() {
     const jsonUrl = '/data/cumulative_stats.json';
-    const chartCanvas = document.getElementById('project-cumulative-chart').getContext('2d');
+    const canvas = document.getElementById('project-cumulative-chart');
+    const chartCanvas = canvas.getContext('2d');
 
     fetch(jsonUrl)
         .then(response => {
@@ -63,51 +80,63 @@ function plotHistoricalData() {
             }));
 
             const colors = getThemeColors();
+            const font = { family: CHART_FONT, size: 12 };
 
             chartInstance = new Chart(chartCanvas, {
                 type: 'line',
                 data: {
                     datasets: [{
-                        label: 'Completed Projects',
+                        label: 'Completed projects',
                         data: completedData,
-                        borderColor: colors.completedBorder,
-                        backgroundColor: colors.completedBackground,
+                        borderColor: colors.completed,
+                        backgroundColor: colors.completed,
+                        borderWidth: 2,
                         tension: 0.1,
-                        showLine: true,
-                        pointRadius: 3
+                        pointRadius: 0,
+                        pointHoverRadius: 5,
+                        pointHitRadius: 12,
+                        pointBorderColor: colors.surface,
+                        pointBorderWidth: 2
                     }, {
-                        label: 'Total Projects',
+                        label: 'Total projects',
                         data: totalData,
-                        borderColor: colors.totalBorder,
-                        backgroundColor: colors.totalBackground,
+                        borderColor: colors.total,
+                        backgroundColor: colors.total,
+                        borderWidth: 2,
+                        borderDash: [6, 4],
                         tension: 0.1,
-                        showLine: true,
-                        pointRadius: 3
+                        pointRadius: 0,
+                        pointHoverRadius: 5,
+                        pointHitRadius: 12,
+                        pointBorderColor: colors.surface,
+                        pointBorderWidth: 2
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    font: {
-                        family: "'Source Code Pro', monospace"
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
                     },
                     scales: {
                         x: {
                             type: 'time',
                             time: {
-                                unit: 'month'
-                            },
-                            title: {
-                                display: false,
-                                text: 'Change Date'
+                                unit: 'month',
+                                tooltipFormat: 'd MMM yyyy',
+                                displayFormats: { month: 'MMM yyyy' }
                             },
                             ticks: {
                                 color: colors.textColor,
-                                font: {
-                                    family: "'Source Code Pro', monospace"
-                                }
+                                font: font,
+                                maxRotation: 0,
+                                autoSkipPadding: 24
                             },
                             grid: {
+                                color: colors.gridColor
+                            },
+                            border: {
                                 color: colors.gridColor
                             }
                         },
@@ -115,46 +144,55 @@ function plotHistoricalData() {
                             type: 'logarithmic',
                             title: {
                                 display: true,
-                                text: 'Number of Projects',
-                                color: colors.textColor
+                                text: 'Projects (log scale)',
+                                color: colors.textColor,
+                                font: font
                             },
                             ticks: {
                                 color: colors.textColor,
-                                font: {
-                                    family: "'Source Code Pro', monospace"
-                                }
+                                font: font,
+                                callback: value => value.toLocaleString()
+                            },
+                            // Keep only 1/2/5 × 10ⁿ ticks; the default log ticks are noisy.
+                            afterBuildTicks: scale => {
+                                scale.ticks = scale.ticks.filter(tick => /^[125]0*$/.test(String(tick.value)));
                             },
                             grid: {
+                                color: colors.gridColor
+                            },
+                            border: {
                                 color: colors.gridColor
                             }
                         }
                     },
                     plugins: {
                         title: {
-                            display: false,
-                            text: 'C++ Module Adoption (Completed vs. Total Projects)',
-                            font: {
-                                family: "'Source Code Pro', monospace"
-                            }
+                            display: false
                         },
                         legend: {
                             display: true,
                             position: 'bottom',
                             labels: {
-                                color: colors.textColor,
-                                font: {
-                                    family: "'Source Code Pro', monospace"
-                                }
+                                color: colors.legendColor,
+                                font: font,
+                                usePointStyle: true,
+                                pointStyle: 'line',
+                                boxWidth: 28,
+                                padding: 16
                             }
                         },
                         tooltip: {
-                            mode: 'index',
-                            intersect: false,
-                            bodyFont: {
-                                family: "'Source Code Pro', monospace"
-                            },
-                            titleFont: {
-                                family: "'Source Code Pro', monospace"
+                            backgroundColor: colors.surface,
+                            borderColor: colors.border,
+                            borderWidth: 1,
+                            titleColor: colors.title,
+                            bodyColor: colors.legendColor,
+                            titleFont: font,
+                            bodyFont: font,
+                            padding: 10,
+                            usePointStyle: true,
+                            callbacks: {
+                                label: item => ` ${item.dataset.label}: ${item.parsed.y.toLocaleString()}`
                             }
                         }
                     }
@@ -163,7 +201,7 @@ function plotHistoricalData() {
         })
         .catch(error => {
             console.error('An error occurred during data fetching or plotting:', error);
-            document.getElementById('project-cumulative-chart').parentNode.innerHTML =
-                `<p style="color: red; padding: 20px;">Could not load historical data. Error: ${error.message}</p>`;
+            canvas.parentNode.innerHTML =
+                `<p class="progress-meta is-centered">Could not load historical data. Error: ${error.message}</p>`;
         });
 }
