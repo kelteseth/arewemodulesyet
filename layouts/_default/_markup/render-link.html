@@ -1,0 +1,12 @@
+{{- /* Pages with `linkHosts: true` show the link target's host next to the
+       link text (used by the Docs resource list). Other pages keep the
+       default anchor. */ -}}
+{{- $host := "" }}
+{{- if .Page.Params.linkHosts }}
+  {{- with urls.Parse .Destination }}{{ $host = .Host }}{{ end }}
+{{- end }}
+{{- if $host -}}
+<a href="{{ .Destination | safeURL }}" class="resource-link"{{ with .Title }} title="{{ . }}"{{ end }}><span class="resource-title">{{ .Text }}</span><span class="resource-host">{{ $host }}</span></a>
+{{- else -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>
+{{- end -}}

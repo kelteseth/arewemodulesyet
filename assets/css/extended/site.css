@@ -3,14 +3,25 @@
    projects table (layouts/partials/progress-table.html). */
 
 :root {
-    --accent: #2a78d6;          /* data accent: completed projects (chart, progress bar) */
+    /* Brand accent: the yellow-orange gradient also used for the active nav item.
+       --accent is a single orange for data marks (chart line), stepped per theme
+       so it keeps >= 3:1 contrast on the card surface. */
+    --accent: #f26a1b;
+    --accent-gradient: linear-gradient(135deg, #ffbb00 0%, #ff5722 100%);
+    --accent-gradient-h: linear-gradient(90deg, #ff9500, #ff5722);
     --tbl-fs: 14px;
     --tbl-fs-small: 12px;
     --tbl-radius: 6px;
 }
 
 .dark {
-    --accent: #3987e5;
+    --accent: #e5652b;
+}
+
+/* The theme stretches the content card to the viewport height, which leaves
+   a large empty area under short pages; let it size to its content. */
+.main {
+    min-height: 0;
 }
 
 /* --- Small muted meta line (data freshness, counts) ------------------- */
@@ -90,6 +101,11 @@
     box-shadow: inset 0 -2px 0 var(--border);
 }
 
+/* First column holds short names (tool, compiler, library); keep them on one line */
+.post-content table:not(.highlighttable) td:first-child {
+    white-space: nowrap;
+}
+
 /* Code in a header (e.g. `import std;`) keeps its case */
 .post-content table th code {
     font-size: 12px;
@@ -160,7 +176,7 @@
 
 .home-info .progress-bar-fill {
     height: 100%;
-    background: var(--accent);
+    background: var(--accent-gradient-h);
     border-radius: 3px;
 }
 
@@ -185,6 +201,13 @@
 .home-info .home-body-text {
     flex: 1 1 0;
     min-width: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.home-info .home-body-text p {
+    max-width: 62ch;
+    margin: 0 0 14px;
 }
 
 .home-info .home-body-image {
@@ -196,27 +219,25 @@
     height: auto;
 }
 
+/* CTA sits flush with the text column it belongs to */
 .home-info .home-cta {
-    margin-top: 24px;
-    text-align: center;
+    margin-top: 20px;
 }
 
 .home-info .browse-projects-btn {
     display: inline-block;
-    padding: 10px 24px;
-    font-size: 15px;
+    padding: 12px 28px;
+    font-size: 16px;
     font-weight: 600;
-    color: var(--theme);
-    background: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: var(--tbl-radius);
+    color: #fff;
+    background: var(--accent-gradient);
+    border-radius: 8px;
     text-decoration: none;
     box-shadow: none;
 }
 
 .home-info .browse-projects-btn:hover {
-    color: var(--primary);
-    background: transparent;
+    filter: brightness(1.06);
 }
 
 .home-info .browse-projects-btn:focus-visible {
@@ -233,4 +254,71 @@
         flex-basis: auto;
         width: 240px;
     }
+}
+
+/* --- Resource lists (Docs) ---------------------------------------------- */
+/* Pages with `layout: resources` render their link lists as rows; the link
+   render hook adds the host name for pages with `linkHosts: true`. */
+
+.resources h2 {
+    margin: 28px 0 10px;
+    font-size: var(--tbl-fs-small);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.resources h2:first-child {
+    margin-top: 20px;
+}
+
+.resources ul {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.resources li {
+    margin: 0;
+}
+
+.resources a.resource-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 16px;
+    padding: 10px 14px;
+    color: var(--primary);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--tbl-radius);
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.resources a.resource-link:hover {
+    border-color: var(--secondary);
+}
+
+.resources a.resource-link:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+.resources .resource-title {
+    font-size: 15px;
+}
+
+.resources .resource-host {
+    font-size: var(--tbl-fs-small);
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.resources .resource-host::after {
+    content: " ↗";
 }
