@@ -1,0 +1,18 @@
+{{- define "main" }}
+{{- /* Link-list pages (Docs): title, description and the content rendered as
+       resource rows; see .resources in assets/css/extended/site.css and the
+       link render hook in _markup/render-link.html. */ -}}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
+  </header>
+
+  <div class="post-content resources">
+    {{ .Content }}
+  </div>
+</article>
+{{- end }}

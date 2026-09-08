@@ -1,17 +1,23 @@
-### Examples to provide modules while keeping headers
+---
+title: "Examples"
+description: "Projects that show how to provide or use C++20 modules"
+layout: "resources"
+linkHosts: true
+---
 
-The section collects good examples to provide modules while keep headers.
+## Providing modules while keeping headers
 
-- [bshoshany-thread-pool](https://github.com/bshoshany/thread-pool). The project is a good example
-  for libraries to provide modules with keeping headers. Its README page also gives a very detailed
-  explanation on how to use the wrapped modules. This is really good for beginners to understand how
-  to adopt modules.
+Good examples of libraries that ship modules alongside their existing headers.
 
+- [bshoshany-thread-pool](https://github.com/bshoshany/thread-pool)
 
-### Examples to use modules natively
+  A good example for libraries that provide modules while keeping headers. Its README also gives a
+  very detailed explanation of how to use the wrapped modules, which makes it a great starting point
+  for beginners adopting modules.
 
-Following off are good examples to use modules natively. This is pretty helpful to give us a feeling
-about how to develop with modules natively.
+## Using modules natively
+
+Projects written with modules from the ground up, to give a feeling for how developing with modules natively looks.
 
 - [infinity](https://github.com/infiniflow/infinity)
 - [technical-machine](https://github.com/davidstone/technical-machine)

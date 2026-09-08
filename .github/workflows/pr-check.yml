@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.152.2
+      HUGO_VERSION: 0.164.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -23,16 +23,22 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0  # Full history for compute_completion_status.py
       - name: Fetch master branch
         run: git fetch origin master
       - name: Setup uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v7
       - name: Run tests
-        run: uv run python -m unittest discover -s tests -v
+        # No tests are committed yet; run them as soon as a tests/ directory exists.
+        run: |
+          if [ -d tests ]; then
+            uv run python -m unittest discover -s tests -v
+          else
+            echo "No tests/ directory, skipping."
+          fi
       - name: Generate data files
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

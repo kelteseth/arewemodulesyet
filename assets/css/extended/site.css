@@ -1,0 +1,633 @@
+/* Site-wide styles, loaded after the PaperMod stylesheet.
+   Fonts, page frame (background, header, content card), type scale, and the
+   rules that keep content pages consistent with the projects table
+   (layouts/partials/progress-table.html). */
+
+/* --- Fonts -------------------------------------------------------------- */
+/* Source Code Pro in two real weights. Anything asking for bold (700) falls
+   back to the 600 face instead of a browser-synthesised bold. */
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Regular.ttf.woff2') format('woff2'),
+         url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Semibold.ttf.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Tokens ------------------------------------------------------------- */
+
+:root {
+    /* Brand accent: the yellow-orange gradient also used for the active nav item.
+       --accent is a single orange for data marks (chart line), stepped per theme
+       so it keeps >= 3:1 contrast on the card surface. */
+    --accent: #f26a1b;
+    /* Orange for text on the page background: 5.0:1 on white, 5.9:1 on
+       the dark page (4.9:1 on the hatched band behind the header). */
+    --accent-text: #c2470a;
+    --accent-gradient: linear-gradient(135deg, #ffbb00 0%, #ff5722 100%);
+    --accent-gradient-h: linear-gradient(90deg, #ff9500, #ff5722);
+    /* Type scale: base 16, minor third (1.2) */
+    --fs-caption: 12px;
+    --fs-table: 14px;
+    --fs-body: 16px;
+    --fs-h3: 19px;
+    --fs-h2: 23px;
+    --fs-h1: 28px;
+    --tbl-fs: var(--fs-table);
+    --tbl-fs-small: var(--fs-caption);
+    --tbl-radius: 6px;
+    /* Page frame */
+    --frame-width: calc(var(--main-width) + var(--gap) * 2);
+    --card-pad-x: 40px;
+    --card-pad-y: 32px;
+    --bg-tile: url('/images/funky-lines.webp');
+    /* Resource-list rows: a light tint on the white card, recessed to the
+       page background on the dark card. */
+    --row-bg: var(--code-bg);
+}
+
+.dark {
+    --accent: #e5652b;
+    --accent-text: #f7772f;
+    --bg-tile: url('/images/funky-lines-dark.webp');
+    --row-bg: var(--theme);
+}
+
+/* --- Page frame --------------------------------------------------------- */
+
+body {
+    min-height: 100vh;
+    font-family: 'Source Code Pro', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+    font-size: var(--fs-body);
+    /* The hatched tile is strongest behind the header and fades to the flat
+       page colour behind the content, so it frames the page instead of
+       wallpapering it. The fade layer must not repeat, and the body has to
+       be at least viewport-high so it covers the whole canvas. */
+    background-color: var(--theme);
+    background-image: linear-gradient(to bottom, transparent, var(--theme) 720px), var(--bg-tile);
+    background-repeat: no-repeat, repeat;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+/* The content card: the only surface on the page. Same width as the header
+   row, with a gutter on small screens. The theme also stretches it to the
+   viewport height; let it size to its content. */
+.main {
+    width: calc(100% - var(--gap) * 2);
+    min-height: 0;
+    padding: var(--card-pad-y) var(--card-pad-x) 40px;
+    border-radius: var(--radius);
+}
+
+/* On the white page the light-grey card needs an edge; the dark card
+   already stands out from its background. */
+body:not(.dark) .main {
+    border: 1px solid var(--border);
+}
+
+/* --- Header ------------------------------------------------------------- */
+/* One row aligned with the card edges: wordmark, page links, theme toggle.
+   No boxes around the parts; the card below is the only container. */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 32px;
+    width: calc(100% - var(--gap) * 2);
+    max-width: var(--frame-width);
+    margin: 0 auto;
+    padding: 48px 0 28px;
+    line-height: 1.2;
+}
+
+.logo {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.logo a {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    overflow: visible;
+    background: none;
+    border-radius: 0;
+}
+
+#menu li + li {
+    margin: 0;
+}
+
+#menu a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+    font-size: 15px;
+    color: var(--secondary);
+    border-radius: 4px;
+}
+
+#menu a:hover {
+    color: var(--primary);
+}
+
+#menu a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+#menu .active {
+    padding-bottom: 3px;
+    font-weight: 600;
+    color: var(--primary);
+    border-bottom: 2px solid #ff9500;
+    border-image: var(--accent-gradient-h) 1;
+}
+
+#menu .ext-icon {
+    opacity: 0.7;
+}
+
+/* The primary destination (menu entry with `params.primary`) is set in the
+   brand orange at semibold; still a plain link, just the one in colour. */
+#menu .menu-primary a,
+#menu .menu-primary .active {
+    font-weight: 600;
+    color: var(--accent-text);
+}
+
+#menu .menu-primary a:hover {
+    color: var(--accent-text);
+    filter: brightness(1.12);
+}
+
+.logo-switches {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+button#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    color: var(--secondary);
+    background: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+button#theme-toggle:hover {
+    color: var(--primary);
+    background: color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
+button#theme-toggle:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+/* Below ~960px the row no longer fits: wordmark and toggle share the first
+   line, the page links wrap underneath. */
+@media (max-width: 960px) {
+    .nav {
+        gap: 10px 16px;
+        padding: 28px 0 18px;
+    }
+
+    .logo-switches {
+        margin-inline-start: auto;
+    }
+
+    #menu {
+        order: 3;
+        flex-basis: 100%;
+        margin: 0 -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --card-pad-x: 16px;
+        --card-pad-y: 20px;
+    }
+
+    .logo a {
+        font-size: 19px;
+    }
+}
+
+/* --- Type scale --------------------------------------------------------- */
+
+.post-title,
+.post-content h1 {
+    font-size: var(--fs-h1);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.post-content h2 {
+    margin: 36px 0 12px;
+    font-size: var(--fs-h2);
+    font-weight: 600;
+}
+
+.post-content h3 {
+    margin: 28px 0 10px;
+    font-size: var(--fs-h3);
+    font-weight: 600;
+}
+
+.post-content > h2:first-child,
+.post-content > h3:first-child {
+    margin-top: 4px;
+}
+
+/* --- Small muted meta line (data freshness, counts) ------------------- */
+
+.progress-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 8px;
+    margin: 12px 0 0;
+    font-size: var(--tbl-fs-small);
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+.progress-meta.is-centered {
+    justify-content: center;
+}
+
+.progress-meta strong,
+.progress-meta #result-count {
+    color: var(--primary);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.progress-meta a,
+.progress-help a {
+    color: inherit;
+    box-shadow: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.progress-meta a:hover,
+.progress-help a:hover {
+    color: var(--primary);
+}
+
+/* --- Content tables ----------------------------------------------------- */
+/* The theme reset turns every <table> into a scrollable block, which also
+   disables real table layout. Restore it and move horizontal scrolling to
+   the wrapper added by layouts/_default/_markup/render-table.html. */
+
+.post-content .table-wrap {
+    margin-bottom: var(--content-gap);
+    overflow-x: auto;
+}
+
+.post-content table {
+    display: table;
+    overflow: visible;
+    width: 100%;
+    margin: 0;
+    font-size: var(--tbl-fs);
+    line-height: 1.4;
+    font-variant-numeric: tabular-nums;
+}
+
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) th,
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+    min-width: 0;
+    padding: 6px 10px;
+    line-height: 1.4;
+    border: 0;
+    vertical-align: top;
+}
+
+.post-content table th {
+    font-size: var(--tbl-fs-small);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--secondary);
+    background: transparent;
+    box-shadow: inset 0 -2px 0 var(--border);
+}
+
+/* First column holds short names (tool, compiler, library); keep them on one line */
+.post-content table:not(.highlighttable) td:first-child {
+    white-space: nowrap;
+}
+
+/* Code in a header (e.g. `import std;`) keeps its case */
+.post-content table th code {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+/* A meta line directly above a table needs breathing room */
+.post-content .progress-meta + .table-wrap {
+    margin-top: 12px;
+}
+
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) tbody tr:nth-child(odd) {
+    background: var(--entry);
+}
+
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) tbody tr:nth-child(even) {
+    background: var(--code-bg);
+}
+
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) tbody tr:hover {
+    background: var(--tertiary);
+    background: color-mix(in srgb, var(--primary) 10%, var(--entry));
+}
+
+/* Inline code inside tables renders as a small chip, matching the import
+   statements on the projects page; the border keeps it visible on striped rows. */
+.post-content table:not(.highlighttable) code {
+    margin: 0;
+    padding: 1px 6px;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: var(--primary);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+/* --- Home page ---------------------------------------------------------- */
+
+/* The card padding already provides the top space; keep a little extra for
+   the hero and the same amount below (the theme doubles the bottom). */
+.first-entry.home-info {
+    margin: 8px 0 var(--gap);
+}
+
+.home-info .home-lead {
+    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.home-info .home-tagline {
+    margin: 0 0 24px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.home-info .home-chart {
+    height: 400px;
+}
+
+.home-info .progress-bar-container {
+    margin-top: 24px;
+}
+
+.home-info .progress-bar-track {
+    height: 6px;
+    overflow: hidden;
+    background: var(--tertiary);
+    border-radius: 3px;
+}
+
+.home-info .progress-bar-fill {
+    height: 100%;
+    background: var(--accent-gradient-h);
+    border-radius: 3px;
+}
+
+.home-info .progress-bar-text {
+    margin: 10px 0 0;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.home-info .progress-bar-text strong {
+    color: var(--primary);
+    font-variant-numeric: tabular-nums;
+}
+
+/* Two columns: text fills the space up to a fixed gap, image on the right;
+   both are vertically centred so their edges line up. */
+.home-info .home-body {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+.home-info .home-body-text {
+    flex: 1 1 0;
+    min-width: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.home-info .home-body-text p {
+    margin: 0 0 14px;
+}
+
+.home-info .home-body-text p:last-child {
+    margin-bottom: 0;
+}
+
+.home-info .home-body-image {
+    flex: 0 0 340px;
+}
+
+.home-info .home-body-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* CTA sits flush with the text column it belongs to */
+.home-info .home-cta {
+    margin-top: 20px;
+}
+
+.home-info .browse-projects-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent-gradient);
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.home-info .browse-projects-btn:hover {
+    filter: brightness(1.06);
+}
+
+.home-info .browse-projects-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+    .home-info .home-lead {
+        font-size: 22px;
+    }
+
+    .home-info .home-body {
+        flex-direction: column;
+    }
+
+    .home-info .home-body-image {
+        flex-basis: auto;
+        width: 240px;
+    }
+}
+
+/* --- Resource lists (Docs, Examples) ------------------------------------ */
+/* Pages with `layout: resources` render their link lists as rows; the link
+   render hook adds the host name for pages with `linkHosts: true`. A list
+   item may carry a description paragraph below the link. */
+
+.resources h2,
+.resources h3 {
+    margin: 28px 0 8px;
+    font-size: var(--tbl-fs-small);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.resources h2:first-child,
+.resources h3:first-child {
+    margin-top: 20px;
+}
+
+/* Section intro */
+.resources > p {
+    max-width: 72ch;
+    margin: 0 0 10px;
+    font-size: var(--tbl-fs);
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+.resources ul {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 4px;
+    padding: 0;
+    list-style: none;
+}
+
+.resources li {
+    margin: 0;
+    padding: 10px 14px;
+    background: var(--row-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--tbl-radius);
+}
+
+.resources li:hover {
+    border-color: var(--secondary);
+}
+
+.resources li p {
+    margin: 0;
+}
+
+/* Description under the link */
+.resources li p + p {
+    margin-top: 6px;
+    max-width: 72ch;
+    font-size: var(--tbl-fs);
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+.resources a.resource-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 16px;
+    color: var(--primary);
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.resources a.resource-link:hover .resource-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.resources a.resource-link:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.resources .resource-title {
+    font-size: 15px;
+}
+
+.resources .resource-host {
+    font-size: var(--tbl-fs-small);
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.resources .resource-host::after {
+    content: " ↗";
+}

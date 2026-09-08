@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $libraries := hugo.Data.excluded_c_libraries.libraries }}
 <article class="post-single">
     <header class="post-header">
         <h1 class="post-title">Excluded C Libraries</h1>
@@ -8,26 +9,55 @@
     </header>
 
     <div class="post-content">
-        <p>Total: <strong>{{ len .Site.Data.excluded_c_libraries.libraries }}</strong> C libraries excluded</p>
+        <div class="progress-meta">
+            <span><strong>{{ lang.FormatNumber 0 (len $libraries) }}</strong> C libraries excluded</span>
+            <span>·</span>
+            <span>C libraries cannot use C++20 modules, so they are left out of the progress numbers</span>
+        </div>
 
-        <table >
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Library Name</th>
-                    <th >vcpkg Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{ range $index, $lib := .Site.Data.excluded_c_libraries.libraries }}
-                <tr>
-                    <td>{{ add $index 1 }}</td>
-                    <td><code>{{ $lib }}</code></td>
-                    <td><a href="https://vcpkg.io/en/package/{{ $lib }}" target="_blank" rel="noopener">vcpkg</a></td>
-                </tr>
-                {{ end }}
-            </tbody>
-        </table>
+        <div class="table-wrap">
+            <table class="excluded-table">
+                <thead>
+                    <tr>
+                        <th class="col-index">#</th>
+                        <th>Library</th>
+                        <th>vcpkg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range $index, $lib := $libraries }}
+                    <tr>
+                        <td class="col-index">{{ add $index 1 }}</td>
+                        <td><code>{{ $lib }}</code></td>
+                        <td><a href="https://vcpkg.io/en/package/{{ $lib }}" target="_blank" rel="noopener">vcpkg.io/en/package/{{ $lib }}</a></td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
     </div>
 </article>
+
+<style>
+    .excluded-table {
+        table-layout: fixed;
+    }
+
+    .excluded-table .col-index {
+        width: 56px;
+        text-align: right;
+        color: var(--secondary);
+    }
+
+    .excluded-table th:nth-child(2),
+    .excluded-table td:nth-child(2) {
+        width: 260px;
+    }
+
+    .excluded-table td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
 {{ end }}

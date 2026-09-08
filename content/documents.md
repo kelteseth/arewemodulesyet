@@ -1,3 +1,10 @@
+---
+title: "Docs"
+description: "Tutorials, guidelines, analyses and tools for C++20 modules"
+layout: "resources"
+linkHosts: true
+---
+
 ## Tutorials
 
 - [General information about C++ Modules](https://en.wikipedia.org/wiki/Modules_(C++))

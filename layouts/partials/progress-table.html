@@ -1,490 +1,509 @@
 <!-- Progress Table -->
 <style>
-    :root {
-        /* Light theme colors */
-        --text-color: #333;
-        --background-color-th: #e0e0e0;
-        --link-color: #0066cc;
-        --input-text-color: #333;
-        --row-color-primary: #ffffff;
-        --row-color-secondary: #f0f0f0;
-        --progress-table-max-width: 1100px;
-        --col-status: 70px;
-        --col-native: 90px;
-        --col-name: 210px;
-        --col-import: 300px;
-        --col-popularity: 120px;
-        --col-version: 120px;
-        --col-support: 120px;
-        --col-tracking: 70px;
+    .progress {
+        /* Column widths for the fixed-layout table (name/import share the rest) */
+        --pt-col-status: 48px;
+        --pt-col-native: 52px;
+        --pt-col-name: 230px;
+        --pt-col-stars: 116px;
+        --pt-col-version: 104px;
+        --pt-col-since: 112px;
+        --pt-col-issue: 48px;
+        /* Compact type scale for dense data (base 14, minor second) */
+        --pt-fs-body: 14px;
+        --pt-fs-small: 12px;
+        --pt-control-h: 38px;
+        --pt-radius: 6px;
+        font-size: var(--pt-fs-body);
+        line-height: 1.4;
     }
 
-    body.dark {
-        /* Dark theme colors */
-        --text-color: #ddd;
-        --background-color-th: #222;
-        --link-color: steelblue;
-        --input-text-color: #827b7b;
-        --row-color-primary: #333333;
-        --row-color-secondary: #2a2a2a;
-    }
-</style>
-
-<!-- Filter Checkboxes with Descriptions -->
-<div class="checkboxes-and-info-container">
-    <div class="checkboxes-container">
-        <div class="checkboxes-section">
-            <div class="section-title">Status Filters</div>
-            <div class="checkbox-grid status-filters">
-                <label class="checkbox-with-desc">
-                    <input type="checkbox" id="status-check" onchange="onSearchInput()"/>
-                    <span class="checkbox-emoji">✅</span>
-                    <span class="checkbox-desc">Full support</span>
-                </label>
-                <label class="checkbox-with-desc">
-                    <input type="checkbox" id="status-question" onchange="onSearchInput()"/>
-                    <span class="checkbox-emoji">❔</span>
-                    <span class="checkbox-desc">Unknown/Not set</span>
-                </label>
-                <label class="checkbox-with-desc">
-                    <input type="checkbox" id="status-working" onchange="onSearchInput()"/>
-                    <span class="checkbox-emoji">⚙️</span>
-                    <span class="checkbox-desc">Work in progress</span>
-                </label>
-                <label class="checkbox-with-desc">
-                    <input type="checkbox" id="status-warning" onchange="onSearchInput()"/>
-                    <span class="checkbox-emoji">⚠️</span>
-                    <span class="checkbox-desc">Issue reported</span>
-                </label>
-                <label class="checkbox-with-desc">
-                    <input type="checkbox" id="status-cross" onchange="onSearchInput()"/>
-                    <span class="checkbox-emoji">❌</span>
-                    <span class="checkbox-desc">No planned support</span>
-                </label>
-            </div>
-        </div>
-
-        <div class="checkboxes-section">
-            <div class="section-title">Additional Filters</div>
-            <div class="checkbox-grid">
-                <label class="checkbox-with-desc">
-                    <input type="checkbox" id="modules-native-check" onchange="onSearchInput()"/>
-                    <span class="checkbox-emoji">✅</span>
-                    <span class="checkbox-desc">🚀 Modules Native (using modules internally, not just wrapping headers)</span>
-                </label>
-            </div>
-        </div>
-    </div>
-
-    <!-- Display Header Information -->
-    <div class="header-info">
-        <h5>Info:</h5>
-        <p>Popularity defaults to GitHub stars, with ✅ projects kept first. Within each status group, projects with GitHub data come first, followed by the vcpkg fallback, then projects with neither metric in their original order. The vcpkg option applies the same tiers in reverse. {{ with .Site.Data.progress.header.github_stars_generated_date }}Stars updated {{ dateFormat "2 January 2006" (time .) }}. {{ end }}vcpkg data generated {{ dateFormat "2 January 2006" (time .Site.Data.progress.header.generated_date) }} from <a href="https://github.com/microsoft/vcpkg/commit/{{ .Site.Data.progress.header.vcpkg_commit_hash }}">this commit.</a> <a href="/excluded-c-libraries/">{{ len .Site.Data.excluded_c_libraries.libraries }} C libraries excluded.</a> Website last rebuilt: {{ now.Format "2 January 2006" }}.
-        </p>
-    </div>
-</div>
-
-<div id="input-bar">
-    <input type="text" id="search-input" onkeyup="onSearchInput()" placeholder="Search projects...">
-    <label class="popularity-sort-control" for="popularity-sort">
-        Sort popularity by
-        <select id="popularity-sort" onchange="onPopularityModeChange()">
-            <option value="github" selected>GitHub stars</option>
-            <option value="vcpkg">vcpkg port updates</option>
-        </select>
-    </label>
-</div>
-
-<style>
-    #input-bar {
+    /* Toolbar: search + popularity source */
+    .progress-toolbar {
         display: flex;
-        gap: 0.75rem;
-        align-items: end;
-        padding-bottom: .5rem;
-        margin-top: 0.75rem;
+        gap: 10px;
+        align-items: center;
     }
 
-    #search-input {
-        color: var(--input-text-color);
-        background-color: var(--row-color-secondary);
-        padding: 12px;
+    .progress-search {
         flex: 1;
-        width: auto;
-        max-width: 100%;
-        font-size: 16px;
-        border: 1px solid var(--background-color-th);
-        border-radius: 4px;
+        display: flex;
+        min-width: 0;
+    }
+
+    .progress .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    .progress #search-input,
+    .progress #popularity-sort {
+        height: var(--pt-control-h);
+        font: inherit;
+        color: var(--primary);
+        background: var(--entry);
+        border: 1px solid var(--border);
+        border-radius: var(--pt-radius);
+    }
+
+    .progress #search-input {
+        flex: 1;
+        min-width: 0;
+        padding: 0 12px;
+    }
+
+    .progress #search-input::placeholder {
+        color: var(--secondary);
+    }
+
+    .progress #search-input:focus-visible,
+    .progress #popularity-sort:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 1px;
     }
 
     .popularity-sort-control {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        min-width: 190px;
-        color: var(--text-color);
-        font-size: 0.85rem;
-        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
     }
 
-    #popularity-sort {
-        color: var(--input-text-color);
-        background-color: var(--row-color-secondary);
-        padding: 12px;
-        border: 1px solid var(--background-color-th);
-        border-radius: 4px;
-        font-size: 16px;
+    .progress #popularity-sort {
+        padding: 0 8px;
     }
 
-    @media (max-width: 640px) {
-        #input-bar {
-            align-items: stretch;
-            flex-direction: column;
-        }
-
-        .popularity-sort-control {
-            min-width: 0;
-        }
+    body.dark .progress #search-input,
+    body.dark .progress #popularity-sort {
+        color-scheme: dark;
     }
 
-    .checkboxes-and-info-container {
-        display: flex;
-        gap: 2rem;
-        margin-bottom: 1rem;
-        align-items: flex-start;
+    /* Small uppercase labels shared by filter groups, controls and table headers */
+    .progress .label-small {
+        font-size: var(--pt-fs-small);
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--secondary);
     }
 
-    .checkboxes-container {
-        flex: 4;
-    }
-
-    .header-info {
-        flex: 1;
-        font-size: small;
-        color: gray;
-        padding-top: 0;
-    }
-
-    .header-info p {
-        margin: 0;
-    }
-
-    .header-info a {
-        color: var(--link-color);
-    }
-
-    .checkboxes-section {
-        margin-bottom: 0.75rem;
-    }
-
-    .section-title {
-        font-weight: bold;
-        margin-bottom: 0.3rem;
-        font-size: 1.1rem;
-        color: var(--text-color);
-    }
-
-    .checkbox-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 0.3rem;
-    }
-
-    .checkbox-grid.status-filters {
+    /* Filter chips */
+    .progress-filters {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.3rem;
+        align-items: center;
+        gap: 8px 24px;
+        margin-top: 12px;
     }
 
-    .checkbox-grid.status-filters .checkbox-with-desc {
-        flex: 1;
-        min-width: 150px;
+    .filter-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .filter-group .label-small {
+        margin-right: 4px;
     }
 
     .checkbox-with-desc {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        padding: 0.4rem 0.5rem;
+        gap: 6px;
+        padding: 4px 10px 4px 8px;
+        color: var(--content);
+        background: var(--entry);
+        border: 1px solid var(--border);
+        border-radius: var(--pt-radius);
+        line-height: 1.2;
         cursor: pointer;
-        border-radius: 4px;
-        transition: background-color 0.2s;
+        user-select: none;
     }
 
     .checkbox-with-desc:hover {
-        background-color: var(--row-color-secondary);
+        border-color: var(--secondary);
     }
 
-    .checkbox-with-desc input[type="checkbox"] {
-        margin-right: 0.5rem;
-        cursor: pointer;
+    .checkbox-with-desc:has(input:checked) {
+        color: var(--primary);
+        background: var(--code-bg);
+        border-color: var(--primary);
     }
 
-    .checkbox-emoji {
-        margin-right: 0.5rem;
-        font-size: 1.2rem;
-    }
-
-    .checkbox-desc {
-        color: var(--text-color);
-        font-size: 0.9rem;
+    .checkbox-with-desc:focus-within {
+        outline: 2px solid var(--primary);
+        outline-offset: 1px;
     }
 
     .checkbox-with-desc.disabled {
-        opacity: 0.4;
+        opacity: 0.45;
         cursor: not-allowed;
     }
 
-    .checkbox-with-desc.disabled input[type="checkbox"] {
-        cursor: not-allowed;
+    .checkbox-with-desc input[type="checkbox"] {
+        width: 14px;
+        height: 14px;
+        margin: 0;
+        accent-color: var(--primary);
+        cursor: inherit;
+    }
+
+    .checkbox-emoji {
+        line-height: 1;
+    }
+
+    /* .progress-meta (result count, data freshness) is shared site-wide;
+       see assets/css/extended/site.css */
+    .progress-help {
+        margin: 2px 0 12px;
+        font-size: var(--pt-fs-small);
+        color: var(--secondary);
+    }
+
+    .progress-help summary {
+        width: max-content;
+        cursor: pointer;
+    }
+
+    .progress-help summary:hover {
+        color: var(--primary);
+    }
+
+    .progress-help p {
+        max-width: 72ch;
+        margin: 4px 0 0;
+    }
+
+    /* Table */
+    .progress-table-container {
+        margin: 0 0 var(--content-gap);
+    }
+
+    /* The theme reset makes every table a scrollable block; restore real table layout */
+    .progress #progress-table {
+        display: table;
+        overflow: visible;
+        width: 100%;
+        margin: 0;
+        table-layout: fixed;
+        border-collapse: collapse;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .progress #progress-table col.col-status  { width: var(--pt-col-status); }
+    .progress #progress-table col.col-native  { width: var(--pt-col-native); }
+    .progress #progress-table col.col-name    { width: var(--pt-col-name); }
+    .progress #progress-table col.col-stars   { width: var(--pt-col-stars); }
+    .progress #progress-table col.col-version { width: var(--pt-col-version); }
+    .progress #progress-table col.col-since   { width: var(--pt-col-since); }
+    .progress #progress-table col.col-issue   { width: var(--pt-col-issue); }
+
+    .progress #progress-table th,
+    .progress #progress-table td {
+        min-width: 0;
+        padding: 5px 8px;
+        border: 0;
+        text-align: left;
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .progress #progress-table .c-center { text-align: center; }
+    .progress #progress-table .c-num    { text-align: right; }
+
+    /* Header: sticky, bottom rule drawn with a shadow so it sticks too */
+    .progress #progress-table thead th {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        padding-bottom: 8px;
+        background: var(--entry);
+        box-shadow: inset 0 -2px 0 var(--border);
+        vertical-align: bottom;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .progress #progress-table thead th:hover .th-label,
+    .progress #progress-table thead th[aria-sort] .th-label {
+        color: var(--primary);
+    }
+
+    .progress #progress-table thead th:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: -2px;
+    }
+
+    .progress #progress-table thead th .th-inner {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .progress #progress-table thead th.c-center .th-inner { justify-content: center; }
+    .progress #progress-table thead th.c-num .th-inner    { justify-content: flex-end; }
+
+    /* Rotated headers keep the narrow columns narrow (adapted from PR #69) */
+    .progress #progress-table thead th.rotated .th-inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6px;
+    }
+
+    .progress #progress-table thead th.rotated .th-label {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        line-height: 1;
+    }
+
+    .progress #progress-table .sort-indicator {
+        min-width: 0.8em;
+        font-size: 0.8em;
+        color: var(--primary);
+    }
+
+    /* Body rows */
+    .progress #progress-table tbody tr:nth-child(odd)  { background: var(--entry); }
+    .progress #progress-table tbody tr:nth-child(even) { background: var(--code-bg); }
+
+    .progress #progress-table tbody tr:hover {
+        background: var(--tertiary);
+        background: color-mix(in srgb, var(--primary) 10%, var(--entry));
+    }
+
+    .progress #progress-table tbody td {
+        background: inherit;
+        color: var(--content);
+    }
+
+    /* Truncated cells reveal their full content on hover */
+    .progress #progress-table .cell {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: bottom;
+    }
+
+    .progress #progress-table td:hover {
+        overflow: visible;
+    }
+
+    .progress #progress-table td:hover > .cell {
+        position: relative;
+        z-index: 1;
+        max-width: none;
+        padding-right: 8px;
+        background: inherit;
+    }
+
+    .progress #progress-table .c-status,
+    .progress #progress-table .c-native {
+        font-size: 15px;
+    }
+
+    .progress #progress-table code.import-statement {
+        margin: 0;
+        padding: 1px 6px;
+        font-size: 13px;
+        line-height: 1.5;
+        color: var(--primary);
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+    }
+
+    .progress #progress-table .popularity-value {
+        display: block;
+        color: var(--primary);
+    }
+
+    .progress #progress-table .popularity-source {
+        display: block;
+        font-size: 11px;
+        line-height: 1.1;
+        color: var(--secondary);
+    }
+
+    .progress #progress-table .popularity-source:empty {
+        display: none;
+    }
+
+    .progress #progress-table .c-issue a {
+        box-shadow: none;
+    }
+
+    @media (max-width: 720px) {
+        .progress-toolbar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .popularity-sort-control {
+            justify-content: space-between;
+        }
+
+        .progress-table-container {
+            overflow-x: auto;
+        }
+
+        .progress #progress-table {
+            min-width: 860px;
+        }
+
+        .progress #progress-table thead th {
+            position: static;
+        }
     }
 </style>
 
-<div class="progress-table-container">
-<table id="progress-table">
-    <style>
-        .progress-table-container {
-            max-width: var(--progress-table-max-width);
-            margin: 0 auto 2rem;
-            overflow-x: hidden;
-        }
+<div class="progress">
+    <div class="progress-toolbar">
+        <label class="progress-search">
+            <span class="visually-hidden">Search projects</span>
+            <input type="search" id="search-input" oninput="onSearchInput()" placeholder="Search projects…" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="popularity-sort-control" for="popularity-sort">
+            <span class="label-small">Popularity</span>
+            <select id="popularity-sort" onchange="onPopularityModeChange()">
+                <option value="github" selected>GitHub stars</option>
+                <option value="vcpkg">vcpkg port updates</option>
+            </select>
+        </label>
+    </div>
 
-        #progress-table {
-            width: 100%;
-            max-width: var(--progress-table-max-width);
-            margin: 0 auto;
-            table-layout: fixed;
-            border-collapse: collapse;
-        }
+    <div class="progress-filters">
+        <div class="filter-group" role="group" aria-label="Status filters">
+            <span class="label-small">Status</span>
+            <label class="checkbox-with-desc">
+                <input type="checkbox" id="status-check" onchange="onSearchInput()"><span class="checkbox-emoji">✅</span><span class="checkbox-desc">Full support</span>
+            </label>
+            <label class="checkbox-with-desc">
+                <input type="checkbox" id="status-question" onchange="onSearchInput()"><span class="checkbox-emoji">❔</span><span class="checkbox-desc">Unknown</span>
+            </label>
+            <label class="checkbox-with-desc">
+                <input type="checkbox" id="status-working" onchange="onSearchInput()"><span class="checkbox-emoji">⚙️</span><span class="checkbox-desc">In progress</span>
+            </label>
+            <label class="checkbox-with-desc">
+                <input type="checkbox" id="status-warning" onchange="onSearchInput()"><span class="checkbox-emoji">⚠️</span><span class="checkbox-desc">Issue reported</span>
+            </label>
+            <label class="checkbox-with-desc">
+                <input type="checkbox" id="status-cross" onchange="onSearchInput()"><span class="checkbox-emoji">❌</span><span class="checkbox-desc">No support</span>
+            </label>
+        </div>
+        <div class="filter-group" role="group" aria-label="Additional filters">
+            <span class="label-small">Native</span>
+            <label class="checkbox-with-desc" title="Uses modules internally, not just wrapping headers">
+                <input type="checkbox" id="modules-native-check" onchange="onSearchInput()"><span class="checkbox-emoji">✅</span><span class="checkbox-desc">Modules native</span>
+            </label>
+        </div>
+    </div>
 
-        th {
-            background-color: var(--background-color-th);
-            padding: 8px;
-            color: var(--text-color);
-        }
+    {{ $header := hugo.Data.progress.header }}
+    {{ $approved := where hugo.Data.progress.ports "status" "✅" }}
+    {{ $others := where hugo.Data.progress.ports "status" "!=" "✅" }}
+    {{ $approved_primary := where $approved "github_sort_tier" 0 }}
+    {{ $approved_fallback := where $approved "github_sort_tier" 1 }}
+    {{ $approved_default := where $approved "github_sort_tier" 2 }}
+    {{ $others_primary := where $others "github_sort_tier" 0 }}
+    {{ $others_fallback := where $others "github_sort_tier" 1 }}
+    {{ $others_default := where $others "github_sort_tier" 2 }}
 
-        td {
-            padding: 8px;
-            color: var(--text-color);
-        }
+    {{ $combined := slice }}
+    {{ range (sort $approved_primary "github_sort_value" "desc") }}
+        {{ $combined = $combined | append . }}
+    {{ end }}
+    {{ range (sort $approved_fallback "github_sort_value" "desc") }}
+        {{ $combined = $combined | append . }}
+    {{ end }}
+    {{ range (sort $approved_default "default_order" "asc") }}
+        {{ $combined = $combined | append . }}
+    {{ end }}
+    {{ range (sort $others_primary "github_sort_value" "desc") }}
+        {{ $combined = $combined | append . }}
+    {{ end }}
+    {{ range (sort $others_fallback "github_sort_value" "desc") }}
+        {{ $combined = $combined | append . }}
+    {{ end }}
+    {{ range (sort $others_default "default_order" "asc") }}
+        {{ $combined = $combined | append . }}
+    {{ end }}
 
-        td a {
-            color: var(--link-color);
-        }
+    <div class="progress-meta">
+        <span id="result-count" aria-live="polite">{{ lang.FormatNumber 0 (len $combined) }} projects</span>
+        <span>·</span>
+        {{ with $header.github_stars_generated_date }}<span>Stars updated {{ dateFormat "2 Jan 2006" (time .) }}</span><span>·</span>{{ end }}
+        <span>vcpkg data {{ dateFormat "2 Jan 2006" (time $header.generated_date) }} (<a href="https://github.com/microsoft/vcpkg/commit/{{ $header.vcpkg_commit_hash }}">commit</a>)</span>
+        <span>·</span>
+        <a href="/excluded-c-libraries/">{{ len hugo.Data.excluded_c_libraries.libraries }} C libraries excluded</a>
+        <span>·</span>
+        <span>Rebuilt {{ now.Format "2 Jan 2006" }}</span>
+    </div>
+    <details class="progress-help">
+        <summary>How rows are ordered</summary>
+        <p>✅ projects come first. Within each group, projects with GitHub stars are sorted by stars, then projects with only vcpkg data by port updates, then the rest in source order. Choosing "vcpkg port updates" swaps the first two tiers.</p>
+    </details>
 
-        /* Alternating row backgrounds using CSS variables for row colors */
-        tr:nth-child(odd) {
-            background-color: var(--row-color-primary);
-        }
-
-        tr:nth-child(even) {
-            background-color: var(--row-color-secondary);
-        }
-
-
-        
-        #progress-table th {
-            white-space: normal;
-            word-wrap: break-word;
-            font-size: 0.85em;
-        }
-        
-        #progress-table td {
-            word-break: break-all;
-            padding: 4px !important;
-            white-space: nowrap;
-        }
-
-        /* Text overflow handling */
-        #progress-table th,
-        #progress-table td {
-            overflow: scroll;
-            scrollbar-width: none;
-            text-overflow: clip;
-        }
-        #progress-table th:hover,
-        #progress-table td:hover {
-            overflow: visible;
-        }
-
-        /* Column width distribution */
-        #progress-table th:nth-child(1), /* Status */
-        #progress-table td:nth-child(1) {
-            width: var(--col-status);
-            min-width: var(--col-status);
-            max-width: var(--col-status);
-            text-align: center;
-        }
-        
-        #progress-table th:nth-child(2), /* Modules Native */
-        #progress-table td:nth-child(2) {
-            width: var(--col-native);
-            min-width: var(--col-native);
-            max-width: var(--col-native);
-            text-align: center;
-        }
-        
-        #progress-table th:nth-child(3), /* Name */
-        #progress-table td:nth-child(3) {
-            width: var(--col-name);
-            min-width: var(--col-name);
-            max-width: var(--col-name);
-        }
-        
-        #progress-table th:nth-child(4), /* Import Statement */
-        #progress-table td:nth-child(4) {
-            width: var(--col-import);
-            min-width: var(--col-import);
-            max-width: var(--col-import);
-        }
-        
-        #progress-table th:nth-child(5), /* Popularity */
-        #progress-table td:nth-child(5) {
-            width: var(--col-popularity);
-            min-width: var(--col-popularity);
-            max-width: var(--col-popularity);
-            text-align: center;
-        }
-        
-        #progress-table th:nth-child(6), /* Version */
-        #progress-table td:nth-child(6) {
-            width: var(--col-version);
-            min-width: var(--col-version);
-            max-width: var(--col-version);
-            text-align: center;
-        }
-        
-        #progress-table th:nth-child(7), /* Modules Support Since */
-        #progress-table td:nth-child(7) {
-            width: var(--col-support);
-            min-width: var(--col-support);
-            max-width: var(--col-support);
-            text-align: center;
-        }
-        
-        #progress-table th:nth-child(8), /* Tracking Issue */
-        #progress-table td:nth-child(8) {
-            width: var(--col-tracking);
-            min-width: var(--col-tracking);
-            max-width: var(--col-tracking);
-            text-align: center;
-        }
-
-        #search-input::placeholder {
-            color: var(--input-text-color);
-        }
-
-        .sort-indicator {
-            font-size: 0.8em;
-            margin-left: 4px;
-        }
-
-        th:hover {
-            background-color: var(--row-color-secondary);
-        }
-
-        .import-statement {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: var(--row-color-secondary);
-            color: var(--text-color);
-            padding: 1px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            display: inline-block;
-        }
-
-        .popularity-source {
-            display: block;
-            color: gray;
-            font-size: 0.7em;
-            line-height: 1.1;
-        }
-    </style>
-    <thead>
-        <tr style="text-align: left;">
-            <th onclick="sortTable(0)" style="cursor: pointer; ">Status <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(1)" style="cursor: pointer; ">Modules Native <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(2)" style="cursor: pointer; ">Name <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(3)" style="cursor: pointer; ">Import Statement <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(4)" style="cursor: pointer; "><span id="popularity-header-label">GitHub Stars</span> <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(5)" style="cursor: pointer; ">Version <span class="sort-indicator"></span></th>
-            <!-- <th>Min C++<br>Version</th> -->
-            <th onclick="sortTable(6)" style="cursor: pointer;">Modules<br>Support Since <span class="sort-indicator"></span></th>
-            <th onclick="sortTable(7)" style="cursor: pointer; ">Tracking Issue <span class="sort-indicator"></span></th>
-        </tr>
-    </thead>
-    <tbody>
-        {{ $approved := where .Site.Data.progress.ports "status" "✅" }}
-        {{ $others := where .Site.Data.progress.ports "status" "!=" "✅" }}
-        {{ $approved_primary := where $approved "github_sort_tier" 0 }}
-        {{ $approved_fallback := where $approved "github_sort_tier" 1 }}
-        {{ $approved_default := where $approved "github_sort_tier" 2 }}
-        {{ $others_primary := where $others "github_sort_tier" 0 }}
-        {{ $others_fallback := where $others "github_sort_tier" 1 }}
-        {{ $others_default := where $others "github_sort_tier" 2 }}
-
-        {{ $combined := slice }}
-
-        {{ range (sort $approved_primary "github_sort_value" "desc") }}
-            {{ $combined = $combined | append . }}
-        {{ end }}
-        {{ range (sort $approved_fallback "github_sort_value" "desc") }}
-            {{ $combined = $combined | append . }}
-        {{ end }}
-        {{ range (sort $approved_default "default_order" "asc") }}
-            {{ $combined = $combined | append . }}
-        {{ end }}
-        {{ range (sort $others_primary "github_sort_value" "desc") }}
-            {{ $combined = $combined | append . }}
-        {{ end }}
-        {{ range (sort $others_fallback "github_sort_value" "desc") }}
-            {{ $combined = $combined | append . }}
-        {{ end }}
-        {{ range (sort $others_default "default_order" "asc") }}
-            {{ $combined = $combined | append . }}
-        {{ end }}
-
-        {{ range $combined }}
-        <tr data-status="{{ .status }}" data-project-name="{{ .name }}" data-default-order="{{ .default_order }}">
-            <td>{{ .status }}</td>
-            <td>{{ .modules_native }}</td>
-            <td><a href="{{ .homepage }}" target="_blank">{{ .name }}</a></td>
-            <td>
-                {{ if isset . "import_statement" }}
-                {{ if ne .import_statement ""}}
-                    <span class="import-statement">import {{ .import_statement }};</span>
+    <div class="progress-table-container">
+        <table id="progress-table">
+            <colgroup>
+                <col class="col-status">
+                <col class="col-native">
+                <col class="col-name">
+                <col class="col-import">
+                <col class="col-stars">
+                <col class="col-version">
+                <col class="col-since">
+                <col class="col-issue">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" class="rotated c-center label-small" data-col="0" tabindex="0" onclick="sortTable(0)"><span class="th-inner"><span class="th-label">Status</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="rotated c-center label-small" data-col="1" tabindex="0" onclick="sortTable(1)"><span class="th-inner"><span class="th-label">Modules native</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="label-small" data-col="2" tabindex="0" onclick="sortTable(2)"><span class="th-inner"><span class="th-label">Name</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="label-small" data-col="3" tabindex="0" onclick="sortTable(3)"><span class="th-inner"><span class="th-label">Import statement</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="c-num label-small" data-col="4" tabindex="0" onclick="sortTable(4)"><span class="th-inner"><span class="th-label" id="popularity-header-label">GitHub stars</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="label-small" data-col="5" tabindex="0" onclick="sortTable(5)"><span class="th-inner"><span class="th-label">Version</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="label-small" data-col="6" tabindex="0" onclick="sortTable(6)"><span class="th-inner"><span class="th-label">Modules since</span><span class="sort-indicator"></span></span></th>
+                    <th scope="col" class="rotated c-center label-small" data-col="7" tabindex="0" onclick="sortTable(7)"><span class="th-inner"><span class="th-label">Tracking issue</span><span class="sort-indicator"></span></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $combined }}
+                {{ $p := . }}
+                <tr data-status="{{ .status }}" data-project-name="{{ .name }}" data-default-order="{{ .default_order }}">
+                    <td class="c-center c-status">{{ .status }}</td>
+                    <td class="c-center c-native">{{ .modules_native }}</td>
+                    <td><span class="cell">{{ with .homepage }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.name }}</a>{{ else }}{{ $p.name }}{{ end }}</span></td>
+                    <td><span class="cell">{{ with .import_statement }}<code class="import-statement">import {{ . }};</code>{{ end }}</span></td>
+                    <td class="c-num popularity-cell"
+                        data-github-stars="{{ if isset . "github_stars" }}{{ .github_stars }}{{ end }}"
+                        data-vcpkg-revisions="{{ if isset . "revision_count" }}{{ .revision_count }}{{ end }}"
+                        data-popularity-value="{{ .github_sort_value }}">
+                        {{- if isset . "github_stars" -}}
+                        <span class="popularity-value">★ {{ lang.FormatNumber 0 .github_stars }}</span><span class="popularity-source"></span>
+                        {{- else if isset . "revision_count" -}}
+                        <span class="popularity-value">{{ lang.FormatNumber 0 .revision_count }}</span><span class="popularity-source">vcpkg fallback</span>
+                        {{- else -}}
+                        <span class="popularity-value">—</span><span class="popularity-source">no data</span>
+                        {{- end -}}
+                    </td>
+                    <td>{{ .version }}</td>
+                    <td>{{ with .modules_support_date }}{{ . }}{{ end }}</td>
+                    <td class="c-center c-issue">{{ with .tracking_issue }}<a href="{{ . }}" target="_blank" rel="noopener" title="Tracking issue" aria-label="Tracking issue for {{ $p.name }}">🔗</a>{{ end }}</td>
+                </tr>
                 {{ end }}
-                {{end }}
-            </td>
-            <td class="popularity-cell"
-                data-github-stars="{{ if isset . "github_stars" }}{{ .github_stars }}{{ end }}"
-                data-vcpkg-revisions="{{ if isset . "revision_count" }}{{ .revision_count }}{{ end }}"
-                data-popularity-value="{{ .github_sort_value }}">
-                {{ if isset . "github_stars" }}
-                    <span class="popularity-value">★ {{ .github_stars }}</span>
-                    <span class="popularity-source">GitHub</span>
-                {{ else if isset . "revision_count" }}
-                    <span class="popularity-value">{{ .revision_count }}</span>
-                    <span class="popularity-source">vcpkg fallback</span>
-                {{ else }}
-                    <span class="popularity-value">—</span>
-                    <span class="popularity-source">No data</span>
-                {{ end }}
-            </td>
-            <td>{{ .version }}</td>
-            <!-- <td>{{ if ne .current_min_cpp_version "Unknown"}}C++{{ .current_min_cpp_version }}{{ end }}</td> -->
-            <td>
-                {{ if ne .modules_support_date ""}}
-                {{ .modules_support_date }}
-                {{ end }}
-            </td>
-            <td>
-                {{ if ne .tracking_issue ""}}
-                <a href="{{ .tracking_issue }}">🔗</a>
-                {{end }}
-            </td>
-        </tr>
-        {{ end }}
-    </tbody>
-</table>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <!-- Script for filtering and sorting -->
@@ -557,6 +576,8 @@
         throw new Error("Popularity sort selector not found");
     }
     const popularityHeaderLabel = document.getElementById("popularity-header-label");
+    const resultCount = document.getElementById("result-count");
+    const headerCells = table.querySelectorAll("thead th");
 
     // Sorting state
     let sortState = {
@@ -609,14 +630,23 @@
             value.textContent = metric.value === null ? "—" : prefix + metric.value.toLocaleString();
         }
         if (source) {
+            // Only flag the exceptions; the selected primary source is implied by the header.
             if (metric.source === "none") {
-                source.textContent = "No data";
+                source.textContent = "no data";
             } else if (metric.fallback) {
                 source.textContent = metric.source === "github" ? "GitHub fallback" : "vcpkg fallback";
             } else {
-                source.textContent = metric.source === "github" ? "GitHub" : "vcpkg";
+                source.textContent = "";
             }
         }
+    }
+
+    function clearSortIndicators() {
+        headerCells.forEach(th => {
+            th.removeAttribute("aria-sort");
+            const indicator = th.querySelector(".sort-indicator");
+            if (indicator) indicator.textContent = "";
+        });
     }
 
     function applyPopularityMode(mode) {
@@ -641,11 +671,11 @@
         });
         rowsArray.forEach(row => tbody.appendChild(row));
 
-        table.querySelectorAll(".sort-indicator").forEach(indicator => indicator.textContent = "");
+        clearSortIndicators();
         sortState.column = -1;
         sortState.ascending = true;
         if (popularityHeaderLabel) {
-            popularityHeaderLabel.textContent = popularityMode === "github" ? "GitHub Stars" : "vcpkg Updates";
+            popularityHeaderLabel.textContent = popularityMode === "github" ? "GitHub stars" : "vcpkg updates";
         }
     }
 
@@ -668,7 +698,7 @@
         }
 
         const rowsArray = Array.from(tbody.getElementsByTagName("tr"));
-        
+
         // Toggle sort direction if clicking the same column
         if (sortState.column === columnIndex) {
             sortState.ascending = !sortState.ascending;
@@ -677,12 +707,11 @@
             sortState.ascending = true;
         }
 
-        // Clear all sort indicators
-        const indicators = table.querySelectorAll(".sort-indicator");
-        indicators.forEach(indicator => indicator.textContent = "");
+        clearSortIndicators();
 
         // Set current sort indicator
-        const currentHeader = table.querySelectorAll("th")[columnIndex];
+        const currentHeader = headerCells[columnIndex];
+        currentHeader.setAttribute("aria-sort", sortState.ascending ? "ascending" : "descending");
         const currentIndicator = currentHeader.querySelector(".sort-indicator");
         if (currentIndicator) {
             currentIndicator.textContent = sortState.ascending ? "▲" : "▼";
@@ -691,7 +720,7 @@
         rowsArray.sort((rowA, rowB) => {
             const cellA = rowA.getElementsByTagName("td")[columnIndex];
             const cellB = rowB.getElementsByTagName("td")[columnIndex];
-            
+
             let textA = cellA.textContent || "";
             let textB = cellB.textContent || "";
 
@@ -735,6 +764,22 @@
         applyPopularityMode(popularityMode);
     }
 
+    // Keyboard sorting: Enter or Space on a focused header
+    table.tHead.addEventListener("keydown", event => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        const th = event.target.closest("th[data-col]");
+        if (!th) return;
+        event.preventDefault();
+        sortTable(Number(th.dataset.col));
+    });
+
+    function updateResultCount(visible, total) {
+        if (!resultCount) return;
+        resultCount.textContent = visible === total
+            ? `${total.toLocaleString()} projects`
+            : `${visible.toLocaleString()} of ${total.toLocaleString()} projects`;
+    }
+
     function onSearchInput() {
         const statusCheckboxesInfo = getCheckboxInfo(statusCheckboxes);
         const allStatusUnchecked = statusCheckboxesInfo.every(checkboxInfo => !checkboxInfo.checked);
@@ -775,6 +820,7 @@
         const filter = input.value.toUpperCase();
 
         let i_row = 0;
+        let visibleRows = 0;
         for (const row of rows) {
             // Skip the first row (header)
             if (i_row == 0) {
@@ -813,9 +859,12 @@
 
             // show or hide the row based on the search
             row.style.display = matches ? "" : "none";
+            if (matches) visibleRows++;
 
             i_row++;
         }
+
+        updateResultCount(visibleRows, rows.length - 1);
     }
 
     applyPopularityMode(popularitySelect.value);

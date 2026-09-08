@@ -1,29 +1,37 @@
 baseURL: https://arewemodulesyet.org
-languageCode: en-us
+locale: en-us
 title: Are We Modules Yet?
 theme: [ "PaperMod" ]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:
     Image: images/cpp_needs_you.webp
 menu:
   main:
-  - name: 🏠 Home
+  - name: Home
     url: /
     weight: 1
-  - name: 📦 Projects
+  - name: Projects
     url: /projects/
     weight: 2
-  - name: ⚙️ Tools Support
+    params:
+      primary: true # rendered as the highlighted nav item
+  - name: Tools
     url: /Tools/
     weight: 3
-  - name: 📚 Docs
+  - name: Docs
     url: /Documents/
     weight: 4
-  - name: 💡 Examples
+  - name: Examples
     url: /Examples/
     weight: 5
-  - name: ☁️ Follow me
+  - name: Bluesky
     url: https://bsky.app/profile/kelteseth.bsky.social
-  - name: 💻 Github
+    weight: 6
+  - name: GitHub
     url: https://github.com/kelteseth/arewemodulesyet/
+    weight: 7
