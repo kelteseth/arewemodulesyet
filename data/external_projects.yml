@@ -112,16 +112,6 @@ projects:
   import_statement: kokkos.*
   modules_support_date: 2025-10-01
   homepage: https://github.com/kokkos/kokkos
-- name: sml
-  status: ✅
-  import_statement: sml
-  modules_support_date: 2025-04-01
-  homepage: https://github.com/qlibs/sml
-- name: mp
-  status: ✅
-  import_statement: mp
-  modules_support_date: 2025-05-01
-  homepage: https://github.com/qlibs/mp
 - name: jmp
   status: ✅
   import_statement: jmp
@@ -279,17 +269,6 @@ projects:
   import_statement: kcenon.database
   status: ✅
   tracking_issue: https://github.com/kcenon/database_system
-- name: common_system
-  homepage: https://github.com/kcenon/common_system
-  modules_support_date: 2026-01-01
-  import_statement: kcenon.common
-  status: ✅
-  tracking_issue: https://github.com/kcenon/common_system
-- name: sqlpp23
-  import_statement: sqlpp23.*
-  modules_support_date: 2025-06-29
-  status: ✅
-  tracking_issue: https://github.com/rbock/sqlpp23
 - name: transform_view
   homepage: https://github.com/bemanproject/transform_view
   modules_support_date: 2026-05-03
@@ -1033,12 +1012,6 @@ projects:
   import_statement: lam.linearalgebra
   modules_native: ✅
   tracking_issue: https://github.com/colinrford/linearalgebra/commit/e3aaac1230d40d7014186ffa399e0044b95c59c8
-- name: NekoSchema
-  homepage: https://github.com/hoshimoe/NekoSchema
-  modules_support_date: 2025-10-21
-  status: ✅
-  import_statement: neko.schema
-  tracking_issue: https://github.com/hoshimoe/NekoSchema/commit/b6bae0bb96cad276fa9cb87cdfcd7bdabd60d806
 - name: thread-pool
   homepage: https://github.com/Millforge/thread-pool
   modules_support_date: 2025-12-01
@@ -1047,6 +1020,13 @@ projects:
   modules_native: ✅
   current_min_cpp_version: 23
   tracking_issue: https://github.com/Millforge/thread-pool/commit/0ad5f594290698a7f75bc4a1041297a3acde75b0
+- name: reflex
+  homepage: https://github.com/Garcia6l20/reflex
+  modules_support_date: 2026-03-26
+  status: ✅
+  import_statement: reflex.*
+  current_min_cpp_version: 26
+  tracking_issue: https://github.com/Garcia6l20/reflex/commit/51f536c2e4b12180723891fdd92546604da116cc
 - name: mminhook
   homepage: https://github.com/z3lx/mminhook
   modules_support_date: 2025-08-05

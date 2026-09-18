@@ -266,7 +266,7 @@ ports:
 - name: poco
   status: ✅
   import_statement: Poco
-  modules_support_date: 2025-09-20
+  modules_support_date: 2025-09-19
   homepage: https://github.com/pocoproject/poco
   tracking_issue: https://github.com/pocoproject/poco/pull/4999
 - name: sfml
@@ -350,12 +350,6 @@ ports:
   status: ✅
   import_statement: tf
   tracking_issue: https://github.com/taskflow/taskflow/pull/750
-- name: poco
-  homepage: https://github.com/pocoproject/poco
-  modules_support_date: 2026-02-10
-  status: ✅
-  import_statement: Poco
-  tracking_issue: https://github.com/pocoproject/poco/pull/4999
 - name: cli11
   homepage: https://github.com/CLIUtils/CLI11
   modules_support_date: 2026-02-10
@@ -498,6 +492,66 @@ ports:
   modules_support_date: 2026-03-30
   status: ✅
   tracking_issue: https://github.com/llnl/units/commit/4fcfc004612d0867e71f9eeb436c57ab6e54fbdf
+- name: bext-sml2
+  import_statement: sml
+  modules_support_date: 2025-04-01
+  status: ✅
+- name: bext-mp
+  import_statement: mp
+  modules_support_date: 2025-05-01
+  status: ✅
+- name: kcenon-common-system
+  import_statement: kcenon.common
+  modules_support_date: 2026-01-01
+  status: ✅
+  tracking_issue: https://github.com/kcenon/common_system
+- name: sqlpp23
+  import_statement: sqlpp23.*
+  modules_support_date: 2025-06-29
+  status: ✅
+  tracking_issue: https://github.com/rbock/sqlpp23
+- name: minio-cpp
+  import_statement: minio
+  modules_support_date: 2026-09-03
+  status: ✅
+  current_min_cpp_version: 17
+  tracking_issue: https://github.com/minio/minio-cpp/pull/240
+- name: neko-event
+  import_statement: neko.event
+  modules_support_date: 2025-11-21
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: https://github.com/hoshimoe/NekoEvent/commit/0a5087423bc8e49081dceb12ff32510e3a38efd2
+- name: neko-function
+  import_statement: neko.function.*
+  modules_support_date: 2025-11-22
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: https://github.com/hoshimoe/NekoFunction/commit/0a1afe3122aeb21f997d543c83c2698dca3056fc
+- name: neko-log
+  import_statement: neko.log
+  modules_support_date: 2025-11-23
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: https://github.com/hoshimoe/NekoLog/commit/298c3e63ea7fb3ca7e76315c835ec8d63baabf96
+- name: neko-schema
+  import_statement: neko.schema
+  modules_support_date: 2025-10-21
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: https://github.com/hoshimoe/NekoSchema/commit/b6bae0bb96cad276fa9cb87cdfcd7bdabd60d806
+- name: neko-system
+  import_statement: neko.system
+  modules_support_date: 2025-11-26
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: https://github.com/hoshimoe/NekoSystem/commit/ab86fa732c7a7ff232c4b70cfac7e183ea17e293
+- name: neko-threadpool
+  import_statement: neko.thread
+  modules_support_date: 2025-11-18
+  status: ✅
+  current_min_cpp_version: 20
+  tracking_issue: https://github.com/hoshimoe/NekoThreadPool/commit/d09520df0bb927e54de4c637113f81e5f0f62cf3
 
 ###############################################################################
 # Qt6 - All share the same tracking issue

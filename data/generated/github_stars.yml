@@ -5,134 +5,134 @@
 ###############################################################################
 
 header:
-  generated_date: 1788851126
-  provider: github
-  repository_count: 1793
-  resolved_count: 1793
+  generated_date: 1789720301
+  provider: ecosystems
+  repository_count: 1794
+  resolved_count: 1794
 repositories:
-  3mfconsortium/lib3mf: 307
-  4creators/jxrlib: 50
+  3mfconsortium/lib3mf: 310
+  4creators/jxrlib: 49
   a-alomran/sqlite_flux: 1
-  a-e-k/canvas_ity: 620
+  a-e-k/canvas_ity: 616
   a4z/astr: 14
   a4z/libsl3: 24
-  aappleby/smhasher: 2892
+  aappleby/smhasher: 2762
   abedra/libvault: 47
-  abellgithub/delaunator-cpp: 212
+  abellgithub/delaunator-cpp: 208
   abrg-models/morphologica: 308
-  abseil/abseil-cpp: 18126
+  abseil/abseil-cpp: 18137
   absurdworlds/awlib: 3
-  abumq/easyloggingpp: 3938
+  abumq/easyloggingpp: 3935
   abumq/ripe: 31
   academysoftwarefoundation/imath: 488
-  academysoftwarefoundation/openfx: 569
-  academysoftwarefoundation/openimageio: 2359
-  acoustid/chromaprint: 1363
-  activescott/lessmsi: 1760
-  actor-framework/actor-framework: 3435
-  ada-url/idna: 69
+  academysoftwarefoundation/openfx: 572
+  academysoftwarefoundation/openimageio: 2365
+  acoustid/chromaprint: 1362
+  activescott/lessmsi: 1752
+  actor-framework/actor-framework: 3439
+  ada-url/idna: 68
   adah1972/libunibreak: 214
   adamstark/audiofile: 1149
-  adamyaxley/obfuscate: 1339
+  adamyaxley/obfuscate: 1340
   adishavit/argh: 1440
   adityarao2005/webcraft: 8
-  aeron-io/aeron: 8847
-  agauniyal/rang: 1595
+  aeron-io/aeron: 8858
+  agauniyal/rang: 1594
   agl-alexglopez/str_view: 1
   akheron/jansson: 3364
-  aklomp/base64: 1020
+  aklomp/base64: 1016
   al-sabr/flashruntimeextensions: 0
   alan-jowett/dagir: 0
   alanxz/rabbitmq-c: 1863
   alanxz/simpleamqpclient: 449
   alecthomas/entityx: 2342
   alexworx/alib-class-library: 10
-  alibaba/async_simple: 2197
-  alibaba/yalantinglibs: 2179
-  alicevision/cctag: 412
-  alicevision/popsift: 501
-  aliyun/alibabacloud-oss-cpp-sdk-v2: 5
-  aliyun/aliyun-oss-c-sdk: 160
-  aliyun/aliyun-oss-cpp-sdk: 230
+  alibaba/async_simple: 2201
+  alibaba/yalantinglibs: 2180
+  alicevision/cctag: 411
+  alicevision/popsift: 499
+  aliyun/alibabacloud-oss-cpp-sdk-v2: 4
+  aliyun/aliyun-oss-c-sdk: 158
+  aliyun/aliyun-oss-cpp-sdk: 225
   allanhanan/duvc-ctl: 38
-  aloshi/dukglue: 176
+  aloshi/dukglue: 172
   alpaka-group/alpaka: 425
   altseed/llgi: 28
-  alugowski/poolstl: 38
-  alugowski/task-thread-pool: 50
+  alugowski/poolstl: 34
+  alugowski/task-thread-pool: 49
   ambroise-leclerc/mdux: 44
   ami-iit/matio-cpp: 71
   aminroosta/sqlite_modern_cpp: 18
-  amiremohamadi/duckx: 507
-  amokhuginnsson/replxx: 765
+  amiremohamadi/duckx: 504
+  amokhuginnsson/replxx: 767
   ampl/asl: 24
   ampl/mp: 254
   amrayn/licensepp: 437
   an-dr/abcmake: 3
-  an-dr/microlog: 177
-  an-tao/drogon: 14259
-  an-tao/trantor: 501
-  andlabs/libui: 10896
+  an-dr/microlog: 170
+  an-tao/drogon: 14280
+  an-tao/trantor: 502
+  andlabs/libui: 10894
   andrascii/marzbanpp: 4
-  andreiavrammsd/cpp-channel: 590
-  andrew-gresyk/hfsm2: 632
-  andrivet/advobfuscator: 1777
+  andreiavrammsd/cpp-channel: 588
+  andrew-gresyk/hfsm2: 633
+  andrivet/advobfuscator: 1772
   andytechnologies/tiny-crc32c: 0
-  anholt/libepoxy: 753
+  anholt/libepoxy: 751
   ankurvdev/embedresource: 5
-  anrieff/libcpuid: 538
-  aomediacodec/libavif: 2171
+  anrieff/libcpuid: 539
+  aomediacodec/libavif: 2178
   aotodev/sgl: 0
-  aous72/openjph: 294
-  apache/avro: 3303
-  apache/brpc: 17597
+  aous72/openjph: 293
+  apache/avro: 3306
+  apache/brpc: 17599
   apache/pulsar-client-cpp: 71
   apache/qpid-proton: 248
   apache/thrift: 10957
   apache/xerces-c: 161
-  apache/zookeeper: 12798
+  apache/zookeeper: 12801
   aparis69/marchingcubecpp: 48
   apolukhin/type_index: 21
-  apple-oss-distributions/mdnsresponder: 400
+  apple-oss-distributions/mdnsresponder: 398
   approvals/approvaltests.cpp: 339
   arashpartow/strtk: 143
-  aravisproject/aravis: 1273
-  architector1324/easycl: 8
-  arcosuc3m/grppi: 84
-  arian8j2/clipboardxx: 63
-  ariya/fastlz: 544
-  arknx/bsio: 40
-  arm-software/kleidiai: 183
+  aravisproject/aravis: 1274
+  architector1324/easycl: 7
+  arcosuc3m/grppi: 80
+  arian8j2/clipboardxx: 49
+  ariya/fastlz: 543
+  arknx/bsio: 41
+  arm-software/kleidiai: 187
   arp1it/minecraft_server_status_cpp: 0
-  arrayfire/arrayfire: 4903
+  arrayfire/arrayfire: 4902
   arrayfire/forge: 238
-  artem-ogre/cdt: 1444
-  arthursonzogni/ftxui: 10651
+  artem-ogre/cdt: 1426
+  arthursonzogni/ftxui: 10525
   artifexsoftware/jbig2dec: 53
-  artivis/manif: 1814
-  arttnba3/closureos: 101
-  arturbac/fixed_math: 98
-  arturbac/simple_enum: 44
-  artyom-beilis/cppcms: 529
-  aruizs/unleash-client-cpp: 10
-  arun11299/cpp-jwt: 441
-  arun11299/cpp-subprocess: 568
-  ashvardanian/numkong: 1882
-  ashvardanian/simsimd: 1882
-  ashvardanian/stringzilla: 3554
+  artivis/manif: 1818
+  arttnba3/closureos: 98
+  arturbac/fixed_math: 91
+  arturbac/simple_enum: 39
+  artyom-beilis/cppcms: 522
+  aruizs/unleash-client-cpp: 11
+  arun11299/cpp-jwt: 436
+  arun11299/cpp-subprocess: 564
+  ashvardanian/numkong: 1887
+  ashvardanian/simsimd: 1887
+  ashvardanian/stringzilla: 3557
   asmaloney/libe57format: 191
-  asmjit/asmtk: 257
-  assimp/assimp: 13184
+  asmjit/asmtk: 258
+  assimp/assimp: 13187
   atliac/minitest: 0
-  aubio/aubio: 3754
-  aui-framework/aui: 597
+  aubio/aubio: 3756
+  aui-framework/aui: 590
   aurora-opensource/au: 444
-  avaneev/avir: 500
-  avaneev/komihash: 286
-  avaneev/lzav: 547
-  avplayer/ucoro: 205
-  aws/aws-sdk-cpp: 2209
-  aws/s2n-tls: 4761
+  avaneev/avir: 432
+  avaneev/komihash: 280
+  avaneev/lzav: 539
+  avplayer/ucoro: 139
+  aws/aws-sdk-cpp: 2207
+  aws/s2n-tls: 4763
   awslabs/aws-c-auth: 62
   awslabs/aws-c-cal: 44
   awslabs/aws-c-common: 303
@@ -141,14 +141,14 @@ repositories:
   awslabs/aws-c-http: 180
   awslabs/aws-c-io: 134
   awslabs/aws-c-mqtt: 111
-  awslabs/aws-c-s3: 176
+  awslabs/aws-c-s3: 179
   awslabs/aws-c-sdkutils: 9
   awslabs/aws-checksums: 70
-  awslabs/aws-crt-cpp: 90
-  axboe/liburing: 3758
+  awslabs/aws-crt-cpp: 91
+  axboe/liburing: 3759
   axiodl/lzokay: 34
-  axiomatic-systems/bento4: 2500
-  ayush272002/dotenv: 3
+  axiomatic-systems/bento4: 2504
+  ayush272002/dotenv: 1
   azure/azure-c-shared-utility: 116
   azure/azure-iot-sdk-c: 620
   azure/azure-sdk-for-cpp: 205
@@ -157,201 +157,201 @@ repositories:
   azure/azure-umqtt-c: 52
   azure/umock-c: 36
   badaix/aixlog: 148
-  badaix/jsonrpcpp: 151
+  badaix/jsonrpcpp: 146
   baidu/braft: 4228
   ballorg/btl: 0
   banderzhm/cnetmod: 6
-  banderzhm/zhouyilab: 119
-  baresip/re: 188
-  basedinc/libhat: 144
+  banderzhm/zhouyilab: 80
+  baresip/re: 186
+  basedinc/libhat: 141
   baylej/tmx: 286
-  bazelbuild/bazel: 25817
+  bazelbuild/bazel: 25853
   bbalouki/bbstrader: 15
-  bbalouki/itchcpp: 11
-  bdwgc/libatomic_ops: 451
-  beached/daw_json_link: 511
+  bbalouki/itchcpp: 7
+  bdwgc/libatomic_ops: 452
+  beached/daw_json_link: 510
   beached/header_libraries: 27
   beached/utf_range: 3
   belledonnecommunications/bcg729: 137
   beltoforion/muparser: 529
   bemanproject/closed_view: 0
   bemanproject/emplace_from: 8
-  bemanproject/execution: 150
+  bemanproject/execution: 148
   bemanproject/exemplar: 128
   bemanproject/expected: 0
-  bemanproject/gates: 1
-  bemanproject/net: 92
+  bemanproject/gates: 0
+  bemanproject/net: 91
   bemanproject/range_searcher: 1
   bemanproject/scan_view: 3
-  bemanproject/scope: 12
+  bemanproject/scope: 11
   bemanproject/str_split: 0
-  bemanproject/take_before: 4
+  bemanproject/take_before: 2
   bemanproject/transform_view: 1
   bemanproject/utf_view: 20
   ben-strasser/fast-cpp-csv-parser: 2360
-  benhoyt/inih: 3041
-  berndporr/iir1: 780
-  besser82/libxcrypt: 239
+  benhoyt/inih: 3043
+  berndporr/iir1: 778
+  besser82/libxcrypt: 238
   bic-mni/libminc: 19
   billyquith/ponder: 662
-  binomialllc/basis_universal: 3098
+  binomialllc/basis_universal: 3105
   biojppm/c4core: 149
   biojppm/rapidyaml: 755
-  bitcoin-core/secp256k1: 2482
-  bitdefender/bddisasm: 1086
+  bitcoin-core/secp256k1: 2483
+  bitdefender/bddisasm: 1085
   bitfactory-software/anyxx: 16
   blake2/libb2: 137
-  blake3-team/blake3: 6420
-  blend2d/blend2d: 1985
+  blake3-team/blake3: 6438
+  blend2d/blend2d: 1973
   blickfeld/blickfeld-qb2: 7
   blitzpp/blitz: 418
-  bloomberg/bde: 1841
-  bloomberg/quantum: 638
+  bloomberg/bde: 1842
+  bloomberg/quantum: 639
   bloomberg/rmqcpp: 106
-  bloomen/transwarp: 632
-  blosc/c-blosc: 1059
-  blosc/c-blosc2: 585
+  bloomen/transwarp: 625
+  blosc/c-blosc: 1058
+  blosc/c-blosc2: 584
   bluescarni/tanuki: 19
-  bolero-murakami/sprout: 885
-  bombela/backward-cpp: 4300
-  boost-ext/di: 1271
+  bolero-murakami/sprout: 870
+  bombela/backward-cpp: 4301
+  boost-ext/di: 1270
   boost-ext/sml: 1393
-  boost-ext/ut: 1437
+  boost-ext/ut: 1439
   boostorg/any: 37
   boostorg/assert: 35
-  boostorg/beast: 4822
-  boostorg/build: 250
+  boostorg/beast: 4818
+  boostorg/build: 249
   boostorg/charconv: 32
-  boostorg/cmake: 120
+  boostorg/cmake: 113
   boostorg/config: 78
   boostorg/conversion: 14
   boostorg/core: 155
   boostorg/decimal: 65
   boostorg/dll: 68
-  boostorg/headers: 8
+  boostorg/headers: 7
   boostorg/lexical_cast: 37
-  boostorg/math: 373
+  boostorg/math: 370
   boostorg/mp11: 292
   boostorg/nowide: 192
-  boostorg/pfr: 1486
-  boostorg/regex: 119
-  boostorg/stacktrace: 494
+  boostorg/pfr: 1472
+  boostorg/regex: 118
+  boostorg/stacktrace: 488
   boostorg/throw_exception: 16
-  borglab/gtsam: 3672
-  bowenfu/matchit.cpp: 649
-  brailcom/speechd: 331
+  borglab/gtsam: 3679
+  bowenfu/matchit.cpp: 633
+  brailcom/speechd: 328
   brechtsanders/xlsxio: 524
-  brenocq/implot3d: 1257
-  brevzin/rivers: 29
-  brofield/simpleini: 1326
+  brenocq/implot3d: 1264
+  brevzin/rivers: 20
+  brofield/simpleini: 1323
   bromeon/aurora: 43
-  brunolevy/geogram: 2529
+  brunolevy/geogram: 2534
   bshoshany/thread-pool: 3050
-  btzy/nativefiledialog-extended: 1064
-  buck-yeh/bux: 7
+  btzy/nativefiledialog-extended: 1065
+  buck-yeh/bux: 6
   buck-yeh/bux-sqlite: 1
-  bulletphysics/bullet3: 14718
-  bw-hro/sqlitemap: 9
+  bulletphysics/bullet3: 14720
+  bw-hro/sqlitemap: 7
   bw-hro/tempdir: 2
   bw-hro/webthing-cpp: 1
-  byvoid/opencc: 9966
-  c-ares/c-ares: 2190
-  c42f/tinyformat: 562
-  cadons/ctus: 9
+  byvoid/opencc: 9983
+  c-ares/c-ares: 2193
+  c42f/tinyformat: 560
+  cadons/ctus: 6
   caltech-ipac/json5_parser: 5
-  cameron314/concurrentqueue: 12485
-  cameron314/readerwriterqueue: 4622
+  cameron314/concurrentqueue: 12492
+  cameron314/readerwriterqueue: 4608
   caomengxuan666/libgossip: 6
-  capstone-engine/capstone: 9000
-  captaincrowbar/unicorn-lib: 226
+  capstone-engine/capstone: 9023
+  captaincrowbar/unicorn-lib: 227
   carnegierobotics/libmultisense: 13
-  castano/nvidia-texture-tools: 622
-  castxml/castxml: 518
+  castano/nvidia-texture-tools: 615
+  castxml/castxml: 517
   catchorg/catch2: 21470
   cbeck88/spirit-po: 53
   cd3/libinterpolate: 257
-  cdacamar/ball_pit: 32
-  cdcseacave/tinyexif: 147
+  cdacamar/ball_pit: 29
+  cdcseacave/tinyexif: 136
   cddlib/cddlib: 134
-  cedricguillemet/imguizmo: 4019
+  cedricguillemet/imguizmo: 4026
   census-instrumentation/opencensus-cpp: 143
-  ceres-solver/ceres-solver: 4555
-  cgal/cgal: 6035
+  ceres-solver/ceres-solver: 4560
+  cgal/cgal: 6047
   cginternals/glbinding: 878
-  cginternals/globjects: 563
+  cginternals/globjects: 560
   chadaustin/cpptoml: 1
   chaiscript/chaiscript: 3127
-  charles-lunarg/vk-bootstrap: 1277
+  charles-lunarg/vk-bootstrap: 1285
   charlesnicholson/nanoprintf: 846
-  chemeris/msinttypes: 54
+  chemeris/msinttypes: 52
   chenjunfu2/nbt_cpp: 6
-  chfast/intx: 175
-  chlumsky/msdfgen: 4922
+  chfast/intx: 161
+  chlumsky/msdfgen: 4925
   christianpanov/lwlog: 352
   christophercrouzet/rexo: 31
   chuanqixu9/socks_server: 5
   chusitoo/flatbush: 25
-  cieslarmichal/faker-cxx: 419
+  cieslarmichal/faker-cxx: 420
   cisco/libsrtp: 1400
-  civetweb/civetweb: 3448
+  civetweb/civetweb: 3452
   cjdb/constexpr-contracts: 27
-  cjlin1/liblinear: 1052
+  cjlin1/liblinear: 1051
   claytonotey/libsbsms: 39
   cleishm/frequency-cpp: 1
   cleishm/thermo-cpp: 0
-  clickhouse/clickhouse-cpp: 381
-  client9/stringencoders: 138
-  cliutils/cli11: 4439
-  clmathlibraries/clfft: 648
+  clickhouse/clickhouse-cpp: 378
+  client9/stringencoders: 137
+  cliutils/cli11: 4448
+  clmathlibraries/clfft: 649
   clmathlibraries/clrng: 137
-  clockworkorigins/clockutils: 9
+  clockworkorigins/clockutils: 4
   cloudwu/sproto: 982
   cmannett85/arg_router: 55
-  cnjinhao/nana: 2484
-  cnugteren/clblast: 1188
-  codeinred/tuplet: 230
-  codeplea/genann: 2283
-  coin-or/cbc: 1013
+  cnjinhao/nana: 2481
+  cnugteren/clblast: 1187
+  codeinred/tuplet: 170
+  codeplea/genann: 2288
+  coin-or/cbc: 1015
   coin-or/cgl: 28
   coin-or/cppad: 588
-  coin-or/ipopt: 1781
+  coin-or/ipopt: 1782
   coin-or/qpoases: 553
-  coin3d/coin: 377
-  coin3d/dime: 20
-  coin3d/simage: 9
+  coin3d/coin: 379
+  coin3d/dime: 18
+  coin3d/simage: 8
   coin3d/soqt: 28
   coin3d/superglu: 4
-  colinator/zerialize: 45
+  colinator/zerialize: 38
   colinrford/linearalgebra: 3
-  colleagueriley/rgfw: 1871
-  commonmark/cmark: 2030
-  confluentinc/librdkafka: 1043
-  conorwilliams/libfork: 897
+  colleagueriley/rgfw: 1878
+  commonmark/cmark: 2031
+  confluentinc/librdkafka: 1049
+  conorwilliams/libfork: 899
   coolprop/coolprop: 1069
-  coolprop/if97: 101
+  coolprop/if97: 100
   coolprop/refprop-headers: 20
-  copernicamarketingsoftware/amqp-cpp: 944
-  copperspice/libguarded: 246
-  coruus/keccak-tiny: 107
-  corvusoft/restbed: 1999
+  copernicamarketingsoftware/amqp-cpp: 947
+  copperspice/libguarded: 242
+  coruus/keccak-tiny: 106
+  corvusoft/restbed: 2003
   coveooss/hareflow: 10
   cpp-netlib/url: 61
-  cpp-niel/mfl: 11
-  cpp-redis/cpp_redis: 728
-  cpp-redis/tacopie: 16
-  cppalliance/crypt: 6
+  cpp-niel/mfl: 8
+  cpp-redis/cpp_redis: 734
+  cpp-redis/tacopie: 10
+  cppalliance/crypt: 4
   cppalliance/safe_numbers: 3
-  cppfastio/fast_io: 846
-  cppmicroservices/cppmicroservices: 878
-  cppp-project/cppp-reiconv: 23
-  cpputest/cpputest: 1482
-  crayzeewulf/libserial: 492
+  cppfastio/fast_io: 842
+  cppmicroservices/cppmicroservices: 879
+  cppp-project/cppp-reiconv: 20
+  cpputest/cpputest: 1481
+  crayzeewulf/libserial: 491
   crhowell3/libsersi: 2
   criticalstack/libevhtp: 456
-  crossdb-org/crossdb: 268
-  crowcpp/crow: 4966
-  ctabin/libzippp: 458
-  cthulhu-irl/parsi: 20
+  crossdb-org/crossdb: 260
+  crowcpp/crow: 4956
+  ctabin/libzippp: 457
+  cthulhu-irl/parsi: 19
   cursey/safetyhook: 751
   curve/coco: 10
   curve/eraser: 4
@@ -360,823 +360,824 @@ repositories:
   curve/lockpp: 8
   curve/poolparty: 2
   curve/rebind: 18
-  cvelth/vkfw: 77
+  cvelth/vkfw: 75
   cwapi3d/cwapi3dcpp: 5
-  cwzx/nngpp: 225
+  cwzx/nngpp: 174
   cxong/tinydir: 870
-  cyan4973/xxhash: 11242
+  cyan4973/xxhash: 11243
   cyrusimap/cyrus-sasl: 158
   d-bahr/crcpp: 414
   d1vanov/simple-fft: 198
-  d99kris/rapidcsv: 1077
-  daandemeyer/reproc: 649
+  d99kris/rapidcsv: 1078
+  daandemeyer/reproc: 651
   dacap/clip: 704
   daleabarnard/try-catcher: 0
-  danbloomberg/leptonica: 2079
-  danfis/libccd: 648
-  danielaparker/jsoncons: 854
+  danbloomberg/leptonica: 2081
+  danfis/libccd: 649
+  danielaparker/jsoncons: 850
   daniele77/aricpp: 34
-  daniele77/cli: 1359
-  darkx32/audioengine: 5
-  dascandy/pixel: 18
-  databasegroup/tree-similarity: 98
-  datenwolf/linmath.h: 1061
-  dav1dde/glad: 4599
+  daniele77/cli: 1355
+  darkx32/audioengine: 4
+  dascandy/pixel: 15
+  databasegroup/tree-similarity: 86
+  datenwolf/linmath.h: 1053
+  dav1dde/glad: 4590
   davea42/libdwarf-code: 261
-  davegamble/cjson: 12981
-  david-haim/concurrencpp: 2767
+  davegamble/cjson: 12987
+  david-haim/concurrencpp: 2764
   davidpetkovsek/semver: 1
   davidstone/bounded-integer: 101
   davidstone/concurrent: 32
   davidstone/operators: 13
-  davidstone/technical-machine: 25
-  davisking/dlib: 14437
+  davidstone/technical-machine: 24
+  davisking/dlib: 14444
   dbry/wavpack: 468
   dcleblanc/safeint: 251
-  dcmtk/dcmtk: 907
-  ddiakopoulos/tinyply: 732
+  dcmtk/dcmtk: 904
+  ddiakopoulos/tinyply: 715
   ddtdanilo/lmdb-wrapper-misra-c: 0
-  dealii/dealii: 1722
+  dealii/dealii: 1727
   delhivery/moirai: 2
-  deniskovalchuk/libftp: 79
+  deniskovalchuk/libftp: 76
   dentonw/devil: 470
   deutsches-klimarechenzentrum/libaec: 34
-  developerpaul123/thread-pool: 564
+  developerpaul123/thread-pool: 563
   dfoxfranke/libaes_siv: 20
-  dgibson/dtc: 331
-  dgobbi/vtk-dicom: 287
-  digitalinblue/celero: 863
-  directfb2/directfb2: 171
+  dgibson/dtc: 329
+  dgobbi/vtk-dicom: 286
+  digitalinblue/celero: 864
+  directfb2/directfb2: 156
   discordapp/discord-rpc: 1177
   divideconcept/fluidlite: 154
-  dlbeer/quirc: 1006
+  dlbeer/quirc: 997
   dlfcn-win32/dlfcn-win32: 342
-  dltcollab/sse2neon: 1531
-  dmlc/dlpack: 1242
+  dltcollab/sse2neon: 1532
+  dmlc/dlpack: 1248
   dmlc/dmlc-core: 878
   dmlc/rabit: 512
-  dmtx/libdmtx: 366
+  dmtx/libdmtx: 365
   dnkpp/mimicpp: 59
   dobiasd/frugally-deep: 1129
   dobiasd/functionalplus: 2294
   docgroup/ace_tao: 765
-  doctest/doctest: 6862
-  dorian3d/dbow2: 945
-  dotnet/runtime: 18255
-  dougbinks/enkits: 2032
-  dpricedev/hephaestos: 2
-  dragonjoker/ashes: 400
-  dragonjoker/rendergraph: 250
+  doctest/doctest: 6865
+  dorian3d/dbow2: 944
+  dotnet/runtime: 18274
+  dougbinks/enkits: 2034
+  dpricedev/hephaestos: 1
+  dragonjoker/ashes: 399
+  dragonjoker/rendergraph: 247
   dragonjoker/shaderwriter: 263
   drako/libxdiff: 0
   drobilla/zix: 17
   dtecta/solid3: 101
-  dtolm/vkfft: 1773
-  duffsdevice/tiny-utf8: 557
-  duilib/duilib: 5955
-  dvidelabs/flatcc: 765
+  dtolm/vkfft: 1774
+  duffsdevice/tiny-utf8: 546
+  duilib/duilib: 5954
+  dvidelabs/flatcc: 762
   e-dant/watcher: 809
-  easyhook/easyhook: 3292
-  ebay/nuraft: 1203
-  ebiggers/libdeflate: 1284
+  easyhook/easyhook: 3288
+  ebay/nuraft: 1204
+  ebiggers/libdeflate: 1290
   eclipse-ecal/ecaludp: 9
   eclipse-ecal/fineftp-server: 358
   eclipse-ecal/tcp_pubsub: 49
-  eclipse/paho.mqtt.c: 2365
-  eclipse/paho.mqtt.cpp: 1329
+  eclipse/paho.mqtt.c: 2369
+  eclipse/paho.mqtt.cpp: 1328
   ecmwf/ecbuild: 39
   ecmwf/eccodes: 268
-  edouarda/brigand: 569
+  edouarda/brigand: 570
   eduard-permyakov/peredvizhnikov-engine: 745
   efficient/libcuckoo: 1744
   effolkronium/random: 947
   efmsoft/logme: 13
-  eisenwave/ulight: 46
-  elalish/manifold: 2258
-  elasota/convectionkernels: 53
+  eisenwave/ulight: 44
+  elalish/manifold: 2265
+  elasota/convectionkernels: 48
   elbeno/constexpr: 248
-  electronicarts/eabase: 224
-  electronicarts/eastl: 9356
-  electronicarts/eathread: 343
-  eliasdaler/imgui-sfml: 1367
+  electronicarts/eabase: 225
+  electronicarts/eastl: 9365
+  electronicarts/eathread: 342
+  eliasdaler/imgui-sfml: 1360
   eliaskosunen/scnlib: 1318
   eljonny/testcpp: 0
-  embeddedsynth/sonivox: 6
-  emberemu/hexi: 289
-  emil-e/rapidcheck: 1107
-  emilk/loguru: 1908
-  emoon/minifb: 1359
+  embeddedsynth/sonivox: 5
+  emberemu/hexi: 288
+  emil-e/rapidcheck: 1103
+  emilk/loguru: 1911
+  emoon/minifb: 1347
   emweb/wt: 1854
   engine3d-dev/audio-cpp: 2
-  engine3d-dev/theatlasengine: 19
+  engine3d-dev/theatlasengine: 18
   engits/engitsdatalib: 0
   enzomassyle/audiofx: 1
-  epezent/implot: 6219
+  epezent/implot: 6231
   eprosima/fast-cdr: 193
-  eranpeer/fakeit: 1371
-  ericniebler/range-v3: 4377
-  erikd/libsndfile: 1712
-  erikerlandson/st_tree: 121
+  eranpeer/fakeit: 1370
+  ericniebler/range-v3: 4375
+  erikd/libsndfile: 1716
+  erikerlandson/st_tree: 119
   erikmuttersbach/libhdfs3: 53
-  erincatto/box3d: 6295
+  erincatto/box3d: 6363
   ermig1979/simd: 2268
-  esotericsoftware/spine-runtimes: 5286
-  esri/lerc: 214
+  esotericsoftware/spine-runtimes: 5293
+  esri/lerc: 215
   exodusdb/exodusdb: 7
   eyalroz/cuda-api-wrappers: 903
-  eyalz800/zpp_bits: 1006
+  eyalz800/zpp_bits: 997
   ez8-co/yapi: 295
   f-i-d-o/future-config: 0
-  faaxm/spix: 267
+  faaxm/spix: 215
   facebook/cachelib: 1592
-  facebook/fbthrift: 2697
-  facebook/folly: 30532
-  facebook/mvfst: 1658
-  facebook/openzl: 3178
-  facebook/proxygen: 8379
-  facebook/rocksdb: 32069
-  facebook/wangle: 3093
-  facebook/yoga: 18905
+  facebook/fbthrift: 2698
+  facebook/folly: 30536
+  facebook/mvfst: 1659
+  facebook/openzl: 3180
+  facebook/proxygen: 8381
+  facebook/rocksdb: 32090
+  facebook/wangle: 3092
+  facebook/yoga: 18909
   facebookexperimental/libunifex: 1716
-  facebookincubator/dispenso: 297
+  facebookincubator/dispenso: 305
   facebookincubator/fizz: 1200
-  facebookincubator/gloo: 1450
+  facebookincubator/gloo: 1453
   facebookresearch/flashlight: 5468
-  falemagn/fameta-counter: 61
-  fallahn/tmxlite: 466
-  fancycode/memorymodule: 3157
-  fantasy-peak/simple_http: 30
-  fast-pack/fastpfor: 975
-  fastfloat/fast_float: 2094
-  fawdlstty/libfv: 141
-  felixguendling/cista: 2250
+  falemagn/fameta-counter: 43
+  fallahn/tmxlite: 464
+  fancycode/memorymodule: 3150
+  fantasy-peak/simple_http: 29
+  fast-pack/fastpfor: 977
+  fastfloat/fast_float: 2097
+  fawdlstty/libfv: 137
+  felixguendling/cista: 2253
   felselva/mathc: 768
   ferd36/quaternions: 76
-  ffmpeg/nv-codec-headers: 363
+  ffmpeg/nv-codec-headers: 364
   fidelxyz/dxcam-cpp: 55
-  file/file: 1655
+  file/file: 1656
   finos/openmama: 177
   fix8mt/conjure_enum: 88
   fktn-k/fkyaml: 153
   flashlight/sequence: 14
   flashlight/text: 78
-  flexible-collision-library/fcl: 1753
-  floofyplasma/splice: 22
-  floooh/sokol: 10270
-  floriankirsch/opencsg: 85
-  fluidsynth/fluidsynth: 2480
-  fmtlib/fmt: 25659
-  fnc12/sqlite_orm: 2693
+  flexible-collision-library/fcl: 1754
+  floofyplasma/splice: 20
+  floooh/sokol: 10281
+  floriankirsch/opencsg: 81
+  fluidsynth/fluidsynth: 2452
+  fmtlib/fmt: 25787
+  fnc12/sqlite_orm: 2694
   foonathan/debug_assert: 230
-  foonathan/lexy: 1255
+  foonathan/lexy: 1250
   foonathan/type_safe: 1649
-  fpagliughi/sockpp: 919
-  fraillt/bitsery: 1264
+  fpagliughi/sockpp: 912
+  fraillt/bitsery: 1265
   frankheckenbach/ftgl: 32
-  frankosterfeld/qtkeychain: 503
-  fraunhoferhhi/vvenc: 1205
+  frankosterfeld/qtkeychain: 500
+  fraunhoferhhi/vvenc: 1204
   fredemmott/magic_args: 65
-  freerdp/freerdp: 13654
-  freespacenav/libspnav: 96
+  freerdp/freerdp: 13692
+  freespacenav/libspnav: 95
   ftylitak/qzxing: 667
-  fukuchi/libqrencode: 3028
+  fukuchi/libqrencode: 3029
   furfurylic/commata: 19
-  fuzzylite/fuzzylite: 325
-  g-truc/glm: 11203
-  gabime/spdlog: 29586
-  gabrieldosreis/ipr: 236
+  fuzzylite/fuzzylite: 326
+  g-truc/glm: 11222
+  gabime/spdlog: 29604
+  gabrieldosreis/ipr: 235
+  garcia6l20/reflex: 28
   gdraheim/zziplib: 70
-  genyleap/genyconnect: 258
-  gershnik/intrusive_shared_ptr: 28
-  getml/reflect-cpp: 1935
-  getml/sqlgen: 197
-  gflags/gflags: 3029
-  ggml-org/ggml: 15309
-  ggml-org/llama.cpp: 127447
-  ggml-org/whisper.cpp: 53518
-  gillesdebunne/libqglviewer: 270
-  ginkgo-project/ginkgo: 620
+  genyleap/genyconnect: 237
+  gershnik/intrusive_shared_ptr: 26
+  getml/reflect-cpp: 1936
+  getml/sqlgen: 198
+  gflags/gflags: 3028
+  ggml-org/ggml: 15364
+  ggml-org/llama.cpp: 128419
+  ggml-org/whisper.cpp: 53710
+  gillesdebunne/libqglviewer: 267
+  ginkgo-project/ginkgo: 622
   giovannidicanio/winreg: 507
   gistrec/geo-utils-cpp: 60
-  github/cmark-gfm: 1128
-  githubuser0xffff/qt-advanced-docking-system: 2524
+  github/cmark-gfm: 1129
+  githubuser0xffff/qt-advanced-docking-system: 2525
   gknowles/dimcli: 39
-  glfw/glfw: 15313
+  glfw/glfw: 15336
   gnome/libxslt: 73
-  godotengine/godot-cpp: 2672
-  google/angle: 4068
-  google/benchmark: 10390
-  google/breakpad: 2899
-  google/brotli: 14866
+  godotengine/godot-cpp: 2677
+  google/angle: 4069
+  google/benchmark: 10396
+  google/breakpad: 2900
+  google/brotli: 14881
   google/butteraugli: 2000
-  google/cctz: 652
+  google/cctz: 653
   google/cityhash: 1232
   google/cld3: 885
-  google/cppdap: 191
-  google/cpu_features: 2618
+  google/cppdap: 192
+  google/cpu_features: 2617
   google/crc32c: 516
   google/double-conversion: 1193
-  google/draco: 7469
-  google/farmhash: 657
-  google/fruit: 1886
-  google/gemmlowp: 1845
-  google/glog: 7395
-  google/googletest: 39504
-  google/guetzli: 12909
-  google/highway: 5803
-  google/jsonnet: 7565
-  google/leveldb: 39394
+  google/draco: 7475
+  google/farmhash: 658
+  google/fruit: 1885
+  google/gemmlowp: 1844
+  google/glog: 7390
+  google/googletest: 39535
+  google/guetzli: 12902
+  google/highway: 5821
+  google/jsonnet: 7568
+  google/leveldb: 39410
   google/libnop: 580
-  google/libphonenumber: 18261
+  google/libphonenumber: 18274
   google/marl: 2000
   google/nsync: 1284
   google/piex: 51
-  google/re2: 9799
-  google/sentencepiece: 12065
-  google/shaderc: 2181
-  google/snappy: 6606
-  google/xnnpack: 2441
-  google/zopfli: 3595
+  google/re2: 9798
+  google/sentencepiece: 12080
+  google/shaderc: 2182
+  google/snappy: 6612
+  google/xnnpack: 2449
+  google/zopfli: 3594
   googleapis/google-cloud-cpp: 660
   googlecloudplatform/functions-framework-cpp: 53
   gpakosz/whereami: 527
   gperftools/gperftools: 8977
-  gpuopen-librariesandsdks/amf: 743
-  gpuopen-librariesandsdks/vulkanmemoryallocator: 3487
-  gracicot/kangaru: 553
+  gpuopen-librariesandsdks/amf: 732
+  gpuopen-librariesandsdks/vulkanmemoryallocator: 3494
+  gracicot/kangaru: 554
   greg7mdp/gtl: 321
-  greg7mdp/sparsepp: 1312
-  greyclab/cimg: 1691
-  grpc/grpc: 45307
-  gsl-lite/gsl-lite: 982
+  greg7mdp/sparsepp: 1311
+  greyclab/cimg: 1690
+  grpc/grpc: 45323
+  gsl-lite/gsl-lite: 985
   guillermocalvo/resultlib: 13
   gul-cpp/gul14: 4
   gul-cpp/gul17: 4
-  gulrak/filesystem: 1561
+  gulrak/filesystem: 1565
   h-uru/libhsplasma: 34
-  h2o/picohttpparser: 2107
-  h4tr3d/avcpp: 544
-  h5py/h5py: 2249
-  hackerl/asyncio: 116
-  haivision/srt: 3598
-  halide/halide: 6598
-  hanickadot/compile-time-regular-expressions: 3844
+  h2o/picohttpparser: 2105
+  h4tr3d/avcpp: 542
+  h5py/h5py: 2252
+  hackerl/asyncio: 113
+  haivision/srt: 3600
+  halide/halide: 6607
+  hanickadot/compile-time-regular-expressions: 3848
   hanickadot/cthash: 238
   hanjingo/high-jump: 3
-  happyseafox/sail: 359
-  harfbuzz/harfbuzz: 6062
-  hayguen/iowahills_dsp: 36
+  happyseafox/sail: 358
+  harfbuzz/harfbuzz: 6083
+  hayguen/iowahills_dsp: 29
   hazelcast/hazelcast-cpp-client: 90
-  hdrhistogram/hdrhistogram_c: 287
-  hellobertrand/zxc: 460
-  herumi/xbyak: 2271
-  hesphoros/uniconv: 18
+  hdrhistogram/hdrhistogram_c: 290
+  hellobertrand/zxc: 461
+  herumi/xbyak: 2269
+  hesphoros/uniconv: 17
   hical61/hical: 58
-  hidefromkgb/gif_load: 84
+  hidefromkgb/gif_load: 80
   highfive-devs/highfive: 136
-  hikogui/hikogui: 925
+  hikogui/hikogui: 908
   hoene/libmysofa: 175
   hoshimoe/nekoevent: 2
   hoshimoe/nekofunction: 3
   hoshimoe/nekolog: 2
-  hoshimoe/nekonetwork: 2
+  hoshimoe/nekonetwork: 1
   hoshimoe/nekoschema: 2
   hoshimoe/nekosystem: 2
   hoshimoe/nekothreadpool: 1
   hosseinmoein/dataframe: 2982
-  host-oman/libraqm: 331
+  host-oman/libraqm: 332
   houseroad/foxi: 9
   howardhinnant/date: 3432
   huangqinjin/qmex: 1
-  hughperkins/jinja2cpplight: 153
+  hughperkins/jinja2cpplight: 148
   hughsie/appstream-glib: 66
   hughsie/libxmlb: 41
   hugoam/two: 1730
-  huira-render/huira: 17
-  hunspell/hunspell: 2582
+  huira-render/huira: 16
+  hunspell/hunspell: 2585
   hypengw/qcm: 185
-  hyperrealm/libconfig: 1224
-  i-curve/copypp: 5
+  hyperrealm/libconfig: 1223
+  i-curve/copypp: 1
   ianlancetaylor/libbacktrace: 1199
-  iasoft-pvt-ltd/auxid: 39
-  ibireme/yyjson: 3864
-  ibob/itlib: 212
+  iasoft-pvt-ltd/auxid: 40
+  ibireme/yyjson: 3869
+  ibob/itlib: 210
   ibob/picobench: 234
-  idea4good/guilite: 7768
-  idealvin/coost: 4210
+  idea4good/guilite: 7629
+  idealvin/coost: 4211
   ig-or/qwtw: 6
-  ikalnytskyi/termcolor: 960
-  ilobilix/kernel: 63
-  imageworks/pystring: 1092
+  ikalnytskyi/termcolor: 959
+  ilobilix/kernel: 55
+  imageworks/pystring: 1088
   imagingdatacommons/libdicom: 39
   imakris/mexce: 6
   imakris/sintra: 0
-  imfl/color-console: 277
-  immediate-mode-ui/nuklear: 11382
+  imfl/color-console: 274
+  immediate-mode-ui/nuklear: 11391
   imqs/utfz: 7
-  index1207/netcpp: 11
+  index1207/netcpp: 6
   infiniflow/infinity: 4704
-  ingeniamc/sercomm: 18
+  ingeniamc/sercomm: 17
   inie0722/air-ctl: 35
-  injae/serdepp: 111
+  injae/serdepp: 113
   insightsoftwareconsortium/itk: 1654
   intel/arm_neon_2_x86_sse: 498
-  intel/gmmlib: 196
-  intel/gpgmm: 36
+  intel/gmmlib: 197
+  intel/gpgmm: 33
   intel/ideep: 181
   intel/isa-l: 1096
-  intel/libva: 780
-  intel/libvpl: 367
+  intel/libva: 782
+  intel/libvpl: 371
   intel/parallelstl: 776
-  intel/tinycbor: 629
-  intellabs/hexl: 268
-  intelrealsense/librealsense: 9002
+  intel/tinycbor: 628
+  intellabs/hexl: 269
+  intelrealsense/librealsense: 9010
   interactivecomputergraphics/trianglemeshdistance: 183
   intercept/interceptar: 29
   ipgeolocation/ip-geolocation-api-cpp-sdk: 0
-  ipotrick/daxa: 607
-  iraspa/raspa3: 102
-  ironsdu/brynet: 1064
-  ismrmrd/ismrmrd: 121
-  itas109/cserialport: 903
-  itay-grudev/singleapplication: 1006
-  ithewei/libhv: 7547
-  ivafanas/sltbench: 152
-  jaegertracing/jaeger-client-cpp: 136
-  jakub-kk/volumeidexfat: 22
+  ipotrick/daxa: 610
+  iraspa/raspa3: 103
+  ironsdu/brynet: 1065
+  ismrmrd/ismrmrd: 122
+  itas109/cserialport: 895
+  itay-grudev/singleapplication: 1001
+  ithewei/libhv: 7549
+  ivafanas/sltbench: 150
+  jaegertracing/jaeger-client-cpp: 137
+  jakub-kk/volumeidexfat: 0
   jamboree/bustache: 86
   jandrewrogers/metrohash: 373
-  jarro2783/cxxopts: 4806
+  jarro2783/cxxopts: 4808
   jasper-software/jasper: 260
-  jbaldwin/libcoro: 963
-  jbcoe/polymorphic_value: 227
+  jbaldwin/libcoro: 943
+  jbcoe/polymorphic_value: 226
   jbcoe/value_types: 87
-  jbeder/yaml-cpp: 6138
+  jbeder/yaml-cpp: 6134
   jcelerier/libremidi: 705
-  jedisct1/libhydrogen: 784
-  jeremy-rifkin/cpptrace: 1476
-  jeremy-rifkin/libassert: 726
-  jeremydumais/cpp-smtpclient-library: 47
-  jeremyko/asocklib: 22
-  jfalcou/eve: 1362
-  jgaa/restc-cpp: 652
+  jedisct1/libhydrogen: 785
+  jeremy-rifkin/cpptrace: 1475
+  jeremy-rifkin/libassert: 702
+  jeremydumais/cpp-smtpclient-library: 49
+  jeremyko/asocklib: 19
+  jfalcou/eve: 1361
+  jgaa/restc-cpp: 645
   jhasse/poly2tri: 518
   jiixyj/epoll-shim: 118
-  jiixyj/libebur128: 491
+  jiixyj/libebur128: 490
   jimmyorourke/plotlypp: 147
-  jkuhlmann/cgltf: 1982
-  jkuhlmann/gainput: 897
+  jkuhlmann/cgltf: 1987
+  jkuhlmann/gainput: 898
   jl2922/hps: 93
-  jlblancoc/nanoflann: 2682
+  jlblancoc/nanoflann: 2685
   jll63/yomm2: 382
-  jmcnamara/libxlsxwriter: 1755
+  jmcnamara/libxlsxwriter: 1759
   jncrmx/cutie-logs: 3
-  jncrmx/xmbshell: 39
+  jncrmx/xmbshell: 25
   joaoleal/cppadcodegen: 201
-  john-chapman/im3d: 1293
-  johnmcfarlane/cnl: 693
+  john-chapman/im3d: 1260
+  johnmcfarlane/cnl: 692
   johnwason/drekar-launch-process-cpp: 6
   jonathansalwan/triton: 4285
-  jordanvrtanoski/luacpp: 209
+  jordanvrtanoski/luacpp: 201
   joshuasledden/jigson: 0
-  josuttis/jthread: 198
+  josuttis/jthread: 179
   jovibor/libpe: 174
   jowillianto/file-lock: 2
-  jpbarrette/curlpp: 1802
+  jpbarrette/curlpp: 1782
   jpenuchot/ctbench: 27
-  jrouwe/joltphysics: 11516
+  jrouwe/joltphysics: 11546
   jslepicka/nemulator: 38
-  json-c/json-c: 3287
-  jsonrpcx/json-rpc-cxx: 286
+  json-c/json-c: 3290
+  jsonrpcx/json-rpc-cxx: 284
   jstedfast/gmime: 144
-  julialang/utf8proc: 1295
+  julialang/utf8proc: 1300
   jupyter-xeus/xeus: 963
-  jupyter-xeus/xproperty: 52
-  justasmasiulis/lazy_importer: 1927
-  justasmasiulis/nt_wrapper: 444
-  justasmasiulis/xorstr: 1446
+  jupyter-xeus/xproperty: 51
+  justasmasiulis/lazy_importer: 1763
+  justasmasiulis/nt_wrapper: 432
+  justasmasiulis/xorstr: 1309
   justwhit3/arsenalgear-cpp: 4
   justwhit3/osmanip: 222
   justwhit3/ptc-print: 42
-  k06a/boolinq: 665
+  k06a/boolinq: 666
   kaaserne/cpp-lazy: 365
-  kafeg/optimus-cpp: 4
-  kaimfrai/atr: 4
-  kam1k4dze/kamiwayland: 30
-  karastojko/mailio: 486
+  kafeg/optimus-cpp: 5
+  kaimfrai/atr: 3
+  kam1k4dze/kamiwayland: 26
+  karastojko/mailio: 480
   karypislab/gklib: 79
-  karypislab/metis: 1051
-  karypislab/parmetis: 178
-  kazdragon/telnetpp: 71
-  kazuho/picojson: 1158
-  kcat/openal-soft: 2742
+  karypislab/metis: 1052
+  karypislab/parmetis: 179
+  kazdragon/telnetpp: 70
+  kazuho/picojson: 1160
+  kcat/openal-soft: 2741
   kcenon/common_system: 1
   kcenon/database_system: 0
   kcenon/messaging_system: 31
   kcenon/network_system: 1
-  kcenon/thread_system: 10
+  kcenon/thread_system: 11
   kdab/kdalgorithms: 98
-  kdab/kdbindings: 335
-  kdab/kdgpu: 163
-  kdab/kdreports: 157
-  kdab/kdsingleapplication: 78
+  kdab/kdbindings: 316
+  kdab/kdgpu: 151
+  kdab/kdreports: 156
+  kdab/kdsingleapplication: 77
   kdab/kdstatemachineeditor: 190
   kdab/kdutils: 62
-  kedixa/coke: 73
-  keithpotz/crashcatch: 102
+  kedixa/coke: 70
+  keithpotz/crashcatch: 103
   keplerproject/luafilesystem: 1010
-  kernelwernel/vmaware: 1386
-  kevinhartman/morton-nd: 115
-  keystone-engine/keystone: 2633
-  kgabis/parson: 1468
-  kgorking/ecs: 69
-  khizmax/libcds: 2745
-  khronosgroup/egl-registry: 150
-  khronosgroup/glslang: 3575
-  khronosgroup/ktx-software: 1351
-  khronosgroup/opencl-sdk: 774
+  kernelwernel/vmaware: 1391
+  kevinhartman/morton-nd: 101
+  keystone-engine/keystone: 2634
+  kgabis/parson: 1467
+  kgorking/ecs: 65
+  khizmax/libcds: 2744
+  khronosgroup/egl-registry: 151
+  khronosgroup/glslang: 3585
+  khronosgroup/ktx-software: 1357
+  khronosgroup/opencl-sdk: 777
   khronosgroup/opengl-registry: 854
-  khronosgroup/openxr-sdk: 1140
-  khronosgroup/spirv-cross: 2509
-  khronosgroup/spirv-headers: 352
+  khronosgroup/openxr-sdk: 1142
+  khronosgroup/spirv-cross: 2512
+  khronosgroup/spirv-headers: 354
   khronosgroup/spirv-reflect: 871
-  khronosgroup/spirv-tools: 1355
-  khronosgroup/vulkan-extensionlayer: 170
-  khronosgroup/vulkan-headers: 1084
-  khronosgroup/vulkan-hpp: 3788
-  khronosgroup/vulkan-loader: 691
-  khronosgroup/vulkan-tools: 488
-  khronosgroup/vulkan-utility-libraries: 102
-  khronosgroup/vulkan-validationlayers: 1030
-  kibaamor/knet: 31
+  khronosgroup/spirv-tools: 1358
+  khronosgroup/vulkan-extensionlayer: 172
+  khronosgroup/vulkan-headers: 1086
+  khronosgroup/vulkan-hpp: 3789
+  khronosgroup/vulkan-loader: 695
+  khronosgroup/vulkan-tools: 491
+  khronosgroup/vulkan-utility-libraries: 103
+  khronosgroup/vulkan-validationlayers: 1035
+  kibaamor/knet: 30
   kicer86/photobroom: 12
-  kimbatt/detria: 13
-  kimwalisch/libpopcnt: 369
-  kistler-group/sdbus-cpp: 436
+  kimbatt/detria: 5
+  kimwalisch/libpopcnt: 368
+  kistler-group/sdbus-cpp: 438
   kitware/vtk: 3206
-  kjellkod/g3log: 962
+  kjellkod/g3log: 961
   kkos/oniguruma: 2523
-  kmammou/v-hacd: 1650
+  kmammou/v-hacd: 1544
   kmhofmann/selene: 314
   knncolle/knncolle: 19
   knncolle/knncolle_annoy: 0
   knncolle/knncolle_hnsw: 1
   knncolle/knncolle_kmknn: 0
   kode54/dumb: 133
-  koide3/small_gicp: 1028
+  koide3/small_gicp: 1030
   kokke/tiny-aes-c: 5006
-  kokke/tiny-bignum-c: 474
+  kokke/tiny-bignum-c: 469
   kokke/tiny-regex-c: 1499
-  kokkos/kokkos: 2673
-  kokkos/mdspan: 506
+  kokkos/kokkos: 2682
+  kokkos/mdspan: 503
   konstanty/libmodplug: 153
-  konvt/pace: 36
-  kosma/minmea: 961
+  konvt/pace: 37
+  kosma/minmea: 960
   koubaa/goldy: 10
-  kpeeters/tree.hh: 156
-  krasnovvvvv/yandex-disk-cpp-client: 5
+  kpeeters/tree.hh: 138
+  krasnovvvvv/yandex-disk-cpp-client: 4
   krm7/gapp: 41
-  kspalaiologos/bzip3: 1443
+  kspalaiologos/bzip3: 1225
   kuba--/zip: 1603
-  kubernetes-client/c: 189
-  kunitoki/luabridge3: 412
+  kubernetes-client/c: 188
+  kunitoki/luabridge3: 388
   kvasir-io/mpl: 172
-  lamarrr/stx: 633
-  lanceputnam/gamma: 498
-  lastools/lastools: 1066
+  lamarrr/stx: 634
+  lanceputnam/gamma: 494
+  lastools/lastools: 1067
   lastrada-software/lightweight: 43
   laudrup/boost-wintls: 69
   launchdarkly/c-server-sdk: 3
-  laurencelundblade/qcbor: 240
-  laurikari/tre: 918
-  lava/matplotlib-cpp: 4770
-  lcm-proj/lcm: 1205
-  ldionne/dyno: 1043
-  leadedge/spout2: 1005
-  leethomason/tinyxml2: 5799
+  laurencelundblade/qcbor: 238
+  laurikari/tre: 916
+  lava/matplotlib-cpp: 4772
+  lcm-proj/lcm: 1203
+  ldionne/dyno: 1006
+  leadedge/spout2: 1006
+  leethomason/tinyxml2: 5800
   lemire/fast_double_parser: 670
-  lexbor/lexbor: 2080
-  lexus2k/tinyproto: 282
-  lfreist/hwinfo: 734
-  libass/libass: 1164
+  lexbor/lexbor: 2087
+  lexus2k/tinyproto: 275
+  lfreist/hwinfo: 713
+  libass/libass: 1167
   libcgroup/libcgroup: 179
-  libcheck/check: 1174
-  libconfuse/libconfuse: 520
-  libcpr/cpr: 7425
-  libdmusic/riffcpp: 4
+  libcheck/check: 1173
+  libconfuse/libconfuse: 521
+  libcpr/cpr: 7424
+  libdmusic/riffcpp: 3
   libevent/libevent: 11949
-  libexpat/libexpat: 1370
-  libfann/fann: 1751
+  libexpat/libexpat: 1378
+  libfann/fann: 1752
   libffi/libffi: 4363
-  libfuse/libfuse: 6135
-  libgd/libgd: 986
-  libgit2/libgit2: 10587
+  libfuse/libfuse: 6138
+  libgd/libgd: 984
+  libgit2/libgit2: 10597
   libglui/glui: 216
   libhal/async_context: 12
-  libharu/libharu: 1997
+  libharu/libharu: 1999
   libical/libical: 365
-  libigl/libigl: 5083
-  libjxl/libjxl: 3654
-  libkml/libkml: 64
+  libigl/libigl: 5090
+  libjxl/libjxl: 3656
+  libkml/libkml: 63
   libofx/libofx: 61
-  libproxy/libproxy: 212
-  librats/librats: 154
+  libproxy/libproxy: 213
+  librats/librats: 155
   libscran/umappp: 80
-  libsdl-org/sdl: 16526
-  libsdl-org/sdl_image: 979
-  libsdl-org/sdl_mixer: 753
-  libsdl-org/sdl_net: 365
-  libsdl-org/sdl_ttf: 746
-  libsdl2pp/libsdl2pp: 601
-  libtcod/libtcod: 1223
-  libusb/hidapi: 2268
-  libusb/libusb: 6151
-  libuv/libuv: 27164
-  libuvc/libuvc: 1158
-  libvips/libvips: 11630
-  libyal/libpff: 367
+  libsdl-org/sdl: 16587
+  libsdl-org/sdl_image: 980
+  libsdl-org/sdl_mixer: 754
+  libsdl-org/sdl_net: 366
+  libsdl-org/sdl_ttf: 747
+  libsdl2pp/libsdl2pp: 600
+  libtcod/libtcod: 1224
+  libusb/hidapi: 2275
+  libusb/libusb: 6158
+  libuv/libuv: 27170
+  libuvc/libuvc: 1159
+  libvips/libvips: 11650
+  libyal/libpff: 368
   libyal/libqcow: 62
-  libyal/libvhdi: 146
-  lieff/minimp3: 1950
+  libyal/libvhdi: 147
+  lieff/minimp3: 1901
   lighttransport/nanort: 1119
   linux-audit/audit-userspace: 729
-  linux-rdma/rdma-core: 2360
+  linux-rdma/rdma-core: 2365
   lionkor/commandline: 95
-  litehtml/litehtml: 2439
+  litehtml/litehtml: 2430
   litespeedtech/ls-qpack: 86
   litespeedtech/lsquic: 1869
   litocpp/lito: 31
   litocpp/rstd: 3
-  llnl/units: 170
-  llnl/zfp: 883
-  lloyal-ai/inlined-vector: 3
+  llnl/units: 171
+  llnl/zfp: 884
+  lloyal-ai/inlined-vector: 2
   lloyd/yajl: 2227
   localspook/zcrc: 6
-  log4cplus/log4cplus: 1729
-  lsalzman/enet: 3264
-  lsposed/dexbuilder: 218
+  log4cplus/log4cplus: 1728
+  lsalzman/enet: 3267
+  lsposed/dexbuilder: 197
   lsposed/lsplant: 1370
   ltla/aarand: 1
   ltla/cppirlba: 18
-  ltla/cppkmeans: 10
+  ltla/cppkmeans: 6
   ltla/powerit: 0
   ltla/sanisizer: 0
   ltla/subpar: 3
-  lu-zero/mfx_dispatch: 159
-  luajit/luajit: 5761
-  luau-lang/luau: 5846
+  lu-zero/mfx_dispatch: 158
+  luajit/luajit: 5765
+  luau-lang/luau: 5872
   luckywenda/rcon: 1
-  lucocozz/argus: 12
-  ludvikjerabek/getopt-win: 16
-  lukasbanana/gaussianlib: 49
-  lukasbanana/llgl: 2630
+  lucocozz/argus: 10
+  ludvikjerabek/getopt-win: 9
+  lukasbanana/gaussianlib: 48
+  lukasbanana/llgl: 2629
   lumia431/reaction: 614
   lunarg/vulkantools: 772
   lunarmodules/lua-compat-5.3: 252
   lunarmodules/luasec: 401
   luncliff/coroutine: 492
   lurcher/unixodbc: 136
-  luvit/luv: 942
-  lvandeve/lodepng: 2345
-  lz4/lz4: 12051
+  luvit/luv: 943
+  lvandeve/lodepng: 2340
+  lz4/lz4: 12061
   lzfse/lzfse: 1822
-  maaxyz/maaframework: 4833
+  maaxyz/maaframework: 4877
   machinezone/ixwebsocket: 791
-  mackron/dr_libs: 1812
-  mackron/miniaudio: 7235
-  macosforge/alac: 441
-  madler/zlib: 7071
-  magiblot/tvision: 3149
-  maharmstone/ntfs2btrfs: 1209
-  maharmstone/tdscpp: 17
+  mackron/dr_libs: 1820
+  mackron/miniaudio: 7275
+  macosforge/alac: 429
+  madler/zlib: 7084
+  magiblot/tvision: 3157
+  maharmstone/ntfs2btrfs: 1219
+  maharmstone/tdscpp: 15
   malaterre/gdcm: 399
   mamba-org/libcred: 4
   man-group/sparrow: 144
   mandreyel/mio: 1953
-  mapbox/earcut.hpp: 1028
+  mapbox/earcut.hpp: 1002
   mapbox/geojson-cpp: 70
-  mapbox/geojson-vt-cpp: 105
+  mapbox/geojson-vt-cpp: 99
   mapbox/geometry.hpp: 102
   mapbox/gzip-hpp: 355
   mapbox/polylabel: 1554
   mapbox/protozero: 381
   mapbox/variant: 383
-  mapbox/wagyu: 196
-  mapnik/mapnik: 3960
+  mapbox/wagyu: 193
+  mapnik/mapnik: 3959
   maratyszcza/fp16: 385
   maratyszcza/fxdiv: 61
-  maratyszcza/nnpack: 1711
+  maratyszcza/nnpack: 1710
   maratyszcza/psimd: 61
-  maratyszcza/pthreadpool: 396
+  maratyszcza/pthreadpool: 395
   mariadb-corporation/mariadb-connector-c: 331
-  mariusbancila/croncpp: 278
-  mariusbancila/stduuid: 909
+  mariusbancila/croncpp: 277
+  mariusbancila/stduuid: 892
   mariusmuja/flann: 2373
   markushocke/modern_io: 0
-  martin-olivier/dylib: 461
+  martin-olivier/dylib: 450
   martinmoene/clue: 67
-  martinmoene/expected-lite: 556
+  martinmoene/expected-lite: 554
   martinmoene/lest: 404
-  martinmoene/optional-lite: 421
-  martinmoene/ring-span-lite: 169
+  martinmoene/optional-lite: 422
+  martinmoene/ring-span-lite: 168
   martinmoene/span-lite: 517
-  martinmoene/status-value-lite: 18
-  martinmoene/string-lite: 17
-  martinmoene/type-lite: 39
+  martinmoene/status-value-lite: 16
+  martinmoene/string-lite: 9
+  martinmoene/type-lite: 38
   martinmoene/value-ptr-lite: 56
-  martinsos/edlib: 606
+  martinsos/edlib: 607
   martinus/robin-hood-hashing: 1621
-  martinus/unordered_dense: 1472
-  marzer/tomlplusplus: 2142
+  martinus/unordered_dense: 1475
+  marzer/tomlplusplus: 2143
   mas-bandwidth/netcode: 2596
   mas-bandwidth/reliable: 654
-  mas-bandwidth/serialize: 137
-  mas-bandwidth/yojimbo: 2731
+  mas-bandwidth/serialize: 138
+  mas-bandwidth/yojimbo: 2738
   master-keying/minisat: 147
   matajoh/libnpy: 28
-  mateidavid/zstr: 344
+  mateidavid/zstr: 343
   matroska-org/libebml: 164
   matroska-org/libmatroska: 367
-  mattconte/tlsf: 1609
-  mattgodbolt/seasocks: 787
-  mattiasgustavsson/libs: 2304
+  mattconte/tlsf: 1585
+  mattgodbolt/seasocks: 782
+  mattiasgustavsson/libs: 2139
   max0x7ba/atomic_queue: 1894
   maxbachmann/rapidfuzz-cpp: 372
-  maxmind/libmaxminddb: 1023
+  maxmind/libmaxminddb: 1026
   mayah/tinytoml: 176
   mayanklahiri/easyexif: 326
-  mborgerding/kissfft: 1979
-  mchehab/zbar: 1363
-  mcmtroffaes/inipp: 321
-  mcpp-community/d2mcpp: 1756
-  mcpp-community/mcpp: 127
-  mcpplibs/llmapi: 10
-  mcuee/libusb-win32: 281
-  mediaarea/mediainfolib: 794
+  mborgerding/kissfft: 1982
+  mchehab/zbar: 1365
+  mcmtroffaes/inipp: 308
+  mcpp-community/d2mcpp: 1738
+  mcpp-community/mcpp: 135
+  mcpplibs/llmapi: 5
+  mcuee/libusb-win32: 274
+  mediaarea/mediainfolib: 795
   mediaarea/zenlib: 34
-  meekrosoft/fff: 936
-  memgraph/memgraph: 4405
+  meekrosoft/fff: 937
+  memgraph/memgraph: 4559
   memgraph/mgclient: 44
   memononen/libtess2: 586
-  memononen/nanosvg: 2020
+  memononen/nanosvg: 2021
   memononen/nanovg: 5704
-  mesonbuild/meson: 6625
-  mfontanini/cppkafka: 646
+  mesonbuild/meson: 6633
+  mfontanini/cppkafka: 645
   michaelmiller-/sec21: 3
   michaelrsweet/mxml: 518
   microsoft/apsi: 212
-  microsoft/azure-kinect-sensor-sdk: 1575
-  microsoft/chakracore: 9256
+  microsoft/azure-kinect-sensor-sdk: 1573
+  microsoft/chakracore: 9254
   microsoft/compoundfilereader: 91
   microsoft/correlationvector-cpp: 20
-  microsoft/cpp-async: 112
+  microsoft/cpp-async: 111
   microsoft/cpp_client_telemetry: 102
   microsoft/cppgraphqlgen: 353
   microsoft/cppvrf: 5
-  microsoft/cppwinrt: 1873
+  microsoft/cppwinrt: 1872
   microsoft/ctstraffic: 289
-  microsoft/detours: 6379
-  microsoft/directxmath: 1797
-  microsoft/directxmesh: 857
-  microsoft/directxshadercompiler: 3645
-  microsoft/directxtex: 2151
+  microsoft/detours: 6382
+  microsoft/directxmath: 1791
+  microsoft/directxmesh: 858
+  microsoft/directxshadercompiler: 3650
+  microsoft/directxtex: 2153
   microsoft/directxtk: 2853
-  microsoft/directxtk12: 1749
-  microsoft/dxut: 462
-  microsoft/fx11: 478
+  microsoft/directxtk12: 1748
+  microsoft/dxut: 461
+  microsoft/fx11: 477
   microsoft/gltf-sdk: 625
-  microsoft/gsl: 6719
+  microsoft/gsl: 6712
   microsoft/ifc: 76
   microsoft/inflatelib: 11
-  microsoft/krabsetw: 803
+  microsoft/krabsetw: 801
   microsoft/kuku: 73
   microsoft/lightgbm: 18751
-  microsoft/linuxtracepoints: 43
-  microsoft/mimalloc: 13358
+  microsoft/linuxtracepoints: 42
+  microsoft/mimalloc: 13367
   microsoft/msix-packaging: 1071
-  microsoft/msquic: 4775
+  microsoft/msquic: 4772
   microsoft/ndis-driver-library: 94
-  microsoft/onnxruntime: 21797
+  microsoft/onnxruntime: 21836
   microsoft/rego-cpp: 47
-  microsoft/seal: 4028
-  microsoft/snmalloc: 1963
+  microsoft/seal: 4018
+  microsoft/snmalloc: 1966
   microsoft/trieste: 53
   microsoft/uvatlas: 926
   microsoft/vbsenclavetooling: 28
-  microsoft/vcpkg: 27452
-  microsoft/wil: 2975
+  microsoft/vcpkg: 27461
+  microsoft/wil: 2978
   midi2-dev/am_midi2.0lib: 71
   miguelmartin75/anax: 461
-  mikepopoloski/slang: 1132
-  mikke89/rmlui: 4417
+  mikepopoloski/slang: 1141
+  mikke89/rmlui: 4434
   mikomikotaishi/openjuice: 14
-  mikomikotaishi/stdlibx: 6
+  mikomikotaishi/stdlibx: 5
   millforge/thread-pool: 2
   mindwerks/wildmidi: 245
   minio/minio-cpp: 223
-  miso1289/asiochan: 45
-  misteo/meojson: 160
-  mit-spark/spatial-hash: 94
+  miso1289/asiochan: 31
+  misteo/meojson: 155
+  mit-spark/spatial-hash: 84
   mitchellthompkins/consteig: 8
-  mity/md4c: 1445
-  mixxxdj/libkeyfinder: 183
+  mity/md4c: 1447
+  mixxxdj/libkeyfinder: 180
   mjansson/mdns: 591
   mjsottile/sfsexp: 87
-  mkazhdan/poissonrecon: 1858
-  mlpack/mlpack: 5704
-  mm2/little-cms: 742
+  mkazhdan/poissonrecon: 1854
+  mlpack/mlpack: 5709
+  mm2/little-cms: 744
   mmahnic/argumentum: 207
-  mmikk/mikktspace: 377
-  mobius3/font-chef: 57
-  mobius3/tweeny: 847
+  mmikk/mikktspace: 362
+  mobius3/font-chef: 54
+  mobius3/tweeny: 848
   mongodb/mongo-c-driver: 881
-  mongodb/mongo-cxx-driver: 1108
-  morcules/swiftnet: 14
+  mongodb/mongo-cxx-driver: 1107
+  morcules/swiftnet: 13
   morgancaron/cpputils: 11
-  morganstanley/modern-cpp-kafka: 422
-  morwenn/cpp-sort: 721
+  morganstanley/modern-cpp-kafka: 423
+  morwenn/cpp-sort: 720
   mozilla/cubeb: 498
-  mpark/patterns: 685
-  mpusz/mp-units: 1473
+  mpark/patterns: 675
+  mpusz/mp-units: 1475
   mraggi/discreture: 72
-  mreineck/pocketfft: 157
-  msgpack/msgpack-c: 3348
-  msteinbeck/tinyspline: 1350
+  mreineck/pocketfft: 135
+  msgpack/msgpack-c: 3347
+  msteinbeck/tinyspline: 1351
   munt/munt: 808
-  mutouyun/cpp-ipc: 2228
-  mypaint/libmypaint: 378
+  mutouyun/cpp-ipc: 2153
+  mypaint/libmypaint: 380
   mypaint/mypaint-brushes: 42
   mysql/mysql-connector-cpp: 708
-  mysql/mysql-server: 12419
+  mysql/mysql-server: 12423
   mysvac/cpp-jsonlib: 3
-  mzying2001/sw: 133
+  mzying2001/sw: 132
   n0f4x/redi: 7
-  naasking/async.h: 787
+  naasking/async.h: 740
   naios/function2: 605
-  nanodbc/nanodbc: 384
-  nats-io/nats.c: 504
-  nayuki/qr-code-generator: 6757
+  nanodbc/nanodbc: 385
+  nats-io/nats.c: 505
+  nayuki/qr-code-generator: 6764
   ndevilla/iniparser: 1075
-  neargye/magic_enum: 6187
-  neargye/nameof: 2359
-  neargye/semver: 355
-  ned14/llfio: 1049
-  ned14/outcome: 801
-  ned14/quickcpplib: 201
-  ned14/status-code: 75
-  nem0/openfbx: 1347
-  nemequ/munit: 737
-  nemequ/portable-snippets: 774
-  nemtrif/utfcpp: 1991
+  neargye/magic_enum: 6197
+  neargye/nameof: 2357
+  neargye/semver: 352
+  ned14/llfio: 1045
+  ned14/outcome: 800
+  ned14/quickcpplib: 200
+  ned14/status-code: 72
+  nem0/openfbx: 1353
+  nemequ/munit: 736
+  nemequ/portable-snippets: 713
+  nemtrif/utfcpp: 1990
   neosapience/typecast-sdk: 7
-  nessan/gf2: 10
-  netflix/vmaf: 5474
+  nessan/gf2: 7
+  netflix/vmaf: 5476
   netheril96/staticjson: 201
-  nevergiveupcpp/obfuscxx: 86
+  nevergiveupcpp/obfuscxx: 77
   ngcpp/proxy: 155
-  nghttp2/nghttp2: 5046
+  nghttp2/nghttp2: 5049
   ngtcp2/nghttp3: 1137
-  ngtcp2/ngtcp2: 1510
+  ngtcp2/ngtcp2: 1514
   ngtcp2/sfparse: 9
   nholthaus/units: 1056
-  nibanks/msh3: 73
+  nibanks/msh3: 67
   nickbruun/hayai: 362
   nickvisionapps/libnick: 7
   nicoshev/rapidhash: 894
-  niekbouman/ctbignum: 123
-  nifti-imaging/nifti_clib: 49
+  niekbouman/ctbignum: 110
+  nifti-imaging/nifti_clib: 46
   nigels-com/glew: 2900
-  nih-at/libzip: 1045
+  nih-at/libzip: 1049
   nihilai-collective/jsonifier: 103
   nihilai-collective/void-numerics: 0
-  nihui/ruapu: 460
-  nixman/yas: 796
-  nlohmann/fifo_map: 212
-  nlohmann/json: 50564
-  nmslib/hnswlib: 5319
+  nihui/ruapu: 462
+  nixman/yas: 794
+  nlohmann/fifo_map: 211
+  nlohmann/json: 50583
+  nmslib/hnswlib: 5326
   nmslib/nmslib: 3589
-  nmwsharp/happly: 405
-  nnqe/qe6502: 6
-  no1msd/mstch: 597
+  nmwsharp/happly: 398
+  nnqe/qe6502: 0
+  no1msd/mstch: 598
   noavailablealias/nano-signal-slot: 440
-  nodejs/http-parser: 6449
-  nodejs/llhttp: 1941
+  nodejs/http-parser: 6450
+  nodejs/llhttp: 1944
   nodejs/node-addon-api: 2409
-  nonstd-lite/bit-lite: 48
+  nonstd-lite/bit-lite: 46
   nonstd-lite/scope-lite: 55
-  nonstd-lite/string-view-lite: 475
-  nothings/stb: 34612
+  nonstd-lite/string-view-lite: 474
+  nothings/stb: 34651
   ntnu-ihb/fmi4cpp: 110
   ntop/pf_ring: 2968
   numactl/numactl: 506
   numpy/x86-simd-sort: 1027
-  nvidia-omniverse/physx: 4758
-  nvidia-rtx/nvrhi: 2015
-  nvidia/cudnn-frontend: 932
-  nvidia/cutlass: 10401
-  nvidia/mdl-sdk: 535
-  nvidia/stdexec: 2428
-  oatpp/oatpp: 8656
+  nvidia-omniverse/physx: 4768
+  nvidia-rtx/nvrhi: 2016
+  nvidia/cudnn-frontend: 939
+  nvidia/cutlass: 10423
+  nvidia/mdl-sdk: 536
+  nvidia/stdexec: 2434
+  oatpp/oatpp: 8651
   oatpp/oatpp-consul: 40
   oatpp/oatpp-curl: 12
   oatpp/oatpp-libressl: 7
@@ -1189,343 +1190,343 @@ repositories:
   oatpp/oatpp-websocket: 96
   oatpp/oatpp-zlib: 6
   oclero/qlementine: 416
-  oclero/qlementine-icons: 80
-  ocornut/imgui: 76123
-  odygrd/quill: 3025
+  oclero/qlementine-icons: 79
+  ocornut/imgui: 76179
+  odygrd/quill: 3028
   offa/influxdb-cxx: 145
   offscale/c89stringutils: 2
   offscale/libetcd-cpp: 3
   offscale/rhasheq: 0
-  ogrecave/ogre: 4647
-  ogrecave/ogre-next: 1378
-  oir/barkeep: 246
-  okdshin/picosha2: 760
-  oktal/pistache: 3470
+  ogrecave/ogre: 4654
+  ogrecave/ogre-next: 1380
+  oir/barkeep: 229
+  okdshin/picosha2: 756
+  oktal/pistache: 3473
   olafvdspek/ctemplate: 370
   oliora/ppconsul: 161
-  oliora/samples: 70
+  oliora/samples: 63
   oneapi-src/level-zero: 334
-  oneapi-src/onednn: 4044
-  onnx/optimizer: 831
-  open-cascade-sas/occt: 2849
-  open-mpi/hwloc: 735
-  open-source-parsers/jsoncpp: 8889
+  oneapi-src/onednn: 4046
+  onnx/optimizer: 832
+  open-cascade-sas/occt: 2852
+  open-mpi/hwloc: 736
+  open-source-parsers/jsoncpp: 8890
   open-source-patterns/collection: 1
-  open-source-patterns/nanojsonc: 20
-  open-telemetry/opentelemetry-cpp: 1374
+  open-source-patterns/nanojsonc: 19
+  open-telemetry/opentelemetry-cpp: 1373
   open-telemetry/opentelemetry-cpp-contrib: 153
-  openbluetoothtoolbox/simpleble: 1128
+  openbluetoothtoolbox/simpleble: 1131
   opencollab/arpack-ng: 357
   opencv/ade: 65
-  opencv/opencv: 90748
-  openethercatsociety/soem: 2070
+  opencv/opencv: 90792
+  openethercatsociety/soem: 2062
   openigtlink/openigtlink: 120
-  openmathlib/openblas: 7578
+  openmathlib/openblas: 7584
   openmvg/openmvg: 6550
   openni/openni2: 442
-  openprogger/phonon-native: 2
+  openprogger/phonon-native: 0
   openstack/liberasurecode: 166
-  openvinotoolkit/openvino: 10814
+  openvinotoolkit/openvino: 10854
   openxlings/xlings: 607
   openzim/libzim: 256
   opflow-dev/opflow: 87
   optframe/optframe: 92
-  orange-cpp/omath: 254
-  orangeduck/tgc: 1098
-  orc/discount: 888
+  orange-cpp/omath: 234
+  orangeduck/tgc: 996
+  orc/discount: 889
   orefkov/simstr: 34
   original-org/original: 6
-  orlp/ed25519: 578
-  orlp/pdqsort: 2507
-  ornladios/adios2: 326
-  orocos/orocos_kinematics_dynamics: 901
+  orlp/ed25519: 571
+  orlp/pdqsort: 2504
+  ornladios/adios2: 327
+  orocos/orocos_kinematics_dynamics: 900
   ortclib/udns: 10
-  osdp-dev/libosdp: 196
+  osdp-dev/libosdp: 194
   osgeo/libgeotiff: 219
   ospray/rkcommon: 21
-  ousnius/nifly: 78
-  owent/libcopp: 865
+  ousnius/nifly: 76
+  owent/libcopp: 866
   ozguronsoy/protocomm: 16
-  p-h-c/phc-winner-argon2: 5370
-  p-ranav/alpaca: 560
-  p-ranav/argparse: 3542
+  p-h-c/phc-winner-argon2: 5372
+  p-ranav/alpaca: 514
+  p-ranav/argparse: 3544
   p-ranav/csv: 233
-  p-ranav/csv2: 627
+  p-ranav/csv2: 590
   p-ranav/glob: 291
-  p-ranav/indicators: 3410
+  p-ranav/indicators: 3412
   p-ranav/pprint: 935
-  p-ranav/structopt: 511
+  p-ranav/structopt: 492
   p-ranav/tabulate: 2174
   palacaze/sigslot: 912
-  pantor/inja: 1967
+  pantor/inja: 1959
   paralin/soil: 64
-  parkertomatoes/lttb-cpp: 43
-  paullouisageneau/libdatachannel: 2734
+  parkertomatoes/lttb-cpp: 35
+  paullouisageneau/libdatachannel: 2688
   paullouisageneau/libjuice: 617
   pavelkisliak/bitserializer: 34
   pboettch/json-schema-validator: 617
-  pcre2project/pcre2: 1352
+  pcre2project/pcre2: 1356
   pdal/capi: 9
-  pelicanmapping/osgearth: 1799
+  pelicanmapping/osgearth: 1800
   pellegre/libcrafter: 312
-  percipioxyz/camport3: 74
+  percipioxyz/camport3: 71
   peter-winter/ctpg: 488
-  peterscott/murmur3: 449
+  peterscott/murmur3: 432
   petiaccja/mathter: 133
-  pganalyze/libpg_query: 1485
+  pganalyze/libpg_query: 1486
   ph3at/libenvpp: 172
-  phenom64/openxmb: 134
-  philsquared/catch23: 40
+  phenom64/openxmb: 34
+  philsquared/catch23: 37
   philsquared/clara: 652
-  piscisaureus/wepoll: 1111
-  pixaranimationstudios/opensubdiv: 3071
-  pixaranimationstudios/openusd: 7481
+  piscisaureus/wepoll: 1105
+  pixaranimationstudios/opensubdiv: 3058
+  pixaranimationstudios/openusd: 7489
   pjk/libcbor: 405
   pkgconf/pkgconf: 654
-  platonvin/lum: 47
+  platonvin/lum: 0
   pmem/libpmemobj-cpp: 111
   pmem/pmdk: 1388
   pmp-library/pmp-library: 1505
-  pnggroup/libpng: 1654
-  pocketpy/pocketpy: 2114
-  pocoproject/poco: 9486
-  podofo/podofo: 600
-  pointcloudlibrary/pcl: 11109
-  pololu/libusbp: 124
+  pnggroup/libpng: 1655
+  pocketpy/pocketpy: 2119
+  pocoproject/poco: 9481
+  podofo/podofo: 593
+  pointcloudlibrary/pcl: 11112
+  pololu/libusbp: 123
   portmidi/portmidi: 209
-  poselib/poselib: 1212
-  pothosware/soapysdr: 1501
+  poselib/poselib: 1214
+  pothosware/soapysdr: 1505
   powturbo/turbo-base64: 338
-  pragmatwice/protopuf: 207
-  pravila00/enum-string: 1
+  pragmatwice/protopuf: 194
+  pravila00/enum-string: 0
   pravila00/make-vector: 0
-  progsource/maddy: 260
-  projectm-visualizer/projectm: 4430
-  projectm-visualizer/projectm-eval: 17
-  protobuf-c/protobuf-c: 2991
-  protocolbuffers/protobuf: 72007
+  progsource/maddy: 249
+  projectm-visualizer/projectm: 4464
+  projectm-visualizer/projectm-eval: 15
+  protobuf-c/protobuf-c: 2992
+  protocolbuffers/protobuf: 72040
   pubby/flat: 60
-  pulzed/mini: 657
-  pvigier/quadtree: 254
+  pulzed/mini: 656
+  pvigier/quadtree: 236
   pybind/pybind11: 18008
-  pyomeca/ezc3d: 182
-  python/cpython: 76471
+  pyomeca/ezc3d: 183
+  python/cpython: 76851
   pytlab/gasol: 21
   pytorch/cpuinfo: 1187
-  pytorch/kineto: 989
+  pytorch/kineto: 990
   pytorch/qnnpack: 1552
   pytorch/tensorpipe: 285
-  qcoro/qcoro: 583
+  qcoro/qcoro: 587
   qgis/o2: 3
   qhull/qhull: 825
-  qicosmos/cinatra: 2181
-  qicosmos/iguana: 1331
-  qicosmos/ormpp: 1514
-  qicosmos/rest_rpc: 2015
+  qicosmos/cinatra: 2173
+  qicosmos/iguana: 1332
+  qicosmos/ormpp: 1510
+  qicosmos/rest_rpc: 2007
   qihoo360/evpp: 3774
-  qlibs/di: 38
-  qlibs/jmp: 101
-  qlibs/mem: 38
-  qlibs/mp: 320
-  qlibs/mph: 263
-  qlibs/perf: 107
-  qlibs/reflect: 518
-  qlibs/sml: 238
-  qlibs/swar: 52
-  qlibs/ut: 55
+  qlibs/di: 26
+  qlibs/jmp: 59
+  qlibs/mem: 34
+  qlibs/mp: 281
+  qlibs/mph: 243
+  qlibs/perf: 67
+  qlibs/reflect: 520
+  qlibs/sml: 209
+  qlibs/swar: 36
+  qlibs/ut: 45
   qtrest/qtrest: 223
   quantstack/sparrow-extensions: 3
   quickfix/quickfix: 1989
-  quickjs-ng/quickjs: 3719
-  quiet/libcorrect: 441
+  quickjs-ng/quickjs: 3744
+  quiet/libcorrect: 433
   radarsat1/liblo: 218
   rafat/wavelib: 446
-  rakashazi/emu-ex-plus-alpha: 1214
-  randy408/libspng: 841
-  randygaul/cute_headers: 5057
-  raysan5/raylib: 34634
-  rbdl/rbdl: 706
-  rbock/sqlpp11: 2625
-  rbock/sqlpp11-connector-mysql: 132
-  rbock/sqlpp11-connector-sqlite3: 75
+  rakashazi/emu-ex-plus-alpha: 1194
+  randy408/libspng: 843
+  randygaul/cute_headers: 5065
+  raysan5/raylib: 34723
+  rbdl/rbdl: 702
+  rbock/sqlpp11: 2622
+  rbock/sqlpp11-connector-mysql: 129
+  rbock/sqlpp11-connector-sqlite3: 74
   rbock/sqlpp23: 179
-  rdbo/libmem: 1248
+  rdbo/libmem: 1252
   rdiankov/collada-dom: 82
-  reactive-extensions/rxcpp: 3209
-  realm/realm-core: 1054
+  reactive-extensions/rxcpp: 3208
+  realm/realm-core: 1053
   realm/realm-cpp: 85
   realtimechris/benchmarksuite: 21
-  recastnavigation/recastnavigation: 7901
-  recp/cglm: 3011
+  recastnavigation/recastnavigation: 7919
+  recp/cglm: 3015
   red0124/ssp: 59
-  redboltz/async_mqtt: 166
-  redboltz/mqtt_cpp: 485
+  redboltz/async_mqtt: 164
+  redboltz/mqtt_cpp: 482
   redfox20/recpp: 13
-  redis/hiredis: 6681
-  redorav/crstl: 84
-  redorav/hlslpp: 1151
-  redot-engine/draconicengine: 41
-  renatogarcia/icecream-cpp: 749
-  renderkit/embree: 2750
-  renenyffenegger/cpp-base64: 1037
+  redis/hiredis: 6685
+  redorav/crstl: 78
+  redorav/hlslpp: 1123
+  redot-engine/draconicengine: 36
+  renatogarcia/icecream-cpp: 740
+  renderkit/embree: 2740
+  renenyffenegger/cpp-base64: 1038
   renestein/rstein.asynccpp: 33
-  reo7sp/tgbot-cpp: 1188
+  reo7sp/tgbot-cpp: 1186
   repology/libversion: 131
-  rgamble/libcsv: 211
-  rhash/rhash: 728
+  rgamble/libcsv: 206
+  rhash/rhash: 730
   ricab/scope_guard: 205
-  richgel999/miniz: 2873
-  ridiculousfish/libdivide: 1351
-  rigtorp/mpmcqueue: 1564
-  rigtorp/spscqueue: 1286
-  rikyoz/bit7z: 855
+  richgel999/miniz: 2874
+  ridiculousfish/libdivide: 1348
+  rigtorp/mpmcqueue: 1568
+  rigtorp/spscqueue: 1112
+  rikyoz/bit7z: 854
   rinrab/xdigest: 7
   rioki/c9y: 4
   rioki/glow: 2
   rioki/libxmlmm: 14
-  rioki/rsig: 2
-  ripper37/libbase: 62
-  rmsalinas/dbow3: 574
-  roaringbitmap/croaring: 1879
+  rioki/rsig: 1
+  ripper37/libbase: 63
+  rmsalinas/dbow3: 570
+  roaringbitmap/croaring: 1882
   roberthue/libnoise: 0
-  robloach/raylib-cpp: 961
-  robotology/idyntree: 235
+  robloach/raylib-cpp: 946
+  robotology/idyntree: 234
   robotraconteur/robotraconteur_companion: 1
-  rodrigocfd/winlamb: 414
+  rodrigocfd/winlamb: 408
   rollbear/strong_type: 483
   rollbear/trompeloeil: 881
-  romanpauk/dingo: 47
-  romeric/fastor: 844
+  romanpauk/dingo: 48
+  romeric/fastor: 823
   ros/console_bridge: 24
-  ros/urdfdom: 136
+  ros/urdfdom: 134
   ros/urdfdom_headers: 40
-  rougier/freetype-gl: 1744
-  royjacobson/ser20: 34
-  rpclib/rpclib: 1841
+  rougier/freetype-gl: 1743
+  royjacobson/ser20: 29
+  rpclib/rpclib: 1840
   rpeschke/ntuples: 0
   rsocket/rsocket-cpp: 255
-  rttrorg/rttr: 3486
+  rttrorg/rttr: 3476
   ruoka/yardb: 0
   rvarago/absent: 45
-  rwfpl/rewolf-wow64ext: 1015
-  ryan-rsm-mckenzie/binary_io: 36
-  ryan-rsm-mckenzie/bsa: 51
+  rwfpl/rewolf-wow64ext: 970
+  ryan-rsm-mckenzie/binary_io: 31
+  ryan-rsm-mckenzie/bsa: 52
   ryan-rsm-mckenzie/mmio: 8
   ryanhaining/cppitertools: 1431
-  s-yata/marisa-trie: 631
-  s9w/oof: 860
-  sago007/platformfolders: 203
-  sahlberg/libsmb2: 425
-  samhocevar/portable-file-dialogs: 1255
+  s-yata/marisa-trie: 633
+  s9w/oof: 856
+  sago007/platformfolders: 202
+  sahlberg/libsmb2: 424
+  samhocevar/portable-file-dialogs: 1092
   sammycage/lunasvg: 1209
-  sammycage/plutosvg: 453
-  sammycage/plutovg: 525
-  samsung/rlottie: 1435
-  samtools/htscodecs: 40
-  samtools/htslib: 949
-  sandermertens/flecs: 8652
+  sammycage/plutosvg: 448
+  sammycage/plutovg: 528
+  samsung/rlottie: 1437
+  samtools/htscodecs: 42
+  samtools/htslib: 950
+  sandermertens/flecs: 8669
   sandialabs/seacas: 189
   sandialabs/verdict: 39
   sap/odbc-cpp-wrapper: 53
-  sapdragon/syscalls-cpp: 183
-  saprykin/plibsys: 765
-  sass/libsass: 4326
+  sapdragon/syscalls-cpp: 181
+  saprykin/plibsys: 748
+  sass/libsass: 4325
   sass/sassc: 783
-  sbg-systems/sbgecom: 37
+  sbg-systems/sbgecom: 32
   sbmlteam/libsbml: 55
   sccn/liblsl: 177
-  sciplot/sciplot: 696
-  scottt/debugbreak: 684
+  sciplot/sciplot: 692
+  scottt/debugbreak: 682
   sctplab/usrsctp: 762
-  scylladb/seastar: 9359
+  scylladb/seastar: 9346
   sebsjames/mathplot: 64
   sebsjames/maths: 11
-  secure-software-engineering/phasar: 1054
+  secure-software-engineering/phasar: 1057
   sedeniono/tiny-optional: 155
-  seladb/pcapplusplus: 3134
+  seladb/pcapplusplus: 3138
   seleznevae/libfort: 536
   selmf/unarr: 90
   sentomk/patternia: 201
-  septag/dmon: 290
+  septag/dmon: 277
   serge-sans-paille/frozen: 1575
-  serge1/elfio: 893
-  sergiusthebest/plog: 2584
+  serge1/elfio: 894
+  sergiusthebest/plog: 2580
   sewenew/redis-plus-plus: 1984
-  sfml/sfml: 12007
-  sfttech/nyan: 256
-  sgieseking/anyrpc: 75
-  sgorsten/linalg: 961
-  shader-slang/slang: 5627
-  sharkdp/dbg-macro: 3235
-  sheredom/utf8.h: 1980
-  shiftmediaproject/gnutls: 25
+  sfml/sfml: 12027
+  sfttech/nyan: 247
+  sgieseking/anyrpc: 66
+  sgorsten/linalg: 936
+  shader-slang/slang: 5647
+  sharkdp/dbg-macro: 3231
+  sheredom/utf8.h: 1973
+  shiftmediaproject/gnutls: 24
   shiftmediaproject/libgcrypt: 31
   shiftmediaproject/libgpg-error: 6
-  shiftmediaproject/vsyasm: 66
-  silentbicycle/greatest: 1540
+  shiftmediaproject/vsyasm: 63
+  silentbicycle/greatest: 1538
   silnrsi/graphite: 188
-  silverlan/pragma: 248
-  silverqx/tinyorm: 353
-  simd-everywhere/simde: 3103
-  simdutf/simdutf: 1957
-  simfeo/fancyargumentparser: 6
-  simple-robotics/proxsuite: 591
-  singerballad/win32pp: 2
-  siv3d/opensiv3d: 1180
-  sjanel/aeronet: 44
-  skadro-official/skcrypter: 841
-  skaslev/gl3w: 747
-  skift-org/karm: 31
-  skift-org/skift: 2980
+  silverlan/pragma: 249
+  silverqx/tinyorm: 350
+  simd-everywhere/simde: 3109
+  simdutf/simdutf: 1961
+  simfeo/fancyargumentparser: 0
+  simple-robotics/proxsuite: 590
+  singerballad/win32pp: 4
+  siv3d/opensiv3d: 1181
+  sjanel/aeronet: 43
+  skadro-official/skcrypter: 753
+  skaslev/gl3w: 745
+  skift-org/karm: 30
+  skift-org/skift: 2965
   skift-org/vaev: 307
-  skillman1337/modern-loki: 36
-  skypjack/entt: 13089
-  skypjack/uvw: 2057
-  skywind3000/kcp: 16899
-  slavenf/sfl-library: 162
-  slembcke/chipmunk2d: 2405
+  skillman1337/modern-loki: 28
+  skypjack/entt: 13101
+  skypjack/uvw: 2056
+  skywind3000/kcp: 16910
+  slavenf/sfl-library: 149
+  slembcke/chipmunk2d: 2407
   slendidev/smath: 8
   slickquant/coinbase-advanced-cpp: 5
   slickquant/hyperliquid-cpp: 3
-  slickquant/slick-dynamic-buffer: 2
+  slickquant/slick-dynamic-buffer: 0
   slickquant/slick-logger: 5
   slickquant/slick-net: 3
-  slickquant/slick-object-pool: 3
-  slickquant/slick-queue: 8
-  slickquant/slick-shm: 2
+  slickquant/slick-object-pool: 2
+  slickquant/slick-queue: 6
+  slickquant/slick-shm: 0
   slickquant/slick-socket: 3
   slickquant/slick-stream-buffer: 2
   slickquant/slick-stream-buffer-multiplexer: 2
-  slikesoft/slikenet: 466
+  slikesoft/slikenet: 389
   snitch-org/snitch: 317
-  soasis/encoding_tables: 11
-  soasis/idk: 40
+  soasis/encoding_tables: 10
+  soasis/idk: 37
   soasis/platform: 5
   soasis/static_containers: 10
-  soasis/text: 337
-  sogou/srpc: 2141
-  sogou/workflow: 14421
-  sonodima/wmipp: 8
+  soasis/text: 325
+  sogou/srpc: 2142
+  sogou/workflow: 14423
+  sonodima/wmipp: 5
   sparrow-org/sparrow-ipc: 6
-  sparsehash/sparsehash: 1599
-  spartanj/efsw: 910
+  sparsehash/sparsehash: 1600
+  spartanj/efsw: 909
   spartanj/soil2: 483
-  spnda/fastgltf: 582
-  spotify/annoy: 14295
+  spnda/fastgltf: 517
+  spotify/annoy: 14299
   spriteovo/sigmatch: 132
-  srombauts/sqlitecpp: 2782
+  srombauts/sqlitecpp: 2784
   ssarcandy/cofetch: 8
   ssarcandy/ini-cpp: 54
-  ssg-aero/gbs: 46
-  stclib/stc: 1969
-  steinm/pxlib: 11
+  ssg-aero/gbs: 45
+  stclib/stc: 1915
+  steinm/pxlib: 10
   steinwurf/recycle: 72
-  stella-cv/fbow: 25
+  stella-cv/fbow: 19
   stellar-group/hpx: 2890
-  stephane/libmodbus: 4246
-  stephenberry/glaze: 3001
+  stephane/libmodbus: 4241
+  stephenberry/glaze: 3022
   stescobedo92/stellar: 2
-  stescobedo92/swagger-cpp: 3
+  stescobedo92/swagger-cpp: 2
   steve-downey/fingertree: 0
   steve-downey/specgen: 1
   steve-downey/transcode: 1
@@ -1533,24 +1534,24 @@ repositories:
   steveire/grantlee: 143
   stevemk14ebr/polyhook_2_0: 1897
   stevenan233/rocket-engine: 1
-  stevengj/nlopt: 2271
-  stevenlovegrove/pangolin: 2741
-  stiffstream/json_dto: 163
-  stiffstream/restinio: 1303
-  stiffstream/so5extra: 27
-  stiffstream/sobjectizer: 626
-  stijnherfst/hivewe: 472
+  stevengj/nlopt: 2274
+  stevenlovegrove/pangolin: 2737
+  stiffstream/json_dto: 160
+  stiffstream/restinio: 1305
+  stiffstream/so5extra: 25
+  stiffstream/sobjectizer: 615
+  stijnherfst/hivewe: 467
   stillwater-sc/universal: 500
   stlab/copy-on-write: 4
-  stlab/libraries: 682
+  stlab/libraries: 680
   stlab/stlab-enum-ops: 3
-  stotko/stdgpu: 1270
+  stotko/stdgpu: 1266
   strasdat/sophus: 2451
-  stripe2933/vk-deferred: 33
-  stripe2933/vk-gltf-viewer: 140
+  stripe2933/vk-deferred: 31
+  stripe2933/vk-gltf-viewer: 129
   stripe2933/vku: 4
-  suikasibyl/sibylengine2023: 74
-  superg/redumper: 496
+  suikasibyl/sibylengine2023: 69
+  superg/redumper: 495
   sushant-wayal/stringhash: 0
   svaarala/duktape: 6209
   svi-opensource/libics: 18
@@ -1558,248 +1559,248 @@ repositories:
   swift-nav/libsbp: 76
   symengine/symengine: 1410
   synodic/soul-engine: 48
-  syoyo/tinyexr: 832
-  syoyo/tinygltf: 2521
-  systemd/systemd: 16666
-  tanakh/cmdline: 1427
+  syoyo/tinyexr: 831
+  syoyo/tinygltf: 2526
+  systemd/systemd: 16693
+  tanakh/cmdline: 1224
   tankos/sfgui: 449
-  taocpp/pegtl: 2155
+  taocpp/pegtl: 2158
   tapzcrew/stormkit: 9
-  tartanllama/expected: 1881
-  tartanllama/optional: 923
+  tartanllama/expected: 1883
+  tartanllama/optional: 922
   tartanllama/ranges: 97
-  taskflow/taskflow: 12147
-  tataliya7/horizonengine: 78
-  taywee/args: 1638
-  tbeu/matio: 400
-  tcbrindle/flux: 748
-  tcbrindle/nanorange: 366
-  tcbrindle/span: 384
-  tcltk/tcl: 830
-  tdlib/td: 9079
+  taskflow/taskflow: 12123
+  tataliya7/horizonengine: 64
+  taywee/args: 1630
+  tbeu/matio: 399
+  tcbrindle/flux: 731
+  tcbrindle/nanorange: 362
+  tcbrindle/span: 365
+  tcltk/tcl: 831
+  tdlib/td: 9097
   team-charls/charls: 221
-  team-charls/jpegls-wic-codec: 14
+  team-charls/jpegls-wic-codec: 13
   tehreer/sheenbidi: 217
-  tencent/ncnn: 23792
-  tensorflow/tensorflow: 199337
+  tencent/ncnn: 23826
+  tensorflow/tensorflow: 199741
   teschnei/lotus-engine: 15
   teslamotors/fixed-containers: 461
-  tesseract-ocr/tesseract: 76389
-  tessil/hat-trie: 873
+  tesseract-ocr/tesseract: 76523
+  tessil/hat-trie: 872
   tessil/hopscotch-map: 849
-  tessil/ordered-map: 576
+  tessil/ordered-map: 577
   tessil/robin-map: 1505
-  tessil/sparse-map: 368
+  tessil/sparse-map: 363
   tesults/cpp: 0
   tesults/tesults-gtest: 0
-  tetsurom/rxqt: 199
+  tetsurom/rxqt: 175
   tfhe/tfhe: 1330
-  tgockel/zookeeper-cpp: 156
-  thalhammer/jwt-cpp: 1163
+  tgockel/zookeeper-cpp: 142
+  thalhammer/jwt-cpp: 1161
   thayakawa-gh/openadapt: 3
-  thedmd/imgui-node-editor: 4503
-  thephd/infoware: 457
-  thephd/itsy_bitsy: 134
+  thedmd/imgui-node-editor: 3997
+  thephd/infoware: 456
+  thephd/itsy_bitsy: 128
   thephd/sol2: 5136
   thermadiag/seq: 111
-  thestk/rtaudio: 1761
-  thestk/rtmidi: 1204
-  think-cell/think-cell-library: 460
-  thirteenag/gtaiv.eflc.fusionfix: 3230
-  thirteenag/maxpayne3.fusionfix: 229
-  thisistherk/fast_obj: 765
-  thomasmonkman/filewatch: 526
+  thestk/rtaudio: 1764
+  thestk/rtmidi: 1203
+  think-cell/think-cell-library: 458
+  thirteenag/gtaiv.eflc.fusionfix: 3210
+  thirteenag/maxpayne3.fusionfix: 224
+  thisistherk/fast_obj: 696
+  thomasmonkman/filewatch: 441
   thorstensuckow/helios-ecs: 1
   tiledb-inc/tiledb: 2076
   timothygu/libilbc: 67
-  timsort/cpp-timsort: 318
-  tiny-dnn/tiny-dnn: 6030
+  timsort/cpp-timsort: 319
+  tiny-dnn/tiny-dnn: 6031
   tlx/tlx: 456
   tmaklin/bxzstr: 65
-  tobanteembedded/tetl: 28
+  tobanteembedded/tetl: 24
   toddthomson/mila: 7
-  tomwillow/tomsolver: 39
-  tonitaga/mtlt: 18
-  torch/torch7: 9142
-  toruniina/toml11: 1297
-  tradias/asio-grpc: 472
-  trailofbits/pe-parse: 909
+  tomwillow/tomsolver: 34
+  tonitaga/mtlt: 19
+  torch/torch7: 9118
+  toruniina/toml11: 1293
+  tradias/asio-grpc: 458
+  trailofbits/pe-parse: 911
   trailofbits/uthenticode: 162
-  tree-sitter/tree-sitter: 26885
-  tree-sitter/tree-sitter-c: 392
+  tree-sitter/tree-sitter: 26935
+  tree-sitter/tree-sitter-c: 391
   tristanpenman/valijson: 424
-  troldal/openxlsx: 1780
-  tronkko/dirent: 1186
+  troldal/openxlsx: 1782
+  tronkko/dirent: 1187
   troymoder/pollcoro: 6
-  tsudakageyu/minhook: 5974
+  tsudakageyu/minhook: 5893
   tucher/jsonfusion: 15
   twig-energy/bark: 3
-  twig-energy/stronk: 49
-  tzcnt/toomanycooks: 276
+  twig-energy/stronk: 48
+  tzcnt/toomanycooks: 279
   ubarsc/kealib: 15
-  uber/h3: 6532
+  uber/h3: 6537
   uclouvain/openjpeg: 1111
-  ulfjack/ryu: 1349
+  ulfjack/ryu: 1338
   ultimaker/libarcus: 78
-  ultravideo/uvg266: 290
+  ultravideo/uvg266: 293
   unetworking/usockets: 1494
-  uni-algo/uni-algo: 331
-  unicorn-engine/unicorn: 9308
-  unidata/netcdf-c: 602
+  uni-algo/uni-algo: 328
+  unicorn-engine/unicorn: 9323
+  unidata/netcdf-c: 603
   unidata/netcdf-cxx4: 152
   unimails/unimail-cpp-sdk: 0
   unistuttgart-visus/datraw: 5
   unittest-cpp/unittest-cpp: 585
-  unixwin/winuxcmd: 264
-  unterumarmung/fixed_string: 115
-  untrustedmodders/plugify: 83
-  unum-cloud/usearch: 4293
-  upa-url/upa: 30
-  upc-virvig/sdflib: 75
-  uscilab/cereal: 4707
-  utelle/wxchartdir: 45
-  uwebsockets/uwebsockets: 18981
-  uxlfoundation/onetbb: 6740
+  unixwin/winuxcmd: 265
+  unterumarmung/fixed_string: 112
+  untrustedmodders/plugify: 81
+  unum-cloud/usearch: 4306
+  upa-url/upa: 25
+  upc-virvig/sdflib: 67
+  uscilab/cereal: 4708
+  utelle/wxchartdir: 44
+  uwebsockets/uwebsockets: 18975
+  uxlfoundation/onetbb: 6745
   valgur/velodyne_decoder: 53
-  valvesoftware/gamenetworkingsockets: 9894
-  valvesoftware/openvr: 6647
-  valvesoftware/steam-audio: 2928
+  valvesoftware/gamenetworkingsockets: 9911
+  valvesoftware/openvr: 6657
+  valvesoftware/steam-audio: 2940
   vancegroup/freealut: 74
   vanillapdf/vanillapdf: 13
-  vcdevel/vc: 1541
-  vczh-libraries/release: 1377
+  vcdevel/vc: 1542
+  vczh-libraries/release: 1376
   vector-of-bool/cmrc: 776
-  vectorclass/version2: 1481
-  veselink1/refl-cpp: 1209
+  vectorclass/version2: 1472
+  veselink1/refl-cpp: 1212
   victimsnino/reactiveplusplus: 312
   victorfisac/physac: 609
   videolabs/libmicrodns: 76
-  viliorg/vili: 26
-  vilya/miniply: 90
+  viliorg/vili: 27
+  vilya/miniply: 88
   vincentlaucsb/classify_scalar: 2
-  vincentlaucsb/csv-parser: 1125
+  vincentlaucsb/csv-parser: 1126
   vinniefalco/luabridge: 1782
-  virustotal/yara: 9853
-  vit-vit/ctpl: 2036
-  vladimirshaleev/ipaddress: 19
-  vmt/udis86: 1081
-  vowpalwabbit/vowpal_wabbit: 8715
-  vpetrigo/smf: 5
+  virustotal/yara: 9868
+  vit-vit/ctpl: 2034
+  vladimirshaleev/ipaddress: 13
+  vmt/udis86: 1079
+  vowpalwabbit/vowpal_wabbit: 8720
+  vpetrigo/smf: 2
   vrtulka23/scinumtools3: 0
-  vsg-dev/vsgimgui: 73
-  vsg-dev/vsgqt: 80
+  vsg-dev/vsgimgui: 71
+  vsg-dev/vsgqt: 64
   vsg-dev/vsgxchange: 104
-  vtraag/libleidenalg: 35
-  vurtun/mmx: 1427
+  vtraag/libleidenalg: 34
+  vurtun/mmx: 1382
   wanduow/wandio: 20
-  wangyi-fudan/wyhash: 1146
-  waywallen/waywallen: 836
+  wangyi-fudan/wyhash: 1143
+  waywallen/waywallen: 764
   waywardgeek/sonic: 698
   wbhart/mpir: 246
   wdas/ptex: 735
-  webassembly/wabt: 8122
+  webassembly/wabt: 8130
   webmproject/libvpx: 971
   webmproject/libwebm: 253
-  webmproject/libwebp: 2387
+  webmproject/libwebp: 2388
   webmproject/sjpeg: 87
-  webui-dev/webui: 4595
-  webview/webview: 14231
+  webui-dev/webui: 4601
+  webview/webview: 14230
   weidai11/cryptopp: 5502
   wentsingnee/kerbal: 78
-  westlicht/tevclient: 4
-  wg21-sg14/sg14: 535
-  wiiuse/wiiuse: 333
+  westlicht/tevclient: 2
+  wg21-sg14/sg14: 497
+  wiiuse/wiiuse: 334
   williamh/dotconf: 29
-  winsiderss/phnt: 1473
-  winsoft666/veigar: 79
+  winsiderss/phnt: 1472
+  winsoft666/veigar: 60
   winsoft666/zoe: 62
-  wirestead/wirestead: 1
+  wirestead/wirestead: 2
   witwall/mman-win32: 146
-  wjakob/nanogui: 4872
-  wohlstand/libadlmidi: 229
-  wohlstand/libopnmidi: 129
-  wolfgitpr/cpp-kana: 5
-  wolfgitpr/cpp-pinyin: 51
+  wjakob/nanogui: 4871
+  wohlstand/libadlmidi: 226
+  wohlstand/libopnmidi: 126
+  wolfgitpr/cpp-kana: 3
+  wolfgitpr/cpp-pinyin: 18
   wolfgitpr/wolf-midi: 2
-  wolfpld/tracy: 16733
-  woollybah/gppanel: 3
-  wpilibsuite/allwpilib: 1301
-  wqking/eventpp: 1683
-  wren-lang/wren: 8129
-  wx257osn2/qoixx: 42
-  wxwidgets/wxwidgets: 7269
-  x509cert/banned: 115
-  xhawk18/promise-cpp: 701
-  xiaoyang-sde/co-uring-http: 183
+  wolfpld/tracy: 16784
+  woollybah/gppanel: 2
+  wpilibsuite/allwpilib: 1302
+  wqking/eventpp: 1684
+  wren-lang/wren: 8130
+  wx257osn2/qoixx: 40
+  wxwidgets/wxwidgets: 7267
+  x509cert/banned: 99
+  xhawk18/promise-cpp: 696
+  xiaoyang-sde/co-uring-http: 164
   xiaoyeli/superlu: 332
-  xiaozhuai/imageinfo: 130
+  xiaozhuai/imageinfo: 131
   xiaozhuai/readline-win32: 2
   xiph/libao: 85
   xiph/libopusenc: 140
-  xiph/opus: 3308
+  xiph/opus: 3317
   xiph/opusfile: 199
   xiph/speex: 509
-  xiph/theora: 126
-  xiph/vorbis: 580
-  xlnt-community/xlnt: 95
+  xiph/theora: 127
+  xiph/vorbis: 579
+  xlnt-community/xlnt: 93
   xqq/libaribcaption: 129
-  xsco/libdjinterop: 80
+  xsco/libdjinterop: 78
   xtensor-stack/xframe: 324
-  xtensor-stack/xsimd: 2750
-  xtensor-stack/xtensor: 3763
+  xtensor-stack/xsimd: 2751
+  xtensor-stack/xtensor: 3762
   xtensor-stack/xtensor-blas: 174
   xtensor-stack/xtensor-fftw: 50
   xtensor-stack/xtensor-io: 96
   xtensor-stack/xtl: 234
-  xxxnpno/chatwire: 2
-  xxxnpno/vmhook: 9
+  xxxnpno/chatwire: 1
+  xxxnpno/vmhook: 8
   xyo-financial/sdk-cpp: 0
-  xyz347/xpack: 660
-  yaaz/vulkanmemoryallocator-hpp: 113
-  yaml/libyaml: 1157
+  xyz347/xpack: 661
+  yaaz/vulkanmemoryallocator-hpp: 100
+  yaml/libyaml: 1158
   yasm/yasm: 1482
   ybainier/hypodermic: 605
-  ybalrid/kissnet: 255
-  yexuanxiao/deque: 10
-  yexuanxiao/rfc4648-base64: 5
-  yhirose/cpp-httplib: 16818
+  ybalrid/kissnet: 252
+  yexuanxiao/deque: 8
+  yexuanxiao/rfc4648-base64: 4
+  yhirose/cpp-httplib: 16748
   yhirose/cpp-peglib: 1062
   yoctopuce/yoctolib_cpp: 12
-  yookax/jvm.cc: 42
-  yse/easy_profiler: 2373
+  yookax/jvm.cc: 35
+  yse/easy_profiler: 2371
   yubico/libu2f-server: 97
-  yubico/yubico-piv-tool: 352
-  yuki-koyama/tinycolormap: 377
-  yunsmall/usbipdcpp: 122
-  yuria-shikibe/xrgui: 42
+  yubico/yubico-piv-tool: 351
+  yuki-koyama/tinycolormap: 343
+  yunsmall/usbipdcpp: 88
+  yuria-shikibe/xrgui: 35
   ywh233/lrc-tools: 2
   yyzybb537/libgo: 3312
   z3lx/mminhook: 0
-  z3prover/z3: 12653
+  z3prover/z3: 12657
   z4kn4fein/cpp-semver: 59
   zeiss/libczi: 73
   zemasoft/wildcards: 95
-  zenomt/rtmfp-cpp: 48
+  zenomt/rtmfp-cpp: 46
   zer0mem/cccapstone: 64
   zeroc-ice/ice: 2191
   zeroc-ice/mcpp: 80
   zerodaycode/zero: 5
   zeromq/azmq: 341
-  zeromq/cppzmq: 2332
+  zeromq/cppzmq: 2334
   zeromq/czmq: 1273
-  zeromq/libzmq: 10989
+  zeromq/libzmq: 11002
   zeromq/zyre: 950
-  zeux/meshoptimizer: 8308
-  zeux/pugixml: 4634
-  zeux/volk: 1913
-  zhihaoy/nontype_functional: 75
-  zigrazor/cxxgraph: 724
-  zint/zint: 801
-  zlib-ng/minizip-ng: 1492
-  zlib-ng/zlib-ng: 2089
-  zlmediakit/zlmediakit: 17511
+  zeux/meshoptimizer: 8343
+  zeux/pugixml: 4642
+  zeux/volk: 1919
+  zhihaoy/nontype_functional: 70
+  zigrazor/cxxgraph: 726
+  zint/zint: 800
+  zlib-ng/minizip-ng: 1497
+  zlib-ng/zlib-ng: 2096
+  zlmediakit/zlmediakit: 17513
   zrax/string_theory: 68
-  zserge/fenster: 1574
-  zxing-cpp/zxing-cpp: 2006
-  zxshady/enchantum: 141
+  zserge/fenster: 1578
+  zxing-cpp/zxing-cpp: 2021
+  zxshady/enchantum: 138
   zyantific/zycore-c: 130
