@@ -39,6 +39,7 @@
 | Gradle        | ❌            | ❌            | ❌           | [Issue Link](https://github.com/gradle/gradle/issues/29009) |
 | fastbuild     | ❌            | ❌            | ❌           | [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026) |
 | qmake         | ❌            | ❌            | ❌           | 💀 Deprecated and should no longer be used! |
+| mcpp          | ✅            | ✅            | ❌           | [A module-first build tool written entirely in C++23 modules](https://github.com/mcpp-community/mcpp) |
 
 ## Language Server (IDE Support)
 
@@ -46,6 +47,7 @@
 |--------------------|---------------|------|
 | Clangd             | ✅  | [C++20 Modules in clangd](https://chuanqixu9.github.io/c++/2025/12/03/Clangd-support-for-Modules.en.html) |
 | vscode-cmake-tools | ❌            | [Issue Link](https://github.com/microsoft/vscode-cmake-tools/issues/3335) |
+| mcpp-language-server (mcppls) | ✅ | [C++20/23 Modules: GCC, Clang, MSVC & MinGW](https://github.com/Sunrisepeak/mcpp-language-server) |
 
 ## Static analyzers
 

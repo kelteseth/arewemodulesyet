@@ -334,6 +334,32 @@ projects:
   import_statement: mcpp.*
   modules_native: ✅
   tracking_issue: https://github.com/mcpp-community/mcpp/commit/92f1335eb244c886b1f5f6538455bb71029e9bab
+- name: mcpp-language-server
+  homepage: https://github.com/Sunrisepeak/mcpp-language-server
+  modules_support_date: 2026-09-22
+  status: ✅
+  import_statement: mcppls.*
+  modules_native: ✅
+  tracking_issue: https://github.com/Sunrisepeak/mcpp-language-server/commit/d236148f33b73d0128c81110fb29624bc3d9ebda
+- name: xfvm
+  homepage: https://github.com/azhzx/xfvm
+  modules_support_date: 2026-07-14
+  status: ✅
+  import_statement: xfvm.*
+  modules_native: ✅
+  tracking_issue: https://github.com/azhzx/xfvm/commit/47b87d89403b90025eff80d9771df97d36e1cebb
+- name: GalTranslPP
+  homepage: https://github.com/julixian/GalTranslPP
+  modules_support_date: 2026-09-25
+  status: ✅
+  modules_native: ✅
+  tracking_issue: https://github.com/julixian/GalTranslPP/commit/ebd2a900e2189a73975d1007bb74b1e2e966c62a#diff-9ba60ac9d91730c89096db346ccb0f16117b3cf9dba0455ae5b1f80ae2eceb68
+- name: HuxerUI
+  homepage: https://github.com/HuxerUI/HuxerUI
+  modules_support_date: 2026-09-10
+  status: ✅
+  import_statement: huxerui
+  tracking_issue: https://github.com/HuxerUI/HuxerUI/commit/ee0c0ca7d0e20775d9f201c85a74c94c375a21b1
 - name: RASPA3
   homepage: https://github.com/iRASPA/RASPA3
   modules_support_date: 2024-10-07
