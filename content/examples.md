@@ -24,3 +24,4 @@ Projects written with modules from the ground up, to give a feeling for how deve
 - [atr](https://github.com/kaimfrai/atr/tree/main)
 - [async_simple's modules branch](https://github.com/alibaba/async_simple/tree/CXX20Modules)
 - [openJuice](https://github.com/mikomikotaishi/openJuice)
+- [mcpp](https://github.com/mcpp-community/mcpp)
