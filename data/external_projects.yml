@@ -1111,3 +1111,11 @@ projects:
   modules_native: ✅
   current_min_cpp_version: 23
   tracking_issue: https://github.com/ToddThomson/Mila/commit/e84b72aecc0bc68e0928853617d888c30d2bdcfc
+- name: Jacinth
+  homepage: https://github.com/crueter/jacinth
+  modules_support_date: 2026-09-18
+  status: ✅
+  import_statement: jacinth
+  modules_native: ✅
+  current_min_cpp_version: 23
+  tracking_issue: https://github.com/crueter/jacinth/commit/e6c1ab42f39606159d7bde47ea01e68cdf671838
