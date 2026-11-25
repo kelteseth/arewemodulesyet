@@ -28,15 +28,16 @@
 | qbs           | ✅ 2.5        | ✅ 3.1        | ❌           | [Tutorial](https://qbs.io//docs/tutorial-10/) |
 | Meson         | Partial       | ❌            | ❌           | [Issue Link](https://github.com/mesonbuild/meson/issues/5024) |
 | Gnu Make      | ✅            | ❌            | ❌           | [Demo Project](https://github.com/fvilante/cpp20_modules_with_gcc_demo) |
-| Cabin         | ❌            | ❌            | ❌           |      |
+| Bazel         | ✅            | ⚙️            | ❌           | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005) |
+| Gradle        | ❌            | ❌            | ❌           | [Issue Link](https://github.com/gradle/gradle/issues/29009) |
+| Cabin         | ❌            | ❌            | ❌           | [Issue Link](https://github.com/cabinpkg/cabin/issues/1505)   |
+| Zig           | ❌            | ❌            | ❌           | [Issue Link](https://github.com/ziglang/zig/issues/15496)     |
 | HMake         | ✅            | ✅            | ✅           |      |
 | GNU Autotools | ❌            | ❌            | ❌           |      |
 | Scons         | ⚙️            | ❌            | ❌           | [PR for GCC support](https://github.com/SCons/scons/pull/4248) |
 | ccache        | ⚙️            | ❌            | ❌           | [PR](https://github.com/ccache/ccache/pull/1523) |
 | sccache (clang) | ✅          | ✅            | ❌           |      |
 | sccache (gcc/MSVC) | ❌       | ❌            | ❌           |      |
-| Bazel         | ✅            | ⚙️            | ❌           | [Issue Link](https://github.com/bazelbuild/bazel/issues/4005) |
-| Gradle        | ❌            | ❌            | ❌           | [Issue Link](https://github.com/gradle/gradle/issues/29009) |
 | fastbuild     | ❌            | ❌            | ❌           | [Issue Link](https://github.com/fastbuild/fastbuild/issues/1026) |
 | qmake         | ❌            | ❌            | ❌           | 💀 Deprecated and should no longer be used! |
 | mcpp          | ✅            | ✅            | ❌           | [A module-first build tool written entirely in C++23 modules](https://github.com/mcpp-community/mcpp) |
