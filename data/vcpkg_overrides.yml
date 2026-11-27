@@ -548,6 +548,9 @@ ports:
   status: ✅
   current_min_cpp_version: 20
   tracking_issue: https://github.com/hoshimoe/NekoThreadPool/commit/d09520df0bb927e54de4c637113f81e5f0f62cf3
+- name: flecs
+  tracking_issue: "https://github.com/SanderMertens/flecs/issues/1317"
+  status: ⚠️
 
 ###############################################################################
 # Qt6 - All share the same tracking issue
